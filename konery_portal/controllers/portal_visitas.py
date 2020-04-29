@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-
 from odoo import http, _
 from odoo.addons.portal.controllers.portal import CustomerPortal, pager as portal_pager
 from odoo.addons.payment.controllers.portal import PaymentProcessing
@@ -23,7 +21,7 @@ class PortalVT(CustomerPortal):
         }
         return self._get_page_view_values(vt, access_token, values, 'my_vts_history', False, **kwargs)
 
-    @http.route(['/my/vt', '/my/vt/page/<int:page>'], type='http', auth="user", website=True)
+    @http.route(['/my/vts', '/my/vts/page/<int:page>'], type='http', auth="user", website=True)
     def portal_my_vts(self, page=1, date_begin=None, date_end=None, sortby=None, **kw):
         values = self._prepare_portal_layout_values()
         VT = request.env['x_cuestionarios']
@@ -77,13 +75,28 @@ class PortalVT(CustomerPortal):
         except (AccessError, MissingError):
             return request.redirect('/my')
 
-        if report_type in ('html', 'pdf', 'text'):
-            return self._show_report(
-                model=vt_sudo,
-                report_type=report_type,
-                report_ref='studio_customization.cuestionarios_report_b1b85f62-563d-4e45-8d9e-e7776704396b',
-                download=download)
+        # if report_type in ('html', 'pdf', 'text'):
+        #    return self._show_report(
+        #        model=vt_sudo,
+        #        report_type=report_type,
+        #        report_ref='studio_customization.cuestionarios_report_b1b85f62-563d-4e45-8d9e-e7776704396b',
+        #        download=download)
 
         values = self._vt_get_page_view_values(vt_sudo, access_token, **kw)
-        PaymentProcessing.remove_payment_transaction(vt_sudo.transaction_ids)
         return request.render("konery_portal.portal_vt_page", values)
+
+    @http.route(['/my/vt/pdf/<int:vt_id>'], type='http', auth="public", website=True)
+    def portal_vt_report(self, vt_id, access_token=None, **kw):
+        try:
+            vt_sudo = self._document_check_access('x_cuestionarios', vt_id, access_token)
+        except AccessError:
+            return request.redirect('/my')
+        # print report as sudo, since it require access to taxes, payment term, ... and portal
+        # does not have those access rights.
+        report_ref = 'studio_customization.cuestionarios_report_b1b85f62-563d-4e45-8d9e-e7776704396b'
+        pdf = request.env.ref(report_ref).sudo().render_qweb_pdf([vt_sudo.id])[0]
+        pdfhttpheaders = [
+            ('Content-Type', 'application/pdf'),
+            ('Content-Length', len(pdf)),
+        ]
+        return request.make_response(pdf, headers=pdfhttpheaders)
