@@ -13,6 +13,7 @@
     "data": [
         "views/report.xml",
         "views/templates.xml",
+        "views/templates_konery.xml",
     ],
     "installable": True,
 }
