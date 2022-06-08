@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
+        
         <record id="paperformat_solar_team" model="report.paperformat">
             <field name="name">M A4 SolarTeam</field>
             <field name="default" eval="True" />
@@ -16,5 +17,23 @@
             <field name="header_spacing">5</field>
             <field name="dpi">90</field>
         </record>
+
+        <record id="paperformat_konery_factura" model="report.paperformat">
+            <field name="name">M A4 Konery</field>
+            <field name="default" eval="True" />
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">47</field>
+            <field name="margin_bottom">23</field>
+            <field name="margin_left">8</field>
+            <field name="margin_right">1</field>
+            <field name="header_line" eval="False" />
+            <field name="header_spacing">40</field>
+            <field name="dpi">90</field>
+        </record>
+
+
     </data>
 </odoo>
