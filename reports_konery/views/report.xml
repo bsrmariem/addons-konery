@@ -14,7 +14,7 @@
             <field name="binding_type">report</field>
         </record>
 
-        <record id="solar_team_invoice_report" model="ir.actions.report">
+        <record id="konery_invoice_report" model="ir.actions.report">
             <field name="name">Konery Factura</field>
             <field name="model">account.move</field>
             <field name="report_type">qweb-pdf</field>
