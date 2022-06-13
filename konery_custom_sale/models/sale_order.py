@@ -6,7 +6,12 @@ from odoo import fields, models, api
 class SaleOrder(models.Model):
     _inherit = 'sale.order',
 
-    all_revision_ids = fields.Many2many('sale.order', string="Revisions", compute="get_all_revisions", domain="['|',('active','=',True),('active','=',False)]")
+    all_revision_ids = fields.Many2many('sale.order',
+                                        string="Revisions",
+                                        compute="get_all_revisions",
+                                        domain="['|',('active','=',True),('active','=',False)]",
+                                        context={'active_test': False}
+                                        )
     all_mail_messages = fields.Many2many('mail.message', string="Messages", compute="get_all_messages", store=False)
 
     def get_all_revisions(self):
