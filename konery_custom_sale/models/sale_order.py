@@ -7,7 +7,7 @@ class SaleOrder(models.Model):
     _inherit = 'sale.order',
 
     all_revision_ids = fields.Many2many('sale.order', string="Revisions", compute="get_all_revisions")
-    all_mail_messages = fields.Many2many('mail.message', store=False)
+    all_mail_messages = fields.Many2many('mail.message', compute='get_all_messages', store=False)
 
     def get_all_messages(self):
         messages = self.env['mail.message'].search([('model', '=', 'sale.order'),
