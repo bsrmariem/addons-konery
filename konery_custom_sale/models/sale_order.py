@@ -10,8 +10,8 @@ class SaleOrder(models.Model):
     all_mail_messages = fields.Many2many('mail.message', string="Messages", compute="get_all_messages", store=False)
 
     def get_all_revisions(self):
-        revision = self.env['sale.order'].search([('unrevisioned_name', '=', self.unrevisioned_name),
-                                                  ('active','in',[True,False])])
+        revision = self.env['sale.order'].search([('unrevisioned_name', '=', self.unrevisioned_name),'|',
+                                                  ('active','=',True),('active','=',False)])
         self.all_revision_ids = [(6, 0, revision.ids)]
 
     def get_all_messages(self):
