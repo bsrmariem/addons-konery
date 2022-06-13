@@ -11,7 +11,7 @@ class SaleOrder(models.Model):
 
     def get_all_messages(self):
         messages = self.env['mail.message'].search([('model', '=', 'sale.order'),
-                                                    ('res_id.id', 'in', self.all_revision_ids.ids)])
+                                                    ('res_id', 'in', self.all_revision_ids.ids)])
         print("messages", messages)
         self.all_mail_messages = [(6, 0, messages.ids)]
 
