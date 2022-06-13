@@ -12,9 +12,9 @@ class SaleOrder(models.Model):
     def get_all_messages(self):
         messages = self.env['mail.message'].search([('model', '=', 'sale.order'),
                                                     ('id', 'in', self.all_revision_ids.ids)])
-        all_mail_messages = [(6, 0, messages.ids)]
+        self.all_mail_messages = [(6, 0, messages.ids)]
 
     def get_all_revisions(self):
         revision = self.env['sale.order'].search([('unrevisioned_name', '=', self.unrevisioned_name)])
-        all_revision_ids = [(6, 0, revision.ids)]
+        self.all_revision_ids = [(6, 0, revision.ids)]
 
