@@ -9,13 +9,13 @@ class SaleOrder(models.Model):
     all_revision_ids = fields.Many2many('sale.order', string="Revisions", compute="get_all_revisions")
     all_mail_messages = fields.Many2many('mail.message', string="Messages", compute="get_all_messages", store=False)
 
+    def get_all_revisions(self):
+        revision = self.env['sale.order'].search([('unrevisioned_name', '=', self.unrevisioned_name),
+                                                  ('active','in',[True,False])])
+        self.all_revision_ids = [(6, 0, revision.ids)]
+
     def get_all_messages(self):
         messages = self.env['mail.message'].search([('model', '=', 'sale.order'),
                                                     ('res_id', 'in', self.all_revision_ids.ids)])
-        print("messages", messages)
         self.all_mail_messages = [(6, 0, messages.ids)]
-
-    def get_all_revisions(self):
-        revision = self.env['sale.order'].search([('unrevisioned_name', '=', self.unrevisioned_name)])
-        self.all_revision_ids = [(6, 0, revision.ids)]
 
