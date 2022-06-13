@@ -11,7 +11,7 @@ class SaleOrder(models.Model):
                                         compute="get_all_revisions",
                                         context={'active_test': False}
                                         )
-    all_revision_count = fields.Integer(string="Revision number",
+    all_revision_count = fields.Integer(string="Revisions",
                                         compute="get_all_revisions_count",
                                         store=False
                                         )
@@ -27,7 +27,7 @@ class SaleOrder(models.Model):
         self.all_revision_ids = [(6, 0, revision.ids)]
 
     def get_all_revisions_count(self):
-        self.all_revision_ids = len(self.all_revision_ids.ids)
+        self.all_revision_count = len(self.all_revision_ids.ids)
 
     def get_all_messages(self):
         messages = self.env['mail.message'].search([('model', '=', 'sale.order'),
