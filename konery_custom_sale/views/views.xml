@@ -11,7 +11,15 @@
                 <page string="Revisions" name="revisions">
                     <group>
                         <field name="all_revision_ids"/>
-                        <field name="all_mail_messages"/>
+
+                        <field name="all_mail_messages" mode="tree">
+                            <tree string="Messages" decoration-bf="needaction==True" decoration-danger="has_error==True"
+                                  default_order="id desc" create='false' edit='false' delete='false'>
+                                <field name="subject_display" string="Message"/>
+                                <field name="needaction" invisible="1"/>
+                                <field name="has_error" invisible="1"/>
+                            </tree>
+                        </field>
                     </group>
                 </page>
             </xpath>
