@@ -6,12 +6,12 @@ from odoo import fields, models, api
 class SaleOrder(models.Model):
     _inherit = 'sale.order',
 
-    all_revision_ids = fields.Many2many('sale.order', string="Revisions", compute="get_all_revisions")
+    all_revision_ids = fields.Many2many('sale.order', string="Revisions", compute="get_all_revisions", domain='['|',('active','=',True),('active','=',False)]')
     all_mail_messages = fields.Many2many('mail.message', string="Messages", compute="get_all_messages", store=False)
 
     def get_all_revisions(self):
         revision = self.env['sale.order'].search([('unrevisioned_name', '=', self.unrevisioned_name),'|',
-                                                  ('active','=',True),('active','=',False)])
+                                                  ('active','in',[True,False])])
         self.all_revision_ids = [(6, 0, revision.ids)]
 
     def get_all_messages(self):
