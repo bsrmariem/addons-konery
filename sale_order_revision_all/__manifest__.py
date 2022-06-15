@@ -1,5 +1,5 @@
 {
-    'name': "Konery Custom Sale",
+    'name': "Sale Order Revision All",
     'summary': """
         
         """,
