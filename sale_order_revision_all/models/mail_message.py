@@ -68,6 +68,49 @@ class MailMessage(models.Model):
         compute="_revision_compute_author_allowed",
         search="_revision_search_author_allowed",
     )
+    revision_edit_date = fields.Datetime(string="Edited on")
+    revision_edit_message = fields.Char(
+        string="Edited by", compute="_compute_revision_edit_message"
+    )
+
+    @api.depends("revision_uid")
+    def _compute_revision_edit_message(self):
+        # Get current timezone
+        tz = self.env.user.tz
+        if tz:
+            local_tz = pytz.timezone(tz)
+        else:
+            local_tz = pytz.utc
+
+        # Get current time
+        now = datetime.now(local_tz)
+
+        # Check messages
+        for rec in self:
+            if not rec.revision_edit_uid:
+                rec.revision_edit_message = False
+                continue
+
+            # Get message date with timezone
+            message_date = pytz.utc.localize(rec.revision_edit_date).astimezone(local_tz)
+            # Compose displayed date/time
+            days_diff = (now.date() - message_date.date()).days
+            if days_diff == 0:
+                date_display = datetime.strftime(message_date, "%H:%M")
+            elif days_diff == 1:
+                date_display = " ".join(
+                    (_("Yesterday"), datetime.strftime(message_date, "%H:%M"))
+                )
+            elif now.year == message_date.year:
+                date_display = " ".join(
+                    (str(message_date.day), _(MONTHS.get(message_date.month)))
+                )
+            else:
+                date_display = str(message_date.date())
+            rec.revision_edit_message = _("Edited by %s %s") % (
+                rec.revision_edit_uid.name,
+                date_display,
+            )
 
     @api.depends("author_id")
     def _revision_compute_author_allowed(self):
@@ -170,7 +213,7 @@ class MailMessage(models.Model):
                 notification_icons = (
                         '%s &nbsp;<i class="fa fa-edit"'
                         ' style="color:#1D8348;"'
-                        ' title="%s"></i>' % (notification_icons, rec.cx_edit_message)
+                        ' title="%s"></i>' % (notification_icons, rec.revision_edit_message)
                 )
             # .. attachments
             if rec.revision_attachment_count > 0:
