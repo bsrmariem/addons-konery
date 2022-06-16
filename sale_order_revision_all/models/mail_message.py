@@ -40,7 +40,8 @@ TREE_TEMPLATE = (
     "</tr>"
     "</tbody>"
     "</table>"
-    '<p id="text-preview" style="color: #808080;">%s</p>'
+    '<p id="text-preview" style="color: #808080;"></p>'
+    '%s'
     "</td>"
     "</tr>"
     "</tbody>"
@@ -149,19 +150,6 @@ class MailMessage(models.Model):
     @api.depends("subject")
     def _revision_compute_subject_display(self):
 
-        # Get config data
-        ICPSudo = self.env["ir.config_parameter"].sudo()
-
-        # Get preview length. Will use it for message body preview
-        body_preview_length = int(
-            ICPSudo.get_param(
-                "cetmix.messages_easy_text_preview", DEFAULT_MESSAGE_PREVIEW_LENGTH
-            )
-        )
-        # Get message subtype colors
-        messages_easy_color_note = ICPSudo.get_param(
-            "cetmix.messages_easy_color_note", default=False
-        )
         mt_note = self.env.ref("mail.mt_note").id
 
         # Get current timezone
@@ -226,14 +214,31 @@ class MailMessage(models.Model):
                 )
 
             # Compose preview body
-            plain_body = html2plaintext(rec.body) if len(rec.body) > 10 else ""
-            if len(plain_body) > body_preview_length:
-                plain_body = "".join((plain_body[:body_preview_length], "..."))
+            mensaje = "<p>" + str(rec.body) + "</p>"
+            for li in rec.tracking_value_ids:
+                if li.field_type in ['char', 'selection', 'many2one']:
+                    mensaje += " * " + li.field_desc + ": " + li.old_value_char + " => " + li.new_value_char +  "<br/>"
+                elif li.field_type == 'datetime':
+                    mensaje += " * " + li.field_desc + ": " + li.old_value_datetime + " => " + li.new_value_datetime + "\n"
+                elif li.field_type == 'integer':
+                    mensaje += " * " + li.field_desc + ": " + str(li.old_value_integer) + " => " + str(
+                        li.new_value_integer) + "\n"
+                elif li.field_type == 'float':
+                    mensaje += " * " + li.field_desc + ": " + str(li.old_value_float) + " => " + str(
+                        li.new_value_float) + "<br/>"
+                elif li.field_type == 'monetary':
+                    mensaje += " * " + li.field_desc + ": " + str(li.old_value_monetary) + " => " + str(
+                        li.new_value_monetary) + "<br/>"
+                elif li.field_type == 'text':
+                    mensaje += " * " + li.field_desc + ": " + li.old_value_text + " => " + li.new_value_text + "\n"
+
+            print("DEBUG", mensaje)
+            #plain_body = html2plaintext(mensaje)
+            #if len(plain_body) > body_preview_length:
+            #    plain_body = "".join((plain_body[:body_preview_length], "..."))
 
             rec.revision_subject_display = TREE_TEMPLATE % (
-                ("background-color:%s;" % messages_easy_color_note)
-                if messages_easy_color_note and rec.subtype_id.id == mt_note
-                else "",
+                ("background-color:%s;"),
                 _("Internal Note") if rec.subtype_id.id == mt_note else _("Message"),
                 rec.author_avatar.decode("utf-8")
                 if rec.author_avatar
@@ -244,5 +249,5 @@ class MailMessage(models.Model):
                 str(message_date.replace(tzinfo=None)),
                 date_display,
                 notification_icons,
-                plain_body,
+                mensaje,
             )
