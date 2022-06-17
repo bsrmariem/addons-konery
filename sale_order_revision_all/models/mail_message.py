@@ -215,7 +215,7 @@ class MailMessage(models.Model):
 
             # Compose preview body
             mensaje = "<p>" + str(rec.body) + "</p>"
-            for li in rec.tracking_value_ids:
+            for li in rec.sudo().tracking_value_ids:
                 if li.field_type in ['char', 'selection', 'many2one']:
                     mensaje += " * " + li.field_desc + ": " + li.old_value_char + " => " + li.new_value_char +  "<br/>"
                 elif li.field_type == 'datetime':
