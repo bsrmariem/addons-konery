@@ -19,8 +19,6 @@
                                 <span t-field="o.company_id.street2"/><br/>
                                 <span t-field="o.company_id.zip"/> <span t-field="o.company_id.state_id"/>,<span t-field="o.company_id.country_id"/><br/>
                                 CIF: <span t-field="o.company_id.vat"/>
-                                <br/>
-                                <br/>
                             </div>
                         </div>
 
@@ -35,7 +33,7 @@
                                         </t>
 
                                         <t style="font-weight: 600" t-if="env.context.get('proforma', False) or is_pro_forma">
-                                            <span>Pro-Forma Invoice # </span>
+                                            <span>Factura Proforma: </span>
                                         </t>
                                     </h3>
                                 </strong>
@@ -57,10 +55,7 @@
                 </div>
 
                 <div t-attf-class="article o_report_layout_standard o_company_#{company.id}_layout" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
-                    <div class="pt-5">
-                        <!-- This div ensures that the address is not cropped by the header. -->
-                        <t t-call="web.address_layout"/>
-                    </div>
+
                     <t t-raw="0"/>
                 </div>
 
@@ -207,8 +202,6 @@
                             <thead style="border-bottom:5pt solid #0084BF;border-top:5pt solid #0871d0;">
                                 <t t-set="colspan" t-value="9"/>
                                 <tr >
-
-
                                     <td>
                                         <strong style="color:#0084BF">SUBTOTAL</strong>
                                     </td>
