@@ -9,7 +9,8 @@
     'summary': '',
     'website': '',
     'depends': [
-        'crm'
+        'crm',
+        'sales_team',
     ],
     'data': [
         'security/crm_security.xml',
