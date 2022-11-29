@@ -18,26 +18,26 @@
             <field name="groups" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
         </record>
 
-    <record id="crm_rule_all_lead_auditor" model="ir.rule">
-        <field name="name">All Leads</field>
-        <field ref="model_crm_lead" name="model_id"/>
-        <field name="domain_force">[(1,'=',1)]</field>
-        <field name="groups" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
-    </record>
+        <record id="crm_rule_all_lead_auditor" model="ir.rule">
+            <field name="name">All Leads</field>
+            <field ref="model_crm_lead" name="model_id"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
+        </record>
 
-    <record id="crm_activity_report_rule_all_activities_auditor" model="ir.rule">
-        <field name="name">All Activities</field>
-        <field ref="model_crm_activity_report" name="model_id"/>
-        <field name="domain_force">[(1,'=',1)]</field>
-        <field name="groups" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
-    </record>
+        <record id="crm_activity_report_rule_all_activities_auditor" model="ir.rule">
+            <field name="name">All Activities</field>
+            <field ref="model_crm_activity_report" name="model_id"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
+        </record>
 
-    <record id="crm_activity_report_rule_personal_activities_auditor" model="ir.rule">
-        <field name="name">Personal Activities</field>
-        <field ref="model_crm_activity_report" name="model_id"/>
-        <field name="domain_force">['|',('user_id','=',user.id),('user_id','=',False)]</field>
-        <field name="groups" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
-    </record>
+        <record id="crm_activity_report_rule_personal_activities_auditor" model="ir.rule">
+            <field name="name">Personal Activities</field>
+            <field ref="model_crm_activity_report" name="model_id"/>
+            <field name="domain_force">['|',('user_id','=',user.id),('user_id','=',False)]</field>
+            <field name="groups" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
+        </record>
     </data>
 
 </odoo>
