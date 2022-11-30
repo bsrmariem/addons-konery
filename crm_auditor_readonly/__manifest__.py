@@ -11,6 +11,8 @@
     'depends': [
         'crm',
         'sales_team',
+        'sale_management',
+        'sale_crm',
     ],
     'data': [
         'security/crm_security.xml',
