@@ -32,11 +32,11 @@
             <field name="groups_id" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
         </record>
 
-        <record model="ir.ui.menu" id="crm.crm.crm_menu_report">
+        <record model="ir.ui.menu" id="crm.crm_menu_report">
             <field name="groups_id" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
         </record>
 
-        <record model="ir.ui.menu" id="crm.crm.crm_menu_config">
+        <record model="ir.ui.menu" id="crm.crm_menu_config">
             <field name="groups_id" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
         </record>
         <record model="ir.ui.menu" id="crm.crm_config_settings_menu">
