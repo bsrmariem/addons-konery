@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <data>
+<!--
+        <record id="sales_team.crm_rule_all_salesteam" model="ir.rule">
+            <field name="groups" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
+        </record>
+
+        <record id="crm.crm_rule_all_lead" model="ir.rule">
+            <field name="groups" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
+        </record>
+-->
+
+    </data>
+
+</odoo>
