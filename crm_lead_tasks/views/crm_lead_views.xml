@@ -14,7 +14,10 @@
                         <field name="name"/>
                         <field name="project_id"/>
                         <field name="user_ids" widget="many2many_tags"/>
-                        <field name="tag_ids" widget="many2many_tags" string="Procesos"/>
+                        <field name="tag_ids" widget="many2many_tags"
+                               string="Procesos"
+                               options="{'color_field': 'color', 'no_create_edit': True}"
+                               context="{'project_id': project_id}"/>
                         <field name="stage_id" readonly="1"/>
                         <field name="company_id" invisible="1"/>
                     </tree>
