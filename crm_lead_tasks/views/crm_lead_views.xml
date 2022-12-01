@@ -13,7 +13,7 @@
                     <tree editable="bottom">
                         <field name="name"/>
                         <field name="project_id"/>
-                        <field name="user_ids" widget="many2many_tags"/>
+                        <field name="user_ids" widget="many2many_avatar_user"/>
                         <field name="tag_ids" widget="many2many_tags"
                                string="Procesos"
                                options="{'color_field': 'color', 'no_create_edit': True}"
