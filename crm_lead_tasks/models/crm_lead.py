@@ -6,5 +6,5 @@ class CrmLead(models.Model):
 
     task_ids = fields.One2many('project.task', 'lead_id', store=True)
     def get_tasks_count(self):
-        self.task_count = len(self.tas_ids)
+        self.task_count = len(self.task_ids)
     task_count = fields.Integer('Tasks', compute=get_tasks_count, store=False)
