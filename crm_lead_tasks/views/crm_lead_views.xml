@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <odoo>
-
+<!--
     <record id="crm_lead_scrap_inh" model="ir.ui.view">
         <field name="name">SCRAP CRM Inherit Form View</field>
         <field name="model">crm.lead</field>
@@ -28,5 +28,5 @@
             </field>
         </field>
     </record>
-
+-->
 </odoo>
