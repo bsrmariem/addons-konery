@@ -7,9 +7,11 @@
         <field name="type">form</field>
         <field name="inherit_id" ref="base.res_company"/>
         <field name="arch" type="xml">
+            <!--
             <field name="website" position="after">
                 <field name="presale_project_tag"/>
             </field>
+            -->
         </field>
     </record>
 
