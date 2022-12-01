@@ -9,7 +9,7 @@
         <field name="arch" type="xml">
             <field name="website" position="after">
                 <field name="presale_project_tag"/>
-            </xpath>
+            </field>
         </field>
     </record>
 
