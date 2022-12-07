@@ -6,4 +6,10 @@ from datetime import datetime
 class AccountMove(models.Model):
     _inherit = 'account.move'
 
-    move_report_type = fields.Selection(string="Report Type", selection=[('konery','Konery'),('solarteam','SolarTeam')])
+    report_type = fields.Many2one('report.type', string='Report Type')
+
+    def get_template_report(self):
+        print(self.report_type.template.name)
+        print(self.report_type.template.xml_id)
+
+        return self.report_type.template.xml_id

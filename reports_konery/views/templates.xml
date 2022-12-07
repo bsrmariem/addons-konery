@@ -5,16 +5,15 @@
 
         <template id="reports_konery.report_invoice_custom" inherit_id="account.report_invoice" active="True">
             <xpath expr="//t[@t-lang='lang']" position="replace">
-                <t t-if="o.move_report_type == 'konery'" t-call="reports_konery.konery_invoice_report_document_report_reno" t-lang="lang"/>
-                <t t-if="o.move_report_type in ['solarteam']" t-call="account.account_invoices" t-lang="lang"/>
-                <t t-else="" t-call="account.report_invoice_document" t-lang="lang"/>
+                <t t-if="not o.report_type" t-call="account.report_invoice_document" t-lang="lang"/>
+                <t t-else="" t-call="{{o.get_template_report()}}" t-lang="lang"/>
             </xpath>
         </template>
 
         <template id="reports_konery.report_invoice_with_payments_custom" inherit_id="account.report_invoice_with_payments" active="True">
             <xpath expr="//t[@t-lang='lang']" position="replace">
-                <t t-if="o.move_report_type == 'konery'" t-call="reports_konery.konery_invoice_report_document_report_reno" t-lang="lang"/>
-                <t t-if="o.move_report_type in ['solarteam']" t-call="reports_konery.report_invoice_document_st" t-lang="lang"/>
+                <t t-if="o.report_type == 'konery'" t-call="reports_konery.konery_invoice_report_document_report_reno" t-lang="lang"/>
+                <t t-if="o.report_type in ['solarteam']" t-call="reports_konery.report_invoice_document_st" t-lang="lang"/>
                 <t t-else="" t-call="account.report_invoice_document" t-lang="lang"/>
             </xpath>
         </template>

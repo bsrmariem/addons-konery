@@ -9,12 +9,14 @@
     "author": "Pedro Guirao, ",
     "website": "https://github.com/OCA/account-analytic",
     "license": "AGPL-3",
-    "depends": ["web", "account", "account_payment_mode"],
+    "depends": ["account", "account_payment_mode", "report_qweb_pdf_watermark"],
     "data": [
-        "data/paper_format.xml",
+
         "views/report_invoice.xml",
         "views/templates.xml",
         "views/account_move.xml",
+        "data/paper_format.xml",
+        "security/ir.model.access.csv",
     ],
 
 }

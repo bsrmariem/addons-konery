@@ -45,8 +45,6 @@ class Report(models.Model):
 
     def _render_qweb_pdf(self, report_ref, res_ids=None, data=None):
         if not self.env.context.get("res_ids"):
-            print("IDS DEBUGG")
-            print(self.with_context(res_ids=res_ids))
             return super(Report, self.with_context(res_ids=res_ids))._render_qweb_pdf(
                 report_ref ,res_ids=res_ids, data=data
             )
@@ -74,6 +72,7 @@ class Report(models.Model):
         specific_paperformat_args=None,
         set_viewport_size=False,
     ):
+        print("TO PDF WATER MARK FUNC")
         result = super(Report, self)._run_wkhtmltopdf(
             bodies,
             report_ref=False,
@@ -87,33 +86,24 @@ class Report(models.Model):
         docids = self.env.context.get("res_ids", False)
         watermark = None
         report_sudo = self._get_report(report_ref)
-        print("#########DEBUG#########")
-        print(report_sudo.report_name)
+
         if report_sudo.pdf_watermark:
             watermark = b64decode(report_sudo.pdf_watermark)
         elif report_sudo.use_company_watermark and report_sudo.env.company.pdf_watermark:
             watermark = b64decode(self.env.company.pdf_watermark)
-        elif docids:
-            watermark = safe_eval(
-                report_sudo.pdf_watermark_expression or "None",
-                dict(env=self.env, docs=self.env[report_sudo.model].browse(docids)),
-            )
-            if watermark:
-                watermark = b64decode(watermark)
-
+        #elif docids:
+        #    watermark = safe_eval(
+        #        report_sudo.pdf_watermark_expression or "None",
+        #        dict(env=self.env, docs=self.env[report_sudo.model].browse(docids)),
+        #    )
+        #    if watermark:
+        #        watermark = b64decode(watermark)
+        print("DEBUG1.5")
         if not watermark:
-            print("##debug##############")
-            #############TEST#############
-            BASE_DIR = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..'))
-            print(("%s/static/img/watermark_kn.pdf" % BASE_DIR))
-            with open(("%s/static/img/watermark_kn.pdf" % BASE_DIR), mode='rb') as file:
-                fileContent = file.read()
-            watermark = fileContent
-            #########################################
-            #return result
+            return result
         pdf = PdfFileWriter()
         pdf_watermark = None
-
+        print("DEBUG2")
         try:
             pdf_watermark = PdfFileReader(BytesIO(watermark))
         except PdfReadError:
@@ -131,7 +121,7 @@ class Report(models.Model):
                 pdf_watermark = PdfFileReader(pdf_buffer)
             except Exception as e:
                 logger.exception("Failed to load watermark", e)
-
+        print("DEBUG3")
         if not pdf_watermark:
             logger.error("No usable watermark found, got %s...", watermark[:100])
             return result
@@ -145,7 +135,7 @@ class Report(models.Model):
             )
             watermark_page.mergePage(pdf_watermark.getPage(0))
             watermark_page.mergePage(page)
-
+        print("DEBUG4")
         pdf_content = BytesIO()
         pdf.write(pdf_content)
         return pdf_content.getvalue()
