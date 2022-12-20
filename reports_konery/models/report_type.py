@@ -13,3 +13,4 @@ class ReportType(models.Model):
     report_id = fields.Many2one('ir.actions.report', string='Report')
     model = fields.Char(string='Model', related='report_id.model')
     template = fields.Many2one('ir.ui.view', string='Template', required=True)
+    paperformat_id = fields.Many2one('report.paperformat', 'Paper Format')

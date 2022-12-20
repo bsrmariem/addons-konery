@@ -63,19 +63,18 @@ class Report(models.Model):
 
     @api.model
     def _run_wkhtmltopdf(
-        self,
-        bodies,
-        report_ref=False,
-        header=None,
-        footer=None,
-        landscape=False,
-        specific_paperformat_args=None,
-        set_viewport_size=False,
-    ):
-        print("TO PDF WATER MARK FUNC")
-        result = super(Report, self)._run_wkhtmltopdf(
+            self,
             bodies,
             report_ref=False,
+            header=None,
+            footer=None,
+            landscape=False,
+            specific_paperformat_args=None,
+            set_viewport_size=False,
+    ):
+        result = super(Report, self)._run_wkhtmltopdf(
+            bodies,
+            report_ref=report_ref,
             header=header,
             footer=footer,
             landscape=landscape,
@@ -98,12 +97,10 @@ class Report(models.Model):
         #    )
         #    if watermark:
         #        watermark = b64decode(watermark)
-        print("DEBUG1.5")
         if not watermark:
             return result
         pdf = PdfFileWriter()
         pdf_watermark = None
-        print("DEBUG2")
         try:
             pdf_watermark = PdfFileReader(BytesIO(watermark))
         except PdfReadError:
@@ -121,7 +118,6 @@ class Report(models.Model):
                 pdf_watermark = PdfFileReader(pdf_buffer)
             except Exception as e:
                 logger.exception("Failed to load watermark", e)
-        print("DEBUG3")
         if not pdf_watermark:
             logger.error("No usable watermark found, got %s...", watermark[:100])
             return result
@@ -135,7 +131,6 @@ class Report(models.Model):
             )
             watermark_page.mergePage(pdf_watermark.getPage(0))
             watermark_page.mergePage(page)
-        print("DEBUG4")
         pdf_content = BytesIO()
         pdf.write(pdf_content)
         return pdf_content.getvalue()

@@ -1,3 +1,5 @@
 from . import account_move
 from . import report
-from . import move_report_type
+from . import report_type
+from . import sale_order
+from . import purchase_order

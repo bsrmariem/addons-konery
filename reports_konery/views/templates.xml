@@ -12,11 +12,24 @@
 
         <template id="reports_konery.report_invoice_with_payments_custom" inherit_id="account.report_invoice_with_payments" active="True">
             <xpath expr="//t[@t-lang='lang']" position="replace">
-                <t t-if="o.report_type == 'konery'" t-call="reports_konery.konery_invoice_report_document_report_reno" t-lang="lang"/>
-                <t t-if="o.report_type in ['solarteam']" t-call="reports_konery.report_invoice_document_st" t-lang="lang"/>
-                <t t-else="" t-call="account.report_invoice_document" t-lang="lang"/>
+                <t t-if="not o.report_type" t-call="account.report_invoice_document" t-lang="lang"/>
+                <t t-else="" t-call="{{o.get_template_report()}}" t-lang="lang"/>
             </xpath>
         </template>
+
+        <template id="reports_konery.report_saleorder_custom" inherit_id="sale.report_saleorder" active="True">
+            <xpath expr="//t[@t-lang='doc.partner_id.lang']" position="replace">
+                <t t-if="not doc.report_type" t-call="sale.report_saleorder_document" t-lang="doc.partner_id.lang"/>
+                <t t-else="" t-call="{{doc.get_template_report()}}" t-lang="doc.partner_id.lang"/>
+            </xpath>
+        </template>
+
+        <!--<template id="reports_konery.report_purchaseorder_custom" inherit_id="purchase.report_purchaseorder" active="True">
+            <xpath expr="//t[@t-lang='o.partner_id.lang']" position="replace">
+                <t t-if="not o.report_type" t-call="purchase.report_purchaseorder_document" t-lang="o.partner_id.lang"/>
+                <t t-else="" t-call="{{o.get_template_report()}}" t-lang="o.partner_id.lang"/>
+            </xpath>
+        </template>-->
 
     </data>
 </odoo>
