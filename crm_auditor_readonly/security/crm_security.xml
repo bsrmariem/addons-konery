@@ -16,7 +16,7 @@
         </record>
 
         <record model="ir.ui.menu" id="crm.crm_menu_sales">
-            <field name="groups_id" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly')]"/>
+            <field name="groups_id" eval="[(4, ref('crm_auditor_readonly.group_crm_auditor_readonly'))]"/>
         </record>
         <record model="ir.ui.menu" id="crm.crm_menu_sales">
             <field name="groups_id" eval="[(4, ref('sales_team.group_sale_salesman'))]"/>
