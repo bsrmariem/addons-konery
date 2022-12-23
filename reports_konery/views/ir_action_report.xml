@@ -48,8 +48,8 @@
     <record id="report_type_form" model="ir.ui.view">
         <field name="active" eval="True"/>
         <field name="arch" type="xml">
-            <form create="false" edit="false" delete="false">
-                <sheet string="OCR">
+            <form>
+                <sheet string="Reports">
                     <h2>
                         <field name="name"/>
                     </h2>
@@ -78,7 +78,7 @@
     <record id="report_type_tree" model="ir.ui.view">
         <field name="active" eval="True"/>
         <field name="arch" type="xml">
-            <tree create="false" delete="false" edit="false" string="OCR">
+            <tree string="Reports">
                 <field name="name"/>
                 <field name="report_id"/>
             </tree>
