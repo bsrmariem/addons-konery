@@ -45,14 +45,15 @@ class ReportWaterMark(models.Model):
         docids = self.env.context.get("res_ids", False)
         report_sudo = self._get_report(report_ref)
         records = self.env[report_sudo.model].browse(docids)
-        for record in records:
-            #BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-            #print(("%s/static/img/watermark_kn.pdf" % BASE_DIR))
-            #with open(("%s/static/img/watermark_kn.pdf" % BASE_DIR), mode='rb') as file:
-            #    fileContent = file.read()
-            report_sudo.pdf_watermark = record.report_type.type_pdf_watermark
-            if record.report_type.paperformat_id:
-                report_sudo.paperformat_id = record.report_type.paperformat_id
+        if report_sudo.model in ['sale.order',['account.move']]:
+            for record in records:
+                #BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+                #print(("%s/static/img/watermark_kn.pdf" % BASE_DIR))
+                #with open(("%s/static/img/watermark_kn.pdf" % BASE_DIR), mode='rb') as file:
+                #    fileContent = file.read()
+                report_sudo.pdf_watermark = record.report_type.type_pdf_watermark
+                if record.report_type.paperformat_id:
+                    report_sudo.paperformat_id = record.report_type.paperformat_id
 
         return super(ReportWaterMark, self)._run_wkhtmltopdf(
             bodies,
