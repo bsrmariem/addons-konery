@@ -106,8 +106,19 @@
                                         </t>
                                     </h3>
                                 </strong>
-                                <p style="font-size:14px;font-family: montserrat;line-height: 18px;"> PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
-                                    FECHA: <strong><span t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}" /></strong></p>
+                                <p style="font-size:14px;font-family: montserrat;line-height: 18px;" >
+                                    <t t-if="doc.sale_order_template_id">
+                                        PLANTILLA: <strong><span t-field="doc.sale_order_template_id"/></strong><br/>
+                                    </t>
+                                    <t t-if="doc.user_id">
+                                        COMERCIAL: <strong><span t-field="doc.user_id"/></strong><br/>
+                                    </t>
+                                    PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
+                                    <t t-if="doc.opportunity_id">
+                                        OPORTUNIDAD: <strong><span t-field="doc.opportunity_id"/></strong><br/>
+                                    </t>
+                                    FECHA: <strong><span  t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
+                                </p>
                                 <!--<p t-if="doc.state in ['draft','sent']" style="font-size:14px;font-family: montserrat;line-height: 18px;" > PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
                                 FECHA: <strong><span  t-field="doc.x_fecha_presupuesto"/></strong></p>-->
                             </div>

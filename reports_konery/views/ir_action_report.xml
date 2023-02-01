@@ -3,7 +3,7 @@
 <odoo>
 
     <record id="action_report_type" model="ir.actions.act_window">
-        <field name="name">Report Type</field>
+        <field name="name">Formatos Impresión</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">report.type</field>
         <field name="view_mode">tree,form</field>
@@ -11,17 +11,17 @@
 
     <menuitem id="move_reports"
               parent="account.menu_finance_configuration"
-              name="Reports"/>
+              name="Formatos Impresión"/>
     <menuitem id="move_reports_types"
               parent="move_reports"
-              name="Types" action="action_report_type"/>
+              name="Formatos" action="action_report_type"/>
 
     <menuitem id="so_reports"
               parent="sale.menu_sale_config"
-              name="Reports"/>
+              name="Formatos Impresión"/>
     <menuitem id="so_reports_types"
               parent="so_reports"
-              name="Types" action="action_report_type"/>
+              name="Formatos" action="action_report_type"/>
 
     <!--<menuitem id="po_reports"
               parent="purchase.menu_purchase_config"
@@ -78,7 +78,7 @@
     <record id="report_type_tree" model="ir.ui.view">
         <field name="active" eval="True"/>
         <field name="arch" type="xml">
-            <tree string="Reports">
+            <tree string="Informes">
                 <field name="name"/>
                 <field name="report_id"/>
             </tree>
