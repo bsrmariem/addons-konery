@@ -259,6 +259,17 @@
                                 </tr>
                             </thead>
                         </table>
+                        <div t-if="doc.signature" class="mt-4 ml64 mr4" name="signature">
+                            <div class="offset-8">
+                                <strong>Signature</strong>
+                            </div>
+                            <div class="offset-8">
+                                <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
+                            </div>
+                            <div class="offset-8 text-center">
+                                <p t-field="doc.signed_by"/>
+                            </div>
+                        </div>
                         <br/><br/><br/><br/>
                         <div align="left">
                             <p style="font-family: montserrat;font-size:11px;margin-left:5%">
@@ -539,6 +550,17 @@
                                 </tr>
                             </thead>
                         </table>
+                        <div t-if="doc.signature" class="mt-4 ml64 mr4" name="signature">
+                            <div class="offset-8">
+                                <strong>Signature</strong>
+                            </div>
+                            <div class="offset-8">
+                                <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
+                            </div>
+                            <div class="offset-8 text-center">
+                                <p t-field="doc.signed_by"/>
+                            </div>
+                        </div>
                         <br/><br/>
                         <div align="left">
                             <p style="font-family: montserrat;font-size:11px;margin-left:5%">
@@ -813,6 +835,17 @@
                                 </tr>
                             </thead>
                         </table>
+                        <div t-if="doc.signature" class="mt-4 ml64 mr4" name="signature">
+                            <div class="offset-8">
+                                <strong>Signature</strong>
+                            </div>
+                            <div class="offset-8">
+                                <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
+                            </div>
+                            <div class="offset-8 text-center">
+                                <p t-field="doc.signed_by"/>
+                            </div>
+                        </div>
                         <br/><br/>
                         <div align="left">
                             <p style="font-family: montserrat;font-size:11px;margin-left:5%">
