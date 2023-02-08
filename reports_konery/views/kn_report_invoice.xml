@@ -45,7 +45,7 @@
                                     Fecha: <strong><span  t-field="o.invoice_date"/></strong><br/>
                                     <!--<p t-if="o.state in ['draft','sent']" style="font-size:14px;font-family: montserrat;line-height: 18px;" > PRESUPUESTO #: <strong><span t-field="o.name"/></strong><br/>
                                     FECHA: <strong><span  t-field="o.x_fecha_presupuesto"/></strong></p>-->
-                                    Vencimiento: <strong><span  t-field="o.invoice_payment_term_id"/></strong><br/>
+                                    Vencimiento: <strong><span  t-field="o.invoice_date_due"/></strong><br/>
                                     <!--Modo de pago: <strong><span  t-field="o.payment_mode_id"/></strong><br/>-->
                                 </p>
                             </div>

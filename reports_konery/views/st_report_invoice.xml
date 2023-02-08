@@ -132,7 +132,7 @@
                                                 FECHA: <strong><span  t-field="o.x_fecha_presupuesto"/></strong></p>-->
                                     VENCIMIENTO:
                                     <strong>
-                                        <span t-field="o.invoice_payment_term_id"/>
+                                        <span t-field="o.invoice_date_due"/>
                                     </strong>
                                     <br/>
                                     <!--Modo de pago:
