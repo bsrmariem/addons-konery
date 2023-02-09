@@ -5,6 +5,7 @@ from datetime import datetime
 
 class ReportType(models.Model):
     _name = 'report.type'
+    _description = 'Report types'
 
     name = fields.Char(string='Nombre')
     type_pdf_watermark = fields.Binary(

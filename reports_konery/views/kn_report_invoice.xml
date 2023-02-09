@@ -201,7 +201,7 @@
                         <div style="text-align:right;">
                             <br/>
                             <br/>
-                            <table class="table-border" style="float:right;width:50%;font-family: montserrat;border-color:white">
+                            <table class="table-border" style="page-break-inside: avoid;float:right;width:50%;font-family: montserrat;border-color:white">
                                 <thead style="border-bottom:5pt solid #0084BF;border-top:5pt solid #0084BF;">
                                     <t t-set="colspan" t-value="9"/>
                                     <tr style="border-color:white">
@@ -239,7 +239,7 @@
                         </div>
                         <div class="clearfix"/>
                         <br/><br/><br/>
-                        <div style="float:right;font-family: montserrat;text-align:right;">
+                        <div style="page-break-inside: avoid;float:right;font-family: montserrat;text-align:right;">
                             <span style="color:#0084BF;font-weight: 600;font-size: 16px;text-align:right;"> Detalles bancarios </span> <br/>
                             <span class="text-left" style="font-size: 14px;"> CAIXABANK   ES62 2100 5815 4202 0006 1608 </span><br/>
                             <span style="font-size: 14px;"> SABADELL ES36 0081 0626 9300 0229 8037 </span>
@@ -356,7 +356,7 @@
                         <div style="text-align:right;">
                             <br/>
                             <br/>
-                            <table class="table-border" style="float:right;width:50%;font-family: montserrat;border-color:white">
+                            <table class="table-border" style="page-break-inside: avoid;float:right;width:50%;font-family: montserrat;border-color:white">
                                 <thead style="border-bottom:5pt solid #0084BF;border-top:5pt solid #0084BF;">
                                     <t t-set="colspan" t-value="9"/>
                                     <tr style="border-color:white">
@@ -394,7 +394,7 @@
                         </div>
                         <div class="clearfix"/>
                         <br/><br/><br/>
-                        <div style="float:right;font-family: montserrat;text-align:right;">
+                        <div style="page-break-inside: avoid;float:right;font-family: montserrat;text-align:right;">
                             <span style="color:#0084BF;font-weight: 600;font-size: 16px;text-align:right;"> Detalles bancarios </span> <br/>
                             <span class="text-left" style="font-size: 14px;"> CAIXABANK   ES62 2100 5815 4202 0006 1608 </span><br/>
                             <span style="font-size: 14px;"> SABADELL ES36 0081 0626 9300 0229 8037 </span>
@@ -510,7 +510,7 @@
                         <div style="text-align:right;">
                             <br/>
                             <br/>
-                            <table class="table-border" style="float:right;width:50%;font-family: montserrat;border-color:white">
+                            <table class="table-border" style="page-break-inside: avoid;float:right;width:50%;font-family: montserrat;border-color:white">
                                 <thead style="border-bottom:5pt solid #0084BF;border-top:5pt solid #0084BF;">
                                     <t t-set="colspan" t-value="9"/>
                                     <tr style="border-color:white">
@@ -548,7 +548,7 @@
                         </div>
                         <div class="clearfix"/>
                         <br/><br/><br/>
-                        <div style="float:right;font-family: montserrat;text-align:right;">
+                        <div style="page-break-inside: avoid;float:right;font-family: montserrat;text-align:right;">
                             <span style="color:#0084BF;font-weight: 600;font-size: 16px;text-align:right;"> Detalles bancarios </span> <br/>
                             <span class="text-left" style="font-size: 14px;"> CAIXABANK   ES62 2100 5815 4202 0006 1608 </span><br/>
                             <span style="font-size: 14px;"> SABADELL ES36 0081 0626 9300 0229 8037 </span>
