@@ -3,7 +3,7 @@
     'version': '16.0.1.0.0',
     'category': '',
     'description': u"""
-CRM Konery Customs (kw)
+CRM Konery Customs
 """,
     'author': 'Serincloud',
     'depends': [
