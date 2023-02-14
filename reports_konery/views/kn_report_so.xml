@@ -37,7 +37,7 @@
                     <br/>
                     <br/>
                     <br/>
-                      <br/>
+                    <br/>
                     <br/>
                     <div class="text-center" style="border-top: 0px solid black;margin-top: 10px">
                         <!--ul class="list-inline mb4">
@@ -85,9 +85,8 @@
                         <t t-set="company" t-value="res_company"/>
                     </t>
                 </t>
-
-                <t t-if="company.external_report_layout_id" t-call="{{company.external_report_layout_id.key}}"><t t-raw="0"/></t>
-                <t t-else="else" t-call="reports_konery.external_konery_so_layout_standard"><t t-raw="0"/></t>
+                <!--<t t-if="company.external_report_layout_id" t-call="{{company.external_report_layout_id.key}}"><t t-raw="0"/></t>-->
+                <t t-call="reports_konery.external_konery_so_layout_standard"><t t-raw="0"/></t>
 
             </t>
         </template>
@@ -99,7 +98,7 @@
                     <div>
                         <div style="float:left">
                             <!--<img t-if="res_company.logo" t-att-src="image_data_uri(res_company.logo)" style="max-height: 60px;" alt="Logo"/>-->
-                             <div style="text-align:left;white-space: nowrap;font-size:14px;line-height: 18px;font-family: montserrat;">
+                            <div style="text-align:left;white-space: nowrap;font-size:14px;line-height: 18px;font-family: montserrat;">
                                 <strong><span t-field="doc.company_id" style="text-align:left;color:#0084BF;font-weight: 900;white-space: nowrap;font-size:16px;line-height: 18px;"/></strong><br/>
                                 <span t-field="doc.company_id.street"/><br/>
                                 <span t-field="doc.company_id.street2"/><br/>
@@ -124,7 +123,7 @@
                                     </h3>
                                 </strong>
                                 <p style="font-size:14px;font-family: montserrat;line-height: 18px;" > PROFORMA #: <strong><span t-field="doc.name"/></strong><br/>
-                                    FECHA: <strong><span  t-field="doc.date_order"/></strong></p>
+                                    FECHA: <strong><span  t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong></p>
                                 <!--<p t-if="doc.state in ['draft','sent']" style="font-size:14px;font-family: montserrat;line-height: 18px;" > PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
                                 FECHA: <strong><span  t-field="doc.x_fecha_presupuesto"/></strong></p>-->
 
@@ -260,6 +259,17 @@
                                 </tr>
                             </thead>
                         </table>
+                        <div t-if="doc.signature" class="mt-4 ml64 mr4" name="signature">
+                            <div class="offset-8">
+                                <strong>Signature</strong>
+                            </div>
+                            <div class="offset-8">
+                                <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
+                            </div>
+                            <div class="offset-8 text-center">
+                                <p t-field="doc.signed_by"/>
+                            </div>
+                        </div>
                         <br/><br/><br/><br/>
                         <div align="left">
                             <p style="font-family: montserrat;font-size:11px;margin-left:5%">
@@ -393,8 +403,19 @@
                                         </t>
                                     </h3>
                                 </strong>
-                                <p style="font-size:14px;font-family: montserrat;line-height: 18px;" > PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
-                                    FECHA: <strong><span  t-field="doc.date_order"/></strong></p>
+                                <p style="font-size:14px;font-family: montserrat;line-height: 18px;" >
+                                    <t t-if="doc.sale_order_template_id">
+                                        PLANTILLA: <strong><span t-field="doc.sale_order_template_id"/></strong><br/>
+                                    </t>
+                                    <t t-if="doc.user_id">
+                                        COMERCIAL: <strong><span t-field="doc.user_id"/></strong><br/>
+                                    </t>
+                                    PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
+                                    <t t-if="doc.opportunity_id">
+                                        OPORTUNIDAD: <strong><span t-field="doc.opportunity_id"/></strong><br/>
+                                    </t>
+                                    FECHA: <strong><span  t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
+                                </p>
                                 <!--<p t-if="doc.state in ['draft','sent']" style="font-size:14px;font-family: montserrat;line-height: 18px;" > PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
                                 FECHA: <strong><span  t-field="doc.x_fecha_presupuesto"/></strong></p>-->
 
@@ -412,6 +433,7 @@
                     <div class="page"/>
                     <t t-set="display_discount" t-value="any([l.discount for l in doc.order_line])"/>
                     <div class="clearfix"/>
+                    <br/>
                     <table class="table-border" style="float:right;width:90%;font-family: montserrat;font-size:12px;border-color:white;">
                         <thead>
                             <tr style="border-bottom:5pt solid ;border-top:5pt solid ;color:#0084BF;">
@@ -422,7 +444,7 @@
                                 <th class="text-right">CANTIDAD</th>
                                 <th class="text-right">PRECIO UNIDAD</th>
                                 <th t-if="display_discount" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
-                                    <span>Desc.(%)</span>
+                                    <span>DESC.(%)</span>
                                 </th>
                                 <th class="text-right">
                                     <t groups="account.group_show_line_subtotals_tax_excluded">TOTAL</t>
@@ -528,6 +550,17 @@
                                 </tr>
                             </thead>
                         </table>
+                        <div t-if="doc.signature" class="mt-4 ml64 mr4" name="signature">
+                            <div class="offset-8">
+                                <strong>Signature</strong>
+                            </div>
+                            <div class="offset-8">
+                                <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
+                            </div>
+                            <div class="offset-8 text-center">
+                                <p t-field="doc.signed_by"/>
+                            </div>
+                        </div>
                         <br/><br/>
                         <div align="left">
                             <p style="font-family: montserrat;font-size:11px;margin-left:5%">
@@ -659,8 +692,19 @@
                                         </t>
                                     </h3>
                                 </strong>
-                                <p style="font-size:14px;font-family: montserrat;line-height: 18px;" > PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
-                                    FECHA: <strong><span t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}" /></strong></p>
+                                <p style="font-size:14px;font-family: montserrat;line-height: 18px;" >
+                                    <t t-if="doc.sale_order_template_id">
+                                        PLANTILLA: <strong><span t-field="doc.sale_order_template_id"/></strong><br/>
+                                    </t>
+                                    <t t-if="doc.user_id">
+                                        COMERCIAL: <strong><span t-field="doc.user_id"/></strong><br/>
+                                    </t>
+                                    PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
+                                    <t t-if="doc.opportunity_id">
+                                        OPORTUNIDAD: <strong><span t-field="doc.opportunity_id"/></strong><br/>
+                                    </t>
+                                    FECHA: <strong><span  t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
+                                </p>
                                 <!--<p t-if="doc.state in ['draft','sent']" style="font-size:14px;font-family: montserrat;line-height: 18px;" > PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
                                 FECHA: <strong><span  t-field="doc.x_fecha_presupuesto"/></strong></p>-->
 
@@ -791,6 +835,17 @@
                                 </tr>
                             </thead>
                         </table>
+                        <div t-if="doc.signature" class="mt-4 ml64 mr4" name="signature">
+                            <div class="offset-8">
+                                <strong>Signature</strong>
+                            </div>
+                            <div class="offset-8">
+                                <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
+                            </div>
+                            <div class="offset-8 text-center">
+                                <p t-field="doc.signed_by"/>
+                            </div>
+                        </div>
                         <br/><br/>
                         <div align="left">
                             <p style="font-family: montserrat;font-size:11px;margin-left:5%">

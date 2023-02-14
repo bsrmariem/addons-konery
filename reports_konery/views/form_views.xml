@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
             <xpath expr="//div[@name='journal_div']" position="after">
-                <label for="report_type" string="Report Type"/>
+                <label for="report_type" string="Formato Impresión"/>
                 <div name="report_type" class="d-flex">
                     <field name="report_type" domain="[('model','=','account.move')]"/>
                 </div>
@@ -21,7 +21,7 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='payment_term_id']" position="after">
-                <label for="report_type" string="Report Type"/>
+                <label for="report_type" string="Formato Impresión"/>
                 <div name="report_type" class="d-flex">
                     <field name="report_type" domain="[('model','=','sale.order')]"/>
                 </div>

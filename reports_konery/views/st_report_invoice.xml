@@ -40,9 +40,9 @@
                             <br/>
                             <br/>
                             <br/>
-                             <br/>
                             <br/>
-                             <br/>
+                            <br/>
+                            <br/>
                             <br/>
                             <p align="center" style="font-size:11px;font: montserrat">Registro Mercantil de Murcia. Tomo 2800 Folio 73. Inscripción 1ª.Hoja-Mu75396. CIF B73704405</p>
                         </div>
@@ -132,7 +132,7 @@
                                                 FECHA: <strong><span  t-field="o.x_fecha_presupuesto"/></strong></p>-->
                                     VENCIMIENTO:
                                     <strong>
-                                        <span t-field="o.invoice_payment_term_id"/>
+                                        <span t-field="o.invoice_date_due"/>
                                     </strong>
                                     <br/>
                                     <!--Modo de pago:
@@ -208,7 +208,7 @@
                                 <!--<tr style="border-bottom:1pt solid #0871d0;"
                                             t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">-->
                                 <tr t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''">
-                                    <t t-if="not line.display_type" name="account_invoice_line_accountable">
+                                    <t t-if="line.display_type == 'product'" name="account_invoice_line_accountable">
                                         <td style="font-weight: 500;width: 40%; line-height: 15px;font-size:13px;padding-top: 0;padding-bottom: 0;color:#E72450;" name="account_invoice_line_name">
                                             <p style="text-align:left">
                                                 <span t-field="line.name" t-options="{'widget': 'text'}"/>
@@ -250,6 +250,14 @@
                                         </td>
                                     </t>
                                 </tr>
+                                <t t-if="current_section and (line_last or lines[line_index+1].display_type == 'line_section')">
+                                    <tr class="is-subtotal text-end">
+                                        <td colspan="99" style="color:#E72450;">
+                                            <strong class="mr16">Subtotal</strong>
+                                            <span t-esc="current_subtotal" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                        </td>
+                                    </tr>
+                                </t>
                             </t>
                         </tbody>
                     </table>
@@ -257,7 +265,7 @@
                     <div style="text-align:right;">
                         <br/>
                         <br/>
-                        <table class="table-border" style="float:right;width:50%;font-family: montserrat;border-color:white;">
+                        <table class="table-border" style="page-break-inside: avoid;float:right;width:50%;font-family: montserrat;border-color:white;">
 
                             <thead style="border-bottom:5pt solid #E62450;border-top:5pt solid #E62450;">
                                 <t t-set="colspan" t-value="9"/>
@@ -300,13 +308,15 @@
                         <br/>
                         <br/>
                         <div class="clearfix"/>
-                        <div>
+                        <div style="page-break-inside: avoid;">
                             <br/>
                             <span style="color:#E62450;font-weight: 600;font-size: 16px;"> Detalles bancarios </span>
                             <br/>
                             <span class="text-left" style="font-size: 14px;"> IberCaja ES59 2085 8171 5703 3024 1732 </span>
                         </div>
                     </div>
+                    <div class="clearfix"/>
+                    <div>
                     <p style="page-break-before:always;text-align: justify">
                         <strong>PROTECCIÓN DE DATOS: Responsable del Tratamiento:</strong>
                         KONERY EFICIENCIA ENERGÉTICA S.L. B73704405 <strong>Finalidad del Tratamiento:</strong>
@@ -323,6 +333,7 @@
                         Plazarte - planta 7, 30009, Murcia, MURCIA,o en la dirección de correo electrónico
                         dpokonery@konery.com.
                     </p>
+                    </div>
                 </t>
             </t>
         </template>
