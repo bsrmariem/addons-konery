@@ -23,6 +23,13 @@
               parent="so_reports"
               name="Formatos" action="action_report_type"/>
 
+    <menuitem id="po_reports"
+              parent="purchase.menu_purchase_config"
+              name="Formatos Impresión"/>
+    <menuitem id="po_reports_types"
+              parent="po_reports"
+              name="Formatos" action="action_report_type"/>
+
     <!--<menuitem id="po_reports"
               parent="purchase.menu_purchase_config"
               name="Reports"/>

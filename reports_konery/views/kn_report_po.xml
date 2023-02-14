@@ -6,9 +6,6 @@
             <t t-name="konery_po_report_document">
                 <t t-call="reports_konery.external_konery_so_layout">
                     <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/>
-                    <div class="col-3 mb4">
-                        <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" style="max-height: 45px;" alt="Logo"/>
-                    </div>
                     <div style="flex;font-weight: 400;font-family: Campton;font-size:16px">
                         <div style="float:left;white-space: nowrap;line-height: 17px; width:35%;">
                             <br/>
@@ -78,6 +75,7 @@
                         <div class="oe_structure"/>
 
                         <!--<t t-set="display_discount" t-value="any([l.discount for l in o.order_line])"/>-->
+
                         <table class="table-border" style="width:100%;padding-top: 10px;font-family: Campton; padding-bottom:10px;font-family: Campton;border-color:white;">
                             <!-- <thead>
                                  <tr style="border-bottom:1pt solid #0084BF;border-top:1pt solid #0871d0;">
@@ -169,33 +167,53 @@
 
                         <br/>
 
-                        <div id="total" class="row justify-content-end">
-                            <div class="col-4">
-                                <table class="table table-sm">
-                                    <tr class="border-black">
-                                        <td><strong>Subtotal</strong></td>
-                                        <td class="text-right">
-                                            <span t-field="o.amount_untaxed" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                        <div style="text-align:right;">
+
+                            <table class="table-border" style="float:right;width:50%;font-family: montserrat;border-color:white">
+                                <thead style="border-bottom:5pt solid #0084BF;border-top:5pt solid #0084BF;">
+                                    <t t-set="colspan" t-value="9"/>
+                                    <tr style="border-color:white">
+
+
+                                        <td>
+                                            <strong style="color:#0084BF">SUBTOTAL</strong>
+                                        </td>
+                                        <td>
+                                            <strong><span t-field="o.amount_untaxed"/></strong>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>Impuestos</td>
-                                        <td class="text-right">
-                                            <span t-field="o.amount_tax" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                    <tr style="border-color:white">
+                                        <td>
+                                            <strong style="color:#0084BF">IMPUESTOS</strong>
+                                        </td>
+                                        <td>
+                                            <strong><span t-field="o.amount_tax"/></strong>
+                                        </td>
+
+                                    </tr>
+                                    <tr style="border-color:white">
+                                        <td >
+                                            <strong style="color:#0084BF">TOTAL</strong>
+                                        </td>
+
+                                        <td >
+                                            <span>
+                                                <strong><span t-field="o.amount_total"/></strong>
+                                            </span>
+                                            <!-- <span t-if="doc.state not in ['draft','sent']">
+                                                 <strong><span t-field="doc.amount_total"/></strong>
+                                             </span>-->
                                         </td>
                                     </tr>
-                                    <tr class="border-black o_total">
-                                        <td><strong>Total</strong></td>
-                                        <td class="text-right">
-                                            <span t-field="o.amount_total" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
-                                        </td>
-                                    </tr>
-                                </table>
+                                </thead>
+                            </table>
+                            <br/><br/><br/><br/>
+                            <div align="left">
+                                <p t-field="o.notes"/>
+                                <div class="oe_structure"/>
                             </div>
                         </div>
 
-                        <p t-field="o.notes"/>
-                        <div class="oe_structure"/>
                     </div>
                     <p style="page-break-before:always;text-align: justify">
                         <strong>PROTECCIÓN DE DATOS: Responsable del Tratamiento: </strong> KONERY EFICIENCIA ENERGÉTICA S.L.
