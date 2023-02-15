@@ -12,11 +12,6 @@
                 <field name="user_id" position="after">
                     <field name="power_kw"/>
                 </field>
-                <field name="partner_shipping_id" position="after">
-                    <field name="opportunity_id" required="1"/>
-                    <field name="crm_user_id"/>
-                    <field name="crm_team_id"/>
-                </field>
             </data>
         </field>
     </record>
