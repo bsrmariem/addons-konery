@@ -8,6 +8,7 @@ CRM Konery Customs
     'author': 'Serincloud',
     'depends': [
         'crm',
+        'sale_management',
     ],
     'data': [
         'views/crm_lead_views.xml',
