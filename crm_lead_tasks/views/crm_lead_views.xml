@@ -37,7 +37,7 @@
                             <field name="activity_ids" string="Next Activity" widget="list_activity" optional="show"/>
                             <field name="kanban_state" widget="state_selection" optional="show"
                                    options="{'hide_label': True}" nolabel="1" required="0"/>
-                            <field name="stage_id" readonly="1"/>
+                            <field name="stage_id"/>
                             <field name="company_id" invisible="1"/>
                         </tree>
                     </field>
