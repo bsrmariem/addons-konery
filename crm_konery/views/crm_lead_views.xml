@@ -23,6 +23,7 @@
         <field name="inherit_id" ref="crm.crm_case_tree_view_oppor"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='expected_revenue']" position="before">
+                <field name="team_id" required="1"/>
                 <field name="power_kw" optional="show"/>
             </xpath>
         </field>
