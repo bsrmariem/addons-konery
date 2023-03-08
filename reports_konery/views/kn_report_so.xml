@@ -61,7 +61,7 @@
                         </div>-->
 
                         <div t-if="report_type == 'pdf'" class="text-muted">
-                            Page: <span class="page"/> / <span class="topage"/>
+                            Página: <span class="page"/> / <span class="topage"/>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                             </div>
                         </div>
 
-                        <div style="float:right;text-align:right">
+                        <div style="float:right;text-align:left;margin-right:8%">
                             <div >
                                 <strong>
                                     <h3 style="font-family: montserrat;font-size:16px;color:#0084BF;text-align:right;font-weight: 900;">
@@ -261,7 +261,7 @@
                         </table>
                         <div t-if="doc.signature" class="mt-4 ml64 mr4" name="signature">
                             <div class="offset-8">
-                                <strong>Signature</strong>
+                                <strong>Firma</strong>
                             </div>
                             <div class="offset-8">
                                 <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
@@ -390,10 +390,10 @@
                             </div>
                         </div>
 
-                        <div style="float:right;text-align:right">
+                        <div style="float:right;text-align:left;margin-right:8%">
                             <div >
                                 <strong>
-                                    <h3 style="font-family: montserrat;font-size:16px;color:#0084BF;text-align:right;font-weight: 900;">
+                                    <h3 style="font-family: montserrat;font-size:16px;color:#0084BF;text-align:center;font-weight: 900;">
                                         <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
                                             <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
                                             <span style="font-weight: 600" >PRESUPUESTO: </span>
@@ -404,15 +404,15 @@
                                     </h3>
                                 </strong>
                                 <p style="font-size:14px;font-family: montserrat;line-height: 18px;" >
-                                    <t t-if="doc.sale_order_template_id">
+                                    <!--<t t-if="doc.sale_order_template_id">
                                         PLANTILLA: <strong><span t-field="doc.sale_order_template_id"/></strong><br/>
-                                    </t>
+                                    </t>-->
                                     <t t-if="doc.user_id">
                                         COMERCIAL: <strong><span t-field="doc.user_id"/></strong><br/>
                                     </t>
                                     PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
                                     <t t-if="doc.opportunity_id">
-                                        OPORTUNIDAD: <strong><span t-field="doc.opportunity_id"/></strong><br/>
+                                        PROYECTO: <strong><span t-field="doc.opportunity_id"/></strong><br/>
                                     </t>
                                     FECHA: <strong><span  t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
                                 </p>
@@ -420,7 +420,7 @@
                                 FECHA: <strong><span  t-field="doc.x_fecha_presupuesto"/></strong></p>-->
 
                             </div>
-                            <div style="font-weight: 400;font-family: montserrat;font-size:14px;text-align:right;line-height: 18px;">
+                            <div style="font-weight: 400;font-family: montserrat;font-size:14px;text-align:center;line-height: 18px;">
                                 <strong><span t-field="doc.partner_id" style="text-align:left;color:#0084BF;font-weight: 900;white-space: nowrap;font-size:16px;"/></strong><br/>
                                 <span t-field="doc.partner_id.street"/><br/>
                                 <span t-field="doc.partner_id.zip"/> <span t-field="doc.partner_id.state_id"/>
@@ -552,7 +552,7 @@
                         </table>
                         <div t-if="doc.signature" class="mt-4 ml64 mr4" name="signature">
                             <div class="offset-8">
-                                <strong>Signature</strong>
+                                <strong>Firma</strong>
                             </div>
                             <div class="offset-8">
                                 <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
@@ -679,7 +679,7 @@
                             </div>
                         </div>
 
-                        <div style="float:right;text-align:right">
+                        <div style="float:right;text-align:left;margin-right:8%">
                             <div >
                                 <strong>
                                     <h3 style="font-family: montserrat;font-size:16px;color:#0084BF;text-align:right;font-weight: 900;">
@@ -693,15 +693,15 @@
                                     </h3>
                                 </strong>
                                 <p style="font-size:14px;font-family: montserrat;line-height: 18px;" >
-                                    <t t-if="doc.sale_order_template_id">
+                                    <!--<t t-if="doc.sale_order_template_id">
                                         PLANTILLA: <strong><span t-field="doc.sale_order_template_id"/></strong><br/>
-                                    </t>
+                                    </t>-->
                                     <t t-if="doc.user_id">
                                         COMERCIAL: <strong><span t-field="doc.user_id"/></strong><br/>
                                     </t>
                                     PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
                                     <t t-if="doc.opportunity_id">
-                                        OPORTUNIDAD: <strong><span t-field="doc.opportunity_id"/></strong><br/>
+                                        PROYECTO: <strong><span t-field="doc.opportunity_id"/></strong><br/>
                                     </t>
                                     FECHA: <strong><span  t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
                                 </p>
@@ -837,7 +837,7 @@
                         </table>
                         <div t-if="doc.signature" class="mt-4 ml64 mr4" name="signature">
                             <div class="offset-8">
-                                <strong>Signature</strong>
+                                <strong>Firma</strong>
                             </div>
                             <div class="offset-8">
                                 <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
