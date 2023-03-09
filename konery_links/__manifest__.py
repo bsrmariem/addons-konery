@@ -1,5 +1,5 @@
 {
-    'name': "Konery Custom RRHH",
+    'name': "Konery Links",
     'summary': """
         Custom RRHH
         """,

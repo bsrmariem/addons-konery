@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <odoo>
 
-    <record id="action_external_web_issues" model="ir.actions.act_url">
+    <record id="action_external_web_compliant" model="ir.actions.act_url">
         <field name="name">Google</field>
         <field name="binding_type">action</field>
         <field name="binding_view_types">list,form</field>
-        <field name="url">https://www.google.es</field>
+        <field name="url">https://canal.konery.com</field>
         <field name="target">new</field>
     </record>
 
     <menuitem
-            id="menu_external_issues_main"
+            id="menu_external_compliant_main"
             name="Issues"
-            action="action_external_web_issues"
+            action="action_external_web_compliant"
             groups="base.group_user"
-            web_icon="konery_rrhh,static/description/icon.png"
-            sequence="10"
+            web_icon="konery_links,static/description/icon.png"
+            sequence="90"
     />
 
 </odoo>
