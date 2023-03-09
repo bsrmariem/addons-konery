@@ -2,7 +2,7 @@
 <odoo>
 
     <record id="action_external_web_compliant" model="ir.actions.act_url">
-        <field name="name">Compliants channel</field>
+        <field name="name">action_compliant_channel</field>
         <field name="binding_type">action</field>
         <field name="binding_view_types">list,form</field>
         <field name="url">https://canal.konery.com</field>
@@ -11,7 +11,7 @@
 
     <menuitem
             id="menu_external_compliant_main"
-            name="Issues"
+            name="Compliants channel"
             action="action_external_web_compliant"
             groups="base.group_user"
             web_icon="konery_links,static/description/icon.png"
