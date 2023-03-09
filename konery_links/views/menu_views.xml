@@ -11,7 +11,7 @@
 
     <menuitem
             id="menu_external_compliant_main"
-            name="Compliants channel"
+            name="Compliants"
             action="action_external_web_compliant"
             groups="base.group_user"
             web_icon="konery_links,static/description/icon.png"
