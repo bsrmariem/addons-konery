@@ -2,7 +2,7 @@
 <odoo>
 
     <record id="action_external_web_compliant" model="ir.actions.act_url">
-        <field name="name">Google</field>
+        <field name="name">Compliants channel</field>
         <field name="binding_type">action</field>
         <field name="binding_view_types">list,form</field>
         <field name="url">https://canal.konery.com</field>
