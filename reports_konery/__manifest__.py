@@ -4,7 +4,7 @@
 {
     "name": "Reports Konery & ST ",
     "summary": "Reports form sale order and invoice.",
-    "version": "16.0.2.0.1",
+    "version": "16.0.2.0.2",
     "category": "Reports",
     "author": "Pedro Guirao, ",
     "website": "",

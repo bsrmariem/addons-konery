@@ -47,7 +47,7 @@
                             <p align="center" style="font-size:11px;font: montserrat">Registro Mercantil de Murcia. Tomo 2800 Folio 73. Inscripción 1ª.Hoja-Mu75396. CIF B73704405</p>
                         </div>
                         <div t-if="report_type == 'pdf'" class="text-muted">
-                            Page: <span class="page"/> / <span class="topage"/>
+                            Página: <span class="page"/> / <span class="topage"/>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                                 <br/>
                             </div>
                         </div>
-                        <div style="float:right;text-align:right">
+                        <div style="float:right;text-align:left;margin-right:8%">
                             <div>
                                 <strong>
                                     <h3 style="font-family: montserrat;font-size:16px;color:#E62450;text-align:right;font-weight: 900;">
