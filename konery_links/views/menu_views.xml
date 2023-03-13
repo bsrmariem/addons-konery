@@ -14,7 +14,7 @@
         <field name="name">action_news_channel</field>
         <field name="binding_type">action</field>
         <field name="binding_view_types">list,form</field>
-        <field name="url">ref="menu_news_link"<field/>
+        <field name="url">ref="menu_news_link"</field>
         <field name="target">new</field>
     </record>
 
