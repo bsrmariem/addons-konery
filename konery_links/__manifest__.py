@@ -12,7 +12,6 @@
         'hr',
     ],
     'data': [
-        'data/ir_config_parameter.xml',
         'views/menu_views.xml',
     ],
     'installable': True,
