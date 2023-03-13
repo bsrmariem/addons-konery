@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+
+    <record id="menu_compliant_link" model="ir.config_parameter">
+        <field name="key">compliant_url</field>
+        <field name="value">https://canal.konery.com</field>
+    </record>
+
+    <record id="menu_news_link" model="ir.config_parameter">
+        <field name="key">news_url</field>
+        <field name="value">https://konery16.odoo.com</field>
+    </record>
+
+</odoo>

@@ -5,7 +5,16 @@
         <field name="name">action_compliant_channel</field>
         <field name="binding_type">action</field>
         <field name="binding_view_types">list,form</field>
-        <field name="url">https://canal.konery.com</field>
+        <field name="url" ref="menu_compliant_link" />
+        <!-- <field name="url">https://canal.konery.com</field> -->
+        <field name="target">new</field>
+    </record>
+
+    <record id="action_web_news" model="ir.actions.act_url">
+        <field name="name">action_news_channel</field>
+        <field name="binding_type">action</field>
+        <field name="binding_view_types">list,form</field>
+        <field name="url" ref="menu_news_link" />
         <field name="target">new</field>
     </record>
 
@@ -16,6 +25,15 @@
             groups="base.group_user"
             web_icon="konery_links,static/description/icon.png"
             sequence="90"
+    />
+
+    <menuitem
+            id="menu_external_news_main"
+            name="News"
+            action="action_web_news"
+            groups="base.group_user"
+            web_icon="konery_links,static/description/icon.png"
+            sequence="92"
     />
 
 </odoo>
