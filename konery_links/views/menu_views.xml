@@ -5,7 +5,7 @@
         <field name="name">action_compliant_channel</field>
         <field name="binding_type">action</field>
         <field name="binding_view_types">list,form</field>
-        <field name="url">ref="menu_compliant_link"<field/>
+        <field name="url">ref="menu_compliant_link"</field>
         <!-- <field name="url">https://canal.konery.com</field> -->
         <field name="target">new</field>
     </record>
