@@ -22,7 +22,7 @@
             name="Compliants"
             action="action_external_web_compliant"
             groups="base.group_user"
-            web_icon="konery_links,static/description/icon.png"
+            web_icon="konery_links,static/description/ic_denuncias.png"
             sequence="90"
     />
 
