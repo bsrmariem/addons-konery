@@ -9,9 +9,8 @@
     "author": "Pedro Guirao, ",
     "website": "",
     "license": "AGPL-3",
-    "depends": ["account", "purchase", "sale", "report_qweb_pdf_watermark"],
+    "depends": ["account", "purchase", "sale", "report_qweb_pdf_watermark","sale_comment_template"],
     "data": [
-
         "views/kn_report_invoice.xml",
         "views/st_report_invoice.xml",
         "views/kn_report_so.xml",
