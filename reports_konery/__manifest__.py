@@ -20,7 +20,7 @@
         "views/templates.xml",
         "views/ir_action_report.xml",
         "views/form_views.xml",
-        "data/paper_format.xml",
+        #"data/paper_format.xml",
         "security/ir.model.access.csv",
     ],
 

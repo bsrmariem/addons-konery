@@ -109,7 +109,7 @@
                             </div>
                         </div>
 
-                        <div style="float:right;text-align:left;margin-right:8%">
+                        <div style="float:right;text-align:left;margin-right:2%">
 
                             <table class="table-border" style="float:right;width:100%;font-family: montserrat;border-color:white;">
                                 <thead style="font-size:17px;">
@@ -136,6 +136,19 @@
                                     <tr>
                                             <!--t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"-->
                                             <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                 <t t-if="doc.user_id">COMERCIAL: </t>
+                                            </td>
+                                            <!--t-attf-class="text-end {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"-->
+                                            <td style="padding-left: 10px; text-align:left;max-width:250px;word-wrap:break-word;">
+                                              <t t-if="doc.user_id">
+                                                <strong><span t-field="doc.user_id"/></strong>
+                                              </t>
+                                            </td>
+
+                                    </tr>
+                                    <tr>
+                                            <!--t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"-->
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
                                                  <t t-if="doc.name">PROFORMA #: </t>
                                             </td>
                                             <!--t-attf-class="text-end {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"-->
@@ -145,6 +158,16 @@
                                               </t>
                                             </td>
 
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: 500;line-height:15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            <t t-if="doc.opportunity_id">PROYECTO: </t>
+                                        </td>
+                                        <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                            <t t-if="doc.opportunity_id">
+                                                <strong><span t-field="doc.opportunity_id"/></strong>
+                                            </t>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
@@ -171,7 +194,7 @@
                                         <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
                                         </td>
                                         <td style="padding-left:10px;text-align:left;color:#0084BF;max-width:250px;word-wrap:break-word;">
-                                            <strong><span t-field="doc.partner_id"/></strong>
+                                            <strong><span t-field="doc.company_id"/></strong>
                                         </td>
                                     </tr>
 
@@ -477,43 +500,128 @@
                             </div>
                         </div>
 
-                        <div style="float:right;text-align:left;margin-right:8%">
-                            <div >
-                                <strong>
-                                    <h3 style="font-family: montserrat;font-size:16px;color:#0084BF;text-align:center;font-weight: 900;">
-                                        <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
-                                            <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
-                                            <span style="font-weight: 600" >PRESUPUESTO: </span>
-                                        </t>
-                                        <t style="font-weight: 600" t-if="env.context.get('proforma', False) or is_pro_forma">
-                                            <span>Pro-Forma Invoice # </span>
-                                        </t>
-                                    </h3>
-                                </strong>
-                                <p style="font-size:14px;font-family: montserrat;line-height: 18px;" >
-                                    <!--<t t-if="doc.sale_order_template_id">
-                                        PLANTILLA: <strong><span t-field="doc.sale_order_template_id"/></strong><br/>
-                                    </t>-->
-                                    <t t-if="doc.user_id">
-                                        COMERCIAL: <strong><span t-field="doc.user_id"/></strong><br/>
-                                    </t>
-                                    PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
-                                    <t t-if="doc.opportunity_id">
-                                        PROYECTO: <strong><span t-field="doc.opportunity_id"/></strong><br/>
-                                    </t>
-                                    FECHA: <strong><span  t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
-                                </p>
-                                <!--<p t-if="doc.state in ['draft','sent']" style="font-size:14px;font-family: montserrat;line-height: 18px;" > PRESUPUESTO #: <strong><span t-field="doc.name"/></strong><br/>
-                                FECHA: <strong><span  t-field="doc.x_fecha_presupuesto"/></strong></p>-->
+                        <div style="float:right;text-align:left;margin-right:2%;">
+                            <table class="table-border" style="float:right;width:100%;font-family: montserrat;border-color:white;">
+                                <thead style="font-size:17px;">
+                                    <tr>
+                                        <th t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
+                                            style="padding-top: 10px; padding-bottom:10px;padding-left: 20px;text-align:right;" class="text-left">
 
-                            </div>
-                            <div style="font-weight: 400;font-family: montserrat;font-size:14px;text-align:center;line-height: 18px;">
-                                <strong><span t-field="doc.partner_id" style="text-align:left;color:#0084BF;font-weight: 900;white-space: nowrap;font-size:16px;"/></strong><br/>
-                                <span t-field="doc.partner_id.street"/><br/>
-                                <span t-field="doc.partner_id.zip"/> <span t-field="doc.partner_id.state_id"/>
-                                <span t-field="doc.partner_id.country_id"/><br/>
-                                CIF: <span t-field="doc.partner_id.vat"/><br/>
-                            </div>
+                                        </th>
+                                        <th>
+                                            <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
+                                                <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
+                                                <span style="font-weight:900;color:#0084BF;padding-left: 10px;text-align:right;" >PRESUPUESTO: </span>
+                                            </t>
+                                            <t style="font-weight: 600" t-if="env.context.get('proforma', False) or is_pro_forma">
+                                                <span>Pro-Forma Invoice # </span>
+                                            </t>
+                                        </th>
+                                        <th class="text-end">
+
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody style="font-size:14px;" class="sale_tbody">
+                                    <tr>
+                                            <!--t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"-->
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                 <t t-if="doc.user_id">COMERCIAL: </t>
+                                            </td>
+                                            <!--t-attf-class="text-end {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"-->
+                                            <td style="padding-left: 10px; text-align:left;max-width:250px;word-wrap:break-word;">
+                                              <t t-if="doc.user_id">
+                                                <strong><span t-field="doc.user_id"/></strong>
+                                              </t>
+                                            </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: 500;line-height:15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            <t t-if="doc.name">PRESUPUESTO: </t>
+                                        </td>
+                                        <td style="padding-left: 10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                            <t t-if="doc.name">
+                                                <strong><span t-field="doc.name"/></strong>
+                                            </t>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: 500;line-height:15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            <t t-if="doc.opportunity_id">PROYECTO: </t>
+                                        </td>
+                                        <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                            <t t-if="doc.opportunity_id">
+                                                <strong><span t-field="doc.opportunity_id"/></strong>
+                                            </t>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            <t t-if="doc.date_order">FECHA:</t>
+                                        </td>
+                                        <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                            <t t-if="doc.date_order">
+                                                <strong><span  t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
+                                            </t>
+                                        </td>
+                                    </tr>
+
+                                    <!--Agregamos un salto de linea-->
+                                    <tr>
+                                        <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            <br></br>
+                                        </td>
+                                        <td style="padding-left:10px;line-height: 15px;text-align:left;">
+                                            <br></br>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                        </td>
+                                        <td style="padding-left:10px;text-align:left;color:#0084BF;max-width:250px;word-wrap:break-word;">
+                                            <strong><span t-field="doc.company_id"/></strong>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                        </td>
+                                        <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                           <strong>CIF <span t-field="doc.partner_id.vat"/></strong>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                        </td>
+                                        <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                            <strong><span t-field="doc.partner_id.street"/></strong>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                        </td>
+                                        <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                            <strong><span t-field="doc.partner_id.country_id"/></strong>
+                                            <strong><span t-field="doc.partner_id.state_id"/></strong>
+                                            <strong><span t-field="doc.partner_id.zip"/></strong>
+                                        </td>
+                                    </tr>
+
+                                    <!--Agregamos un salto de linea-->
+                                    <tr>
+                                        <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            <br></br>
+                                        </td>
+                                        <td style="padding-left:10px;line-height: 15px;text-align:left;">
+                                            <br></br>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
