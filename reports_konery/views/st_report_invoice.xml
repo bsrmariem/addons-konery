@@ -97,14 +97,14 @@
                                 <span t-field="o.company_id.state_id"/>,
                                 <span t-field="o.sequence_prefix"/>
                                 <br/>
-                                CIF:
+                                CIF: <span t-field="o.company_id.vat"/>
 
                                 <br/>
 
                                 <br/>
                             </div>
                         </div>
-                        <div style="float:right;text-align:left;margin-right:8%">
+                        <div style="float:right;text-align:right;margin-right:2%">
                             <div>
                                 <strong>
                                     <h3 style="font-family: montserrat;font-size:16px;color:#E62450;text-align:right;font-weight: 900;">
