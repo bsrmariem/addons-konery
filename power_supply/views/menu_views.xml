@@ -103,7 +103,7 @@
     <record id="power_pricelist_menu" model="ir.ui.menu">
         <field name="action" ref="action_power_pricelist"/>
         <field name="active" eval="True"/>
-        <field name="name">Power Supply</field>
+        <field name="name">Pricelist</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
         <field name="sequence">20</field>
         <field name="web_icon" eval="False"/>
