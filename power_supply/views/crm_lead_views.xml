@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data>
+
+    <record id="crm_lead_konery_custom_inh_form" model="ir.ui.view">
+        <field name="name">CRM Inherit Konery Custom Form View</field>
+        <field name="model">crm.lead</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="priority">98</field>
+        <field name="arch" type="xml">
+            <data>
+                <field name="user_id" position="after">
+                    <field name="power_kw"/>
+                </field>
+            </data>
+        </field>
+    </record>
+
+    <record id="crm_lead_konery_custom_inh_tree" model="ir.ui.view">
+        <field name="name">CRM Lead Konery custom</field>
+        <field name="model">crm.lead</field>
+        <field name="type">tree</field>
+        <field name="inherit_id" ref="crm.crm_case_tree_view_oppor"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='expected_revenue']" position="before">
+                <field name="team_id" required="1"/>
+                <field name="power_kw" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+</data>
