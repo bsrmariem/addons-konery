@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-        <record id="power_supply_user" model="res.groups">
+        <record id="group_power_supply_user" model="res.groups">
             <field name="name">Power supply</field>
             <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
             <field name="users" eval="[(4, ref('base.user_root'))]"/>
