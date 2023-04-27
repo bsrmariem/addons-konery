@@ -12,6 +12,7 @@ Power Supply history
     'data': [
         'security/ir.model.access.csv',
         'security/user_groups.xml',
+        'views/menu_views.xml',
 #        'views/sale_order_views.xml',
     ],
     'installable': True,
