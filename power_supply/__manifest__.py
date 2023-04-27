@@ -8,6 +8,7 @@ Power Supply history
     'author': 'Serincloud',
     'depends': [
         'base',
+        'mail',
     ],
     'data': [
         'security/user_groups.xml',
