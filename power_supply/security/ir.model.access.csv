@@ -1,5 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_power_contract,Contratos de suministros,model_power_contract,power_supply.group_power_supply_user,1,1,1,1
+access_power_contract_type,Tipos de Contrato,model_power_contract_type,power_supply.group_power_supply_user,1,1,1,1
 access_power_pricelist,Tarifas de suministros,model_power_pricelist,power_supply.group_power_supply_user,1,1,1,1
 access_power_supply,Puntos de suministro,model_power_supply,power_supply.group_power_supply_user,1,1,1,1
 access_power_tag,Etiquetas de suministros,model_power_tag,power_supply.group_power_supply_user,1,1,1,1
