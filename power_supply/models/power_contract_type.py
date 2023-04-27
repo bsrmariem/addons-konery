@@ -5,7 +5,6 @@ from odoo import fields, models, api
 
 class PowerContractType(models.Model):
     _name = 'power.contract.type'
-    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Power Contract Type'
 
     name = fields.Char(string='Name', required=True)

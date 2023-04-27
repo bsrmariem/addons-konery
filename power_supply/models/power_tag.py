@@ -5,7 +5,6 @@ from odoo import fields, models, api
 
 class PowerTag(models.Model):
     _name = 'power.tag'
-    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Power Tags'
 
     name = fields.Char(string='Name', required=True)

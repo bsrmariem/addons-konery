@@ -5,7 +5,6 @@ from odoo import fields, models, api
 
 class PowerPricelist(models.Model):
     _name = 'power.pricelist'
-    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Power Supplies'
 
     name = fields.Char(string='Name', required=True)
