@@ -1,5 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_power_contract,Contratos de suministros,model_power_contract,account.group_power_supply_user,1,1,1,1
-access_power_pricelist,Tarifas de suministros,model_power_pricelist,account.group_power_supply_user,1,1,1,1
-access_power_supply,Puntos de suministro,model_power_supply,account.group_power_supply_user,1,1,1,1
-access_power_tag,Etiquetas de suministros,model_power_tag,account.group_power_supply_user,1,1,1,1
+access_power_contract,Contratos de suministros,model_power_contract,group_power_supply_user,1,1,1,1
+access_power_pricelist,Tarifas de suministros,model_power_pricelist,group_power_supply_user,1,1,1,1
+access_power_supply,Puntos de suministro,model_power_supply,group_power_supply_user,1,1,1,1
+access_power_tag,Etiquetas de suministros,model_power_tag,group_power_supply_user,1,1,1,1

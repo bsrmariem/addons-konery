@@ -10,8 +10,8 @@ Power Supply history
         'base',
     ],
     'data': [
-        'security/ir.model.access.csv',
         'security/user_groups.xml',
+        'security/ir.model.access.csv',
         'views/menu_views.xml',
 #        'views/sale_order_views.xml',
     ],
