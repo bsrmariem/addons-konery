@@ -29,7 +29,7 @@ class PowerSupply(models.Model):
     monitor = fields.Boolean('Monitorized')
     monitor_type = fields.Selection([('gprs','GPRS'),('gsm','GSM'),('datadis','Datadis')])
     monitor_ip = fields.Char('IP')
-    monitor_ port = fields.Integer('Port')
+    monitor_port = fields.Integer('Port')
     monitor_phone = fields.Char('Phone')
 
     meter = fields.Selection([('sold','Sold'),('exist','Exist'),('rent','Rented')])

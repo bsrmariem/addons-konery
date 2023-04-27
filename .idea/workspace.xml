@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply v0">
-      <change beforePath="$PROJECT_DIR$/power_supply/models/power_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_contract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_supply.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_supply.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682635951036</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="power supply v0">
+      <created>1682636043137</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682636043137</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
