@@ -19,6 +19,10 @@ class PowerContract(models.Model):
     marketeer_contact_id = fields.Many2one('res.partner', store=True, string='Marketeer contact',
                                            domain="[('is_marketeer','=',True),('company_type','=','person')]")
 
+    origin_warranty = fields.Boolean('Origin warranty')
+    compromise = fields.Boolean('Compromise')
+    auto_renew = fields.Boolean('Auto renew')
+
     p1 = fields.Float(string='P1/Q', store=True)
     p2 = fields.Float(string='P2', store=True)
     p3 = fields.Float(string='P3', store=True)

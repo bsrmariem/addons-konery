@@ -13,7 +13,6 @@ class PowerSupply(models.Model):
     date_init = fields.Date('Date start')
     energy_type = fields.Selection([('electricity','Electricity'),('gas','Gas')],string='Energy type')
     partner_id = fields.Many2one('res.partner', string='Customer', store=True)
-    partner_sign_id = fields.Many2one('res.partner', string='Customer', domain="[('company_type','=','person')]", store=True)
     holding_id = fields.Many2one('res.partner', string='Holding')
     manager_id = fields.Many2one('res.users', string='Manager')
     salesman_id = fields.Many2one('res.users', string='Salesman')
