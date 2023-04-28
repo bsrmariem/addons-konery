@@ -26,43 +26,66 @@
         <field name="arch" type="xml">
             <form>
                 <sheet name="main" string="Power supply">
-                    <div class="oe_button_box" name="button_box"/>
-                    <h2>
-                        <field name="name"/>
-                    </h2>
                     <group name="basic_params">
                         <group>
-                            <field name="date_init"/>
                             <field name="energy_type"/>
+                            <field name="name"/>
                             <field name="partner_id"/>
                             <field name="holding_id"/>
-                            <field name="manager_id"/>
                             <field name="salesman_id"/>
+                            <field name="manager_id"/>
                             <field name="tax_exception"/>
-                            <field name="pricelist_id"/>
-                            <field name="location"/>
-                            <field name="cups"/>
-                            <field name="anual_power"/>
-                            <field name="tag_ids"/>
-                            <field name="marketeer_ids"/>
-                            <field name="dealer_id"/>
-                            <field name="monitor"/>
-                            <field name="monitor_type"/>
-                            <field name="monitor_ip"/>
-                            <field name="monitor_port"/>
-                            <field name="monitor_phone"/>
-                            <field name="meter"/>
-                            <field name="meter_note"/>
-                            <field name="contract_ids"/>
                         </group>
                         <group>
-
+                            <field name="location"/>
+                            <field name="dealer_id"/>
+                            <field name="pricelist_id" widget="selection"/>
+                            <field name="cups"/>
+                            <field name="anual_power"/>
+                            <field name="tag_ids" widget="many2many_tags"/>
                         </group>
                     </group>
-                    <notebook>
-                        <page string="Description">
-                        </page>
-                    </notebook>
+                    <group name="contract" string="Contract">
+                        <field name="contract_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="marketeer_id"/>
+                                <field name="date_start"/>
+                                <field name="date_end"/>
+                                <field name="type_id"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <group name="power" string="Power">
+                        <field name="contract_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="p1"/>
+                                <field name="p2"/>
+                                <field name="p3"/>
+                                <field name="p4"/>
+                                <field name="p5"/>
+                                <field name="p6"/>
+                                <field name="date_start"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <group name="communication" string="Communication">
+                        <group>
+                            <field name="meter"/>
+                            <field name="meter_note"/>
+                        </group>
+                        <group>
+                            <field name="monitor"/>
+                            <field name="monitor_type" attrs="{'invisible':[('monitor','=',False)]}"/>
+                            <field name="monitor_ip"
+                                   attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs','gsm'])]}"/>/>
+                            <field name="monitor_port"
+                                   attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs','gsm'])]}"/>/>
+                            <field name="monitor_phone"
+                                   attrs="{'invisible':['|',('monitor','=',False),('monitor_type','!=','datadis'])]}"/>
+                        </group>
+                    </group>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>

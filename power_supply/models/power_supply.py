@@ -23,7 +23,6 @@ class PowerSupply(models.Model):
     cups = fields.Char('CUPS', store=True)
     anual_power = fields.Integer('Anual power (Kw)')
     tag_ids = fields.Many2many('power.tag', string='Tags', store=True)
-    marketeer_ids = fields.Many2many('res.partner', store=True, domain="[('is_marketeer','=',True)]")
     dealer_id = fields.Many2one('res.partner', store=True, domain="[('is_dealer','=',True)]")
 
     monitor = fields.Boolean('Monitorized')
