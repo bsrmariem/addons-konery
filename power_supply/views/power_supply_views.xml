@@ -31,7 +31,7 @@
                             <field name="energy_type"/>
                             <field name="name"/>
                             <field name="partner_id"/>
-                            <field name="holding_id" domain="[('company_type','=','company')]"/>
+                            <field name="holding_id"/>
                             <field name="salesman_id"/>
                             <field name="manager_id"/>
                             <field name="tax_exception"/>
