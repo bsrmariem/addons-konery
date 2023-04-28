@@ -24,7 +24,7 @@ class PowerContract(models.Model):
     compromise = fields.Boolean('Compromise')
     auto_renew = fields.Boolean('Auto renew')
 
-    date_on = fields.Date(string='Date ON')
+    date_on = fields.Date(string='Activation date')
     p1 = fields.Float(string='P1/Q', store=True)
     p2 = fields.Float(string='P2', store=True)
     p3 = fields.Float(string='P3', store=True)

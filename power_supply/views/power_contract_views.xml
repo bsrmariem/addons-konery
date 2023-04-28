@@ -51,7 +51,9 @@
                         </group>
                     </group>
                     <group name="power_data" string="Power">
-                        <field name="date_on"/>
+                        <group>
+                            <field name="date_on"/>
+                        </group>
                     </group>
                     <div>
                         <table>
