@@ -19,7 +19,6 @@
         <field name="inherit_id" eval="False"/>
         <field name="type">form</field>
         <field name="arch" type="xml">
-        <field name="arch" type="xml">
             <form>
                 <sheet name="main" string="Contracts">
                     <div class="oe_button_box" name="button_box"/>
