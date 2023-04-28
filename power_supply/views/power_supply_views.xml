@@ -57,7 +57,7 @@
                         </field>
                     </group>
                     <group name="power" string="Power">
-                        <field name="contract_ids">
+                        <field name="contract_power_ids">
                             <tree>
                                 <field name="name"/>
                                 <field name="p1"/>
