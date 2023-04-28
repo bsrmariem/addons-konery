@@ -15,6 +15,10 @@ Power Supply history
         'security/ir.model.access.csv',
         'views/menu_views.xml',
         'views/power_pricelist_views.xml',
+        'views/power_tag_views.xml',
+        'views/power_contract_type_views.xml',
+        'views/power_contract_views.xml',
+        'views/power_supply_views.xml',
     ],
     'installable': True,
 }
