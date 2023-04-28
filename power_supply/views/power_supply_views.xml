@@ -31,7 +31,7 @@
                             <field name="energy_type"/>
                             <field name="name"/>
                             <field name="partner_id"/>
-                            <field name="holding_id"/>
+                            <field name="holding_id" domain="[('company_type','=','company')]"/>
                             <field name="salesman_id"/>
                             <field name="manager_id"/>
                             <field name="tax_exception"/>
@@ -76,19 +76,21 @@
                     </notebook>
                     <notebook name="communication_nb">
                         <page name="communication" string="Communication">
-                            <group>
-                                <field name="meter"/>
-                                <field name="meter_note"/>
-                            </group>
-                            <group>
-                                <field name="monitor"/>
-                                <field name="monitor_type" attrs="{'invisible':[('monitor','=',False)]}"/>
-                                <field name="monitor_ip"
-                                       attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs','gsm'])]}"/>/>
-                                <field name="monitor_port"
-                                       attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs','gsm'])]}"/>/>
-                                <field name="monitor_phone"
-                                       attrs="{'invisible':['|',('monitor','=',False),('monitor_type','!=','datadis')]}"/>
+                            <group name="communication_group">
+                                <group>
+                                    <field name="meter"/>
+                                    <field name="meter_note"/>
+                                </group>
+                                <group>
+                                    <field name="monitor"/>
+                                    <field name="monitor_type" attrs="{'invisible':[('monitor','=',False)]}"/>
+                                    <field name="monitor_ip"
+                                           attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs','gsm'])]}"/>/>
+                                    <field name="monitor_port"
+                                           attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs','gsm'])]}"/>/>
+                                    <field name="monitor_phone"
+                                           attrs="{'invisible':['|',('monitor','=',False),('monitor_type','!=','datadis')]}"/>
+                                </group>
                             </group>
                         </page>
                     </notebook>
