@@ -8,5 +8,3 @@ class PowerPricelist(models.Model):
     _description = 'Power Supplies'
 
     name = fields.Char(string='Name', required=True)
-    partner_id = fields.Many2one('res.partner', store=True)
-    
