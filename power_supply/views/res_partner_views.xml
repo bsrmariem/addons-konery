@@ -6,7 +6,7 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <field name="ref" postion="after">
+            <field name="ref" position="after">
                 <field name="is_dealer"/>
                 <field name="is_marketeer"/>
                 <field name="is_agent"/>
