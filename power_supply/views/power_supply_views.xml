@@ -55,7 +55,7 @@
                     </group>
                     <notebook name="contract_nb">
                         <page name="contract" string="Contract">
-                            <field name="contract_ids">
+                            <field name="contract_ids" context="{'default_partner_i}">
                                 <tree>
                                     <field name="name"/>
                                     <field name="marketeer_id"/>
