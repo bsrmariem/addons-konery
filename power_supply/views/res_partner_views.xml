@@ -13,4 +13,19 @@
         </field>
     </record>
 
+    <record id="power_supply_partner_inh_search" model="ir.ui.view">
+        <field name="name">power.supply.partner.inh.search</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <field name="user_id" position="after">
+                <field name="is_dealer" string="Dealer"/>
+                <field name="is_marketeer" string="Marketeer"/>
+            </field>
+            <filter name="type_company" position="after">
+                <filter string="Dealers and marketeers" name="dealer_marketeer"
+                        domain="['|',('is_dealer','=',True),('is_marketeer','=',True)]"/>
+            </filter>
+        </field>
+    </record>
 </odoo>
