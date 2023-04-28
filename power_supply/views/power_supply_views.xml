@@ -83,7 +83,7 @@
                             <field name="monitor_port"
                                    attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs','gsm'])]}"/>/>
                             <field name="monitor_phone"
-                                   attrs="{'invisible':['|',('monitor','=',False),('monitor_type','!=','datadis'])]}"/>
+                                   attrs="{'invisible':['|',('monitor','=',False),('monitor_type','!=','datadis')]}"/>
                         </group>
                     </group>
                 </sheet>
