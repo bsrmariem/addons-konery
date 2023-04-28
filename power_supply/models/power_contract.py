@@ -9,7 +9,7 @@ class PowerContract(models.Model):
     _description = 'Power Contracts'
 
     name = fields.Char(string='Name', required=True)
-    active = fields.Boolean('Active')
+    active = fields.Boolean('Active', default=True)
     date = fields.Date(string='Date contracted')
     date_start = fields.Date(string='Date start')
     date_end = fields.Date(string='Date end')
