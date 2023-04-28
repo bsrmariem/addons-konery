@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <record id="power_supply_partner_inh_form" model="ir.ui.view">
+        <field name="name">power.supply.partner.inh.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="ref" postion="after">
+                <field name="is_dealer"/>
+                <field name="is_marketeer"/>
+                <field name="is_agent"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

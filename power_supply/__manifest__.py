@@ -19,6 +19,7 @@ Power Supply history
         'views/power_contract_type_views.xml',
         'views/power_contract_views.xml',
         'views/power_supply_views.xml',
+        'views/res_partner_views.xml',
     ],
     'installable': True,
 }
