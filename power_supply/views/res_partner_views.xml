@@ -18,11 +18,10 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_res_partner_filter"/>
         <field name="arch" type="xml">
-            <field name="user_id" position="after">
-                <field name="is_dealer" string="Dealer"/>
-                <field name="is_marketeer" string="Marketeer"/>
-            </field>
             <filter name="type_company" position="after">
+                <separator/>
+                <filter name="is_dealer" string="Is dealer" domain="[('is_dealer','=',True)]"/>
+                <filter name="is_marketeer" string="Is marketeer" domain="[('is_marketeer','=',True)]"/>
                 <filter string="Dealers and marketeers" name="dealer_marketeer"
                         domain="['|',('is_dealer','=',True),('is_marketeer','=',True)]"/>
             </filter>
