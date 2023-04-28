@@ -6,4 +6,3 @@ class ResPartner(models.Model):
 
     is_dealer = fields.Boolean('Is dealer')
     is_marketeer = fields.Boolean('Is marketeer')
-    is_agent = fields.Boolean('Is agent')

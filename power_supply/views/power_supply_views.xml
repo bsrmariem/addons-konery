@@ -46,7 +46,7 @@
                         </group>
                         <group>
                             <field name="location"/>
-                            <field name="dealer_id"/>
+                            <field name="dealer_id" context="{'default_is_dealer':True}"/>
                             <field name="pricelist_id" widget="selection"/>
                             <field name="cups"/>
                             <field name="anual_power"/>

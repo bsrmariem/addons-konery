@@ -9,7 +9,6 @@
             <field name="ref" position="after">
                 <field name="is_dealer"/>
                 <field name="is_marketeer"/>
-                <field name="is_agent"/>
             </field>
         </field>
     </record>

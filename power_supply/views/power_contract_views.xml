@@ -35,8 +35,8 @@
                     </h2>
                     <group name="administrative_data" string="Administrative data">
                         <group>
-                            <field name="marketeer_id"/>
-                            <field name="marketeer_contact_id"/>
+                            <field name="marketeer_id" context="{'default_is_marketeer':True}"/>
+                            <field name="marketeer_contact_id" context="{'default_is_marketeer':True}"/>
                             <field name="date_start"/>
                             <field name="date_end"/>
                             <field name="supply_id"/>
