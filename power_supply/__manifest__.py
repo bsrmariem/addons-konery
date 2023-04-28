@@ -14,7 +14,7 @@ Power Supply history
         'security/user_groups.xml',
         'security/ir.model.access.csv',
         'views/menu_views.xml',
-#        'views/sale_order_views.xml',
+        'views/power_pricelist_views.xml',
     ],
     'installable': True,
 }
