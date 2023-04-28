@@ -7,8 +7,9 @@
         <field name="inherit_id" eval="False"/>
         <field name="type">tree</field>
         <field name="arch" type="xml">
-            <tree name="power_tag_tree" editable="top">
-                    <field name="name"/>
+            <tree string="Tags" editable="top" sample="1" multi_edit="1" default_order="name">
+                <field name="name"/>
+                <field name="color" widget="color_picker" optional="show"/>
             </tree>
         </field>
     </record>

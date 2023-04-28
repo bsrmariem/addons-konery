@@ -8,4 +8,5 @@ class PowerTag(models.Model):
     _description = 'Power Tags'
 
     name = fields.Char(string='Name', required=True)
+    color = fields.Integer('Color')
     
