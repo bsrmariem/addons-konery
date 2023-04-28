@@ -32,7 +32,28 @@
                     </h2>
                     <group name="basic_params">
                         <group>
-
+                            <field name="date_init"/>
+                            <field name="energy_type"/>
+                            <field name="partner_id"/>
+                            <field name="holding_id"/>
+                            <field name="manager_id"/>
+                            <field name="salesman_id"/>
+                            <field name="tax_exception"/>
+                            <field name="pricelist_id"/>
+                            <field name="location"/>
+                            <field name="cups"/>
+                            <field name="anual_power"/>
+                            <field name="tag_ids"/>
+                            <field name="marketeer_ids"/>
+                            <field name="dealer_id"/>
+                            <field name="monitor"/>
+                            <field name="monitor_type"/>
+                            <field name="monitor_ip"/>
+                            <field name="monitor_port"/>
+                            <field name="monitor_phone"/>
+                            <field name="meter"/>
+                            <field name="meter_note"/>
+                            <field name="contract_ids"/>
                         </group>
                         <group>
 
