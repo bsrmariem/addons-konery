@@ -9,6 +9,7 @@
         <field name="arch" type="xml">
             <tree name="power_contract_tree">
                 <field name="name"/>
+                <!--
                 <field name="partner_id" optional="show"/>
                 <field name="type_id" optional="show"/>
                 <field name="marketeer_id" optiona="show"/>
@@ -18,6 +19,7 @@
                 <field name="auto_renew" optional="hide"/>
                 <field name="supply_id" optional="hide"/>
                 <field name="date_end" optional="show"/>
+                -->
             </tree>
         </field>
     </record>
