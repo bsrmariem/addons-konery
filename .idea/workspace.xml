@@ -34,10 +34,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/power_supply/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/power_supply" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/power_supply" />
       <recent name="$PROJECT_DIR$/power_supply/views" />
       <recent name="$PROJECT_DIR$/power_supply/models" />
       <recent name="$PROJECT_DIR$" />
@@ -51,20 +52,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00013" summary="power supply v0">
-      <created>1682637766675</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1682637766675</updated>
-    </task>
-    <task id="LOCAL-00014" summary="power supply v0">
-      <created>1682637912147</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1682637912147</updated>
     </task>
     <task id="LOCAL-00015" summary="power supply v0">
       <created>1682638156830</created>
@@ -395,7 +382,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682700129587</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="power supply v0">
+      <created>1682700298887</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1682700298887</updated>
+    </task>
+    <task id="LOCAL-00063" summary="power supply v0">
+      <created>1682700433742</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1682700433742</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
