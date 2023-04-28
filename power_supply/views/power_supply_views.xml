@@ -22,7 +22,7 @@
                 <field name="monitor" optional="hide"/>
                 <field name="monitor_type" optional="hide"/>
                 <field name="meter" optional="hide"/>
-v            </tree>
+            </tree>
         </field>
     </record>
 
