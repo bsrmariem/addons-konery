@@ -10,7 +10,6 @@ class PowerSupply(models.Model):
 
     name = fields.Char(string='Name', required=True)
     active = fields.Boolean(string='Active', store=True, default=True)
-    date_init = fields.Date('Date start')
     energy_type = fields.Selection([('electricity','Electricity'),('gas','Gas')],string='Energy type')
     partner_id = fields.Many2one('res.partner', string='Customer', store=True)
     holding_id = fields.Many2one('res.partner', string='Holding')
