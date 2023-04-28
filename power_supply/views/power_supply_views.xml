@@ -11,10 +11,18 @@
                 <field name="name"/>
                 <field name="partner_id"/>
                 <field name="pricelist_id"/>
-                <field name="cups"/>
-                <field name="anual_power"/>
-                <field name="monitor"/>
-            </tree>
+                <field name="cups" optional="show"/>
+                <field name="anual_power" optional="show"/>
+                <field name="monitor" optional"hide"/>
+                <field name="tag_ids" widget="many2many_tags" optional="hide"/>
+                <field name="salesman_id" optional="hide"/>
+                <field name="manager_id" optional="hide"/>
+                <field name="tax_exception" optional="hide"/>
+                <field name="location" optional="hide"/>
+                <field name="monitor" optional="hide"/>
+                <field name="monitor_type" optional="hide"/>
+                <field name="meter" optional="hide"/>
+v            </tree>
         </field>
     </record>
 
