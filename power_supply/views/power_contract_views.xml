@@ -85,6 +85,36 @@
         </field>
     </record>
 
+    <record id="power_contract_search" model="ir.ui.view">
+        <field name="name">power.contract.search</field>
+        <field name="model">power.contract</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="arch" type="xml">
+            <search string="Search Power Contract">
+                <field name="name" filter_domain="['|', '|', ('display_name', 'ilike', self), ('partner_id', 'ilike', self), ('marketeer_id', 'ilike', self)]"/>
+                <field name="partner_id"/>
+                <field name="marketeer_id"/>
+                <field name="supply_id"/>
+                <separator/>
+                <filter string="Origin warranty" name="origin_warranty" domain="[('origin_warranty', '=', True)]"/>
+                <filter string="Compromised" name="compromise" domain="[('compromise','=',True)]"/>
+                <filter string="Auto renew" name="auto_renew" domain="[('auto_renew','=',True)]"/>
+                <separator/>
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                <separator/>
+                <group expand="0" name="group_by" string="Group By">
+                    <filter name="date_start" string="Date start" domain="[]" context="{'group_by' : 'date_start'}"/>
+                    <filter name="date_start" string="Date end" domain="[]" context="{'group_by' : 'date_end'}"/>
+                    <filter name="date" string="Date contracted" domain="[]" context="{'group_by' : 'date'}"/>
+                    <filter name="date_on" string="Activation date" domain="[]" context="{'group_by' : 'date_on'}"/>
+                    <filter name="marketeer_id" string="Marketeer" context="{'group_by': 'marketeer_id'}"/>
+                    <filter name="partner_id" string="Partner" context="{'group_by': 'partner_id'}"/>
+                    <filter name="type_id" string="Type" context="{'group_by': 'type_id'}"/>
+                </group>
+            </search>
+
+        </field>
+    </record>
 
 
 </odoo>

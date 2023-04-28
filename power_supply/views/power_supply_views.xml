@@ -112,7 +112,6 @@
         </field>
     </record>
 
-
     <record id="power_supply_search" model="ir.ui.view">
         <field name="name">power.supply.search</field>
         <field name="model">power.supply</field>
@@ -141,7 +140,6 @@
                     <filter name="dealer_id" string="Dealer" context="{'group_by': 'dealer_id'}"/>
                 </group>
             </search>
-
         </field>
     </record>
 
