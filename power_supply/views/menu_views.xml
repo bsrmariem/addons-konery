@@ -86,6 +86,7 @@
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
         <field name="domain" eval="False"/>
+        <field name="context">{'search_default_dealer_marketeer': 1}</field>
         <field name="filter" eval="False"/>
         <field name="limit">80</field>
         <field name="name">Contacts</field>
