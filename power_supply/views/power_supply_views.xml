@@ -8,7 +8,12 @@
         <field name="type">tree</field>
         <field name="arch" type="xml">
             <tree name="power_supply_tree">
-                    <field name="name"/>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="pricelist_id"/>
+                <field name="cups"/>
+                <field name="anual_power"/>
+                <field name="monitor"/>
             </tree>
         </field>
     </record>
