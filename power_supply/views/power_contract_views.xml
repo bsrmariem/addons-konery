@@ -41,7 +41,7 @@
                             <field name="auto_renew"/>
                         </group>
                     </group>
-                    <group>
+                    <group name="power_data" string="Power">
                         <group>
                             <field name="p1"/>
                             <field name="p3"/>
