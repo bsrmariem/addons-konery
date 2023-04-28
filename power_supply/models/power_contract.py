@@ -18,7 +18,7 @@ class PowerContract(models.Model):
     type_id = fields.Many2one('power.contract.type', string='Contract type')
     marketeer_id = fields.Many2one('res.partner', store=True, domain="[('is_marketeer','=',True)]")
     marketeer_contact_id = fields.Many2one('res.partner', store=True, string='Marketeer contact',
-                                           domain="[('is_marketeer','=',True),('company_type','=','person')]")
+                                           domain="[('is_marketeer','=',True)]")
 
     origin_warranty = fields.Boolean('Origin warranty')
     compromise = fields.Boolean('Compromise')
