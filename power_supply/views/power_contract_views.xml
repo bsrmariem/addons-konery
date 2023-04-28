@@ -53,12 +53,12 @@
                     <group name="power_data" string="Power">
                         <group>
                             <field name="p1"/>
+                            <field name="p2"/>
                             <field name="p3"/>
-                            <field name="p5"/>
                         </group>
                         <group>
-                            <field name="p2"/>
                             <field name="p4"/>
+                            <field name="p5"/>
                             <field name="p6"/>
                         </group>
                     </group>
