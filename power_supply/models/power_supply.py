@@ -11,7 +11,7 @@ class PowerSupply(models.Model):
     name = fields.Char(string='Name', required=True)
     active = fields.Boolean(string='Active', store=True, default=True)
     energy_type = fields.Selection([('electricity','Electricity'),('gas','Gas')],string='Energy type')
-    partner_id = fields.Many2one('res.partner', string='Customer', store=True)
+    partner_id = fields.Many2one('res.partner', string='Customer', store=True, required="1")
     holding_id = fields.Many2one('res.partner', string='Holding')
     manager_id = fields.Many2one('res.users', string='Manager')
     salesman_id = fields.Many2one('res.users', string='Salesman')
