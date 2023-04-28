@@ -82,6 +82,22 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="action_power_contact" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Contacts</field>
+        <field name="res_model">res.partner</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
     <!-- MENUS: -->
     <menuitem
             action="action_power_supply"
@@ -133,6 +149,15 @@
         <field name="name">Tags</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
         <field name="sequence">50</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_contact_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_contact"/>
+        <field name="active" eval="True"/>
+        <field name="name">Contacts</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">60</field>
         <field name="web_icon" eval="False"/>
     </record>
 
