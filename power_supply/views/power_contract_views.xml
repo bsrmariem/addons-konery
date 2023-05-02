@@ -35,16 +35,16 @@
                     </h2>
                     <group name="administrative_data" string="Administrative data">
                         <group>
-                            <field name="marketeer_id" context="{'default_is_marketeer':True}"/>
-                            <field name="marketeer_contact_id" context="{'default_is_marketeer':True}"/>
+                            <field name="marketeer_id" widget="selection" context="{'default_is_marketeer':True}"/>
+                            <field name="marketeer_contact_id" widget="selection" context="{'default_is_marketeer':True}"/>
                             <field name="date_start"/>
                             <field name="date_end"/>
-                            <field name="supply_id"/>
+                            <field name="supply_id" widget="selection"/>
                             <field name="partner_id"/>
                         </group>
                         <group>
                             <field name="date"/>
-                            <field name="type_id"/>
+                            <field name="type_id" widget="selection"/>
                             <field name="origin_warranty"/>
                             <field name="compromise"/>
                             <field name="auto_renew"/>

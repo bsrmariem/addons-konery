@@ -39,14 +39,14 @@
                             <field name="energy_type" required="1"/>
                             <field name="name"/>
                             <field name="partner_id"/>
-                            <field name="holding_id"/>
-                            <field name="salesman_id"/>
-                            <field name="manager_id"/>
+                            <field name="holding_id" widget="selection"/>
+                            <field name="salesman_id" widget="selection"/>
+                            <field name="manager_id" widget="selection"/>
                             <field name="tax_exception"/>
                         </group>
                         <group>
                             <field name="location"/>
-                            <field name="dealer_id" context="{'default_is_dealer':True}"/>
+                            <field name="dealer_id" widget="selection" context="{'default_is_dealer':True}"/>
                             <field name="pricelist_id" widget="selection"/>
                             <field name="cups"/>
                             <field name="anual_power"/>

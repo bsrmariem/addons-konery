@@ -20,7 +20,7 @@ class PowerSupply(models.Model):
 
     location = fields.Char('Location', store=True)
     cups = fields.Char('CUPS', store=True)
-    anual_power = fields.Integer('Anual power (Kw)')
+    anual_power = fields.Integer('Anual power (kWh)')
     tag_ids = fields.Many2many('power.tag', string='Tags', store=True)
     dealer_id = fields.Many2one('res.partner', store=True, domain="[('is_dealer','=',True)]")
 
