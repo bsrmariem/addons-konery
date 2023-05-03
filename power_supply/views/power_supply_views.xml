@@ -68,7 +68,7 @@
                     </notebook>
                     <notebook name="power_nb">
                         <page name="power" string="Power">
-                            <field name="power_ids">
+                            <field name="power_ids" readonly="1">
                                 <tree>
                                     <field name="date_on" required="1"/>
                                     <field name="p1" required="1"/>

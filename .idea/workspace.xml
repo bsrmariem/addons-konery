@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply v1">
+      <change beforePath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,20 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00022" summary="power supply v0">
-      <created>1682641685517</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1682641685517</updated>
-    </task>
-    <task id="LOCAL-00023" summary="power supply v0">
-      <created>1682641781645</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1682641781645</updated>
     </task>
     <task id="LOCAL-00024" summary="power supply v0">
       <created>1682641903116</created>
@@ -420,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683073183587</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="power supply v1">
+      <created>1683073450997</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1683073450997</updated>
+    </task>
+    <task id="LOCAL-00072" summary="power supply v1">
+      <created>1683073638146</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1683073638146</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
