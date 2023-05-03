@@ -36,9 +36,9 @@
                 <sheet name="main" string="Power supply">
                     <group name="basic_params">
                         <group>
-                            <field name="energy_type" required="1"/>
-                            <field name="name"/>
-                            <field name="partner_id"/>
+                            <field name="energy_type" string="Energy (*)required="1"/>
+                            <field name="name" string="Name (*)"/>
+                            <field name="partner_id" string="Customer (*)"/>
                             <field name="holding_id" widget="selection"/>
                             <field name="salesman_id" widget="selection"/>
                             <field name="manager_id" widget="selection"/>
