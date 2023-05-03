@@ -50,30 +50,21 @@
                             <field name="auto_renew"/>
                         </group>
                     </group>
-                    <group name="power_data" string="Power">
-                        <group>
-                            <field name="date_on"/>
-                        </group>
-                    </group>
-                    <div>
-                        <table>
-                            <tr>
-                                <th><t>P1/Q</t></th>
-                                <th><t>P2</t></th>
-                                <th><t>P3</t></th>
-                                <th><t>P4</t></th>
-                                <th><t>P5</t></th>
-                                <th><t>P6</t></th>
-                            </tr>
-                            <tr>
-                                <td><field name="p1"/></td>
-                                <td><field name="p2"/></td>
-                                <td><field name="p3"/></td>
-                                <td><field name="p4"/></td>
-                                <td><field name="p5"/></td>
-                                <td><field name="p6"/></td>
-                            </tr>
-                        </table>
+                    <div name="power_power" string="Power">
+                        <field name="power_ids">
+                            <tree>
+                                <field name="date_on" required="1"/>
+                                <field name="p1" required="1"/>
+                                <field name="p2"/>
+                                <field name="p3"/>
+                                <field name="p4"/>
+                                <field name="p5"/>
+                                <field name="p6"/>
+                                <field name="contractd_id" invisible="1"/>
+                                <field name="supply_id" invisible="1"/>
+                                <field name="partner_id" invisible="1"/>
+                            </tree>
+                        </field>
                     </div>
                 </sheet>
                 <div class="oe_chatter">

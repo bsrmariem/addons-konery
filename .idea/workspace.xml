@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply v0">
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply upd selection &amp; rename field">
+      <change afterPath="$PROJECT_DIR$/power_supply/models/power_power.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_contract.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/models/power_supply.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_supply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +38,16 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/power_supply" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/power_supply/views" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/power_supply" />
       <recent name="$PROJECT_DIR$/power_supply/views" />
       <recent name="$PROJECT_DIR$/power_supply/models" />
+      <recent name="$PROJECT_DIR$/power_supply" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -78,13 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00016" summary="power supply v0">
-      <created>1682638323183</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1682638323183</updated>
     </task>
     <task id="LOCAL-00017" summary="power supply v0">
       <created>1682638490419</created>
@@ -422,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682700752024</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="power supply upd selection &amp; rename field">
+      <created>1683030287844</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1683030287844</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,7 +443,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ico kon" />
     <MESSAGE value="power supply v0" />
-    <option name="LAST_COMMIT_MESSAGE" value="power supply v0" />
+    <MESSAGE value="power supply upd selection &amp; rename field" />
+    <option name="LAST_COMMIT_MESSAGE" value="power supply upd selection &amp; rename field" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

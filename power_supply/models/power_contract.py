@@ -24,6 +24,7 @@ class PowerContract(models.Model):
     origin_warranty = fields.Boolean('Origin warranty')
     compromise = fields.Boolean('Compromise')
     auto_renew = fields.Boolean('Auto renew')
+    power_ids = fields.One2many('power.power', 'contract_id', string='Lines')
 
     date_on = fields.Date(string='Activation date')
     p1 = fields.Float(string='P1/Q', store=True)
