@@ -7,8 +7,8 @@ class PowerPower(models.Model):
     _name = 'power.power'
     _description = 'Power Contract Powers'
 
-    contract_id = fields.Many2one('power.contract', string='Power contract', store=True, required=True)
-    supply_id = fields.Many2one('power.supply', related='contract_id.supply_id', string='Power supply', store=True)
+    contract_id = fields.Many2one('power.contract', string='Contract', store=True, required=True)
+    supply_id = fields.Many2one('power.supply', related='contract_id.supply_id', string='Supply', store=True)
     partner_id = fields.Many2one('res.partner', related='supply_id.partner_id', string='Customer', store=True)
     date_on = fields.Date(string='Activation date')
     p1 = fields.Float(string='P1/Q', store=True)

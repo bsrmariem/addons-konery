@@ -117,39 +117,12 @@
         <field name="web_icon" eval="False"/>
     </record>
 
-    <record id="power_pricelist_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_pricelist"/>
-        <field name="active" eval="True"/>
-        <field name="name">Pricelist</field>
-        <field name="parent_id" ref="power_supply_main_menu"/>
-        <field name="sequence">20</field>
-        <field name="web_icon" eval="False"/>
-    </record>
-
-    <record id="power_contract_type_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_contract_type"/>
-        <field name="active" eval="True"/>
-        <field name="name">Contract type</field>
-        <field name="parent_id" ref="power_supply_main_menu"/>
-        <field name="sequence">30</field>
-        <field name="web_icon" eval="False"/>
-    </record>
-
     <record id="power_contract_menu" model="ir.ui.menu">
         <field name="action" ref="action_power_contract"/>
         <field name="active" eval="True"/>
         <field name="name">Contracts</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
-        <field name="sequence">40</field>
-        <field name="web_icon" eval="False"/>
-    </record>
-
-    <record id="power_tag_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_tag"/>
-        <field name="active" eval="True"/>
-        <field name="name">Tags</field>
-        <field name="parent_id" ref="power_supply_main_menu"/>
-        <field name="sequence">50</field>
+        <field name="sequence">20</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -158,7 +131,42 @@
         <field name="active" eval="True"/>
         <field name="name">Contacts</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
-        <field name="sequence">60</field>
+        <field name="sequence">30</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_configuration_menu" model="ir.ui.menu">
+        <field name="active" eval="True"/>
+        <field name="name">Configuration</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">40</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_pricelist_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_pricelist"/>
+        <field name="active" eval="True"/>
+        <field name="name">Pricelist</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">10</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_contract_type_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_contract_type"/>
+        <field name="active" eval="True"/>
+        <field name="name">Contract type</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">20</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_tag_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_tag"/>
+        <field name="active" eval="True"/>
+        <field name="name">Tags</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">30</field>
         <field name="web_icon" eval="False"/>
     </record>
 

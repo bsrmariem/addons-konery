@@ -14,6 +14,10 @@
                             <field name="contract_id" readonly="1"/>
                             <field name="supply_id" readonly="1"/>
                             <field name="partner_id" readonly="1"/>
+                        </group>
+                    </group>
+                    <group name="power_data" string="Power">
+                        <group>
                             <field name="date_on"/>
                         </group>
                     </group>
