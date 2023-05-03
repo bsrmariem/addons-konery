@@ -59,7 +59,7 @@
                             <field name="p4"/>
                             <field name="p5"/>
                             <field name="p6"/>
-                            <field name="contractd_id" invisible="1"/>
+                            <field name="contract_id" invisible="1"/>
                             <field name="supply_id" invisible="1"/>
                             <field name="partner_id" invisible="1"/>
                         </tree>
