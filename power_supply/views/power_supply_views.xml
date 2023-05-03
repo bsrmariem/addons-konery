@@ -95,7 +95,7 @@
                                     <field name="monitor"/>
                                     <field name="monitor_type" attrs="{'invisible':[('monitor','=',False)]}"/>
                                     <field name="monitor_ip"
-                                           attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs','gsm'])]}"/>
+                                           attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs'])]}"/>
                                     <field name="monitor_port"
                                            attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs'])]}"/>
                                     <field name="monitor_phone"
