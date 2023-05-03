@@ -3,6 +3,6 @@
         <record id="group_power_supply_user" model="res.groups">
             <field name="name">Power supply</field>
             <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
-            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+            <field name="users" eval="[(4, ref('base.user_admin'))]"/>
         </record>
 </odoo>
