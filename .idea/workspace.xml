@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply upd selection &amp; rename field">
-      <change afterPath="$PROJECT_DIR$/power_supply/models/power_power.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/models/power_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_contract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/models/power_supply.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_supply.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" afterDir="false" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply v1">
       <change beforePath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,13 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00017" summary="power supply v0">
-      <created>1682638490419</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1682638490419</updated>
     </task>
     <task id="LOCAL-00018" summary="power supply v0">
       <created>1682638556839</created>
@@ -426,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683030287844</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="power supply v1">
+      <created>1683072387493</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1683072387493</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,7 +438,8 @@
     <MESSAGE value="ico kon" />
     <MESSAGE value="power supply v0" />
     <MESSAGE value="power supply upd selection &amp; rename field" />
-    <option name="LAST_COMMIT_MESSAGE" value="power supply upd selection &amp; rename field" />
+    <MESSAGE value="power supply v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="power supply v1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
