@@ -11,7 +11,7 @@
                 <sheet name="main" string="Powers">
                     <group name="administrative_data" string="Administrative data">
                         <group>
-                            <field name="contract_id" readonly="1"/>
+                            <field name="contract_id"/>
                             <field name="supply_id" readonly="1"/>
                             <field name="partner_id" readonly="1"/>
                         </group>
