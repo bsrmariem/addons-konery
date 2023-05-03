@@ -68,16 +68,18 @@
                     </notebook>
                     <notebook name="power_nb">
                         <page name="power" string="Power">
-                            <field name="contract_power_ids">
+                            <field name="power_ids">
                                 <tree>
-                                    <field name="name"/>
-                                    <field name="p1"/>
+                                    <field name="date_on" required="1"/>
+                                    <field name="p1" required="1"/>
                                     <field name="p2"/>
                                     <field name="p3"/>
                                     <field name="p4"/>
                                     <field name="p5"/>
                                     <field name="p6"/>
-                                    <field name="date_start"/>
+                                    <field name="contract_id" invisible="1"/>
+                                    <field name="supply_id" invisible="1"/>
+                                    <field name="partner_id" invisible="1"/>
                                 </tree>
                             </field>
                         </page>
