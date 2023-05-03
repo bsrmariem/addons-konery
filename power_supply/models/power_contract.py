@@ -25,12 +25,3 @@ class PowerContract(models.Model):
     compromise = fields.Boolean('Compromise')
     auto_renew = fields.Boolean('Auto renew')
     power_ids = fields.One2many('power.power', 'contract_id', string='Lines')
-
-    date_on = fields.Date(string='Activation date')
-    p1 = fields.Float(string='P1/Q', store=True)
-    p2 = fields.Float(string='P2', store=True)
-    p3 = fields.Float(string='P3', store=True)
-    p4 = fields.Float(string='P4', store=True)
-    p5 = fields.Float(string='P5', store=True)
-    p6 = fields.Float(string='P6', store=True)
-    
