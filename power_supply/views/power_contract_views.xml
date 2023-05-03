@@ -95,7 +95,6 @@
                     <filter name="date_start" string="Date start" domain="[]" context="{'group_by' : 'date_start'}"/>
                     <filter name="date_start" string="Date end" domain="[]" context="{'group_by' : 'date_end'}"/>
                     <filter name="date" string="Date contracted" domain="[]" context="{'group_by' : 'date'}"/>
-                    <filter name="date_on" string="Activation date" domain="[]" context="{'group_by' : 'date_on'}"/>
                     <separator/>
                     <filter name="marketeer_id" string="Marketeer" context="{'group_by': 'marketeer_id'}"/>
                     <filter name="partner_id" string="Partner" context="{'group_by': 'partner_id'}"/>
