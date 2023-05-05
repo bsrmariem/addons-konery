@@ -15,6 +15,7 @@ class PowerContract(models.Model):
     date_end = fields.Date(string='Date end')
     supply_id = fields.Many2one('power.supply', string='Power supply', store=True, required=True)
     partner_id = fields.Many2one('res.partner', string='Customer', related='supply_id.partner_id')
+    cups = fields.Char('CUPS', related='supply_id.cups', store=True)
 
     type_id = fields.Many2one('power.contract.type', string='Contract type')
     marketeer_id = fields.Many2one('res.partner', store=True, domain="[('is_marketeer','=',True)]")

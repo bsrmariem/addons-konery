@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <record id="power_saving_default_tree" model="ir.ui.view">
+        <field name="name">power.saving.default.tree</field>
+        <field name="model">power.saving</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree name="power_saving_tree" editable="top">
+                    <field name="partner_id"/>
+                    <field name="supply_id"/>
+                    <field name="cups"/>
+                    <field name="name"/>
+                    <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

@@ -11,6 +11,7 @@
                 <field name="name"/>
                 <field name="partner_id" optional="show"/>
                 <field name="type_id" optional="show"/>
+                <field name="cups" optional="hide"/>
                 <field name="marketeer_id" optional="show"/>
                 <field name="marketeer_contact_id" optional="hide"/>
                 <field name="origin_warranty" optional="hide"/>
@@ -45,6 +46,7 @@
                         <group>
                             <field name="date"/>
                             <field name="type_id" widget="selection"/>
+                            <field name="cups"/>
                             <field name="origin_warranty"/>
                             <field name="compromise"/>
                             <field name="auto_renew"/>

@@ -10,6 +10,7 @@
             <tree name="power_supply_tree">
                 <field name="name"/>
                 <field name="partner_id"/>
+                <field name="energy_type" optional="hide"/>
                 <field name="pricelist_id"/>
                 <field name="cups" optional="show"/>
                 <field name="anual_power" optional="show"/>
@@ -89,6 +90,19 @@
                             </field>
                         </page>
                     </notebook>
+                    <notebook name="power_saving" attrs="{'invisible':[('id','=',False)]}">
+                        <page name="saving" string="Savings">
+                            <field name="saving_ids">
+                                <tree>
+                                    <field name="partner_id" invisible="1"/>
+                                    <field name="supply_id" invisible="1"/>
+                                    <field name="cups" invisible="1"/>
+                                    <field name="name"/>
+                                    <field name="date"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
                     <notebook name="communication_nb">
                         <page name="communication" string="Communication">
                             <group name="communication_group">
@@ -102,6 +116,8 @@
                                     <field name="monitor_ip"
                                            attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs'])]}"/>
                                     <field name="monitor_port"
+                                           attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs'])]}"/>
+                                    <field name="link_address"
                                            attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs'])]}"/>
                                     <field name="monitor_phone"
                                            attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs','gsm'])]}"/>
@@ -137,6 +153,9 @@
                 <filter string="GSM" name="gsm" domain="[('monitor_type','=','gsm')]"/>
                 <filter string="GPRS" name="gsm" domain="[('monitor_type','=','gprs')]"/>
                 <filter string="Datadis" name="gsm" domain="[('monitor_type','=','datadis')]"/>
+                <separator/>
+                <filter string="electricity" name="Electrical" domain="[('energy_type','=','electricity')]"/>
+                <filter string="gas" name="Gas" domain="[('energy_type','=','gas')]"/>
                 <separator/>
                 <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
                 <separator/>

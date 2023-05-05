@@ -29,9 +29,10 @@ class PowerSupply(models.Model):
     monitor_ip = fields.Char('IP')
     monitor_port = fields.Integer('Port')
     monitor_phone = fields.Char('Phone')
+    link_address = fields.Char('Link address')
 
     meter = fields.Selection([('sold','Sold'),('exist','Exist'),('rent','Rented')])
     meter_note = fields.Char('Meter notes')
     contract_ids = fields.One2many('power.contract', 'supply_id', string='Contracts', store=True)
     power_ids = fields.One2many('power.power', 'supply_id', string='Power', store=True)
-
+    saving_ids = fields.One2many('poser.saving', 'supply_id', string='Savings', store=True)
