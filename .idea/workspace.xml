@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply v2">
-      <change beforePath="$PROJECT_DIR$/power_supply/models/power_saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_saving.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/views/power_saving_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_saving_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,34 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00045" summary="power supply v0">
-      <created>1682681710222</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1682681710222</updated>
-    </task>
-    <task id="LOCAL-00046" summary="power supply v0">
-      <created>1682691485945</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1682691485945</updated>
-    </task>
-    <task id="LOCAL-00047" summary="power supply v0">
-      <created>1682695170617</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1682695170617</updated>
-    </task>
-    <task id="LOCAL-00048" summary="power supply v0">
-      <created>1682695239417</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1682695239417</updated>
     </task>
     <task id="LOCAL-00049" summary="power supply v0">
       <created>1682695398776</created>
@@ -421,7 +393,35 @@
       <option name="project" value="LOCAL" />
       <updated>1683277264706</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="power supply v2">
+      <created>1683277825156</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1683277825156</updated>
+    </task>
+    <task id="LOCAL-00095" summary="power supply v2">
+      <created>1683277922165</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1683277922165</updated>
+    </task>
+    <task id="LOCAL-00096" summary="power supply v2">
+      <created>1683278000192</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1683278000192</updated>
+    </task>
+    <task id="LOCAL-00097" summary="power supply v2">
+      <created>1683278047051</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1683278047051</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -101,6 +101,7 @@
                                     <field name="power_qty"/>
                                     <field name="amount" widget="monetary"/>
                                     <field name="date"/>
+                                    <field name="currency_id" invisible="1"/>
                                 </tree>
                             </field>
                         </page>
