@@ -5,6 +5,7 @@ from odoo import fields, models, api
 
 class PowerSaving(models.Model):
     _name = 'power.saving'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Power Savings'
 
     name = fields.Char(string='Name', required=True)
