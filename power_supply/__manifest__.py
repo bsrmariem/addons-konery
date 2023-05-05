@@ -20,6 +20,7 @@ Power Supply history
         'views/power_contract_views.xml',
         'views/power_power_views.xml',
         'views/power_supply_views.xml',
+        'views/power_saving.xml',
         'views/res_partner_views.xml',
     ],
     'installable': True,
