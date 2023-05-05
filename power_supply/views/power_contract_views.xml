@@ -36,7 +36,8 @@
                     </h2>
                     <group name="administrative_data" string="Administrative data">
                         <group>
-                            <field name="marketeer_id" widget="selection" context="{'default_is_marketeer':True}"/>
+                            <field name="marketeer_id" options="{'no_quick_create': True, 'no_create_edit':True}"
+                                   context="{'default_is_marketeer':True}"/>
                             <field name="marketeer_contact_id" options="{'no_quick_create': True, 'no_create_edit':True}"
                                    context="{'default_is_marketeer':True}"/>
                             <field name="date_start"/>
