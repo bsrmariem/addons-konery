@@ -33,7 +33,7 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form>
-                <div name="main" string="Power supply">
+                <sheet name="main" string="Power supply">
                     <group name="basic_params">
                         <group>
                             <field name="energy_type" string="Energy (*)"/>
