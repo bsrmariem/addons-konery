@@ -105,7 +105,7 @@
             id="power_supply_main_menu"
             name="Power Supply"
             sequence="1"
-            web_icon="power_supply,static/description/credentials.png"
+            web_icon="power_supply,static/description/icon.png"
     />
 
     <record id="power_supply_menu" model="ir.ui.menu">
