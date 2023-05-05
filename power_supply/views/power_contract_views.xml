@@ -50,6 +50,7 @@
                             <field name="auto_renew"/>
                         </group>
                     </group>
+                    <!--
                     <field name="power_ids">
                         <tree editable="top">
                             <field name="date_on" required="1"/>
@@ -64,6 +65,7 @@
                             <field name="partner_id" invisible="1"/>
                         </tree>
                     </field>
+                    -->
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
