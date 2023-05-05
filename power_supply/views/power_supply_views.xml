@@ -33,7 +33,7 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form>
-                <sheet name="main" string="Power supply">
+                <div name="main" string="Power supply">
                     <group name="basic_params">
                         <group>
                             <field name="energy_type" string="Energy (*)"/>
@@ -53,9 +53,12 @@
                             <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}"/>
                         </group>
                     </group>
+                    <div attrs="{'invisible':[('id','!=',False)]}">
+                        <h3>Please, save main data prior to new contracts and powers creation !!</h3>
+                    </div>
                     <notebook name="contract_nb">
                         <page name="contract" string="Contract">
-                            <field name="contract_ids">
+                            <field name="contract_ids" attrs="{'invisible':[('id','=',False)]}">
                                 <tree>
                                     <field name="name"/>
                                     <field name="marketeer_id"/>
@@ -67,8 +70,8 @@
                         </page>
                     </notebook>
                     <notebook name="power_nb">
-                        <page name="power" string="Power" attrs="{'invisible':[('id','=',False)]}">
-                            <field name="power_ids">
+                        <page name="power" string="Power">
+                            <field name="power_ids" attrs="{'invisible':[('id','=',False)]}">
                                 <tree>
                                     <field name="date_on" required="1"/>
                                     <field name="p1" required="1"/>
