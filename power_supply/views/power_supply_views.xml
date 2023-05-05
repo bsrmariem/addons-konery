@@ -67,7 +67,7 @@
                         </page>
                     </notebook>
                     <notebook name="power_nb">
-                        <page name="power" string="Power">
+                        <page name="power" string="Power" attrs="{'invisible':[('id','=',False)]}">
                             <field name="power_ids">
                                 <tree>
                                     <field name="date_on" required="1"/>
