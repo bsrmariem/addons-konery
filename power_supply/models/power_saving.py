@@ -12,3 +12,6 @@ class PowerSaving(models.Model):
     supply_id = fields.Many2one('power.supply', string='Power supply', store=True, required=True)
     partner_id = fields.Many2one('res.partner', string='Customer', related='supply_id.partner_id')
     cups = fields.Char('CUPS', related='supply_id.cups', store=True)
+    power_qty = fields.Integer('Power(kWh)')
+    amount = fields.Monetary('Amount')
+    currency_id = fields.Many2one('res.currency', string='Currency', default=1)
