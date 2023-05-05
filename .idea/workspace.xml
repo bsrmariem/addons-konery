@@ -77,20 +77,6 @@
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
     </task>
-    <task id="LOCAL-00040" summary="power supply v0">
-      <created>1682647593862</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1682647593862</updated>
-    </task>
-    <task id="LOCAL-00041" summary="power supply v0">
-      <created>1682647679265</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1682647679265</updated>
-    </task>
     <task id="LOCAL-00042" summary="power supply v0">
       <created>1682648253094</created>
       <option name="number" value="00042" />
@@ -420,7 +406,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683246274775</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="power supply v2">
+      <created>1683246634319</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1683246634319</updated>
+    </task>
+    <task id="LOCAL-00090" summary="power supply v2">
+      <created>1683246833541</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1683246833541</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

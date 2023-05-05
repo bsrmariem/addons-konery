@@ -54,7 +54,7 @@
                         </group>
                     </group>
                     <div attrs="{'invisible':[('id','!=',False)]}">
-                        <h3> ****   Please, save main data prior to new contracts and power-limits creation !!</h3>
+                        <h3> ****   Please save prior to new contracts and power-limits creation !!</h3>
                     </div>
                     <notebook name="contract_nb" attrs="{'invisible':[('id','=',False)]}">
                         <page name="contract" string="Contract">
