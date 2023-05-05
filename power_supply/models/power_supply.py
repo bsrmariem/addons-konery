@@ -35,4 +35,4 @@ class PowerSupply(models.Model):
     meter_note = fields.Char('Meter notes')
     contract_ids = fields.One2many('power.contract', 'supply_id', string='Contracts', store=True)
     power_ids = fields.One2many('power.power', 'supply_id', string='Power', store=True)
-    saving_ids = fields.One2many('poser.saving', 'supply_id', string='Savings', store=True)
+    saving_ids = fields.One2many('power.saving', 'supply_id', string='Savings', store=True)
