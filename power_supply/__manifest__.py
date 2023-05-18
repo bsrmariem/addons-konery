@@ -7,7 +7,7 @@ Power Supply history
 """,
     'author': 'Serincloud',
     'depends': [
-        'base',
+        'base_partner_company_group',
         'mail',
     ],
     'data': [
