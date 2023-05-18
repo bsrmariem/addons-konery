@@ -40,7 +40,7 @@
                             <field name="energy_type" string="Energy (*)"/>
                             <field name="name" string="Name (*)"/>
                             <field name="partner_id" string="Customer (*)"/>
-                            <field name="holding_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
+                            <field name="company_group_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
                             <field name="salesman_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
                             <field name="manager_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
                             <field name="tax_exception"/>
@@ -145,7 +145,7 @@
         <field name="inherit_id" eval="False"/>
         <field name="arch" type="xml">
             <search string="Search Power Supply">
-                <field name="name" filter_domain="['|', '|', '|', ('name', 'ilike', self), ('location', 'ilike', self), ('partner_id', 'ilike', self), ('holding_id', 'ilike', self)]"/>
+                <field name="name" filter_domain="['|', '|', '|', ('name', 'ilike', self), ('location', 'ilike', self), ('partner_id', 'ilike', self), ('company_group_id', 'ilike', self)]"/>
                 <field name="salesman_id"/>
                 <field name="manager_id"/>
                 <field name="dealer_id"/>
