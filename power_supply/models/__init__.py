@@ -6,3 +6,5 @@ from . import power_supply
 from . import power_tag
 from . import power_power
 from . import power_saving
+from . import power_dealer
+from . import power_marketeer
