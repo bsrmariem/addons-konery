@@ -8,3 +8,4 @@ class PowerPricelist(models.Model):
     _description = 'Power Supplies'
 
     name = fields.Char(string='Name', required=True)
+    energy_type = fields.Selection([('electricity','Electricity'),('gas','Gas')],string='Energy type')
