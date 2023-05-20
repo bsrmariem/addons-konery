@@ -121,7 +121,7 @@
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
         <field name="domain" eval="False"/>
-        <field name="context">{}</field>>
+        <field name="context">{}</field>
         <field name="filter" eval="False"/>
         <field name="limit">80</field>
         <field name="name">Dealers</field>
@@ -139,7 +139,7 @@
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
         <field name="domain" eval="False"/>
-        <field name="context">{}</field>>
+        <field name="context">{}</field>
         <field name="filter" eval="False"/>
         <field name="limit">80</field>
         <field name="name">Marketeers</field>
@@ -231,7 +231,7 @@
         <field name="sequence">40</field>
         <field name="web_icon" eval="False"/>
     </record>
-<!--
+
     <record id="power_dealer_menu" model="ir.ui.menu">
         <field name="action" ref="action_power_tag"/>
         <field name="active" eval="True"/>
@@ -249,6 +249,6 @@
         <field name="sequence">60</field>
         <field name="web_icon" eval="False"/>
     </record>
--->
+
 
 </odoo>
