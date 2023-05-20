@@ -49,7 +49,7 @@
                             <field name="location"/>
                             <field name="dealer_id" options="{'no_quick_create': True, 'no_create_edit':True}"
                                    context="{'default_is_dealer':True}"/>
-                            <field name="pricelist_id" attrs="{'domain':[('energy_type','=',energy_type}"/>
+                            <field name="pricelist_id" attrs="{'domain':[('energy_type','=',energy_type)]}"/>
                             <field name="cups"/>
                             <field name="anual_power"/>
                             <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}"/>
