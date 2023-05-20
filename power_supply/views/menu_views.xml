@@ -231,7 +231,7 @@
         <field name="sequence">40</field>
         <field name="web_icon" eval="False"/>
     </record>
-
+<!--
     <record id="power_dealer_menu" model="ir.ui.menu">
         <field name="action" ref="action_power_tag"/>
         <field name="active" eval="True"/>
@@ -249,6 +249,6 @@
         <field name="sequence">60</field>
         <field name="web_icon" eval="False"/>
     </record>
-
+-->
 
 </odoo>
