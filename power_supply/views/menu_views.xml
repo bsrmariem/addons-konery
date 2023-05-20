@@ -121,7 +121,7 @@
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
         <field name="domain" eval="False"/>
-        <field name="context" eval="False"/>
+        <field name="context">{}</field>>
         <field name="filter" eval="False"/>
         <field name="limit">80</field>
         <field name="name">Dealers</field>
@@ -139,7 +139,7 @@
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
         <field name="domain" eval="False"/>
-        <field name="context" eval="False"/>
+        <field name="context">{}</field>>
         <field name="filter" eval="False"/>
         <field name="limit">80</field>
         <field name="name">Marketeers</field>
