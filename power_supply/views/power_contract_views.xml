@@ -15,6 +15,7 @@
                 <field name="marketeer_id" optional="show"/>
                 <field name="marketeer_contact_id" optional="hide"/>
                 <field name="origin_warranty" optional="hide"/>
+                <field name="atr_detached" optional="hide"/>
                 <field name="compromise" optional="hide"/>
                 <field name="auto_renew" optional="hide"/>
                 <field name="supply_id" optional="hide"/>
@@ -50,6 +51,7 @@
                             <field name="type_id" widget="selection"/>
                             <field name="cups"/>
                             <field name="origin_warranty"/>
+                            <field name="atr_detached"/>
                             <field name="compromise"/>
                             <field name="auto_renew"/>
                         </group>

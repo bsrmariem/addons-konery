@@ -20,10 +20,13 @@
                     </group>
                     <group name="power_data" string="Power">
                         <group>
+                            <field name="energy_type"/>
                             <field name="date_on"/>
+                            <field name="qgas" attrs="{'invisible':[('power_type','!=','gas')]}">
                         </group>
                     </group>
-                    <div>
+
+                    <div name="electricity_power" attrs="{'invisible':[('power_type','!=','electricity')]}">
                         <table>
                             <tr>
                                 <th><t>P1/Q</t></th>
@@ -43,6 +46,7 @@
                             </tr>
                         </table>
                     </div>
+
                 </sheet>
             </form>
         </field>
