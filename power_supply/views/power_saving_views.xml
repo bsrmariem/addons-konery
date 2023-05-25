@@ -7,15 +7,16 @@
         <field name="inherit_id" eval="False"/>
         <field name="type">tree</field>
         <field name="arch" type="xml">
-            <tree name="power_saving_tree" editable="top">
+            <tree name="power_saving_tree">
+                <field name="name"/>
                 <field name="partner_id"/>
                 <field name="supply_id"/>
                 <field name="power_qty"/>
                 <field name="amount" widget="monetary"/>
-                <field name="cups"/>
-                <field name="name"/>
+                <field name="cups" optional="show"/>
                 <field name="date"/>
                 <field name="state"/>
+                <field name="energy_type" invisible="1"/>
                 <field name="currency_id" invisible="1"/>
             </tree>
         </field>
@@ -38,6 +39,7 @@
                     <group name="general_saving">
                         <group>
                             <field name="supply_id"/>
+                            <field name="energy_type"/>
                             <field name="date"/>
                             <field name="power_qty"/>
                             <field name="amount" widget="monetary"/>
@@ -55,5 +57,33 @@
             </form>
         </field>
     </record>
+
+
+    <record id="power_saving_search" model="ir.ui.view">
+        <field name="name">power.saving.search</field>
+        <field name="model">power.saving</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="arch" type="xml">
+            <search string="Search Power Saving">
+                <field name="name" filter_domain="['|', '|', ('name', 'ilike', self), ('supply', 'ilike', self), ('cups', 'ilike', self)]"/>
+                <field name="partner_id"/>
+                <field name="cups" filter_domain="[('cups','ilike',self)]"/>
+                <field name="state"/>
+                <separator/>
+                <filter string="Draft" name="draft" domain="[('state', '=', 'draft')]"/>
+                <filter string="Sent" name="draft" domain="[('state', '=', 'sent')]"/>
+                <separator/>
+                <filter string="electricity" name="Electrical" domain="[('energy_type','=','electricity')]"/>
+                <filter string="gas" name="Gas" domain="[('energy_type','=','gas')]"/>
+                <separator/>
+                <group expand="0" name="group_by" string="Group By">
+                    <filter name="partner_id" string="Partner" context="{'group_by': 'partner_id'}"/>
+                    <filter name="supply_id" string="Supply" context="{'group_by': 'supply_id'}"/>
+                    <filter name="date" string="Date" context="{'group_by' : 'date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
 
 </odoo>
