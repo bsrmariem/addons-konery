@@ -28,7 +28,7 @@
     </record>
 
     <record id="power_supply_default_form" model="ir.ui.view">
-        <field name="name">power.contract.default.form</field>
+        <field name="name">power.supply.default.form</field>
         <field name="model">power.supply</field>
         <field name="inherit_id" eval="False"/>
         <field name="type">form</field>
@@ -74,16 +74,24 @@
                     </notebook>
                     <notebook name="power_nb" attrs="{'invisible':[('id','=',False)]}">
                         <page name="power" string="Power">
-                            <field name="power_ids">
+                            <field name="power_electricity_ids" attrs="{'invisible':[('energy_type','!=','electricity')]}">
                                 <tree>
                                     <field name="date_on" required="1"/>
-                                    <field name="qgas" attrs="{'invisible':[('energy_type','!=','gas')]}"/>
-                                    <field name="p1" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
-                                    <field name="p2" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
-                                    <field name="p3" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
-                                    <field name="p4" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
-                                    <field name="p5" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
-                                    <field name="p6" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
+                                    <field name="p1"/>
+                                    <field name="p2"/>
+                                    <field name="p3"/>
+                                    <field name="p4"/>
+                                    <field name="p5"/>
+                                    <field name="p6"/>
+                                    <field name="energy_type" invisible="1"/>
+                                    <field name="supply_id" invisible="1"/>
+                                    <field name="partner_id" invisible="1"/>
+                                </tree>
+                            </field>
+                            <field name="power_gas_ids" attrs="{'invisible':[('energy_type','!=','gas')]}">
+                                <tree>
+                                    <field name="date_on" required="1"/>
+                                    <field name="qgas"/>
                                     <field name="energy_type" invisible="1"/>
                                     <field name="supply_id" invisible="1"/>
                                     <field name="partner_id" invisible="1"/>

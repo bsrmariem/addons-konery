@@ -34,5 +34,6 @@ class PowerSupply(models.Model):
     meter = fields.Selection([('sold','Sold'),('exist','Exist'),('rent','Rented')])
     meter_note = fields.Char('Meter notes')
     contract_ids = fields.One2many('power.contract', 'supply_id', string='Contracts', store=True)
-    power_ids = fields.One2many('power.power', 'supply_id', string='Power', store=True)
+    power_electricity_ids = fields.One2many('power.power', 'supply_id', string='Electrical Power', store=True)
+    power_gas_ids = fields.One2many('power.power', 'supply_id', string='Gas Power', store=True)
     saving_ids = fields.One2many('power.saving', 'supply_id', string='Savings', store=True)
