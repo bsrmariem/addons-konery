@@ -22,7 +22,7 @@
                         <group>
                             <field name="energy_type"/>
                             <field name="date_on"/>
-                            <field name="qgas" attrs="{'invisible':[('power_type','!=','gas')]}">
+                            <field name="qgas" attrs="{'invisible':[('power_type','!=','gas')]}"/>
                         </group>
                     </group>
 
