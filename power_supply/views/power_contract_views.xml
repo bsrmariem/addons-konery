@@ -19,6 +19,7 @@
                 <field name="compromise" optional="hide"/>
                 <field name="auto_renew" optional="hide"/>
                 <field name="supply_id" optional="hide"/>
+                <field name="energy_type" optional="hide"/>
                 <field name="date_end" optional="show"/>
             </tree>
         </field>
@@ -44,6 +45,7 @@
                             <field name="date_start"/>
                             <field name="date_end"/>
                             <field name="supply_id" widget="selection"/>
+                            <field name="energy_type"/>
                             <field name="partner_id"/>
                         </group>
                         <group>
@@ -56,22 +58,6 @@
                             <field name="auto_renew"/>
                         </group>
                     </group>
-                    <!--
-                    <field name="power_ids">
-                        <tree editable="top">
-                            <field name="date_on" required="1"/>
-                            <field name="p1" required="1"/>
-                            <field name="p2"/>
-                            <field name="p3"/>
-                            <field name="p4"/>
-                            <field name="p5"/>
-                            <field name="p6"/>
-                            <field name="contract_id" invisible="1"/>
-                            <field name="supply_id" invisible="1"/>
-                            <field name="partner_id" invisible="1"/>
-                        </tree>
-                    </field>
-                    -->
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
