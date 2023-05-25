@@ -37,3 +37,11 @@ class PowerSupply(models.Model):
     power_electricity_ids = fields.One2many('power.power', 'supply_id', string='Electrical Power', store=True)
     power_gas_ids = fields.One2many('power.power', 'supply_id', string='Gas Power', store=True)
     saving_ids = fields.One2many('power.saving', 'supply_id', string='Savings', store=True)
+
+    @api.depends('power_electricity_ids', 'power_gas_ids', 'contract_ids')
+    def _get_energy_type_readonly(self):
+        total = False
+        if (self.power_electricity_ids.ids) or (self.power_gas_ids) or (self.contract_ids):
+            total = True
+        self.energy_type_readonly = total
+    energy_type_readonly = fields.Boolean('Energy type is readonly', compute='_get_energy_type_readonly')
