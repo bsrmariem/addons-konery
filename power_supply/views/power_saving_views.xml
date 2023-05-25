@@ -39,10 +39,12 @@
                     <group name="general_saving">
                         <group>
                             <field name="supply_id"/>
-                            <field name="energy_type"/>
-                            <field name="date"/>
                             <field name="power_qty"/>
                             <field name="amount" widget="monetary"/>
+                            <field name="date"/>
+                        </group>
+                        <group>
+                            <field name="energy_type"/>
                             <field name="partner_id"/>
                             <field name="cups"/>
                             <field name="currency_id" invisible="1"/>
