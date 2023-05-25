@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_cnmc_contact" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context"></field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">SIM</field>
+        <field name="res_model">res.sim</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_cnmc_contact_dist" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context"></field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Distributor</field>
+        <field name="res_model">res.distributor</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_cnmc_contact_mark" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context"></field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Marketer</field>
+        <field name="res_model">res.marketer</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="cnmc_importer_wizard_action" model="ir.actions.act_window">
+        <field name="name">CNMC Importer Wizard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cnmc.importer</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="cnmc_importer_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="cnmc_wizard_importer"
+              name="CNMC Importer"
+              action="cnmc_importer_wizard_action"
+              parent="power_supply.power_configuration_menu"
+              sequence="180"/>
+
+    <record id="power_contact_cnmc_menu" model="ir.ui.menu">
+        <field name="active" eval="True"/>
+        <field name="name">CNMC Contacts</field>
+        <field name="parent_id" ref="power_supply.power_supply_main_menu"/>
+        <field name="sequence">35</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_contact_cnmc_sim" model="ir.ui.menu">
+        <field name="active" eval="True"/>
+         <field name="action" ref="action_cnmc_contact"/>
+        <field name="name">SIM</field>
+        <field name="parent_id" ref="power_contact_cnmc_menu"/>
+        <field name="sequence">10</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+     <record id="power_contact_cnmc_distributor" model="ir.ui.menu">
+        <field name="active" eval="True"/>
+         <field name="action" ref="action_cnmc_contact_dist"/>
+        <field name="name">Distributors</field>
+        <field name="parent_id" ref="power_contact_cnmc_menu"/>
+        <field name="sequence">15</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+     <record id="power_contact_cnmc_marketer" model="ir.ui.menu">
+        <field name="active" eval="True"/>
+         <field name="action" ref="action_cnmc_contact_mark"/>
+        <field name="name">Marketers</field>
+        <field name="parent_id" ref="power_contact_cnmc_menu"/>
+        <field name="sequence">20</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+</odoo>

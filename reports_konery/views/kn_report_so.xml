@@ -1056,9 +1056,9 @@
                                         </td>
 
 
-                                        <td t-if="display_discount" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+                                        <!--<td t-if="display_discount" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
                                             <span t-field="line.discount"/>
-                                        </td>
+                                        </td>-->
 
                                     </t>
                                     <t t-if="line.display_type == 'line_section'">

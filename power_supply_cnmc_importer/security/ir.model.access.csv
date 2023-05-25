@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_marketer,Comercializadores,model_res_marketer,power_supply.group_power_supply_user,1,1,1,1
+access_res_distributor,Distribuidores,model_res_distributor,power_supply.group_power_supply_user,1,1,1,1
+access_res_sim,Sim,model_res_sim,power_supply.group_power_supply_user,1,1,1,1
+access_cnmc_wizard_importer,CNMC Wizard,model_cnmc_importer,power_supply.group_power_supply_user,1,1,1,1
+
+
