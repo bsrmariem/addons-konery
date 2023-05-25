@@ -22,11 +22,11 @@
                         <group>
                             <field name="energy_type"/>
                             <field name="date_on"/>
-                            <field name="qgas" attrs="{'invisible':[('power_type','!=','gas')]}"/>
+                            <field name="qgas" attrs="{'invisible':[('energy_type','!=','gas')]}"/>
                         </group>
                     </group>
 
-                    <div name="electricity_power" attrs="{'invisible':[('power_type','!=','electricity')]}">
+                    <div name="electricity_power" attrs="{'invisible':[('energy_type','!=','electricity')]}">
                         <table>
                             <tr>
                                 <th><t>P1/Q</t></th>
