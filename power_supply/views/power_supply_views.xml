@@ -168,8 +168,8 @@
                 <filter string="GPRS" name="gsm" domain="[('monitor_type','=','gprs')]"/>
                 <filter string="Datadis" name="gsm" domain="[('monitor_type','=','datadis')]"/>
                 <separator/>
-                <filter string="electricity" name="Electrical" domain="[('energy_type','=','electricity')]"/>
-                <filter string="gas" name="Gas" domain="[('energy_type','=','gas')]"/>
+                <filter string="Electricity" name="electricity" domain="[('energy_type','=','electricity')]"/>
+                <filter string="Gas" name="gas" domain="[('energy_type','=','gas')]"/>
                 <separator/>
                 <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
                 <separator/>

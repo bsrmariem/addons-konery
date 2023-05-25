@@ -73,8 +73,8 @@
                 <filter string="Draft" name="draft" domain="[('state', '=', 'draft')]"/>
                 <filter string="Sent" name="draft" domain="[('state', '=', 'sent')]"/>
                 <separator/>
-                <filter string="electricity" name="Electrical" domain="[('energy_type','=','electricity')]"/>
-                <filter string="gas" name="Gas" domain="[('energy_type','=','gas')]"/>
+                <filter string="Electricity" name="electricity" domain="[('energy_type','=','electricity')]"/>
+                <filter string="Gas" name="gas" domain="[('energy_type','=','gas')]"/>
                 <separator/>
                 <group expand="0" name="group_by" string="Group By">
                     <filter name="partner_id" string="Partner" context="{'group_by': 'partner_id'}"/>
