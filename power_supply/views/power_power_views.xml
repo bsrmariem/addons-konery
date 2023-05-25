@@ -14,7 +14,7 @@
                             <field name="partner_id" readonly="1"/>
                             <field name="supply_id" readonly="1"/>
                         </group>
-                        <group
+                        <group>
                             <field name="contract_id" domain="[('supply_id','=',supply_id)]"/>
                             <field name="type_id"/>
                         </group>
