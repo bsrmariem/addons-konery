@@ -15,6 +15,7 @@
                 <field name="cups"/>
                 <field name="name"/>
                 <field name="date"/>
+                <field name="state"/>
                 <field name="currency_id" invisible="1"/>
             </tree>
         </field>
@@ -27,6 +28,9 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <field name="state" widget="statusbar" class="o_field_statusbar" options="{'clickable': '1', 'fold_field': 'fold'}"/>
+                </header>
                 <sheet name="main" string="Power saving">
                     <h1>
                         <field name="name"/>
