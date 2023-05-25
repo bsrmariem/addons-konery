@@ -7,11 +7,14 @@ class PowerPower(models.Model):
     _name = 'power.power'
     _description = 'Power Contract Powers'
 
-#    contract_id = fields.Many2one('power.contract', string='Contract', store=True, required=True)
     supply_id = fields.Many2one('power.supply', string='Supply', store=True)
     energy_type = fields.Selection([('electricity','Electricity'),('gas','Gas')],string='Energy type',
                                    related='supply_id.energy_type')
+
     partner_id = fields.Many2one('res.partner', related='supply_id.partner_id', string='Customer', store=True)
+    contract_id = fields.Many2one('power.contract', string='Contract', store=True, required=True)
+    type_id = fields.Many2one('power.contract.type', string='Type', store=True, related='contract_id.type_id')
+
     date_on = fields.Date(string='Activation date')
     qgas = fields.Float(string='Q', store=True)
     p1 = fields.Float(string='P1', store=True)
