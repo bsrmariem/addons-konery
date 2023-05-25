@@ -37,7 +37,7 @@
                 <sheet name="main" string="Power supply">
                     <group name="basic_params">
                         <group>
-                            <field name="energy_type" string="Energy (*)"/>
+                            <field name="energy_type" string="Energy (*)" attrs="{'readonly':[('power_ids','!=',False)]}"/>
                             <field name="name" string="Name (*)"/>
                             <field name="partner_id" string="Customer (*)"/>
                             <field name="company_group_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
