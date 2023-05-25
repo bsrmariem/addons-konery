@@ -84,6 +84,7 @@
                                     <field name="p4" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
                                     <field name="p5" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
                                     <field name="p6" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
+                                    <field name="energy_type" invisible="1"/>
                                     <field name="supply_id" invisible="1"/>
                                     <field name="partner_id" invisible="1"/>
                                 </tree>
