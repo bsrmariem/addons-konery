@@ -20,3 +20,4 @@ class PowerSaving(models.Model):
     currency_id = fields.Many2one('res.currency', string='Currency', default=1)
     state = fields.Selection([('draft','Draft'),('sent','Sent'),('done','Done'),('cancel','Cancel')],
                              string='State', default='draft')
+    description = fields.Html('Description')
