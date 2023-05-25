@@ -17,6 +17,7 @@ class PowerContract(models.Model):
     energy_type = fields.Selection([('electricity', 'Electricity'), ('gas', 'Gas')], string='Energy type',
                                    related='supply_id.energy_type')
     partner_id = fields.Many2one('res.partner', string='Customer', related='supply_id.partner_id')
+    company_group_id = fields.Many2one('res.partner', string='Holding', related='partner_id.company_group_id')
     cups = fields.Char('CUPS', related='supply_id.cups', store=True)
 
     type_id = fields.Many2one('power.contract.type', string='Contract type')
