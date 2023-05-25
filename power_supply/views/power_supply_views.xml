@@ -39,7 +39,7 @@
                         <group>
                             <field name="name" string="Name (*)"/>
                             <field name="energy_type" string="Energy (*)"
-                                   attrs="{'readonly':[('energy_type_readonly','=',True)}"/>
+                                   attrs="{'readonly':[('energy_type_readonly','=',True)]}"/>
                             <field name="partner_id" string="Customer (*)"/>
                             <field name="company_group_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
                             <field name="salesman_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
