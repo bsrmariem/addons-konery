@@ -57,7 +57,7 @@
                         </group>
                     </group>
 
-                    <group name="administrative_data" string="Administrative data">
+                    <group name="administrative_data" string="Supply and Customer">
                         <group>
                             <field name="supply_id" widget="selection"/>
                             <field name="energy_type"/>
