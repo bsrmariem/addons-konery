@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="cnmc_importer_wizard_action" model="ir.actions.act_window">
+        <field name="name">CNMC Importer Wizard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cnmc.importer</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="cnmc_importer_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="cnmc_wizard_importer"
+              name="CNMC Importer"
+              action="cnmc_importer_wizard_action"
+              parent="power_supply.power_configuration_menu"
+              sequence="180"/>
+
+</odoo>
