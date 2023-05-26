@@ -300,7 +300,7 @@
     </record>
 
     <record id="power_com_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_sim"/>
+        <field name="action" ref="action_power_com"/>
         <field name="active" eval="True"/>
         <field name="name">Communications</field>
         <field name="parent_id" ref="power_configuration_menu"/>
