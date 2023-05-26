@@ -175,7 +175,7 @@
     </record>
 
     <!-- COMMUNICATION WINDOW ACTION: -->
-    <record id="action_power_com" model="ir.actions.act_window">
+    <record id="action_power_communication" model="ir.actions.act_window">
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
         <field name="domain" eval="False"/>
