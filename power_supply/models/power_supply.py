@@ -22,7 +22,7 @@ class PowerSupply(models.Model):
     cups = fields.Char('CUPS', store=True)
     anual_power = fields.Integer('Anual power (kWh)')
     tag_ids = fields.Many2many('power.tag', string='Tags', store=True)
-    dealer_id = fields.Many2one('res.partner', store=True, domain="[('is_dealer','=',True)]")
+    dealer_id = fields.Many2one('power.dealer', store=True)
 
     monitor = fields.Boolean('Monitorized')
     monitor_type = fields.Selection([('gprs','GPRS'),('gsm','GSM'),('datadis','Datadis')])

@@ -21,7 +21,7 @@ Power Supply history
         'views/power_power_views.xml',
         'views/power_supply_views.xml',
         'views/power_saving_views.xml',
-        'views/res_partner_views.xml',
+#        'views/res_partner_views.xml',
         'views/power_dealer_views.xml',
         'views/power_marketeer_views.xml',
         'views/power_sim_views.xml',
