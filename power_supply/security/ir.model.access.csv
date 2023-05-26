@@ -9,4 +9,4 @@ access_power_saving,Ahorros en suministros,model_power_saving,power_supply.group
 access_power_dealer,Power dealers,model_power_dealer,power_supply.group_power_supply_user,1,1,1,1
 access_power_marketeer,Power marketeers,model_power_marketeer,power_supply.group_power_supply_user,1,1,1,1
 access_power_sim,Power Sims,model_power_sim,power_supply.group_power_supply_user,1,1,1,1
-access_power_com,Power Communitaion,model_power_com,power_supply.group_power_supply_user,1,1,1,1
+access_power_communication,Power Communitaion,model_power_communication,power_supply.group_power_supply_user,1,1,1,1
