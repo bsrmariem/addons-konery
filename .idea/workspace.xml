@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply v4">
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_power_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_power_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply/models/power_com.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_sim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/views/menu_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/menu_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +40,12 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/power_supply/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/power_supply/models" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/power_supply/views" />
       <recent name="$PROJECT_DIR$/power_supply/models" />
+      <recent name="$PROJECT_DIR$/power_supply/views" />
       <recent name="$PROJECT_DIR$/power_supply" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -76,13 +81,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00101" summary="power supply v2">
-      <created>1683278883657</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1683278883657</updated>
     </task>
     <task id="LOCAL-00102" summary="power supply v2">
       <created>1683279028648</created>
@@ -420,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685114638051</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="power supply v4">
+      <created>1685114764112</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1685114764112</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

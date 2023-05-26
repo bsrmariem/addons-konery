@@ -18,6 +18,7 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <!-- POWER PRICELIST WINDOW ACTION: -->
     <record id="action_power_pricelist" model="ir.actions.act_window">
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
@@ -34,6 +35,7 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <!-- Contract TYPES WINDOW ACTION: -->
     <record id="action_power_contract_type" model="ir.actions.act_window">
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
@@ -50,6 +52,7 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <!-- CONTRACTS WINDOW ACTION: -->
     <record id="action_power_contract" model="ir.actions.act_window">
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
@@ -66,6 +69,7 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <!-- TAGS ON SUPPLYs WINDOW ACTION: -->
     <record id="action_power_tag" model="ir.actions.act_window">
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
@@ -82,6 +86,7 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <!-- CONTRACTED POWERS WINDOW ACTION: -->
     <record id="action_power_power" model="ir.actions.act_window">
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
@@ -98,6 +103,7 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <!-- SAVING WINDOW ACTION: -->
     <record id="action_power_saving" model="ir.actions.act_window">
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
@@ -149,6 +155,7 @@
         <field name="view_id" eval="False"/>
         <field name="view_mode">tree,form</field>
     </record>
+
     <!-- SIMS WINDOW ACTION: -->
     <record id="action_power_sim" model="ir.actions.act_window">
         <field name="binding_model_id" eval="False"/>
@@ -159,6 +166,24 @@
         <field name="limit">80</field>
         <field name="name">Sims</field>
         <field name="res_model">power.sim</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- COMMUNICATION WINDOW ACTION: -->
+    <record id="action_power_com" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context">{}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Communications</field>
+        <field name="res_model">power.com</field>
         <field name="search_view_id" eval="False"/>
         <field name="target">current</field>
         <field name="type">ir.actions.act_window</field>
@@ -271,6 +296,15 @@
         <field name="name">Sims</field>
         <field name="parent_id" ref="power_configuration_menu"/>
         <field name="sequence">80</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_com_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_sim"/>
+        <field name="active" eval="True"/>
+        <field name="name">Communications</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">90</field>
         <field name="web_icon" eval="False"/>
     </record>
 
