@@ -7,7 +7,7 @@
         <field name="inherit_id" eval="False"/>
         <field name="type">tree</field>
         <field name="arch" type="xml">
-            <tree name="power_marketeer_tree" editable="top">
+            <tree name="power_marketeer_tree">
                     <field name="name"/>
                 <field name="active" optional="show"/>
                 <field name="order_number" optional="show"/>
