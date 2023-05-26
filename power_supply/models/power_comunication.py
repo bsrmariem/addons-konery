@@ -45,7 +45,7 @@ class PowerCommunication(models.Model):
 
     description = fields.Html('Description', store=True)
 
-    @api.onchage('sim_id')
+    @api.onchange('sim_id')
     def _update_konery_sim_data(self):
         self.write({'iccid':sim_id.name, 'phone':sim_id.phone, 'access_ip':sim_id.access_ip,
                     'access_port':sim_id.access_port, 'control_port':sim_id.control_port
