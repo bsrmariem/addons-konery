@@ -8,7 +8,8 @@
         <field name="type">tree</field>
         <field name="arch" type="xml">
             <tree name="power_contract_type_tree" editable="top">
-                    <field name="name"/>
+                <field name="name"/>
+                <field name="energy_type"/>
             </tree>
         </field>
     </record>
