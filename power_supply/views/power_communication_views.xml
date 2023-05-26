@@ -69,7 +69,17 @@
                             <field name="protocol_port"/>
                         </group>
                     </group>
-                    <field name="description"/>
+                    <group name="info" string="INFO">
+                        <group>
+                            <field name="create_date"/>
+                            <field name="write_date"/>
+                            <field name="write_uid"/>
+                        </group>
+                        <group>
+                            <field name="description"/>
+                        </group>
+                    </group>
+
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>

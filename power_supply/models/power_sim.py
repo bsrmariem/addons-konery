@@ -27,3 +27,8 @@ class PowerSim(models.Model):
 
     # CAMPO O2M A DESTINOS SIM PARA SI HAY ALGO, EL ESTADO CAMBIE A USED:
     communication_ids = fields.One2many('power.communication', 'sim_id', string='Communications', store=True)
+
+    @api.depends('communication_ids')
+    def _get_sim_used(self):
+        if self.communication_ids.ids:
+            self.state = 'used'
