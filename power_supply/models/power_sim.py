@@ -4,7 +4,7 @@
 from odoo import api, fields, models, _
 # VER CON PEDRO QUE LOS STATES NO SE IMPORTAN:
 STATE = [('available','Available'),('used','Used'),('cancel','Cancel')]
-COVERAGE = [('movistar','Movistar'),('Multi COB'),('orange','Orange'), ('telefonica','Telefonica')]
+COVERAGE = [('movistar','Movistar'),('multicob','Multi COB'),('orange','Orange'), ('telefonica','Telefonica')]
 
 class PowerSim(models.Model):
     _name = 'power.sim'
