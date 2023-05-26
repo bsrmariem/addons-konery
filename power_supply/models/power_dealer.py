@@ -8,3 +8,8 @@ class PowerDealer(models.Model):
     _description = 'Power Dealers'
 
     name = fields.Char(string='Name', required=True)
+    active = fields.Boolean('Active', default=True)
+    order_number = fields.Char("Order number")
+    phone = fields.Char("Phone")
+    cif = fields.Char("CIF")
+    web = fields.Char("Web")
