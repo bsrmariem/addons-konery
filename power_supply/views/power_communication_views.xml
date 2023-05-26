@@ -9,6 +9,11 @@
         <field name="arch" type="xml">
             <tree name="power_communication_tree">
                 <field name="name"/>
+                <field name="supply_id"/>
+                <field name="partner_id"/>
+                <field name="phone"/>
+                <field name="access_ip"/>
+                <field name="access_port"/>
             </tree>
         </field>
     </record>
@@ -24,23 +29,41 @@
                     <h2>
                         <field name="name"/>
                     </h2>
-                    <!--
                     <group name="administrative_data" string="Administrative data">
                         <group>
+                            <field name="type"/>
+                            <field name="photovoltaic"/>
+                            <field name="supply_id"/>
+                            <field name="partner_id"/>
+                            <field name="cups"/>
+                        </group>
+                        <group>
+                            <field name="meter_brand"/>
+                            <field name="meter_link_addr"/>
+                            <field name="meter_point"/>
+                            <field name="meter_serial_speed"/>
+                            <field name="meter_optical_speed"/>
+                            <field name="meter_voltage_ratio"/>
+                            <field name="meter_intensity_ratio"/>
+                            <field name="meter_image"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="sim_owner"/>
+                            <field name="sim_id"/>
                             <field name="iccid"/>
+                            <field name="phone"/>
+                            <field name="protocol_communication"/>
+                        </group>
+                        <group>
                             <field name="access_ip"/>
                             <field name="access_port"/>
                             <field name="control_port"/>
-                            <field name="active"/>
-                            <field name="application_port"/>
-                        </group>
-                        <group>
-                            <field name="phone"/>
-                            <field name="state"/>
-                            <field name="coverage"/>
+                            <field name="protocol_port"/>
                         </group>
                     </group>
-                    -->
+                    <field name="description"/>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
