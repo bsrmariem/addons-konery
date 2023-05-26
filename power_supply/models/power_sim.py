@@ -15,8 +15,8 @@ class PowerSim(models.Model):
     name = fields.Char(string='Name', required=True)
     iccid = fields.Char("ICCID")
     access_ip = fields.Char("Access IP")
-    access_port = fields.Char("Access port")
-    control_port = fields.Char("Control port")
+    access_port = fields.Integer("Access port")
+    control_port = fields.Integer("Control port")
     active = fields.Boolean('Active', default=True)
     application_port = fields.Char("Application port")
     phone = fields.Char("Phone")
@@ -25,6 +25,5 @@ class PowerSim(models.Model):
     state = fields.Selection(selection=STATE, string="State")
     coverage = fields.Selection(selection=COVERAGE, string="Coverage")
 
-    # AÑADIR UN CAMPO O2M A DESTINOS SIM PARA SI HAY ALGO, EL ESTADO CAMBIE A USED:
-
-
+    # CAMPO O2M A DESTINOS SIM PARA SI HAY ALGO, EL ESTADO CAMBIE A USED:
+    communication_ids = fields.One2many('power.communication', 'sim_id', string='Communications', store=True)
