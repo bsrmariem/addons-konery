@@ -24,6 +24,7 @@ Power Supply history
         'views/power_dealer_views.xml',
         'views/power_marketeer_views.xml',
         'views/power_sim_views.xml',
+        'views/power_communication_views.xml',
     ],
     'installable': True,
 }

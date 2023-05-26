@@ -9,6 +9,7 @@ COMPORT     = [('rs232','RS232'),('rs485','RS485'),('ethernet','Ethernet'),('opt
 
 class PowerCommunication(models.Model):
     _name = 'power.communication'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Power Communication'
 
     name = fields.Char(string='Device name', required=True, store=True)
@@ -27,7 +28,7 @@ class PowerCommunication(models.Model):
     meter_serial_speed = fields.Char('Serial speed', store=True)
     meter_optical_speed = fields.Char('Optical speed', store=True)
     meter_voltage_ratio = fields.Char('Voltage ratio', store=True)
-    meter_intensity_ratio = fields.Char('Intensity address', store=True)
+    meter_intensity_ratio = fields.Char('Intensity ratio', store=True)
     meter_image = fields.Binary('Meter image', store=True)
 
     # COMM:

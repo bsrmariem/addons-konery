@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <record id="power_communication_default_tree" model="ir.ui.view">
+        <field name="name">power.communication.default.tree</field>
+        <field name="model">power.communication</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree name="power_communication_tree">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="power_communication_default_form" model="ir.ui.view">
+        <field name="name">power.communication.default.form</field>
+        <field name="model">power.communication</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet name="main" string="Communications">
+                    <h2>
+                        <field name="name"/>
+                    </h2>
+                    <!--
+                    <group name="administrative_data" string="Administrative data">
+                        <group>
+                            <field name="iccid"/>
+                            <field name="access_ip"/>
+                            <field name="access_port"/>
+                            <field name="control_port"/>
+                            <field name="active"/>
+                            <field name="application_port"/>
+                        </group>
+                        <group>
+                            <field name="phone"/>
+                            <field name="state"/>
+                            <field name="coverage"/>
+                        </group>
+                    </group>
+                    -->
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" options="{'post_refresh':'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>
