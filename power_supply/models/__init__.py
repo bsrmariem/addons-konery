@@ -8,4 +8,4 @@ from . import power_saving
 from . import power_dealer
 from . import power_marketeer
 from . import power_sim
-from . import power_com
+from . import power_comunication
