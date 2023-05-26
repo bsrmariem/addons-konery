@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply v3">
-      <change afterPath="$PROJECT_DIR$/power_supply/models/power_sim.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply/views/power_sim_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/__manifest__.py" afterDir="false" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply v4">
       <change beforePath="$PROJECT_DIR$/power_supply/models/power_dealer.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_dealer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/models/power_marketeer.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_marketeer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_dealer_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_dealer_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply_cnmc_importer/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply_cnmc_importer/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_sim.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,13 +78,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00087" summary="power supply v2">
-      <created>1683246200330</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1683246200330</updated>
     </task>
     <task id="LOCAL-00088" summary="power supply v2">
       <created>1683246274775</created>
@@ -428,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685017087587</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="power supply v4">
+      <created>1685091396372</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1685091396372</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -449,7 +443,8 @@
     <MESSAGE value="power supply v1" />
     <MESSAGE value="power supply v2" />
     <MESSAGE value="power supply v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="power supply v3" />
+    <MESSAGE value="power supply v4" />
+    <option name="LAST_COMMIT_MESSAGE" value="power supply v4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

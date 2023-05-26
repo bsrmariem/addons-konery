@@ -8,7 +8,7 @@ STATE = [
     ('occupied', 'Occupied'),
 ]
 
-class ResSim(models.Model):
+class PowerSim(models.Model):
     _name = 'power.sim'
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Sims'

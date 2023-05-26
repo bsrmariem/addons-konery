@@ -5,6 +5,7 @@ from odoo import fields, models, api
 
 class PowerMarketeer(models.Model):
     _name = 'power.marketeer'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Power Marketeer'
 
     name = fields.Char(string='Name', required=True)
