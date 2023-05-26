@@ -23,3 +23,11 @@ class PowerPower(models.Model):
     p4 = fields.Float(string='P4', store=True)
     p5 = fields.Float(string='P5', store=True)
     p6 = fields.Float(string='P6', store=True)
+
+    @api.depends('supply_id', 'date_on')
+    def _get_power_power_name(self):
+        name = "/"
+        if (self.supply_id.id) and (self.date_on):
+            name = str(self.supply_id.name) + " > " + str(self.date_on)
+        self.name = name
+    name = fields.Char('Name', store=True, compute='_get_power_power_name')
