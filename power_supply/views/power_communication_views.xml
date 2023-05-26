@@ -34,21 +34,27 @@
                             <field name="type"/>
                             <field name="photovoltaic"/>
                             <field name="supply_id"/>
+                        </group>
+                        <group>
                             <field name="partner_id"/>
                             <field name="cups"/>
                         </group>
+                    </group>
+                    <group name="meter" string="Meter">
                         <group>
                             <field name="meter_brand"/>
                             <field name="meter_link_addr"/>
                             <field name="meter_point"/>
                             <field name="meter_serial_speed"/>
+                        </group>
+                        <group>
                             <field name="meter_optical_speed"/>
                             <field name="meter_voltage_ratio"/>
                             <field name="meter_intensity_ratio"/>
                             <field name="meter_image"/>
                         </group>
                     </group>
-                    <group>
+                    <group name="communications" string="Communications">
                         <group>
                             <field name="sim_owner"/>
                             <field name="sim_id"/>
