@@ -29,7 +29,7 @@
                     <h2>
                         <field name="name"/>
                     </h2>
-                    <group name="communication_data" string="Communication data">
+                    <group name="communication" string="Communication">
                         <group>
                             <field name="type"/>
                             <field name="photovoltaic"/>
@@ -65,7 +65,7 @@
                             <field name="meter_optical_speed"/>
                             <field name="meter_voltage_ratio"/>
                             <field name="meter_intensity_ratio"/>
-                            <field name="meter_image"/>
+                            <field name="meter_image" widget="image"/>
                         </group>
                     </group>
                     <group name="info" string="INFO">
