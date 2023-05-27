@@ -3,7 +3,7 @@
 
 from odoo import api, fields, models, _
 # VER CON PEDRO QUE LOS STATES NO SE IMPORTAN:
-STATE = [('available','Available'),('used','Used'),('cancel','Cancel')]
+STATE = [('available','Available'),('used','Used')]
 COVERAGE = [('movistar','Movistar'),('multicob','Multi COB'),('orange','Orange'), ('telefonica','Telefonica')]
 
 class PowerSim(models.Model):
@@ -30,5 +30,7 @@ class PowerSim(models.Model):
 
     @api.onchange('communication_ids','state')
     def _get_sim_used(self):
+        state = 'available'
         if self.communication_ids.ids:
-            self.state = 'used'
+            state = 'used'
+        self.state = state
