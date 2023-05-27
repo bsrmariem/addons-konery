@@ -204,7 +204,7 @@
     <record id="power_supply_menu" model="ir.ui.menu">
         <field name="action" ref="action_power_supply"/>
         <field name="active" eval="True"/>
-        <field name="name">Power Supply</field>
+        <field name="name">Supplies</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
         <field name="sequence">10</field>
         <field name="web_icon" eval="False"/>
