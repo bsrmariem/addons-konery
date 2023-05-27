@@ -35,6 +35,11 @@ class PowerCommunication(models.Model):
     sim_owner = fields.Selection([('konery','Konery'),('dealer','Dealer')], string='SIM Owner', store=True)
     sim_id = fields.Many2one('power.sim', string='SIM', store=True, copy=False)
 
+    protocol_communication = fields.Selection(selection=COMPROTOCOL, store=True, copy=False)
+    protocol_port = fields.Selection(selection=COMPORT, store=True, copy=False)
+
+    description = fields.Html('Description', store=True)
+
     @api.depends('sim_id','sim_owner')
     def _get_sim_iccid(self):
         result = ''
@@ -75,7 +80,7 @@ class PowerCommunication(models.Model):
         self.control_port = result
     control_port = fields.Integer('Control port', store=True, copy=False, compute=_get_sim_control_port)
 
-    protocol_communication = fields.Selection(selection=COMPROTOCOL, store=True, copy=False)
-    protocol_port = fields.Selection(selection=COMPORT, store=True, copy=False)
-
-    description = fields.Html('Description', store=True)
+    @api.depends('sim_id', 'sim_owner')
+    def _update_konery_sim_data(self):
+        if self.sim_owner != 'konery':
+            self.sim_id = False
