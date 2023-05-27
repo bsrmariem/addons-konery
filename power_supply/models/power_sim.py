@@ -23,7 +23,7 @@ class PowerSim(models.Model):
     coverage = fields.Selection(selection=COVERAGE, string="Coverage")
     communication_ids = fields.One2many('power.communication', 'sim_id', string='Communication', store=True)
 
-    def _get_sim_used(self):
+    def _get_sim_state(self):
         state = 'available'
         if self.communication_ids.ids:
             state = 'used'
