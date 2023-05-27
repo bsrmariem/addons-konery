@@ -67,13 +67,13 @@
                         <group>
                             <!-- TYPEs = 'gsm', 'gprs', 'datadis', 'other' -->
                             <field name="access_ip"
-                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs'])]}"/>
+                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs','other'])]}"/>
                             <field name="access_port"
-                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs'])]}"/>
+                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs','other'])]}"/>
                             <field name="control_port"
-                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs'])]}"/>
+                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs','other'])]}"/>
                             <field name="protocol_port"
-                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs'])]}"/>
+                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs','other'])]}"/>
                         </group>
                     </group>
                     <group name="info" string="INFO">
