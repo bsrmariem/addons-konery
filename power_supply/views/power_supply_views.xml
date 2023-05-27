@@ -118,7 +118,14 @@
                     </notebook>
                     <notebook name="communication_nb">
                         <page name="communication" string="Communication">
-                            <field name="communication_ids"/>
+                            <field name="communication_ids">
+                                <tree name="power_communication_tree">
+                                    <field name="name"/>
+                                    <field name="phone"/>
+                                    <field name="access_ip"/>
+                                    <field name="access_port"/>
+                                </tree>
+                            </field>
 
                             <!-- Se supone que lo siguiente es para eliminar: -->
                             <group name="communication_group">
