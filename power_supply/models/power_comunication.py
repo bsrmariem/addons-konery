@@ -46,8 +46,10 @@ class PowerCommunication(models.Model):
 
     description = fields.Html('Description', store=True)
 
-    @api.onchange('sim_id')
+    @api.onchange('sim_id', 'sim_owner')
     def _update_konery_sim_data(self):
+        if self.sim_owner != 'konery':
+            self.sim_id = False
         self.write({'iccid':self.sim_id.name, 'phone':self.sim_id.phone,
                     'access_ip':self.sim_id.access_ip, 'access_port':self.sim_id.access_port,
                     'control_port':self.sim_id.control_port
