@@ -219,11 +219,42 @@
         <field name="web_icon" eval="False"/>
     </record>
 
+    <record id="power_power_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_power"/>
+        <field name="active" eval="True"/>
+        <field name="name">Powers</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">30</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_saving_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_saving"/>
+        <field name="active" eval="True"/>
+        <field name="name">Savings</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">40</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_communication_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_communication"/>
+        <field name="active" eval="True"/>
+        <field name="name">Communications</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">50</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+
+
+
+
     <record id="power_configuration_menu" model="ir.ui.menu">
         <field name="active" eval="True"/>
         <field name="name">Configuration</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
-        <field name="sequence">30</field>
+        <field name="sequence">60</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -245,30 +276,12 @@
         <field name="web_icon" eval="False"/>
     </record>
 
-    <record id="power_power_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_power"/>
-        <field name="active" eval="True"/>
-        <field name="name">Powers</field>
-        <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">30</field>
-        <field name="web_icon" eval="False"/>
-    </record>
-
-    <record id="power_saving_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_saving"/>
-        <field name="active" eval="True"/>
-        <field name="name">Savings</field>
-        <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">40</field>
-        <field name="web_icon" eval="False"/>
-    </record>
-
     <record id="power_tag_menu" model="ir.ui.menu">
         <field name="action" ref="action_power_tag"/>
         <field name="active" eval="True"/>
         <field name="name">Tags</field>
         <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">50</field>
+        <field name="sequence">30</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -277,7 +290,7 @@
         <field name="active" eval="True"/>
         <field name="name">Dealers</field>
         <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">60</field>
+        <field name="sequence">40</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -286,7 +299,7 @@
         <field name="active" eval="True"/>
         <field name="name">Marketeers</field>
         <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">70</field>
+        <field name="sequence">50</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -295,16 +308,7 @@
         <field name="active" eval="True"/>
         <field name="name">Sims</field>
         <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">80</field>
-        <field name="web_icon" eval="False"/>
-    </record>
-
-    <record id="power_communication_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_communication"/>
-        <field name="active" eval="True"/>
-        <field name="name">Communications</field>
-        <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">90</field>
+        <field name="sequence">60</field>
         <field name="web_icon" eval="False"/>
     </record>
 
