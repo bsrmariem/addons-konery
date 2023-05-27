@@ -35,7 +35,13 @@ class PowerCommunication(models.Model):
     sim_owner = fields.Selection([('konery','Konery'),('dealer','Dealer')], string='SIM Owner', store=True)
     sim_id = fields.Many2one('power.sim', string='SIM', store=True, copy=False)
 
-    iccid = fields.Char('ICCID', store=True, copy=False)
+    @api.depends('sim_id','sim_owner')
+    def _geticcid(self):
+        iccid = ''
+        if self.sim_id.id and self.sim_owner=='konery':
+            iccid = self.sim_id.iccid
+        self.iccid = iccid
+    iccid = fields.Char('ICCID', store=True, copy=False, compute=_geticcid)
     phone = fields.Char('Phone', store=True, copy=False)
     access_ip = fields.Char('IP Address', store=True, copy=False)
     access_port = fields.Integer('IP port', store=True, copy=False)
@@ -46,11 +52,11 @@ class PowerCommunication(models.Model):
 
     description = fields.Html('Description', store=True)
 
-    @api.depends('sim_id', 'sim_owner')
-    def _update_konery_sim_data(self):
-        if self.sim_owner != 'konery':
-            self.sim_id = False
-        self.write({'iccid':self.sim_id.name, 'phone':self.sim_id.phone,
-                    'access_ip':self.sim_id.access_ip, 'access_port':self.sim_id.access_port,
-                    'control_port':self.sim_id.control_port
-                    })
+#    @api.depends('sim_id', 'sim_owner')
+#    def _update_konery_sim_data(self):
+#        if self.sim_owner != 'konery':
+#            self.sim_id = False
+#        self.write({'iccid':self.sim_id.name, 'phone':self.sim_id.phone,
+#                    'access_ip':self.sim_id.access_ip, 'access_port':self.sim_id.access_port,
+#                    'control_port':self.sim_id.control_port
+#                    })
