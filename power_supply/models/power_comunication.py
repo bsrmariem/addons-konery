@@ -54,3 +54,4 @@ class PowerCommunication(models.Model):
                     'access_ip':self.sim_id.access_ip, 'access_port':self.sim_id.access_port,
                     'control_port':self.sim_id.control_port
                     })
+        return self
