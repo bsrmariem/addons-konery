@@ -46,7 +46,7 @@ class PowerCommunication(models.Model):
 
     description = fields.Html('Description', store=True)
 
-    @api.onchange('sim_id', 'sim_owner')
+    @api.depends('sim_id', 'sim_owner')
     def _update_konery_sim_data(self):
         if self.sim_owner != 'konery':
             self.sim_id = False
