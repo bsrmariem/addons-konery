@@ -60,14 +60,20 @@
                             <field name="sim_id" domain="[('communication_ids','=',False)]"
                                    attrs="{'invisible':[('sim_owner','!=','konery')],}"/>
                             <field name="iccid" attrs="{'readonly':[('sim_id','!=',False)]}"/>
-                            <field name="phone" attrs="{'readonly':[('sim_id','!=',False)]}"/>
+                            <field name="phone"
+                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','in', ['datadis'])]}"/>
                             <field name="protocol_communication" attrs="{'readonly':[('sim_id','!=',False)]}"/>
                         </group>
                         <group>
-                            <field name="access_ip" attrs="{'readonly':[('sim_id','!=',False)]}"/>
-                            <field name="access_port" attrs="{'readonly':[('sim_id','!=',False)]}"/>
-                            <field name="control_port" attrs="{'readonly':[('sim_id','!=',False)]}"/>
-                            <field name="protocol_port" attrs="{'readonly':[('sim_id','!=',False)]}"/>
+                            <!-- TYPEs = 'gsm', 'gprs', 'datadis', 'other' -->
+                            <field name="access_ip"
+                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs'])]}"/>
+                            <field name="access_port"
+                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs'])]}"/>
+                            <field name="control_port"
+                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs'])]}"/>
+                            <field name="protocol_port"
+                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs'])]}"/>
                         </group>
                     </group>
                     <group name="info" string="INFO">

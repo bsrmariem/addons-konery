@@ -120,10 +120,12 @@
                         <page name="communication" string="Communication">
                             <field name="communication_ids">
                                 <tree name="power_communication_tree">
-                                    <field name="name"/>
+                                    <field name="name" optional="show"/>
+                                    <field name="type"/>
                                     <field name="phone"/>
                                     <field name="access_ip"/>
                                     <field name="access_port"/>
+                                    <field name="meter_brand"/>
                                 </tree>
                             </field>
 
