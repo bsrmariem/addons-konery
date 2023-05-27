@@ -57,17 +57,17 @@
                     <group name="communications" string="Communications">
                         <group>
                             <field name="sim_owner"/>
-                            <field name="sim_id" attrs="{'invisible':[('sim_owner','!=','konery')]}"
-                                   domain="[('communication_ids','=',[])]"/>
-                            <field name="iccid"/>
-                            <field name="phone"/>
-                            <field name="protocol_communication"/>
+                            <field name="sim_id" domain="[('communication_ids','=',[])]"
+                                   attrs="{'invisible':[('sim_owner','!=','konery')],}"
+                            <field name="iccid" attrs="{'readonly':[('sim_id','!=',False)]}"/>
+                            <field name="phone" attrs="{'readonly':[('sim_id','!=',False)]}"/>
+                            <field name="protocol_communication" attrs="{'readonly':[('sim_id','!=',False)]}"/>
                         </group>
                         <group>
-                            <field name="access_ip"/>
-                            <field name="access_port"/>
-                            <field name="control_port"/>
-                            <field name="protocol_port"/>
+                            <field name="access_ip" attrs="{'readonly':[('sim_id','!=',False)]}"/>
+                            <field name="access_port" attrs="{'readonly':[('sim_id','!=',False)]}"/>
+                            <field name="control_port" attrs="{'readonly':[('sim_id','!=',False)]}"/>
+                            <field name="protocol_port" attrs="{'readonly':[('sim_id','!=',False)]}"/>
                         </group>
                     </group>
                     <group name="info" string="INFO">
