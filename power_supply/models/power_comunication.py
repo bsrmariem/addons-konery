@@ -36,27 +36,46 @@ class PowerCommunication(models.Model):
     sim_id = fields.Many2one('power.sim', string='SIM', store=True, copy=False)
 
     @api.depends('sim_id','sim_owner')
-    def _geticcid(self):
-        iccid = ''
+    def _get_sim_iccid(self):
+        result = ''
         if self.sim_id.id and self.sim_owner=='konery':
-            iccid = self.sim_id.iccid
-        self.iccid = iccid
-    iccid = fields.Char('ICCID', store=True, copy=False, compute=_geticcid)
-    phone = fields.Char('Phone', store=True, copy=False)
+            result = self.sim_id.iccid
+        self.iccid = result
+    iccid = fields.Char('ICCID', store=True, copy=False, compute=_get_sim_iccid)
+
+    @api.depends('sim_id','sim_owner')
+    def _get_sim_phone(self):
+        result = ''
+        if self.sim_id.id and self.sim_owner=='konery':
+            result = self.sim_id.phone
+        self.phone = result
+    phone = fields.Char('Phone', store=True, copy=False, compute=_get_sim_phone)
+
+    @api.depends('sim_id','sim_owner')
+    def _get_sim_phone(self):
+        result = ''
+        if self.sim_id.id and self.sim_owner=='konery':
+            result = self.sim_id.phone
+        self.phone = result
     access_ip = fields.Char('IP Address', store=True, copy=False)
-    access_port = fields.Integer('IP port', store=True, copy=False)
-    control_port = fields.Integer('Control port', store=True, copy=False)
+
+    @api.depends('sim_id','sim_owner')
+    def _get_sim_access_port(self):
+        result = ''
+        if self.sim_id.id and self.sim_owner=='konery':
+            result = self.sim_id.access_port
+        self.access_port = result
+    access_port = fields.Integer('IP port', store=True, copy=False, compute=_get_sim_access_port)
+
+    @api.depends('sim_id','sim_owner')
+    def _get_sim_control_port(self):
+        result = ''
+        if self.sim_id.id and self.sim_owner=='konery':
+            result = self.sim_id.control_port
+        self.control_port = result
+    control_port = fields.Integer('Control port', store=True, copy=False, compute=_get_sim_control_port)
 
     protocol_communication = fields.Selection(selection=COMPROTOCOL, store=True, copy=False)
     protocol_port = fields.Selection(selection=COMPORT, store=True, copy=False)
 
     description = fields.Html('Description', store=True)
-
-#    @api.depends('sim_id', 'sim_owner')
-#    def _update_konery_sim_data(self):
-#        if self.sim_owner != 'konery':
-#            self.sim_id = False
-#        self.write({'iccid':self.sim_id.name, 'phone':self.sim_id.phone,
-#                    'access_ip':self.sim_id.access_ip, 'access_port':self.sim_id.access_port,
-#                    'control_port':self.sim_id.control_port
-#                    })
