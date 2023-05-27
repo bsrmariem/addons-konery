@@ -26,9 +26,9 @@ class PowerSim(models.Model):
     coverage = fields.Selection(selection=COVERAGE, string="Coverage")
 
     # CAMPO O2M A DESTINOS SIM PARA SI HAY ALGO, EL ESTADO CAMBIE A USED:
-    communication_ids = fields.One2many('power.communication', 'sim_id', string='Communications', store=True)
+    communication_ids = fields.One2many('power.communication', 'sim_id', string='Communication', store=True)
 
-    @api.depends('communication_ids')
+    @api.depends('communication_ids','state')
     def _get_sim_used(self):
         if self.communication_ids.ids:
             self.state = 'used'
