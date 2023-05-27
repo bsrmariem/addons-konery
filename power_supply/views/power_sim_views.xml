@@ -29,6 +29,9 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <field name="state" widget="statusbar" class="o_field_statusbar" options="{'clickable': '1', 'fold_field': 'fold'}"/>
+                </header>
                 <sheet name="main" string="SIM">
                     <h2>
                         <field name="name"/>
@@ -39,7 +42,6 @@
                             <field name="access_ip"/>
                             <field name="access_port"/>
                             <field name="control_port"/>
-                            <field name="active"/>
                             <field name="application_port"/>
                         </group>
                         <group>
@@ -47,6 +49,7 @@
                             <field name="state"/>
                             <field name="coverage"/>
                             <field name="communication_ids" widget="many2many_tags" readonly="1"/>
+                            <field name="active" invisible="1"/>
                         </group>
                     </group>
                 </sheet>
