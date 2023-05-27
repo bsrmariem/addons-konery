@@ -20,17 +20,12 @@ class PowerSim(models.Model):
     active = fields.Boolean('Active', default=True)
     application_port = fields.Char("Application port")
     phone = fields.Char("Phone")
-
-    # ¿Calculado para que cuando esté en uso en un ps el estado sea 'used'?
-    state = fields.Selection(selection=STATE, string="State")
     coverage = fields.Selection(selection=COVERAGE, string="Coverage")
-
-    # CAMPO O2M A DESTINOS SIM PARA SI HAY ALGO, EL ESTADO CAMBIE A USED:
     communication_ids = fields.One2many('power.communication', 'sim_id', string='Communication', store=True)
 
-    @api.onchange('communication_ids','state')
     def _get_sim_used(self):
         state = 'available'
         if self.communication_ids.ids:
             state = 'used'
         self.state = state
+    state = fields.Selection(selection=STATE, string="State", store=False, compute='_get_sim_state')
