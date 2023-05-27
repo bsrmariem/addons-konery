@@ -118,6 +118,9 @@
                     </notebook>
                     <notebook name="communication_nb">
                         <page name="communication" string="Communication">
+                            <field name="communication_ids"/>
+
+                            <!-- Se supone que lo siguiente es para eliminar: -->
                             <group name="communication_group">
                                 <group name="meter_device" attrs="{'invisible':[('energy_type','!=','electricity')]}">
                                     <field name="meter"/>
