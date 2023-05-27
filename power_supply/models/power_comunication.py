@@ -33,16 +33,16 @@ class PowerCommunication(models.Model):
 
     # COMM:
     sim_owner = fields.Selection([('konery','Konery'),('dealer','Dealer')], string='SIM Owner', store=True)
-    sim_id = fields.Many2one('power.sim', string='SIM', store=True)
+    sim_id = fields.Many2one('power.sim', string='SIM', store=True, copy=False)
 
-    iccid = fields.Char('ICCID', store=True)
-    phone = fields.Char('Phone', store=True)
-    access_ip = fields.Char('IP Address', store=True)
-    access_port = fields.Integer('IP port', store=True)
-    control_port = fields.Integer('Control port', store=True)
+    iccid = fields.Char('ICCID', store=True, copy=False)
+    phone = fields.Char('Phone', store=True, copy=False)
+    access_ip = fields.Char('IP Address', store=True, copy=False)
+    access_port = fields.Integer('IP port', store=True, copy=False)
+    control_port = fields.Integer('Control port', store=True, copy=False)
 
-    protocol_communication = fields.Selection(selection=COMPROTOCOL, store=True)
-    protocol_port = fields.Selection(selection=COMPORT, store=True)
+    protocol_communication = fields.Selection(selection=COMPROTOCOL, store=True, copy=False)
+    protocol_port = fields.Selection(selection=COMPORT, store=True, copy=False)
 
     description = fields.Html('Description', store=True)
 

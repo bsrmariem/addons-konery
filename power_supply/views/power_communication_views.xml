@@ -57,7 +57,7 @@
                     <group name="communications" string="Communications">
                         <group>
                             <field name="sim_owner"/>
-                            <field name="sim_id" domain="[('communication_ids','=',[])]"
+                            <field name="sim_id" domain="[('communication_ids','=',False)]"
                                    attrs="{'invisible':[('sim_owner','!=','konery')],}"/>
                             <field name="iccid" attrs="{'readonly':[('sim_id','!=',False)]}"/>
                             <field name="phone" attrs="{'readonly':[('sim_id','!=',False)]}"/>
