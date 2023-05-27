@@ -57,7 +57,7 @@
                     <group name="communications" string="Communications">
                         <group>
                             <field name="sim_owner"/>
-                            <field name="sim_id"/>
+                            <field name="sim_id" attrs="{'invisible':[('sim_owner','!=','konery')]}"/>
                             <field name="iccid"/>
                             <field name="phone"/>
                             <field name="protocol_communication"/>
