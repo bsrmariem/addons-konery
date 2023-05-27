@@ -127,7 +127,7 @@
                                 </tree>
                             </field>
 
-                            <!-- Se supone que lo siguiente es para eliminar: -->
+                            <!-- Se supone que lo siguiente es para eliminar, así como los campos: -->
                             <group name="communication_group">
                                 <group name="meter_device" attrs="{'invisible':[('energy_type','!=','electricity')]}">
                                     <field name="meter"/>
