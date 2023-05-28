@@ -15,6 +15,7 @@ class PowerCommunication(models.Model):
     name = fields.Char(string='Device name', required=True, store=True)
     type = fields.Selection(selection=COMTYPE, string='Technology', store=True)
     photovoltaic = fields.Boolean('Photovoltaic', store=True)
+    konery360 = fields.Boolean('Konery 360', store=True)
 
     supply_id = fields.Many2one('power.supply', string='Power supply', store=True, required=True)
     partner_id = fields.Many2one('res.partner', string='Customer', store=True, related='supply_id.partner_id')

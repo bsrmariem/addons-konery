@@ -31,13 +31,11 @@
                     </h2>
                     <group name="administrative_data" string="Administrative data">
                         <group>
-                            <field name="name"/>
-                            <field name="active"/>
-                            <field name="order_number"/>
-                        </group>
-                        <group>
                             <field name="phone"/>
                             <field name="cif"/>
+                        </group>
+                        <group>
+                            <field name="order_number"/>
                             <field name="web"/>
                         </group>
                     </group>

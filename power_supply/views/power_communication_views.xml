@@ -14,6 +14,7 @@
                 <field name="phone"/>
                 <field name="access_ip"/>
                 <field name="access_port"/>
+                <field name="konery360" optional="show"/>
             </tree>
         </field>
     </record>
@@ -32,7 +33,6 @@
                     <group name="communication" string="Communication">
                         <group>
                             <field name="type"/>
-                            <field name="photovoltaic"/>
                             <field name="supply_id"/>
                             <field name="sim_owner"/>
                             <field name="sim_id" domain="[('communication_ids','=',False)]"
@@ -43,6 +43,8 @@
                             <field name="protocol_communication" attrs="{'readonly':[('sim_id','!=',False)]}"/>
                         </group>
                         <group>
+                            <field name="konery360"/>
+                            <field name="photovoltaic"/>
                             <!-- TYPEs = 'gsm', 'gprs', 'datadis', 'other' -->
                             <field name="access_ip"
                                    attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs','other'])]}"/>
