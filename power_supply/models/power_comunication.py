@@ -80,7 +80,7 @@ class PowerCommunication(models.Model):
         self.control_port = result
     control_port = fields.Integer('Control port', store=True, copy=False, compute=_get_sim_control_port)
 
-    @api.depends('sim_id', 'sim_owner')
+    @api.onchange('sim_id', 'sim_owner')
     def _update_konery_sim_data(self):
         if self.sim_owner != 'konery':
             self.sim_id = False
