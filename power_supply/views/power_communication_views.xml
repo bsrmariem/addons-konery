@@ -53,7 +53,7 @@
                             <field name="control_port"
                                    attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs','other'])]}"/>
                             <field name="protocol_port"
-                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs','other'])]}"/>
+                                   attrs="{'invisible':[('type','not in', ['gprs','other'])]}"/>
                         </group>
                     </group>
                     <group name="meter" string="Meter">
