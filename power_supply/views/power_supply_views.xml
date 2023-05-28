@@ -9,10 +9,11 @@
         <field name="arch" type="xml">
             <tree name="power_supply_tree">
                 <field name="name"/>
+                <field name="cups" optional="show"/>
                 <field name="partner_id"/>
                 <field name="energy_type" optional="hide"/>
                 <field name="pricelist_id"/>
-                <field name="cups" optional="show"/>
+                <field name="communication_ids" widget="many2many_tags" optional="show"/>
                 <field name="anual_power" optional="show"/>
                 <field name="tag_ids" widget="many2many_tags" optional="hide"/>
                 <field name="salesman_id" optional="hide"/>
