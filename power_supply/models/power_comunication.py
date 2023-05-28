@@ -36,8 +36,8 @@ class PowerCommunication(models.Model):
     sim_owner = fields.Selection([('konery','Konery'),('dealer','Dealer')], string='SIM Owner', store=True)
     sim_id = fields.Many2one('power.sim', string='SIM', store=True, copy=False)
 
-    protocol_communication = fields.Selection(selection=COMPROTOCOL, store=True, copy=False)
-    protocol_port = fields.Selection(selection=COMPORT, store=True, copy=False)
+    protocol_communication = fields.Selection(selection=COMPROTOCOL, string='Protocol', store=True, copy=False)
+    protocol_port = fields.Selection(selection=COMPORT, string='Port', store=True, copy=False)
 
     description = fields.Html('Description', store=True)
 

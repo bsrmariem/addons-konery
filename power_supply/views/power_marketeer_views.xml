@@ -9,7 +9,7 @@
         <field name="arch" type="xml">
             <tree name="power_marketeer_tree">
                     <field name="name"/>
-                <field name="active" optional="show"/>
+                <field name="active" optional="hide"/>
                 <field name="order_number" optional="show"/>
                 <field name="phone" optional="hide"/>
                 <field name="sector" optional="show"/>
@@ -41,7 +41,6 @@
                             <field name="cif"/>
                         </group>
                         <group>
-                            <field name="active"/>
                             <field name="date_discharge"/>
                             <field name="date_leaving"/>
                             <field name="web"/>
