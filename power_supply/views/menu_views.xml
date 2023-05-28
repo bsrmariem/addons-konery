@@ -192,6 +192,43 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+
+    <!-- COVERAGE WINDOW ACTION: -->
+    <record id="action_power_coverage" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context">{}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Coverages</field>
+        <field name="res_model">power.coverage</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <!-- PORTS WINDOW ACTION: -->
+    <record id="action_power_``rt" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context">{}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Communication ports</field>
+        <field name="res_model">power.port</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree</field>
+    </record>
+
     <!-- MENUS: -->
     <menuitem
             action="action_power_supply"
@@ -312,5 +349,22 @@
         <field name="web_icon" eval="False"/>
     </record>
 
+    <record id="power_coverage_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_coverage"/>
+        <field name="active" eval="True"/>
+        <field name="name">Coverages</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">70</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_port_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_port"/>
+        <field name="active" eval="True"/>
+        <field name="name">Communication Ports</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">80</field>
+        <field name="web_icon" eval="False"/>
+    </record>
 
 </odoo>

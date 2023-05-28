@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply v4">
+      <change afterPath="$PROJECT_DIR$/power_supply/models/power_coverage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply/models/power_port.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/models/power_comunication.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_comunication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_communication_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_communication_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_dealer_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_dealer_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_sim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/views/menu_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/menu_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +42,12 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/power_supply/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/power_supply/models" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/power_supply/views" />
       <recent name="$PROJECT_DIR$/power_supply/models" />
+      <recent name="$PROJECT_DIR$/power_supply/views" />
       <recent name="$PROJECT_DIR$/power_supply" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -79,20 +83,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00145" summary="power supply v4">
-      <created>1685103227481</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1685103227481</updated>
-    </task>
-    <task id="LOCAL-00146" summary="power supply v4">
-      <created>1685103469963</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1685103469963</updated>
     </task>
     <task id="LOCAL-00147" summary="power supply v4">
       <created>1685103733682</created>
@@ -423,7 +413,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685232373222</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="power supply v4">
+      <created>1685234470562</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1685234470562</updated>
+    </task>
+    <task id="LOCAL-00195" summary="power supply v4">
+      <created>1685234777084</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1685234777084</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

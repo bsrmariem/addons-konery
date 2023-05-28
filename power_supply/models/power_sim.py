@@ -4,7 +4,6 @@
 from odoo import api, fields, models, _
 # VER CON PEDRO QUE LOS STATES NO SE IMPORTAN:
 STATE = [('available','Available'),('used','Used')]
-COVERAGE = [('movistar','Movistar'),('multicob','Multi COB'),('orange','Orange'), ('telefonica','Telefonica')]
 
 class PowerSim(models.Model):
     _name = 'power.sim'
@@ -20,7 +19,7 @@ class PowerSim(models.Model):
     active = fields.Boolean('Active', default=True)
     application_port = fields.Char("Application port")
     phone = fields.Char("Phone")
-    coverage = fields.Selection(selection=COVERAGE, string="Coverage")
+    coverage = fields.Many2one('power.coverage', string="Coverage", store=True)
     communication_ids = fields.One2many('power.communication', 'sim_id', string='Communication', store=True)
 
     def _get_sim_state(self):

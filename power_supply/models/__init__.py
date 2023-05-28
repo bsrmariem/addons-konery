@@ -9,3 +9,5 @@ from . import power_dealer
 from . import power_marketeer
 from . import power_sim
 from . import power_comunication
+from . import power_coverage
+from . import power_port

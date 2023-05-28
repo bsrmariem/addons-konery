@@ -5,7 +5,6 @@ from odoo import fields, models, api
 
 COMTYPE     = [('gsm','GSM'),('gprs','GPRS'),('datadis','Datadis'),('other','Other')]
 COMPROTOCOL = [('iec','IEC'),('dlms','DLMS Prime'),('internet','Internet'),('modbus','Modbus')]
-COMPORT     = [('rs232','RS232'),('rs485','RS485'),('ethernet','Ethernet'),('optical','Optical')]
 
 class PowerCommunication(models.Model):
     _name = 'power.communication'
@@ -37,7 +36,7 @@ class PowerCommunication(models.Model):
     sim_id = fields.Many2one('power.sim', string='SIM', store=True, copy=False)
 
     protocol_communication = fields.Selection(selection=COMPROTOCOL, string='Protocol', store=True, copy=False)
-    protocol_port = fields.Selection(selection=COMPORT, string='Port', store=True, copy=False)
+    protocol_port = fields.Many2one('power.port', string='Port', store=True, copy=True)
 
     description = fields.Html('Description', store=True)
 

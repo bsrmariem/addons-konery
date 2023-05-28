@@ -10,3 +10,5 @@ access_power_dealer,Power dealers,model_power_dealer,power_supply.group_power_su
 access_power_marketeer,Power marketeers,model_power_marketeer,power_supply.group_power_supply_user,1,1,1,1
 access_power_sim,Power Sims,model_power_sim,power_supply.group_power_supply_user,1,1,1,1
 access_power_communication,Power Communitaion,model_power_communication,power_supply.group_power_supply_user,1,1,1,1
+access_power_coverage,Power Coverage,model_power_coverage,power_supply.group_power_supply_user,1,1,1,1
+access_power_port,Power Port,model_power_port,power_supply.group_power_supply_user,1,1,1,1
