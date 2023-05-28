@@ -24,15 +24,6 @@ class PowerSupply(models.Model):
     tag_ids = fields.Many2many('power.tag', string='Tags', store=True)
     dealer_id = fields.Many2one('power.dealer', store=True)
 
-    monitor = fields.Boolean('Monitorized')
-    monitor_type = fields.Selection([('gprs','GPRS'),('gsm','GSM'),('datadis','Datadis')])
-    monitor_ip = fields.Char('IP')
-    monitor_port = fields.Integer('Port')
-    monitor_phone = fields.Char('Phone')
-    link_address = fields.Char('Link address')
-
-    meter = fields.Selection([('sold','Sold'),('exist','Exist'),('rent','Rented')])
-    meter_note = fields.Char('Meter notes')
     contract_ids = fields.One2many('power.contract', 'supply_id', string='Contracts', store=True)
     power_electricity_ids = fields.One2many('power.power', 'supply_id', string='Electrical Power', store=True)
     power_gas_ids = fields.One2many('power.power', 'supply_id', string='Gas Power', store=True)

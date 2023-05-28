@@ -14,15 +14,11 @@
                 <field name="pricelist_id"/>
                 <field name="cups" optional="show"/>
                 <field name="anual_power" optional="show"/>
-                <field name="monitor" optional="hide"/>
                 <field name="tag_ids" widget="many2many_tags" optional="hide"/>
                 <field name="salesman_id" optional="hide"/>
                 <field name="manager_id" optional="hide"/>
                 <field name="tax_exception" optional="hide"/>
                 <field name="location" optional="hide"/>
-                <field name="monitor" optional="hide"/>
-                <field name="monitor_type" optional="hide"/>
-                <field name="meter" optional="hide"/>
             </tree>
         </field>
     </record>
@@ -128,26 +124,6 @@
                                     <field name="meter_brand"/>
                                 </tree>
                             </field>
-
-                            <!-- Se supone que lo siguiente es para eliminar, así como los campos: -->
-                            <group name="communication_group">
-                                <group name="meter_device" attrs="{'invisible':[('energy_type','!=','electricity')]}">
-                                    <field name="meter"/>
-                                    <field name="meter_note"/>
-                                </group>
-                                <group>
-                                    <field name="monitor"/>
-                                    <field name="monitor_type" attrs="{'invisible':[('monitor','=',False)]}"/>
-                                    <field name="monitor_ip"
-                                           attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs'])]}"/>
-                                    <field name="monitor_port"
-                                           attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs'])]}"/>
-                                    <field name="link_address"
-                                           attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs'])]}"/>
-                                    <field name="monitor_phone"
-                                           attrs="{'invisible':['|',('monitor','=',False),('monitor_type','not in',['gprs','gsm'])]}"/>
-                                </group>
-                            </group>
                         </page>
                     </notebook>
                 </sheet>
