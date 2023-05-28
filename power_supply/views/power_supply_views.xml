@@ -166,7 +166,7 @@
         <field name="inherit_id" eval="False"/>
         <field name="arch" type="xml">
             <search string="Search Power Supply">
-                <field name="name" filter_domain="['|', '|', '|', ('name', 'ilike', self), ('location', 'ilike', self), ('partner_id', 'ilike', self), ('company_group_id', 'ilike', self)]"/>
+                <field name="name" filter_domain="['|', '|', '|', '|', ('name','ilike',self), ('cups','ilike',self), ('location','ilike',self), ('partner_id', 'ilike', self), ('company_group_id', 'ilike', self)]"/>
                 <field name="salesman_id"/>
                 <field name="manager_id"/>
                 <field name="dealer_id"/>
