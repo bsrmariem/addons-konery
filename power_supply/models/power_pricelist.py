@@ -9,4 +9,4 @@ class PowerPricelist(models.Model):
 
     name = fields.Char(string='Name', required=True)
     energy_type = fields.Selection([('electricity','Electricity'),('gas','Gas')],string='Energy type',
-                                   default='electricity', required="1")
+                                   default='electricity', required=True)
