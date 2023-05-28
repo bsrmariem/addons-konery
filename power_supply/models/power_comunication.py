@@ -66,7 +66,7 @@ class PowerCommunication(models.Model):
 
     @api.depends('sim_id','sim_owner')
     def _get_sim_access_port(self):
-        result = ''
+        result = 0
         if self.sim_id.id and self.sim_owner=='konery':
             result = self.sim_id.access_port
         self.access_port = result
