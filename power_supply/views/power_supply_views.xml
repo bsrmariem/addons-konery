@@ -149,11 +149,7 @@
                 <field name="tag_ids"/>
                 <field name="cups" filter_domain="[('cups','ilike',self)]"/>
                 <separator/>
-                <filter string="Monitorized" name="monitor" domain="[('monitor', '=', True)]"/>
-                <separator/>
-                <filter string="GSM" name="gsm" domain="[('monitor_type','=','gsm')]"/>
-                <filter string="GPRS" name="gsm" domain="[('monitor_type','=','gprs')]"/>
-                <filter string="Datadis" name="gsm" domain="[('monitor_type','=','datadis')]"/>
+                <filter string="Remote control" name="monitor" domain="[('communication_ids', '!=', False)]"/>
                 <separator/>
                 <filter string="Electricity" name="electricity" domain="[('energy_type','=','electricity')]"/>
                 <filter string="Gas" name="gas" domain="[('energy_type','=','gas')]"/>
