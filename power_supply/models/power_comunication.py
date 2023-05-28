@@ -57,12 +57,12 @@ class PowerCommunication(models.Model):
     phone = fields.Char('Phone', store=True, copy=False, compute=_get_sim_phone)
 
     @api.depends('sim_id','sim_owner')
-    def _get_sim_phone(self):
+    def _get_sim_access_ip(self):
         result = ''
         if self.sim_id.id and self.sim_owner=='konery':
-            result = self.sim_id.phone
-        self.phone = result
-    access_ip = fields.Char('IP Address', store=True, copy=False)
+            result = self.sim_id.access_ip
+        self.access_ip = result
+    access_ip = fields.Char('IP Address', store=True, copy=False, compute=_get_sim_access_ip)
 
     @api.depends('sim_id','sim_owner')
     def _get_sim_access_port(self):
