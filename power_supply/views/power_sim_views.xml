@@ -16,7 +16,7 @@
                 <field name="active" optional="show"/>
                 <field name="application_port" optional="hide"/>
                 <field name="phone" optional="hide"/>
-                <field name="coverage" optional="show"/>
+                <field name="coverage_id" optional="show"/>
                 <field name="communication_ids" widget="many2many_tags" optional="show"/>
                 <field name="state" optional="hide"/>
             </tree>
@@ -47,7 +47,7 @@
                         </group>
                         <group>
                             <field name="phone"/>
-                            <field name="coverage"/>
+                            <field name="coverage_id"/>
                             <field name="communication_ids" widget="many2many_tags" readonly="1"/>
                             <field name="active" invisible="1"/>
                         </group>

@@ -19,7 +19,7 @@ class PowerSim(models.Model):
     active = fields.Boolean('Active', default=True)
     application_port = fields.Char("Application port")
     phone = fields.Char("Phone")
-    coverage = fields.Many2one('power.coverage', string="Coverage", store=True)
+    coverage_id = fields.Many2one('power.coverage', string="Coverage", store=True)
     communication_ids = fields.One2many('power.communication', 'sim_id', string='Communication', store=True)
 
     def _get_sim_state(self):
