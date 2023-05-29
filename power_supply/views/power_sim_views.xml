@@ -9,7 +9,6 @@
         <field name="arch" type="xml">
             <tree name="power_sim_tree">
                 <field name="name"/>
-                <field name="iccid" optional="show"/>
                 <field name="access_ip" optional="show"/>
                 <field name="access_port" optional="hide"/>
                 <field name="control_port" optional="show"/>
@@ -39,7 +38,6 @@
                     </h2>
                     <group name="administrative_data" string="Administrative data">
                         <group>
-                            <field name="iccid"/>
                             <field name="access_ip"/>
                             <field name="access_port"/>
                             <field name="control_port"/>

@@ -54,13 +54,11 @@ class ImporterCnmc(models.TransientModel):
                     if not sim_registered:
                         self.env['power.sim'].sudo().create({
                             'name': str(line[k]),
-                            'iccid': str(line[k]),
                             'access_ip': str(line[k+1]),
                             'access_port': str(line[k+2]),
                             'control_port': str(line[k+3]),
                             'application_port': str(line[k+4]),
                             'phone': str(line[k+5]),
-                            'state': str(line[k+6]),
                             'coverage': str(line[k+7]),
                         })
 
