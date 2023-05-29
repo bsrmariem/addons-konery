@@ -45,8 +45,8 @@ class PowerCommunication(models.Model):
         result = ''
         if self.sim_id.id and self.sim_owner=='konery':
             result = self.sim_id.name
-        self.name = result
-    name = fields.Char('ICCID', store=True, copy=False, compute=_get_sim_iccid)
+        self.iccid = result
+    iccid = fields.Char('ICCID', store=True, copy=False, compute=_get_sim_iccid)
 
     @api.depends('sim_id','sim_owner')
     def _get_sim_phone(self):
