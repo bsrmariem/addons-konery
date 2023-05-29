@@ -9,7 +9,7 @@ from odoo.exceptions import ValidationError
 
 TYPE = [
     ('marketer', 'Marketer'),
-    ('distributor', 'Distributor'),
+    ('dealer', 'Dealer'),
     ('sim', 'SIM'),
 ]
 
@@ -35,7 +35,6 @@ class ImporterCnmc(models.TransientModel):
     def import_sim(self, csv):
         l = 0
         k = 0
-
         try:
             for line in csv:
                 if l == 0:
@@ -49,23 +48,28 @@ class ImporterCnmc(models.TransientModel):
                     k = 0
                 else:
                     sim_registered = self.env['power.sim'].search([
-                        ("iccid", "=", line[k]),
+                        ("name", "=", line[k]),
                     ], limit=1)
                     if not sim_registered:
-                        self.env['power.sim'].sudo().create({
-                            'name': str(line[k]),
-                            'access_ip': str(line[k+1]),
-                            'access_port': str(line[k+2]),
-                            'control_port': str(line[k+3]),
-                            'application_port': str(line[k+4]),
-                            'phone': str(line[k+5]),
-                            'coverage': str(line[k+7]),
-                        })
-
+                        coverage_id = self.env['power.coverage'].search([
+                            ("name", "=", line[k + 7]),
+                        ], limit=1)
+                        if coverage_id:
+                            self.env['power.sim'].sudo().create({
+                                'name': str(line[k]),
+                                'access_ip': str(line[k+2]),
+                                'access_port': str(line[k+3]),
+                                'control_port': str(line[k+4]),
+                                'rc485_port': str(line[k+5]),
+                                'phone': str(line[k+1]),
+                                'coverage_id': coverage_id.id,
+                            })
+                        else:
+                            raise ValidationError('Please verify the Coverage name to match the already created ones')
         except Exception as e:
             raise ValidationError('Error %s' % e)
 
-    def import_distributor(self, csv):
+    def import_dealer(self, csv):
         l = 0
         k = 0
 
@@ -81,11 +85,11 @@ class ImporterCnmc(models.TransientModel):
                     l += 1
                     k = 0
                 else:
-                    dis_registered = self.env['power.distributor'].search([
+                    dis_registered = self.env['power.dealer'].search([
                         ("cif", "=", line[k]),
                     ], limit=1)
                     if not dis_registered:
-                        self.env['power.distributor'].sudo().create({
+                        self.env['power.dealer'].sudo().create({
                             'name': str(line[k+2]),
                             'order_number': str(line[k+1]),
                             'phone': str(line[k+3]),
@@ -155,8 +159,8 @@ class ImporterCnmc(models.TransientModel):
                 csvfile = list(csv.reader(base64.b64decode(self.file_bin).decode('utf-8').splitlines()))
                 if (self.file_type == 'sim'):
                     self.import_sim(csvfile)
-                elif (self.file_type == 'distributor'):
-                    self.import_distributor(csvfile)
+                elif (self.file_type == 'dealer'):
+                    self.import_dealer(csvfile)
                 else:
                     self.import_marketer(csvfile)
 
