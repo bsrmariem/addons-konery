@@ -13,7 +13,7 @@
                 <field name="access_port" optional="hide"/>
                 <field name="control_port" optional="show"/>
                 <field name="active" optional="show"/>
-                <field name="application_port" optional="hide"/>
+                <field name="rs485_port" optional="hide"/>
                 <field name="phone" optional="hide"/>
                 <field name="coverage_id" optional="show"/>
                 <field name="communication_ids" widget="many2many_tags" optional="show"/>
@@ -41,7 +41,7 @@
                             <field name="access_ip"/>
                             <field name="access_port"/>
                             <field name="control_port"/>
-                            <field name="application_port"/>
+                            <field name="rs485_port"/>
                         </group>
                         <group>
                             <field name="phone"/>

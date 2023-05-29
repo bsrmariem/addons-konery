@@ -17,7 +17,7 @@ class PowerSim(models.Model):
     access_port = fields.Integer("Access port")
     control_port = fields.Integer("Control port")
     active = fields.Boolean('Active', default=True)
-    rc485_port = fields.Char("Port RC485")
+    rs485_port = fields.Char("Port RS485")
     phone = fields.Char("Phone")
     coverage_id = fields.Many2one('power.coverage', string="Coverage", store=True)
     communication_ids = fields.One2many('power.communication', 'sim_id', string='Communication', store=True)

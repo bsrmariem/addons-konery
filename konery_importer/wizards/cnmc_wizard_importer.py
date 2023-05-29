@@ -60,7 +60,7 @@ class ImporterCnmc(models.TransientModel):
                                 'access_ip': str(line[k+2]),
                                 'access_port': str(line[k+3]),
                                 'control_port': str(line[k+4]),
-                                'rc485_port': str(line[k+5]),
+                                'rs485_port': str(line[k+5]),
                                 'phone': str(line[k+1]),
                                 'coverage_id': coverage_id.id,
                             })
