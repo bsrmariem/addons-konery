@@ -53,10 +53,27 @@
     </record>
 
     <!-- CONTRACTS WINDOW ACTION: -->
-    <record id="action_power_contract" model="ir.actions.act_window">
+    <record id="action_power_electric_contract" model="ir.actions.act_window">
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">action</field>
-        <field name="domain" eval="False"/>
+        <field name="domain">[('energy_type','=','electricity')]</field>
+        <field name="context">{'default_energy_type':'electricity'}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Contracts</field>
+        <field name="res_model">power.contract</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="action_power_gas_contract" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain">[('energy_type','=','gas')]</field>
+        <field name="context">{'default_energy_type':'gas'}</field>
         <field name="filter" eval="False"/>
         <field name="limit">80</field>
         <field name="name">Contracts</field>
@@ -232,16 +249,28 @@
     <!-- MENUS: -->
     <menuitem
             action="action_power_supply"
-            id="power_supply_main_menu"
+            id="power_supply_icon_menu"
             name="Power Supply"
             sequence="1"
             web_icon="power_supply,static/description/icon.png"
     />
 
+    <menuitem
+            action="action_power_supply"
+            id="power_supply_main_enu"
+            name="Power Supply"
+            sequence="1"
+            web_icon="power_supply,static/description/icon.png"
+    />
 
-
-
-
+    <record id="power_supply_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_supply"/>
+        <field name="active" eval="True"/>
+        <field name="name">Supplies</field>
+        <field name="parent_id" ref="power_supply_main_enu"/>
+        <field name="sequence">10</field>
+        <field name="web_icon" eval="False"/>
+    </record>
 
     <record id="power_supply_menu" model="ir.ui.menu">
         <field name="action" ref="action_power_supply"/>
@@ -252,12 +281,21 @@
         <field name="web_icon" eval="False"/>
     </record>
 
-    <record id="power_contract_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_contract"/>
+    <record id="power_contract_electric_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_electric_contract"/>
         <field name="active" eval="True"/>
         <field name="name">Contracts</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
         <field name="sequence">20</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_contract_gas_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_gas_contract"/>
+        <field name="active" eval="True"/>
+        <field name="name">Contracts</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">30</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -266,7 +304,7 @@
         <field name="active" eval="True"/>
         <field name="name">Powers</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
-        <field name="sequence">30</field>
+        <field name="sequence">40</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -275,7 +313,7 @@
         <field name="active" eval="True"/>
         <field name="name">Savings</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
-        <field name="sequence">40</field>
+        <field name="sequence">50</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -284,7 +322,7 @@
         <field name="active" eval="True"/>
         <field name="name">Communications</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
-        <field name="sequence">50</field>
+        <field name="sequence">60</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -295,7 +333,7 @@
     <record id="power_configuration_menu" model="ir.ui.menu">
         <field name="active" eval="True"/>
         <field name="name">Configuration</field>
-        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="parent_id" ref="power_supply_icon_menu"/>
         <field name="sequence">60</field>
         <field name="web_icon" eval="False"/>
     </record>
