@@ -86,14 +86,14 @@ class ImporterCnmc(models.TransientModel):
                     k = 0
                 else:
                     dis_registered = self.env['power.dealer'].search([
-                        ("cif", "=", line[k]),
+                        ("vat", "=", line[k]),
                     ], limit=1)
                     if not dis_registered:
                         self.env['power.dealer'].sudo().create({
                             'name': str(line[k+2]),
                             'order_number': str(line[k+1]),
                             'phone': str(line[k+3]),
-                            'cif': str(line[k]),
+                            'vat': str(line[k]),
                             'web': str(line[k + 4]),
                         })
 
@@ -118,7 +118,7 @@ class ImporterCnmc(models.TransientModel):
 
                 else:
                     mark_registered = self.env['power.marketeer'].search([
-                        ("cif", "=", line[k+8]),
+                        ("vat", "=", line[k+8]),
                     ], limit=1)
                     if not mark_registered:
                         date_discharge = False
@@ -139,7 +139,7 @@ class ImporterCnmc(models.TransientModel):
                             'order_number': str(line[k]),
                             'phone': str(line[k + 6]),
                             'sector': str(line[k + 7]),
-                            'cif': str(line[k+8]),
+                            'vat': str(line[k+8]),
                             'status': str(line[k + 12]),
                             'date_discharge': date_discharge,
                             'date_leaving': date_leaving,

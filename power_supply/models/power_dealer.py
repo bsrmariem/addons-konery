@@ -12,5 +12,5 @@ class PowerDealer(models.Model):
     active = fields.Boolean('Active', default=True)
     order_number = fields.Char("Order number")
     phone = fields.Char("Phone")
-    cif = fields.Char("CIF")
+    vat = fields.Char("VAT")
     web = fields.Char("Web")
