@@ -66,6 +66,11 @@
                                     <field name="date_start"/>
                                     <field name="date_end"/>
                                     <field name="type_id"/>
+                                    <field name="marketeer_contact_id" optional="hide"/>
+                                    <field name="origin_warranty" optional="hide"/>
+                                    <field name="atr_detached" optional="hide"/>
+                                    <field name="compromise" optional="hide"/>
+                                    <field name="auto_renew" optional="hide"/>
                                 </tree>
                             </field>
                         </page>
@@ -122,9 +127,26 @@
                                     <field name="name" optional="show"/>
                                     <field name="type"/>
                                     <field name="phone"/>
-                                    <field name="access_ip"/>
-                                    <field name="access_port"/>
-                                    <field name="meter_brand"/>
+                                    <field name="konery360" optional="show"/>
+                                    <field name="photovoltaic" optional="hide"/>
+                                    <field name="meter_brand" optional="show"/>
+                                    <field name="meter_link_addr" optional="hide"/>
+                                    <field name="meter_point" optional="hide"/>
+                                    <field name="meter_serial_speed" optional="hide"/>
+                                    <field name="meter_optical_speed" optional="hide"/>
+                                    <field name="meter_voltage_ratio" optional="hide"/>
+                                    <field name="meter_intensity_ratio" optional="hide"/>
+                                    <field name="sim_owner" optional="hide"/>
+                                    <field name="meter_optical_speed" optional="hide"/>
+                                    <field name="sim_owner" optional="hide"/>
+                                    <field name="protocol_communication" optional="hide"/>
+                                    <field name="protocol_port" optional="hide"/>
+                                    <field name="description" optional="hide" widget="html"/>
+                                    <field name="iccid" optional="hide"/>
+                                    <field name="phone" optional="hide"/>
+                                    <field name="access_ip" optional="show"/>
+                                    <field name="access_port" optional="show"/>
+                                    <field name="control_port" optional="hide"/>
                                 </tree>
                             </field>
                         </page>

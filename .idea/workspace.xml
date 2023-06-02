@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="sup 0206">
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_power_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_power_views.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00185" summary="power supply v4">
-      <created>1685206868791</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1685206868791</updated>
     </task>
     <task id="LOCAL-00186" summary="power supply v4">
       <created>1685207133145</created>
@@ -422,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685718973807</updated>
     </task>
-    <option name="localTasksCounter" value="234" />
+    <task id="LOCAL-00234" summary="sup 0206">
+      <created>1685719462376</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1685719462376</updated>
+    </task>
+    <option name="localTasksCounter" value="235" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
