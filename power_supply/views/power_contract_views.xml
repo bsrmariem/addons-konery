@@ -35,7 +35,7 @@
             <form>
                 <sheet name="main" string="Contracts">
                     <h2>
-                        <field name="name"/>
+                        <field name="name" placeholder="Contract name"/>
                     </h2>
                     <group name="contract_data" string="Administrative data">
                         <group>
