@@ -47,10 +47,10 @@
                         <group>
                             <field name="location"/>
                             <field name="dealer_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
-                            <field name="pricelist_id" domain="[('energy_type','=',energy_type)]"/>
+                            <field name="pricelist_id" domain="[('energy_type','=',energy_type)]" options="{'no_quick_create': True, 'no_create_edit':True}"/>
                             <field name="cups"/>
                             <field name="anual_power"/>
-                            <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}"/>
+                            <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_quick_create': True, 'no_create_edit': True}"/>
                             <field name="meter_owner"/>
                         </group>
                     </group>

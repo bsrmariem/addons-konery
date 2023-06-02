@@ -7,7 +7,7 @@
         <field name="inherit_id" eval="False"/>
         <field name="type">tree</field>
         <field name="arch" type="xml">
-            <tree name="power_power_tree">
+            <tree name="power_power_tree" create="false">
                 <field name="name" optional="hide"/>
                 <field name="supply_id" optional="show"/>
                 <field name="energy_type"/>
