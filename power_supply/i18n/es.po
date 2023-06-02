@@ -37,7 +37,7 @@ msgstr "Puerto"
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_supply__meter_owner__acquire
 msgid "Acquired"
-msgstr "En propiedad"
+msgstr "Comprado"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__message_needaction
