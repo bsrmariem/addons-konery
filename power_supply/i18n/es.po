@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-02 16:23+0000\n"
-"PO-Revision-Date: 2023-06-02 18:27+0200\n"
+"POT-Creation-Date: 2023-06-02 16:38+0000\n"
+"PO-Revision-Date: 2023-06-02 18:40+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -518,12 +518,12 @@ msgstr "Nombre de icono awesome p.e. fa-tasks"
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_communication__type__gprs
 msgid "GPRS"
-msgstr "GPRS"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_communication__type__gsm
 msgid "GSM"
-msgstr "GSM"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_contract_type__energy_type__gas
@@ -532,7 +532,7 @@ msgstr "GSM"
 #: model_terms:ir.ui.view,arch_db:power_supply.power_saving_search
 #: model_terms:ir.ui.view,arch_db:power_supply.power_supply_search
 msgid "Gas"
-msgstr "Gas"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.actions.act_window,name:power_supply.action_power_gas_contract
@@ -637,7 +637,7 @@ msgstr "Icono"
 #: model:ir.model.fields,help:power_supply.field_power_sim__activity_exception_icon
 #: model:ir.model.fields,help:power_supply.field_power_supply__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Icono de excepción en actividad"
+msgstr "Icono de excepción en actividad."
 
 #. module: power_supply
 #: model:ir.model.fields,help:power_supply.field_power_communication__message_needaction
@@ -669,7 +669,7 @@ msgstr "Ratio de intensidad"
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_communication__protocol_communication__internet
 msgid "Internet"
-msgstr "Internet"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__message_is_follower
@@ -685,7 +685,7 @@ msgstr "Es seguidor"
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_communication__sim_owner__konery
 msgid "Konery"
-msgstr "Konery"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__konery360
@@ -1105,11 +1105,6 @@ msgid "Power Supplies"
 msgstr "Suministros"
 
 #. module: power_supply
-#: model:ir.ui.menu,name:power_supply.power_supply_icon_menu
-msgid "Power Supply"
-msgstr "Punto de Suministro"
-
-#. module: power_supply
 #: model:ir.model,name:power_supply.model_power_tag
 msgid "Power Tags"
 msgstr "Etiquetas"
@@ -1291,6 +1286,7 @@ msgid "Street"
 msgstr "Calle"
 
 #. module: power_supply
+#: model:ir.ui.menu,name:power_supply.power_supply_icon_menu
 #: model:ir.ui.menu,name:power_supply.power_supply_menu
 msgid "Supplies"
 msgstr "Suministros"
