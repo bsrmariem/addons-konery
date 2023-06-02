@@ -65,7 +65,7 @@ class ImporterCnmc(models.TransientModel):
                                 'coverage_id': coverage_id.id,
                             })
                         else:
-                            raise ValidationError('Please verify the Coverage name to match the already created ones')
+                            raise ValidationError('Verifica que existan la/las Operadoras (Cobertura) en el menú Configuración => Cobertura')
         except Exception as e:
             raise ValidationError('Error %s' % e)
 
