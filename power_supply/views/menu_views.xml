@@ -276,7 +276,7 @@
     <record id="power_contract_electric_menu" model="ir.ui.menu">
         <field name="action" ref="action_power_electric_contract"/>
         <field name="active" eval="True"/>
-        <field name="name">Contracts</field>
+        <field name="name">Electric Contracts</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
         <field name="sequence">20</field>
         <field name="web_icon" eval="False"/>
@@ -285,7 +285,7 @@
     <record id="power_contract_gas_menu" model="ir.ui.menu">
         <field name="action" ref="action_power_gas_contract"/>
         <field name="active" eval="True"/>
-        <field name="name">Contracts</field>
+        <field name="name">Gas Contracts</field>
         <field name="parent_id" ref="power_supply_main_menu"/>
         <field name="sequence">30</field>
         <field name="web_icon" eval="False"/>
@@ -333,7 +333,7 @@
     <!-- CONFIGURATION: CNMC DEALERS AND MARKETEERS: -->
     <record id="power_configuration_cnmc_menu" model="ir.ui.menu">
         <field name="active" eval="True"/>
-        <field name="name">Configuration</field>
+        <field name="name">CNMV</field>
         <field name="parent_id" ref="power_configuration_menu"/>
         <field name="sequence">70</field>
         <field name="web_icon" eval="False"/>
@@ -361,7 +361,7 @@
     <!-- CONFIGURATION: METER AND COMUNICATIONS: -->
     <record id="power_configuration_meter_com_menu" model="ir.ui.menu">
         <field name="active" eval="True"/>
-        <field name="name">Configuration</field>
+        <field name="name">Meter and communication</field>
         <field name="parent_id" ref="power_configuration_menu"/>
         <field name="sequence">100</field>
         <field name="web_icon" eval="False"/>
@@ -398,7 +398,7 @@
     <!-- CONFIGURATION: GENERAL INFO: -->
     <record id="power_configuration_infogeneral_menu" model="ir.ui.menu">
         <field name="active" eval="True"/>
-        <field name="name">Configuration</field>
+        <field name="name">General</field>
         <field name="parent_id" ref="power_configuration_menu"/>
         <field name="sequence">140</field>
         <field name="web_icon" eval="False"/>
