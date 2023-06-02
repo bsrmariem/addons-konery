@@ -60,7 +60,7 @@
         <field name="context">{'default_energy_type':'electricity'}</field>
         <field name="filter" eval="False"/>
         <field name="limit">80</field>
-        <field name="name">Contracts</field>
+        <field name="name">Electricity Contracts</field>
         <field name="res_model">power.contract</field>
         <field name="search_view_id" eval="False"/>
         <field name="target">current</field>
@@ -76,7 +76,7 @@
         <field name="context">{'default_energy_type':'gas'}</field>
         <field name="filter" eval="False"/>
         <field name="limit">80</field>
-        <field name="name">Contracts</field>
+        <field name="name">Gas Contracts</field>
         <field name="res_model">power.contract</field>
         <field name="search_view_id" eval="False"/>
         <field name="target">current</field>
@@ -408,7 +408,7 @@
         <field name="action" ref="action_power_pricelist"/>
         <field name="active" eval="True"/>
         <field name="name">Pricelist</field>
-        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="parent_id" ref="power_configuration_infogeneral_menu"/>
         <field name="sequence">150</field>
         <field name="web_icon" eval="False"/>
     </record>
@@ -417,7 +417,7 @@
         <field name="action" ref="action_power_contract_type"/>
         <field name="active" eval="True"/>
         <field name="name">Contract type</field>
-        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="parent_id" ref="power_configuration_infogeneral_menu"/>
         <field name="sequence">160</field>
         <field name="web_icon" eval="False"/>
     </record>
@@ -426,7 +426,7 @@
         <field name="action" ref="action_power_tag"/>
         <field name="active" eval="True"/>
         <field name="name">Tags</field>
-        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="parent_id" ref="power_configuration_infogeneral_menu"/>
         <field name="sequence">170</field>
         <field name="web_icon" eval="False"/>
     </record>
