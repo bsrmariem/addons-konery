@@ -100,7 +100,7 @@
                     <notebook name="power_saving" attrs="{'invisible':[('id','=',False)]}">
                         <page name="saving" string="Savings">
                             <field name="saving_ids">
-                                <tree name="power_savings" editable="top">
+                                <tree name="power_savings">
                                     <field name="partner_id" invisible="1"/>
                                     <field name="supply_id" options="{'no_quick_create': True, 'no_create_edit':True}" invisible="1"/>
                                     <field name="cups" invisible="1"/>
@@ -110,6 +110,7 @@
                                     <field name="date"/>
                                     <field name="state"/>
                                     <field name="currency_id" invisible="1"/>
+                                    <field name="description" optional="hide" widget="html"/>
                                 </tree>
                             </field>
                         </page>

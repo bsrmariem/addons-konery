@@ -12,8 +12,6 @@ class PowerPower(models.Model):
                                    related='supply_id.energy_type')
 
     partner_id = fields.Many2one('res.partner', related='supply_id.partner_id', string='Customer', store=True)
-    contract_id = fields.Many2one('power.contract', string='Contract', store=True)
-    type_id = fields.Many2one('power.contract.type', string='Type', store=True, related='contract_id.type_id')
 
     date_on = fields.Date(string='Activation date')
     qgas = fields.Float(string='Q', store=True)

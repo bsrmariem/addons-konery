@@ -28,7 +28,7 @@
             <form>
                 <sheet name="main" string="Communications">
                     <h2>
-                        <field name="name"/>
+                        <field name="name" placeholder="Communnication name"/>
                     </h2>
                     <group name="communication" string="Communication">
                         <group>
