@@ -34,7 +34,7 @@
                 <sheet name="main" string="Power supply">
                     <group name="basic_params">
                         <group>
-                            <field name="name" string="Name (*)"/>
+                            <field name="name" string="Name (*)" placeholder="Power supply name"/>
                             <field name="energy_type" string="Energy (*)"
                                    attrs="{'readonly':[('energy_type_readonly','=',True)]}"/>
                             <field name="partner_id" string="Customer (*)"/>
