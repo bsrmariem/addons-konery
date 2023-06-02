@@ -7,13 +7,11 @@
         <field name="inherit_id" eval="False"/>
         <field name="type">tree</field>
         <field name="arch" type="xml">
-            <tree name="power_pricelist_tree">
+            <tree name="power_power_tree">
                 <field name="name" optional="hide"/>
                 <field name="supply_id" optional="show"/>
                 <field name="energy_type"/>
                 <field name="partner_id" optional="show"/>
-                <field name="contract_id" optional="hide"/>
-                <field name="type_id" optional="hide"/>
                 <field name="date_on" optional="show"/>
             </tree>
         </field>
