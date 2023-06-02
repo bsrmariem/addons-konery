@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="meter_owner">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="sup 0206" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00170" summary="power supply v4">
-      <created>1685203201460</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1685203201460</updated>
     </task>
     <task id="LOCAL-00171" summary="power supply v4">
       <created>1685203408349</created>
@@ -422,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685695974639</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="sup 0206">
+      <created>1685706681749</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1685706681749</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -448,7 +445,8 @@
     <MESSAGE value="supply-meter" />
     <MESSAGE value="project_task_import" />
     <MESSAGE value="meter_owner" />
-    <option name="LAST_COMMIT_MESSAGE" value="meter_owner" />
+    <MESSAGE value="sup 0206" />
+    <option name="LAST_COMMIT_MESSAGE" value="sup 0206" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

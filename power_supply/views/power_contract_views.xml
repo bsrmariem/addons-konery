@@ -39,7 +39,7 @@
                     </h2>
                     <group name="contract_data" string="Administrative data">
                         <group>
-                            <field name="supply_id" widget="selection"/>
+                            <field name="supply_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
                             <field name="energy_type"/>
                             <field name="type_id" domain="[('energy_type','=',energy_type)]" widget="selection"/>
                             <field name="marketeer_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
