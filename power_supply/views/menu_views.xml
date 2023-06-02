@@ -250,7 +250,7 @@
     <menuitem
             action="action_power_supply"
             id="power_supply_icon_menu"
-            name="Power Supply"
+            name="Supplies"
             sequence="1"
             web_icon="power_supply,static/description/icon.png"
     />
