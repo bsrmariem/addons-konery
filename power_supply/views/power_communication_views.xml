@@ -15,6 +15,28 @@
                 <field name="access_ip"/>
                 <field name="access_port"/>
                 <field name="konery360" optional="show"/>
+                <field name="type" optional="hide"/>
+                <field name="photovoltaic" optional="hide"/>
+                <field name="cups" optional="hide"/>
+                <field name="meter_brand" optional="hide"/>
+                <field name="meter_link_addr" optional="hide"/>
+                <field name="meter_point" optional="hide"/>
+                <field name="meter_serial_speed" optional="hide"/>
+                <field name="meter_optical_speed" optional="hide"/>
+                <field name="meter_voltage_ratio" optional="hide"/>
+                <field name="meter_intensity_ratio" optional="hide"/>
+                <field name="sim_owner" optional="hide"/>
+                <field name="meter_optical_speed" optional="hide"/>
+                <field name="sim_owner" optional="hide"/>
+                <field name="protocol_communication" optional="hide"/>
+                <field name="protocol_port" optional="hide"/>
+                <field name="description" optional="hide" widget="html"/>
+                <field name="iccid" optional="hide"/>
+                <field name="phone" optional="hide"/>
+                <field name="access_ip" optional="hide"/>
+                <field name="access_port" optional="hide"/>
+                <field name="control_port" optional="hide"/>
+                <field name="" optional="hide"/>
             </tree>
         </field>
     </record>
@@ -39,9 +61,11 @@
                                    attrs="{'invisible':[('sim_owner','!=','konery')],}"/>
                             <field name="sim_id" domain="[('communication_ids','=',False)]"
                                    attrs="{'invisible':[('sim_owner','!=','konery')],}"/>
-                            <field name="iccid" attrs="{'readonly':[('sim_id','!=',False)]}"/>
+                            <field name="iccid" attrs="{'readonly':[('sim_id','!=',False)],
+                                   'invisible':[('sim_owner','not in',['dealer'])],}"/>
                             <field name="phone"
-                                   attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','in', ['datadis'])]}"/>
+                                   attrs="{'readonly':[('sim_id','!=',False)],
+                                   'invisible':['|',('sim_owner','in',[False]),('type','in', ['datadis'])]}"/>
                             <field name="protocol_communication" attrs="{'readonly':[('sim_id','!=',False)]}"/>
                         </group>
                         <group>
