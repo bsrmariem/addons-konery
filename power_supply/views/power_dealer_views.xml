@@ -12,7 +12,7 @@
                 <field name="active" optional="show"/>
                 <field name="order_number" optional="hide"/>
                 <field name="phone" optional="show"/>
-                <field name="cif" optional="show"/>
+                <field name="vat" optional="show"/>
                 <field name="web" optional="hide"/>
             </tree>
         </field>
@@ -32,7 +32,7 @@
                     <group name="administrative_data" string="Administrative data">
                         <group>
                             <field name="phone"/>
-                            <field name="cif"/>
+                            <field name="vat"/>
                         </group>
                         <group>
                             <field name="order_number"/>
