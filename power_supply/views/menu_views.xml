@@ -238,6 +238,11 @@
             web_icon="power_supply,static/description/icon.png"
     />
 
+
+
+
+
+
     <record id="power_supply_menu" model="ir.ui.menu">
         <field name="action" ref="action_power_supply"/>
         <field name="active" eval="True"/>
@@ -286,7 +291,7 @@
 
 
 
-
+    <!-- MAIN CONFIGURATION MENU: -->
     <record id="power_configuration_menu" model="ir.ui.menu">
         <field name="active" eval="True"/>
         <field name="name">Configuration</field>
@@ -295,30 +300,12 @@
         <field name="web_icon" eval="False"/>
     </record>
 
-    <record id="power_pricelist_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_pricelist"/>
+    <!-- CONFIGURATION: CNMC DEALERS AND MARKETEERS: -->
+    <record id="power_configuration_cnmc_menu" model="ir.ui.menu">
         <field name="active" eval="True"/>
-        <field name="name">Pricelist</field>
+        <field name="name">Configuration</field>
         <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">10</field>
-        <field name="web_icon" eval="False"/>
-    </record>
-
-    <record id="power_contract_type_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_contract_type"/>
-        <field name="active" eval="True"/>
-        <field name="name">Contract type</field>
-        <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">20</field>
-        <field name="web_icon" eval="False"/>
-    </record>
-
-    <record id="power_tag_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_tag"/>
-        <field name="active" eval="True"/>
-        <field name="name">Tags</field>
-        <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">30</field>
+        <field name="sequence">70</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -326,8 +313,8 @@
         <field name="action" ref="action_power_dealer"/>
         <field name="active" eval="True"/>
         <field name="name">Dealers</field>
-        <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">40</field>
+        <field name="parent_id" ref="power_configuration_cnmc_menu"/>
+        <field name="sequence">80</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -335,8 +322,18 @@
         <field name="action" ref="action_power_marketeer"/>
         <field name="active" eval="True"/>
         <field name="name">Marketeers</field>
+        <field name="parent_id" ref="power_configuration_cnmc_menu"/>
+        <field name="sequence">90</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+
+    <!-- CONFIGURATION: METER AND COMUNICATIONS: -->
+    <record id="power_configuration_meter_com_menu" model="ir.ui.menu">
+        <field name="active" eval="True"/>
+        <field name="name">Configuration</field>
         <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">50</field>
+        <field name="sequence">100</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -344,8 +341,17 @@
         <field name="action" ref="action_power_sim"/>
         <field name="active" eval="True"/>
         <field name="name">Sims</field>
-        <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">60</field>
+        <field name="parent_id" ref="power_configuration_meter_com_menu"/>
+        <field name="sequence">110</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_port_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_port"/>
+        <field name="active" eval="True"/>
+        <field name="name">Communication Ports</field>
+        <field name="parent_id" ref="power_configuration_infogeneral_menu"/>
+        <field name="sequence">120</field>
         <field name="web_icon" eval="False"/>
     </record>
 
@@ -354,16 +360,44 @@
         <field name="active" eval="True"/>
         <field name="name">Coverages</field>
         <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">70</field>
+        <field name="sequence">130</field>
         <field name="web_icon" eval="False"/>
     </record>
 
-    <record id="power_port_menu" model="ir.ui.menu">
-        <field name="action" ref="action_power_port"/>
+
+    <!-- CONFIGURATION: GENERAL INFO: -->
+    <record id="power_configuration_infogeneral_menu" model="ir.ui.menu">
         <field name="active" eval="True"/>
-        <field name="name">Communication Ports</field>
+        <field name="name">Configuration</field>
         <field name="parent_id" ref="power_configuration_menu"/>
-        <field name="sequence">80</field>
+        <field name="sequence">140</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_pricelist_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_pricelist"/>
+        <field name="active" eval="True"/>
+        <field name="name">Pricelist</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">150</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_contract_type_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_contract_type"/>
+        <field name="active" eval="True"/>
+        <field name="name">Contract type</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">160</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_tag_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_tag"/>
+        <field name="active" eval="True"/>
+        <field name="name">Tags</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">170</field>
         <field name="web_icon" eval="False"/>
     </record>
 
