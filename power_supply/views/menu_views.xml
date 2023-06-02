@@ -388,7 +388,7 @@
         <field name="action" ref="action_power_port"/>
         <field name="active" eval="True"/>
         <field name="name">Communication Ports</field>
-        <field name="parent_id" ref="power_configuration_infogeneral_menu"/>
+        <field name="parent_id" ref="power_configuration_meter_com_menu"/>
         <field name="sequence">120</field>
         <field name="web_icon" eval="False"/>
     </record>
@@ -397,7 +397,7 @@
         <field name="action" ref="action_power_coverage"/>
         <field name="active" eval="True"/>
         <field name="name">Coverages</field>
-        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="parent_id" ref="power_configuration_meter_com_menu"/>
         <field name="sequence">130</field>
         <field name="web_icon" eval="False"/>
     </record>
