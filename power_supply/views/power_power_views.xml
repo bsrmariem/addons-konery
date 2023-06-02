@@ -48,7 +48,7 @@
                     <div name="electricity_power" attrs="{'invisible':[('energy_type','!=','electricity')]}">
                         <table>
                             <tr>
-                                <th><t>P1/Q</t></th>
+                                <th><t>P1</t></th>
                                 <th><t>P2</t></th>
                                 <th><t>P3</t></th>
                                 <th><t>P4</t></th>

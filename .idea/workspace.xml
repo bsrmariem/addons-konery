@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="project_task_import">
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="meter_owner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_power.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_power.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/views/power_power_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_power_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,20 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00167" summary="power supply v4">
-      <created>1685202947034</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1685202947034</updated>
-    </task>
-    <task id="LOCAL-00168" summary="power supply v4">
-      <created>1685202993326</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1685202993326</updated>
     </task>
     <task id="LOCAL-00169" summary="power supply v4">
       <created>1685203022120</created>
@@ -421,7 +409,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685362407644</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="meter_owner">
+      <created>1685637533809</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1685637533813</updated>
+    </task>
+    <task id="LOCAL-00217" summary="meter_owner">
+      <created>1685637743397</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1685637743397</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -446,7 +448,8 @@
     <MESSAGE value="project_task_dpt" />
     <MESSAGE value="supply-meter" />
     <MESSAGE value="project_task_import" />
-    <option name="LAST_COMMIT_MESSAGE" value="project_task_import" />
+    <MESSAGE value="meter_owner" />
+    <option name="LAST_COMMIT_MESSAGE" value="meter_owner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
