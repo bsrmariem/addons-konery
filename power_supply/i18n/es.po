@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-02 15:35+0000\n"
-"PO-Revision-Date: 2023-06-02 18:17+0200\n"
+"POT-Creation-Date: 2023-06-02 16:23+0000\n"
+"PO-Revision-Date: 2023-06-02 18:27+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -161,7 +161,6 @@ msgid "Available"
 msgstr "Disponible"
 
 #. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_dealer__cif
 #: model:ir.model.fields,field_description:power_supply.field_power_marketeer__cif
 msgid "CIF"
 msgstr ""
@@ -169,7 +168,7 @@ msgstr ""
 #. module: power_supply
 #: model:ir.ui.menu,name:power_supply.power_configuration_cnmc_menu
 msgid "CNMV"
-msgstr "CNMV"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__cups
@@ -177,7 +176,7 @@ msgstr "CNMV"
 #: model:ir.model.fields,field_description:power_supply.field_power_saving__cups
 #: model:ir.model.fields,field_description:power_supply.field_power_supply__cups
 msgid "CUPS"
-msgstr "CUPS"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_saving__state__cancel
@@ -192,7 +191,7 @@ msgstr "Ciudad"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_tag__color
 msgid "Color"
-msgstr "Color"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_sim__communication_ids
@@ -335,12 +334,12 @@ msgstr "Cliente (*)"
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_communication__protocol_communication__dlms
 msgid "DLMS Prime"
-msgstr "DLMS Prime"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_communication__type__datadis
 msgid "Datadis"
-msgstr "Datadis"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_saving__date
@@ -549,7 +548,7 @@ msgstr "Potencia de Gas"
 #. module: power_supply
 #: model:ir.ui.menu,name:power_supply.power_configuration_infogeneral_menu
 msgid "General"
-msgstr "General"
+msgstr ""
 
 #. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_contract_search
@@ -579,7 +578,7 @@ msgstr "Grupo empresarial"
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__iccid
 #: model:ir.model.fields,field_description:power_supply.field_power_sim__name
 msgid "ICCID"
-msgstr "ICCID"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__id
@@ -596,17 +595,17 @@ msgstr "ICCID"
 #: model:ir.model.fields,field_description:power_supply.field_power_supply__id
 #: model:ir.model.fields,field_description:power_supply.field_power_tag__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_communication__protocol_communication__iec
 msgid "IEC"
-msgstr "IEC"
+msgstr ""
 
 #. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_communication_default_form
 msgid "INFO"
-msgstr "INFO"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__access_ip
@@ -691,7 +690,7 @@ msgstr "Konery"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__konery360
 msgid "Konery 360"
-msgstr "Konery 360"
+msgstr "K360"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication____last_update
@@ -834,12 +833,12 @@ msgstr "Foto del contador"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_supply__meter_owner
 msgid "Meter owner"
-msgstr "Propietario del contador"
+msgstr "Propiedad contador"
 
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_communication__protocol_communication__modbus
 msgid "Modbus"
-msgstr "Modbus"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__my_activity_date_deadline
@@ -1103,12 +1102,12 @@ msgstr "Ahorros en Puntos de Suministro"
 #: model:ir.model,name:power_supply.model_power_supply
 #: model:ir.ui.menu,name:power_supply.power_supply_main_menu
 msgid "Power Supplies"
-msgstr "Puntos de Suministro"
+msgstr "Suministros"
 
 #. module: power_supply
 #: model:ir.ui.menu,name:power_supply.power_supply_icon_menu
 msgid "Power Supply"
-msgstr "Puntos de Suministro"
+msgstr "Punto de Suministro"
 
 #. module: power_supply
 #: model:ir.model,name:power_supply.model_power_tag
@@ -1192,7 +1191,7 @@ msgstr "Responsable"
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__sim_id
 #: model_terms:ir.ui.view,arch_db:power_supply.power_sim_default_form
 msgid "SIM"
-msgstr "SIM"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__sim_owner
@@ -1235,7 +1234,7 @@ msgstr "Buscar punto de suministro"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_marketeer__sector
 msgid "Sector"
-msgstr "Sector"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_saving__state__sent
@@ -1342,6 +1341,11 @@ msgid "Used"
 msgstr "Usada"
 
 #. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_dealer__vat
+msgid "VAT"
+msgstr "NIF"
+
+#. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__meter_voltage_ratio
 msgid "Voltage ratio"
 msgstr "Ratio de voltaje"
@@ -1350,7 +1354,7 @@ msgstr "Ratio de voltaje"
 #: model:ir.model.fields,field_description:power_supply.field_power_dealer__web
 #: model:ir.model.fields,field_description:power_supply.field_power_marketeer__web
 msgid "Web"
-msgstr "Web"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_marketeer__zip
