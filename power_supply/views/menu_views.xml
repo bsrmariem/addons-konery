@@ -255,20 +255,11 @@
             web_icon="power_supply,static/description/icon.png"
     />
 
-    <menuitem
-            action="action_power_supply"
-            id="power_supply_main_enu"
-            name="Power Supply"
-            sequence="1"
-            inherit_id="power_supply_icon_menu"
-            web_icon="power_supply,static/description/icon.png"
-    />
-
-    <record id="power_supply_menu" model="ir.ui.menu">
+    <record id="power_supply_main_menu" model="ir.ui.menu">
         <field name="action" ref="action_power_supply"/>
         <field name="active" eval="True"/>
-        <field name="name">Supplies</field>
-        <field name="parent_id" ref="power_supply_main_enu"/>
+        <field name="name">Power Supplies</field>
+        <field name="parent_id" ref="power_supply_icon_enu"/>
         <field name="sequence">10</field>
         <field name="web_icon" eval="False"/>
     </record>
