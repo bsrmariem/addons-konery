@@ -36,7 +36,6 @@
                 <field name="access_ip" optional="hide"/>
                 <field name="access_port" optional="hide"/>
                 <field name="control_port" optional="hide"/>
-                <field name="" optional="hide"/>
             </tree>
         </field>
     </record>
