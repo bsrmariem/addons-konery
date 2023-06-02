@@ -260,6 +260,7 @@
             id="power_supply_main_enu"
             name="Power Supply"
             sequence="1"
+            inherit_id="power_supply_icon_menu"
             web_icon="power_supply,static/description/icon.png"
     />
 
