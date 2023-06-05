@@ -17,7 +17,7 @@ class PowerMarketeer(models.Model):
     order_number = fields.Char("Order number")
     phone = fields.Char("Phone")
     sector = fields.Char("Sector")
-    cif = fields.Char("CIF")
+    vat = fields.Char("CIF")
     status = fields.Char("Status")
     date_discharge = fields.Date(string='Date discharge')
     date_leaving = fields.Date(string='Date leaving')
