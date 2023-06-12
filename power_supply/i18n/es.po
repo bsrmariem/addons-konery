@@ -615,7 +615,7 @@ msgstr "Dirección IP"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__access_port
 msgid "IP port"
-msgstr "Puerto"
+msgstr "Puerto de acceso"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__activity_exception_icon
