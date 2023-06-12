@@ -978,37 +978,37 @@ msgstr "Otros detalles y notas …"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_power__p1
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
-msgid "P1"
+msgid "P1 (kW)"
 msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_power__p2
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
-msgid "P2"
+msgid "P2 (kW)"
 msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_power__p3
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
-msgid "P3"
+msgid "P3 (kW)"
 msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_power__p4
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
-msgid "P4"
+msgid "P4 (kW)"
 msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_power__p5
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
-msgid "P5"
+msgid "P5 (kW)"
 msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_power__p6
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
-msgid "P6"
+msgid "P6 (kW)"
 msgstr ""
 
 #. module: power_supply
@@ -1140,8 +1140,8 @@ msgstr "Nombre del punto de suministro"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_saving__power_qty
-msgid "Power(kWh/Q)"
-msgstr "Potencia (kWh/Q)"
+msgid "Power(kWh/day)"
+msgstr "Potencia (kWh/día)"
 
 #. module: power_supply
 #: model:ir.actions.act_window,name:power_supply.action_power_power
