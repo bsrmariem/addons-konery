@@ -116,6 +116,7 @@
                                     <field name="date"/>
                                     <field name="state"/>
                                     <field name="currency_id" invisible="1"/>
+                                    <field name="energy_type" invisible="1"/>
                                     <field name="description" optional="hide" widget="html"/>
                                 </tree>
                             </field>
