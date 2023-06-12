@@ -27,7 +27,7 @@
             <form>
                 <sheet name="main" string="Dealer">
                     <h2>
-                        <field name="name"/>
+                        <field name="name" placeholder="Dealer company name"/>
                     </h2>
                     <group name="administrative_data" string="Administrative data">
                         <group>

@@ -4,7 +4,10 @@
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="sup 0206">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/i18n/es.po" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/i18n/es.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_contract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/views/power_dealer_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_dealer_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,20 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00192" summary="power supply v4">
-      <created>1685231929114</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1685231929114</updated>
-    </task>
-    <task id="LOCAL-00193" summary="power supply v4">
-      <created>1685232373222</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1685232373222</updated>
     </task>
     <task id="LOCAL-00194" summary="power supply v4">
       <created>1685234470562</created>
@@ -423,7 +412,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685724193860</updated>
     </task>
-    <option name="localTasksCounter" value="241" />
+    <task id="LOCAL-00241" summary="sup 0206">
+      <created>1686589353620</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1686589353620</updated>
+    </task>
+    <task id="LOCAL-00242" summary="sup 0206">
+      <created>1686589460065</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1686589460065</updated>
+    </task>
+    <option name="localTasksCounter" value="243" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

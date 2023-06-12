@@ -28,4 +28,4 @@ class PowerContract(models.Model):
     compromise = fields.Boolean('Compromise')
     auto_renew = fields.Boolean('Auto renew')
     atr_detached = fields.Boolean('Detached ATR')
-#    power_ids = fields.One2many('power.power', 'contract_id', string='Lines')
+    description = fields.Text('Notes')

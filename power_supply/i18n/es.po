@@ -226,7 +226,7 @@ msgstr "Nombre para la comunicación"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_contract__compromise
 msgid "Compromise"
-msgstr "Compromiso"
+msgstr "Permanencia"
 
 #. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_contract_search

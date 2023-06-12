@@ -31,7 +31,7 @@
             <form>
                 <sheet name="main" string="Marketeer">
                     <h2>
-                        <field name="name"/>
+                        <field name="name" placeholder="Marketeer company name"/>
                     </h2>
                     <group name="administrative_data" string="Administrative data">
                         <group>

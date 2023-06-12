@@ -46,8 +46,8 @@
                             <field name="marketeer_contact_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
                         </group>
                         <group>
-                            <field name="origin_warranty"/>
-                            <field name="atr_detached"/>
+                            <field name="origin_warranty" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
+                            <field name="atr_detached" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
                             <field name="compromise"/>
                             <field name="auto_renew"/>
                         </group>
@@ -64,6 +64,10 @@
                             <field name="partner_id"/>
                             <field name="company_group_id"/>
                         </group>
+                    </group>
+
+                    <group name="other_notes" string="Description and notes">
+                        <field name="description" placeholder="Other information ..."/>
                     </group>
 
                 </sheet>
