@@ -13,7 +13,7 @@
                 <field name="order_number" optional="show"/>
                 <field name="phone" optional="hide"/>
                 <field name="sector" optional="show"/>
-                <field name="cif" optional="show"/>
+                <field name="vat" optional="show"/>
                 <field name="date_discharge" optional="hide"/>
                 <field name="date_leaving" optional="hide"/>
                 <field name="web" optional="hide"/>
@@ -38,7 +38,7 @@
                             <field name="order_number"/>
                             <field name="phone"/>
                             <field name="sector"/>
-                            <field name="cif"/>
+                            <field name="vat"/>
                         </group>
                         <group>
                             <field name="date_discharge"/>
