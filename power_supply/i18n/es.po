@@ -32,7 +32,7 @@ msgstr "Dirección IP"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_sim__access_port
 msgid "Access port"
-msgstr "Puerto"
+msgstr "Puerto de acceso"
 
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_supply__meter_owner__acquire
@@ -270,7 +270,7 @@ msgstr "Puerto de control"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_sim__coverage_id
 msgid "Coverage"
-msgstr "Covertura"
+msgstr "Cobertura"
 
 #. module: power_supply
 #: model:ir.actions.act_window,name:power_supply.action_power_coverage

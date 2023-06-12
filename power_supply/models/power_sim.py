@@ -12,7 +12,6 @@ class PowerSim(models.Model):
 
     # ¿Porqué name y phone? name debería ser number y quitar phone
     name = fields.Char(string='ICCID', required=True)
-    #iccid = fields.Char("ICCID")
     access_ip = fields.Char("Access IP")
     access_port = fields.Integer("Access port")
     control_port = fields.Integer("Control port")
