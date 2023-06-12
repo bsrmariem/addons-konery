@@ -51,7 +51,7 @@
                             <field name="cups" required="1"/>
                             <field name="anual_power"/>
                             <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_quick_create': True, 'no_create_edit': True}"/>
-                            <field name="meter_owner" attrs="{'invisible':[('energy_type','!=','electricity')]}">
+                            <field name="meter_owner" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
                         </group>
                     </group>
                     <div attrs="{'invisible':[('id','!=',False)]}">
