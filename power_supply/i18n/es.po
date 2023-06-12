@@ -181,7 +181,7 @@ msgstr ""
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_saving__state__cancel
 msgid "Cancel"
-msgstr "Cancelado"
+msgstr "Descartado"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_marketeer__city
@@ -430,7 +430,7 @@ msgstr "Nombre mostrado"
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_saving__state__done
 msgid "Done"
-msgstr "Hecho"
+msgstr "Realizado"
 
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_saving__state__draft
@@ -1139,11 +1139,6 @@ msgid "Power supply name"
 msgstr "Nombre del punto de suministro"
 
 #. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_saving__power_qty
-msgid "Power(kWh/day)"
-msgstr "Potencia (kWh/día)"
-
-#. module: power_supply
 #: model:ir.actions.act_window,name:power_supply.action_power_power
 #: model:ir.ui.menu,name:power_supply.power_power_menu
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
@@ -1235,7 +1230,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:power_supply.selection__power_saving__state__sent
 #: model_terms:ir.ui.view,arch_db:power_supply.power_saving_search
 msgid "Sent"
-msgstr "Enviado"
+msgstr "Propuesto"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__meter_serial_speed

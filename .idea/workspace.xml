@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="sup 1206">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/i18n/es.po" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/i18n/es.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/models/power_saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_saving.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/views/power_saving_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_saving_views.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" afterDir="false" />
@@ -80,34 +80,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00196" summary="power supply v4">
-      <created>1685236095563</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1685236095563</updated>
-    </task>
-    <task id="LOCAL-00197" summary="power supply v4">
-      <created>1685236441559</created>
-      <option name="number" value="00197" />
-      <option name="presentableId" value="LOCAL-00197" />
-      <option name="project" value="LOCAL" />
-      <updated>1685236441559</updated>
-    </task>
-    <task id="LOCAL-00198" summary="power supply v4">
-      <created>1685236540423</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1685236540423</updated>
-    </task>
-    <task id="LOCAL-00199" summary="power supply v4">
-      <created>1685237054220</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1685237054220</updated>
     </task>
     <task id="LOCAL-00200" summary="power supply v4">
       <created>1685238386656</created>
@@ -424,7 +396,35 @@
       <option name="project" value="LOCAL" />
       <updated>1686590323948</updated>
     </task>
-    <option name="localTasksCounter" value="245" />
+    <task id="LOCAL-00245" summary="sup 1206">
+      <created>1686591562392</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1686591562392</updated>
+    </task>
+    <task id="LOCAL-00246" summary="sup 1206">
+      <created>1686591652199</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1686591652200</updated>
+    </task>
+    <task id="LOCAL-00247" summary="sup 1206">
+      <created>1686591788894</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1686591788894</updated>
+    </task>
+    <task id="LOCAL-00248" summary="sup 1206">
+      <created>1686591813360</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1686591813360</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
