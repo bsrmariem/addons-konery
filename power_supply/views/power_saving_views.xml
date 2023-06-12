@@ -11,7 +11,8 @@
                 <field name="name"/>
                 <field name="partner_id"/>
                 <field name="supply_id"/>
-                <field name="power_qty"/>
+                <field name="electricity_save" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
+                <field name="gas_save" attrs="{'invisible':[('energy_type','!=','gas')]}"/>
                 <field name="amount" widget="monetary"/>
                 <field name="cups" optional="show"/>
                 <field name="date"/>
@@ -39,7 +40,8 @@
                     <group name="general_saving">
                         <group>
                             <field name="supply_id"/>
-                            <field name="power_qty"/>
+                            <field name="electricity_save" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
+                            <field name="gas_save" attrs="{'invisible':[('energy_type','!=','gas')]}"/>
                             <field name="amount" widget="monetary"/>
                             <field name="date"/>
                         </group>

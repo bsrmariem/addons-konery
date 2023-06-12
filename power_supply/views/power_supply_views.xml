@@ -110,7 +110,8 @@
                                     <field name="supply_id" options="{'no_quick_create': True, 'no_create_edit':True}" invisible="1"/>
                                     <field name="cups" invisible="1"/>
                                     <field name="name"/>
-                                    <field name="power_qty"/>
+                                    <field name="electricity_save" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
+                                    <field name="gas_save" attrs="{'invisible':[('energy_type','!=','gas')]}"/>
                                     <field name="amount" widget="monetary"/>
                                     <field name="date"/>
                                     <field name="state"/>

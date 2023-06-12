@@ -15,7 +15,8 @@ class PowerSaving(models.Model):
                                    related='supply_id.energy_type')
     partner_id = fields.Many2one('res.partner', string='Customer', related='supply_id.partner_id')
     cups = fields.Char('CUPS', related='supply_id.cups', store=True)
-    power_qty = fields.Integer('Power(kWh/Q)')
+    electricity_save = fields.Integer('Power(kW)')
+    gas_save = fields.Integer('Power(kWh/day)')
     amount = fields.Monetary('Amount')
     currency_id = fields.Many2one('res.currency', string='Currency', default=1)
     state = fields.Selection([('draft','Draft'),('sent','Sent'),('done','Done'),('cancel','Cancel')],

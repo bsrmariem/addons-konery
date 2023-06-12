@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="sup 0206">
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="sup 1206">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/i18n/es.po" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/i18n/es.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/models/power_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_contract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_dealer_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_dealer_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_saving.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/views/power_saving_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_saving_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,20 +80,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00194" summary="power supply v4">
-      <created>1685234470562</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1685234470562</updated>
-    </task>
-    <task id="LOCAL-00195" summary="power supply v4">
-      <created>1685234777084</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1685234777084</updated>
     </task>
     <task id="LOCAL-00196" summary="power supply v4">
       <created>1685236095563</created>
@@ -426,7 +410,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686589460065</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="sup 1206">
+      <created>1686590128788</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1686590128788</updated>
+    </task>
+    <task id="LOCAL-00244" summary="sup 1206">
+      <created>1686590323948</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1686590323948</updated>
+    </task>
+    <option name="localTasksCounter" value="245" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -453,6 +451,7 @@
     <MESSAGE value="project_task_import" />
     <MESSAGE value="meter_owner" />
     <MESSAGE value="sup 0206" />
-    <option name="LAST_COMMIT_MESSAGE" value="sup 0206" />
+    <MESSAGE value="sup 1206" />
+    <option name="LAST_COMMIT_MESSAGE" value="sup 1206" />
   </component>
 </project>
