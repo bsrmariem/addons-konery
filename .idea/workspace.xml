@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="sup 1206">
-      <change beforePath="$PROJECT_DIR$/power_supply/views/menu_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/menu_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_marketeer.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_marketeer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00206" summary="power supply v4">
-      <created>1685310117680</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1685310117680</updated>
     </task>
     <task id="LOCAL-00207" summary="power supply v4">
       <created>1685310594604</created>
@@ -421,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686642962965</updated>
     </task>
-    <option name="localTasksCounter" value="255" />
+    <task id="LOCAL-00255" summary="sup 1206">
+      <created>1686643682750</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1686643682750</updated>
+    </task>
+    <option name="localTasksCounter" value="256" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
