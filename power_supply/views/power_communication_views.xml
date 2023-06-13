@@ -59,11 +59,12 @@
                             <field name="sim_id" domain="[('communication_ids','=',False)]"
                                    attrs="{'invisible':[('sim_owner','!=','konery')],}"/>
                             <field name="iccid" attrs="{'readonly':[('sim_id','!=',False)],
-                                   'invisible':[('sim_owner','not in',['dealer'])],}"/>
+                                   'invisible':[('sim_owner','not in',['dealer'])]}"/>
                             <field name="phone"
                                    attrs="{'readonly':[('sim_id','!=',False)],
                                    'invisible':['|',('sim_owner','in',[False]),('type','in', ['datadis'])]}"/>
-                            <field name="protocol_communication" attrs="{'readonly':[('sim_id','!=',False)]}"/>
+                            <field name="protocol_communication" attrs="{'readonly':[('sim_id','!=',False)],
+                                   'invisible':[('type','not in',['gprs','other'])]}"/>
                         </group>
                         <group>
                             <field name="konery360"/>

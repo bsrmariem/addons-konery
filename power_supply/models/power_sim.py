@@ -22,8 +22,9 @@ class PowerSim(models.Model):
     communication_ids = fields.One2many('power.communication', 'sim_id', string='Communication', store=True)
 
     def _get_sim_state(self):
-        state = 'available'
-        if self.communication_ids.ids:
-            state = 'used'
-        self.state = state
+        for record in self:
+            state = 'available'
+            if record.communication_ids.ids:
+                state = 'used'
+            record['state'] = state
     state = fields.Selection(selection=STATE, string="State", store=False, compute='_get_sim_state')

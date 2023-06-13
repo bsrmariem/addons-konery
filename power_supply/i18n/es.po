@@ -968,7 +968,7 @@ msgstr "Garantía en origen"
 #. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_communication__type__other
 msgid "Other"
-msgstr "Otros"
+msgstr "Otro"
 
 #. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_communication_default_form
@@ -1039,7 +1039,7 @@ msgstr "Punto"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__protocol_port
 msgid "Port"
-msgstr "Puerto"
+msgstr "Puerto de comunicación"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_sim__rs485_port
