@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-02 16:38+0000\n"
-"PO-Revision-Date: 2023-06-02 18:40+0200\n"
+"POT-Creation-Date: 2023-06-13 08:20+0000\n"
+"PO-Revision-Date: 2023-06-13 10:32+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -109,6 +109,11 @@ msgid "Activity Type Icon"
 msgstr "Icono de tipo de actividad"
 
 #. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_supply_default_tree
+msgid "Activity by"
+msgstr "Actividad de"
+
+#. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_saving_default_form
 msgid "Add a description..."
 msgstr "Añade descripción …"
@@ -159,11 +164,6 @@ msgstr "Autorenovación"
 #: model:ir.model.fields.selection,name:power_supply.selection__power_sim__state__available
 msgid "Available"
 msgstr "Disponible"
-
-#. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__cif
-msgid "CIF"
-msgstr ""
 
 #. module: power_supply
 #: model:ir.ui.menu,name:power_supply.power_configuration_cnmc_menu
@@ -279,6 +279,11 @@ msgid "Coverages"
 msgstr "Coberturas"
 
 #. module: power_supply
+#: model_terms:ir.actions.act_window,help:power_supply.action_power_supply
+msgid "Crear nuevos documento"
+msgstr ""
+
+#. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__create_uid
 #: model:ir.model.fields,field_description:power_supply.field_power_contract__create_uid
 #: model:ir.model.fields,field_description:power_supply.field_power_contract_type__create_uid
@@ -389,6 +394,11 @@ msgid "Dealer"
 msgstr "Distribuidora"
 
 #. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_dealer_default_form
+msgid "Dealer company name"
+msgstr "Empresa distribuidora"
+
+#. module: power_supply
 #: model:ir.actions.act_window,name:power_supply.action_power_dealer
 #: model:ir.ui.menu,name:power_supply.power_dealer_menu
 msgid "Dealers"
@@ -399,6 +409,11 @@ msgstr "Distribuidoras"
 #: model:ir.model.fields,field_description:power_supply.field_power_saving__description
 msgid "Description"
 msgstr "Descripción"
+
+#. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_contract_default_form
+msgid "Description and notes"
+msgstr "Descripción y notas"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_contract__atr_detached
@@ -579,6 +594,11 @@ msgstr "Grupo empresarial"
 #: model:ir.model.fields,field_description:power_supply.field_power_sim__name
 msgid "ICCID"
 msgstr ""
+
+#. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_sim_default_form
+msgid "ICCID code"
+msgstr "Código ICCID"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__id
@@ -771,11 +791,21 @@ msgid "Manager"
 msgstr "Gestor"
 
 #. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_supply__location_map
+msgid "Map address"
+msgstr "Dirección para mapa"
+
+#. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_contract__marketeer_id
 #: model_terms:ir.ui.view,arch_db:power_supply.power_contract_search
 #: model_terms:ir.ui.view,arch_db:power_supply.power_marketeer_default_form
 msgid "Marketeer"
 msgstr "Comercializadora"
+
+#. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_marketeer_default_form
+msgid "Marketeer company name"
+msgstr "Empresa comercializadora"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_contract__marketeer_contact_id
@@ -852,6 +882,11 @@ msgid "My Activity Deadline"
 msgstr "Mi línea de actividades"
 
 #. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_supply_default_tree
+msgid "My Deadline"
+msgstr ""
+
+#. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_contract__name
 #: model:ir.model.fields,field_description:power_supply.field_power_contract_type__name
 #: model:ir.model.fields,field_description:power_supply.field_power_coverage__name
@@ -870,6 +905,17 @@ msgstr "Nombre"
 #: model_terms:ir.ui.view,arch_db:power_supply.power_supply_default_form
 msgid "Name (*)"
 msgstr "Nombre (*)"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_communication__activity_calendar_event_id
+#: model:ir.model.fields,field_description:power_supply.field_power_contract__activity_calendar_event_id
+#: model:ir.model.fields,field_description:power_supply.field_power_dealer__activity_calendar_event_id
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__activity_calendar_event_id
+#: model:ir.model.fields,field_description:power_supply.field_power_saving__activity_calendar_event_id
+#: model:ir.model.fields,field_description:power_supply.field_power_sim__activity_calendar_event_id
+#: model:ir.model.fields,field_description:power_supply.field_power_supply__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Próxima actividad de calendario"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__activity_date_deadline
@@ -903,6 +949,11 @@ msgstr "Asunto de próxima actividad"
 #: model:ir.model.fields,field_description:power_supply.field_power_supply__activity_type_id
 msgid "Next Activity Type"
 msgstr "Tipo de próxima actividad"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_contract__description
+msgid "Notes"
+msgstr "Notas"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__message_needaction_counter
@@ -976,38 +1027,67 @@ msgid "Other details and descriptions ..."
 msgstr "Otros detalles y notas …"
 
 #. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_power__p1
+#: model_terms:ir.ui.view,arch_db:power_supply.power_contract_default_form
+msgid "Other information ..."
+msgstr ""
+
+#. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
+msgid "P1"
+msgstr "P1 (kW)"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_power__p1
 msgid "P1 (kW)"
 msgstr ""
 
 #. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_power__p2
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
+msgid "P2"
+msgstr "P2 (kW)"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_power__p2
 msgid "P2 (kW)"
 msgstr ""
 
 #. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_power__p3
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
+msgid "P3"
+msgstr "P3 (kW)"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_power__p3
 msgid "P3 (kW)"
 msgstr ""
 
 #. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_power__p4
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
+msgid "P4"
+msgstr "P4 (kW)"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_power__p4
 msgid "P4 (kW)"
 msgstr ""
 
 #. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_power__p5
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
+msgid "P5"
+msgstr "P5 (kW)"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_power__p5
 msgid "P5 (kW)"
 msgstr ""
 
 #. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_power__p6
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
+msgid "P6"
+msgstr "P6 (kW)"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_power__p6
 msgid "P6 (kW)"
 msgstr ""
 
@@ -1157,6 +1237,11 @@ msgid "Protocol"
 msgstr "Protocolo"
 
 #. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_power__qgas
+msgid "Q (kWh/day)"
+msgstr "Q (kW/día)"
+
+#. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_supply_search
 msgid "Remote control"
 msgstr "Control remoto"
@@ -1197,6 +1282,11 @@ msgstr "Vendedor"
 #: model_terms:ir.ui.view,arch_db:power_supply.power_supply_search
 msgid "Salesperson"
 msgstr "Vendedor"
+
+#. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_saving_default_form
+msgid "Saving name"
+msgstr "Asunto del ahorro"
 
 #. module: power_supply
 #: model:ir.actions.act_window,name:power_supply.action_power_saving
@@ -1327,12 +1417,18 @@ msgid "Type of the exception activity on record."
 msgstr "Tipo de excepción en esta actividad."
 
 #. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_supply_default_map
+msgid "Ubication"
+msgstr "Ubicación"
+
+#. module: power_supply
 #: model:ir.model.fields.selection,name:power_supply.selection__power_sim__state__used
 msgid "Used"
 msgstr "Usada"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_dealer__vat
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__vat
 msgid "VAT"
 msgstr "NIF"
 
