@@ -8,6 +8,7 @@
     'sequence': 15,
     'summary': '',
     'website': '',
+    'author': 'Serincloud',
     'depends': [
         'crm',
         'sales_team',

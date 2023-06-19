@@ -3,7 +3,7 @@
     'summary': """
         Custom RRHH
         """,
-    'author': "Serincloud SL",
+    'author': 'Serincloud',
     'license': 'AGPL-3',
     'website': "https://ingenieriacloud.com",
     'category': 'Tools',

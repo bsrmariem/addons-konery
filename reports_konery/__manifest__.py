@@ -6,7 +6,7 @@
     "summary": "Reports form sale order and invoice.",
     "version": "16.0.2.0.2",
     "category": "Reports",
-    "author": "Pedro Guirao, ",
+    'author': 'Serincloud',
     "website": "",
     "license": "AGPL-3",
     "depends": ["account", "purchase", "sale", "report_qweb_pdf_watermark","sale_comment_template"],

@@ -3,7 +3,7 @@
 {
     "name": "Pdf watermark",
     "version": "15.0.1.0.0",
-    "author": "Therp BV, " "Odoo Community Association (OCA)",
+    "author": "Therp BV, " "Odoo Community Association (OCA)" "Serincloud",
     "license": "AGPL-3",
     "category": "Technical Settings",
     "development_status": "Production/Stable",
