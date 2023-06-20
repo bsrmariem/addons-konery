@@ -48,5 +48,5 @@ class PowerContract(models.Model):
                 if (self.date_start) and (self.date_end) and (self.date_start < co.date_start) and (self.date_end > co.date_start):
                     raise UserError(
                         'Not valid period, check other contract dates for this Supply (actives or archived).')
-               if (self.date_start) and (self.date_end) and (self.date_start > self.date_end):
+                if (self.date_start) and (self.date_end) and (self.date_start > self.date_end):
                    raise UserError('Date end earlier than begin')
