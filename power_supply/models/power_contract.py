@@ -39,12 +39,12 @@ class PowerContract(models.Model):
                     [('id', '!=', record.id), ('supply_id', '=', record.supply_id.id), ('active', 'in', [True, False])])
                 for co in contracts:
                     if not (co.date_start) or not (co.date_end):
-                        raise UserError(
+                        raise ValidationError(
                             'Before save this contract check previous to assign starting and ending dates (actives and archived).')
                     if (record.date_start) and (record.date_start < co.date_end) and (record.date_start > co.date_start):
-                        raise UserError('Begin date overlaped with other contract (actives and archived.')
+                        raise ValidationError('Begin date overlaped with other contract (actives and archived.')
                     if (record.date_end) and (record.date_end < co.date_end) and (record.date_end > co.date_start):
-                        raise UserError('End date overlaped with other contract (actives and archived.')
+                        raise ValidationError('End date overlaped with other contract (actives and archived.')
                     if (record.date_start) and (record.date_end) and (record.date_start < co.date_start) and (record.date_end > co.date_start):
-                        raise UserError(
+                        raise ValidationError(
                             'Not valid period, check other contract dates for this Supply (actives and archived.')
