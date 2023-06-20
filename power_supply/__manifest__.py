@@ -28,5 +28,6 @@ Power Supply history
         'views/power_coverage_views.xml',
         'views/power_port_views.xml',
     ],
+    'application': True,
     'installable': True,
 }
