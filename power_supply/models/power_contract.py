@@ -32,7 +32,7 @@ class PowerContract(models.Model):
     description = fields.Text('Notes')
 
 # Comentado porque no funciona, hay que hacer AA:
-    @api.onchange('date_start','date_end', 'supply_id')
+#    @api.onchange('date_start','date_end', 'supply_id')
     def _check_valid_date(self):
         if (self.id) and (self.supply_id.id):
             contracts = self.env['power.contract'].search(
@@ -48,3 +48,5 @@ class PowerContract(models.Model):
                 if (self.date_start) and (self.date_end) and (self.date_start < co.date_start) and (self.date_end > co.date_start):
                     raise UserError(
                         'Not valid period, check other contract dates for this Supply (actives or archived).')
+               if (self.date_start) and (self.date_end) and (self.date_start > self.date_end):
+                    raise UserError('Date end earlier than begin')
