@@ -31,7 +31,7 @@ class PowerContract(models.Model):
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
 
-    @api.onchange('date_start','date_end')
+    @api.depends('create_date','date_start','date_end')
     def _check_valid_date(self):
         if (self.id) and (self.date_start) and (self.supply_id.id):
             contracts = self.env['power.contract'].search([('id','!=',self.id),('supply_id','=',self.supply_id.id)])
