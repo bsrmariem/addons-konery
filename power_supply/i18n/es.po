@@ -1239,7 +1239,7 @@ msgstr "Protocolo"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_power__qgas
 msgid "Q (kWh/day)"
-msgstr "Q (kW/día)"
+msgstr "Q (kWh/día)"
 
 #. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_supply_search
