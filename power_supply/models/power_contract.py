@@ -33,7 +33,7 @@ class PowerContract(models.Model):
 
     @api.onchange('date_start','date_end')
     def _check_valid_date(self):
-        if (self.date_start) and (self.supply_id.id):
+        if (self.id) and (self.date_start) and (self.supply_id.id):
             contracts = self.env['power.contract'].search([('id','!=',self.id),('supply_id','=',self.supply_id.id)])
             if contracts.ids:
                 raise ValidationError('hola')
