@@ -2,6 +2,7 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
 from odoo import api, fields, models, _
+from odoo.exceptions import ValidationError
 
 class PowerContract(models.Model):
     _name = 'power.contract'
@@ -29,3 +30,8 @@ class PowerContract(models.Model):
     auto_renew = fields.Boolean('Auto renew')
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
+
+    @api.onchange('date_start','date_end')
+    def _check_valid_date(self):
+        contracts = self.env['power.contract'].search([('id','!=',self.id),('supply_id','=',self.supply_id.id)])
+        raise ValidationError(contracts)

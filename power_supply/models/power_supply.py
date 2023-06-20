@@ -42,3 +42,4 @@ class PowerSupply(models.Model):
     energy_type_readonly = fields.Boolean('Energy type is readonly', compute='_get_energy_type_readonly')
 
     communication_ids = fields.One2many('power.communication','supply_id', string='Communications', store=True)
+    
