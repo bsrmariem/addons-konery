@@ -25,7 +25,7 @@ class PowerSupply(models.Model):
     tag_ids = fields.Many2many('power.tag', string='Tags', store=True)
     dealer_id = fields.Many2one('power.dealer', store=True)
 
-    contract_ids = fields.One2many('power.contract', 'supply_id', string='Contracts', store=True, context="{'active_test': False}")
+    contract_ids = fields.One2many('power.contract', 'supply_id', string='Contracts', store=True)
     power_electricity_ids = fields.One2many('power.power', 'supply_id', string='Electrical Power', store=True)
     power_gas_ids = fields.One2many('power.power', 'supply_id', string='Gas Power', store=True)
     saving_ids = fields.One2many('power.saving', 'supply_id', string='Savings', store=True)
