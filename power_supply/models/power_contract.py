@@ -31,8 +31,8 @@ class PowerContract(models.Model):
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
 
-# Comentado porque no funciona, hay que hacer AA:
-#    @api.onchange('date_start','date_end', 'supply_id')
+    # Comentado porque no funciona, hay que hacer AA:
+    #    @api.onchange('date_start','date_end', 'supply_id')
     def _check_valid_date(self):
         if (self.id) and (self.supply_id.id):
             contracts = self.env['power.contract'].search(
@@ -49,4 +49,4 @@ class PowerContract(models.Model):
                     raise UserError(
                         'Not valid period, check other contract dates for this Supply (actives or archived).')
                 if (self.date_start) and (self.date_end) and (self.date_start > self.date_end):
-                   raise UserError('Date end earlier than begin')
+                    raise UserError('Date end earlier than begin')
