@@ -9,7 +9,7 @@
             record._check_valid_date()
         </field>
         <field name="trigger">on_create_or_write</field>
-        <field name="on_change_fields">date_start,date_end,supply_id</field>
+        <!--<field name="on_change_fields">date_start,date_end,supply_id</field>-->
         <field name="active" eval="True"/>
     </record>
 
