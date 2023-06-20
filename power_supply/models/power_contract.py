@@ -34,6 +34,7 @@ class PowerContract(models.Model):
     @api.depends('create_date','date_start','date_end', 'supply_id')
     def _check_valid_date(self):
         for record in self:
+            raise ValidationError('hola')
             if (record.id) and (record.supply_id.id):
                 contracts = env['power.contract'].search(
                     [('id', '!=', record.id), ('supply_id', '=', record.supply_id.id), ('active', 'in', [True, False])])
@@ -48,3 +49,4 @@ class PowerContract(models.Model):
                     if (record.date_start) and (record.date_end) and (record.date_start < co.date_start) and (record.date_end > co.date_start):
                         raise ValidationError(
                             'Not valid period, check other contract dates for this Supply (actives and archived.')
+                return True
