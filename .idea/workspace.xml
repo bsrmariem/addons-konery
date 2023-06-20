@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="traducción qgas" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="traducción qgas">
+      <change afterPath="$PROJECT_DIR$/power_supply/data/automatic_actions.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +35,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/project_task_department/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/power_supply" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,27 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00236" summary="sup 0206">
-      <created>1685720787721</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
-      <option name="project" value="LOCAL" />
-      <updated>1685720787721</updated>
-    </task>
-    <task id="LOCAL-00237" summary="sup 0206">
-      <created>1685722748526</created>
-      <option name="number" value="00237" />
-      <option name="presentableId" value="LOCAL-00237" />
-      <option name="project" value="LOCAL" />
-      <updated>1685722748526</updated>
-    </task>
-    <task id="LOCAL-00238" summary="sup 0206">
-      <created>1685722887548</created>
-      <option name="number" value="00238" />
-      <option name="presentableId" value="LOCAL-00238" />
-      <option name="project" value="LOCAL" />
-      <updated>1685722887548</updated>
     </task>
     <task id="LOCAL-00239" summary="sup 0206">
       <created>1685723789020</created>
@@ -419,7 +400,28 @@
       <option name="project" value="LOCAL" />
       <updated>1687282955166</updated>
     </task>
-    <option name="localTasksCounter" value="285" />
+    <task id="LOCAL-00285" summary="traducción qgas">
+      <created>1687283297293</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1687283297293</updated>
+    </task>
+    <task id="LOCAL-00286" summary="traducción qgas">
+      <created>1687283315612</created>
+      <option name="number" value="00286" />
+      <option name="presentableId" value="LOCAL-00286" />
+      <option name="project" value="LOCAL" />
+      <updated>1687283315612</updated>
+    </task>
+    <task id="LOCAL-00287" summary="traducción qgas">
+      <created>1687283501224</created>
+      <option name="number" value="00287" />
+      <option name="presentableId" value="LOCAL-00287" />
+      <option name="project" value="LOCAL" />
+      <updated>1687283501224</updated>
+    </task>
+    <option name="localTasksCounter" value="288" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
