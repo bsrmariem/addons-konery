@@ -55,9 +55,9 @@
                         <group>
                             <field name="type"/>
                             <field name="supply_id"/>
-                            <field name="sim_owner"/>
+                            <field name="sim_owner" attrs="{'invisible':[('type','in',['datadis','other'])],}"/>
                             <field name="sim_id" domain="[('communication_ids','=',False)]"
-                                   attrs="{'invisible':[('sim_owner','!=','konery')],}"/>
+                                   attrs="{'invisible':['|',('sim_owner','!=','konery'),('type','in',['datadis','other'])],}"/>
                             <field name="iccid" attrs="{'readonly':[('sim_id','!=',False)],
                                    'invisible':[('sim_owner','not in',['dealer'])]}"/>
                             <field name="phone"
@@ -67,8 +67,6 @@
                                    'invisible':[('type','not in',['gprs','other'])]}"/>
                         </group>
                         <group>
-                            <field name="konery360"/>
-                            <field name="photovoltaic"/>
                             <!-- TYPEs = 'gsm', 'gprs', 'datadis', 'other' -->
                             <field name="access_ip"
                                    attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs','other'])]}"/>
@@ -78,6 +76,8 @@
                                    attrs="{'readonly':[('sim_id','!=',False)], 'invisible':[('type','not in', ['gprs','other'])]}"/>
                             <field name="protocol_port"
                                    attrs="{'invisible':[('type','not in', ['gprs','other'])]}"/>
+                            <field name="konery360"/>
+                            <field name="photovoltaic"/>
                         </group>
                     </group>
                     <group name="meter" string="Meter">

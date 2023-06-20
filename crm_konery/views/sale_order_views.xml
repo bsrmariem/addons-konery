@@ -15,6 +15,10 @@
                     <field name="crm_team_id"/>
                     <field name="crm_user_company_ids" invisible="1"/>
                 </field>
+                <!-- Solicitud 20/06/23 para que las líneas de venta no puedan crear productos, sino crear y editar: -->
+                <xpath expr="//field[@name='product_template_id']" position="attributes">
+                    <attribute name="options">{'no_quick_create': True}</attribute>
+                </xpath>
             </data>
         </field>
     </record>

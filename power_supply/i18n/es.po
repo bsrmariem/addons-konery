@@ -1266,7 +1266,7 @@ msgstr "Responsable"
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__sim_id
 #: model_terms:ir.ui.view,arch_db:power_supply.power_sim_default_form
 msgid "SIM"
-msgstr ""
+msgstr "ICCID"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__sim_owner

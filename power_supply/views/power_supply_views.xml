@@ -76,6 +76,7 @@
                                     <field name="atr_detached" optional="hide"/>
                                     <field name="compromise" optional="hide"/>
                                     <field name="auto_renew" optional="hide"/>
+                                    <field name="active" widget="boolean_toggle" optional="show"/>
                                 </tree>
                             </field>
                         </page>
