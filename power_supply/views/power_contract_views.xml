@@ -97,6 +97,7 @@
                 <filter string="Compromised" name="compromise" domain="[('compromise','=',True)]"/>
                 <filter string="Auto renew" name="auto_renew" domain="[('auto_renew','=',True)]"/>
                 <separator/>
+                <filter string="Active" name="active" domain="[('active', '=', True)]"/>
                 <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
                 <separator/>
                 <group expand="0" name="group_by" string="Group By">
