@@ -31,7 +31,8 @@ class PowerContract(models.Model):
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
 
-    @api.onchange('date_start','date_end', 'supply_id')
+# Comentado porque no funciona, hay que hacer AA:
+#    @api.onchange('date_start','date_end', 'supply_id')
     def _check_valid_date(self):
         if (self.id) and (self.supply_id.id):
             contracts = self.env['power.contract'].search(
@@ -39,11 +40,11 @@ class PowerContract(models.Model):
             for co in contracts:
                 if not (co.date_start) or not (co.date_end):
                     raise UserError(
-                        'Before save this contract check previous to assign starting and ending dates (actives and archived).')
+                        'Before save this contract check previous to assign starting and ending dates (actives or archived).')
                 if (self.date_start) and (self.date_start < co.date_end) and (self.date_start > co.date_start):
-                    raise UserError('Begin date overlaped with other contract (actives and archived.')
+                    raise UserError('Begin date overlaped with other contract (actives or archived.')
                 if (self.date_end) and (self.date_end < co.date_end) and (self.date_end > co.date_start):
-                    raise UserError('End date overlaped with other contract (actives and archived.')
+                    raise UserError('End date overlaped with other contract (actives or archived).')
                 if (self.date_start) and (self.date_end) and (self.date_start < co.date_start) and (self.date_end > co.date_start):
                     raise UserError(
-                        'Not valid period, check other contract dates for this Supply (actives and archived.')
+                        'Not valid period, check other contract dates for this Supply (actives or archived).')
