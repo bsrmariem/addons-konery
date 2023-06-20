@@ -33,17 +33,17 @@ class PowerContract(models.Model):
 
     @api.depends('create_date','date_start','date_end', 'supply_id')
     def _check_valid_date(self):
-            if (record.id) and (record.supply_id.id):
-                contracts = self.env['power.contract'].search(
-                    [('id', '!=', record.id), ('supply_id', '=', record.supply_id.id), ('active', 'in', [True, False])])
-                for co in contracts:
-                    if not (co.date_start) or not (co.date_end):
-                        raise UserError(
-                            'Before save this contract check previous to assign starting and ending dates (actives and archived).')
-                    if (record.date_start) and (record.date_start < co.date_end) and (record.date_start > co.date_start):
-                        raise UserError('Begin date overlaped with other contract (actives and archived.')
-                    if (record.date_end) and (record.date_end < co.date_end) and (record.date_end > co.date_start):
-                        raise UserError('End date overlaped with other contract (actives and archived.')
-                    if (record.date_start) and (record.date_end) and (record.date_start < co.date_start) and (record.date_end > co.date_start):
-                        raise UserError(
-                            'Not valid period, check other contract dates for this Supply (actives and archived.')
+        if (self.id) and (self.supply_id.id):
+            contracts = self.env['power.contract'].search(
+                [('id', '!=', self.id), ('supply_id', '=', self.supply_id.id), ('active', 'in', [True, False])])
+            for co in contracts:
+                if not (co.date_start) or not (co.date_end):
+                    raise UserError(
+                        'Before save this contract check previous to assign starting and ending dates (actives and archived).')
+                if (self.date_start) and (self.date_start < co.date_end) and (self.date_start > co.date_start):
+                    raise UserError('Begin date overlaped with other contract (actives and archived.')
+                if (self.date_end) and (self.date_end < co.date_end) and (self.date_end > co.date_start):
+                    raise UserError('End date overlaped with other contract (actives and archived.')
+                if (self.date_start) and (self.date_end) and (self.date_start < co.date_start) and (self.date_end > co.date_start):
+                    raise UserError(
+                        'Not valid period, check other contract dates for this Supply (actives and archived.')
