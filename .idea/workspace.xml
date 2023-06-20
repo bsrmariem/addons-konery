@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="traducción qgas">
-      <change beforePath="$PROJECT_DIR$/power_supply/data/automatic_actions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/data/automatic_actions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_contract.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,27 +78,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00241" summary="sup 0206">
-      <created>1686589353620</created>
-      <option name="number" value="00241" />
-      <option name="presentableId" value="LOCAL-00241" />
-      <option name="project" value="LOCAL" />
-      <updated>1686589353620</updated>
-    </task>
-    <task id="LOCAL-00242" summary="sup 0206">
-      <created>1686589460065</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
-      <option name="project" value="LOCAL" />
-      <updated>1686589460065</updated>
-    </task>
-    <task id="LOCAL-00243" summary="sup 1206">
-      <created>1686590128788</created>
-      <option name="number" value="00243" />
-      <option name="presentableId" value="LOCAL-00243" />
-      <option name="project" value="LOCAL" />
-      <updated>1686590128788</updated>
     </task>
     <task id="LOCAL-00244" summary="sup 1206">
       <created>1686590323948</created>
@@ -421,7 +401,28 @@
       <option name="project" value="LOCAL" />
       <updated>1687283927989</updated>
     </task>
-    <option name="localTasksCounter" value="290" />
+    <task id="LOCAL-00290" summary="traducción qgas">
+      <created>1687284069617</created>
+      <option name="number" value="00290" />
+      <option name="presentableId" value="LOCAL-00290" />
+      <option name="project" value="LOCAL" />
+      <updated>1687284069617</updated>
+    </task>
+    <task id="LOCAL-00291" summary="traducción qgas">
+      <created>1687284132359</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1687284132359</updated>
+    </task>
+    <task id="LOCAL-00292" summary="traducción qgas">
+      <created>1687284202097</created>
+      <option name="number" value="00292" />
+      <option name="presentableId" value="LOCAL-00292" />
+      <option name="project" value="LOCAL" />
+      <updated>1687284202097</updated>
+    </task>
+    <option name="localTasksCounter" value="293" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

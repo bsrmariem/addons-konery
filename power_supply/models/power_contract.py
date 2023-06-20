@@ -32,7 +32,7 @@ class PowerContract(models.Model):
     description = fields.Text('Notes')
 
 # Comentado porque no funciona, hay que hacer AA:
-#    @api.onchange('date_start','date_end', 'supply_id')
+    @api.onchange('date_start','date_end', 'supply_id')
     def _check_valid_date(self):
         if (self.id) and (self.supply_id.id):
             contracts = self.env['power.contract'].search(
