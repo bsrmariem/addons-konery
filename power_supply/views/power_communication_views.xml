@@ -63,8 +63,7 @@
                             <field name="phone"
                                    attrs="{'readonly':[('sim_id','!=',False)],
                                    'invisible':['|',('sim_owner','in',[False]),('type','in', ['datadis'])]}"/>
-                            <field name="protocol_communication" attrs="{'readonly':[('sim_id','!=',False)],
-                                   'invisible':[('type','not in',['gprs','other'])]}"/>
+                            <field name="protocol_communication" attrs="{'invisible':[('type','not in',['gprs','other'])]}"/>
                         </group>
                         <group>
                             <!-- TYPEs = 'gsm', 'gprs', 'datadis', 'other' -->
