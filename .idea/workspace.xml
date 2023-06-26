@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="traducción qgas">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="bug protocol comm ro" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00250" summary="sup 1206">
-      <created>1686592514111</created>
-      <option name="number" value="00250" />
-      <option name="presentableId" value="LOCAL-00250" />
-      <option name="project" value="LOCAL" />
-      <updated>1686592514111</updated>
     </task>
     <task id="LOCAL-00251" summary="sup 1206">
       <created>1686610782438</created>
@@ -421,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687302188638</updated>
     </task>
-    <option name="localTasksCounter" value="299" />
+    <task id="LOCAL-00299" summary="bug protocol comm ro">
+      <created>1687432227115</created>
+      <option name="number" value="00299" />
+      <option name="presentableId" value="LOCAL-00299" />
+      <option name="project" value="LOCAL" />
+      <updated>1687432227115</updated>
+    </task>
+    <option name="localTasksCounter" value="300" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -450,7 +448,8 @@
     <MESSAGE value="sup 0206" />
     <MESSAGE value="sup 1206" />
     <MESSAGE value="traducción qgas" />
-    <option name="LAST_COMMIT_MESSAGE" value="traducción qgas" />
+    <MESSAGE value="bug protocol comm ro" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug protocol comm ro" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
