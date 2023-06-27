@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-13 08:20+0000\n"
-"PO-Revision-Date: 2023-06-13 10:32+0200\n"
+"POT-Creation-Date: 2023-06-27 11:12+0000\n"
+"PO-Revision-Date: 2023-06-27 13:15+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
-"X-Generator: Poedit 3.3.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_supply_default_form
@@ -23,6 +23,14 @@ msgid ""
 "****   Please save prior to new contracts, communication and power-limits "
 "creation !!"
 msgstr ""
+"**** Pulsa guardar antes de poder crear nuevos contratos, comunicaciones "
+"y potencias !!"
+
+#. module: power_supply
+#: model:ir.actions.server,name:power_supply.check_contract_dates_ir_actions_server
+msgid "=> Avoid overlaped supply contract dates"
+msgstr ""
+"=> Evitar fechas superpuestas en la creación de contratos power_supply"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_sim__access_ip
@@ -61,6 +69,7 @@ msgstr "Fecha de activación"
 #: model:ir.model.fields,field_description:power_supply.field_power_marketeer__active
 #: model:ir.model.fields,field_description:power_supply.field_power_sim__active
 #: model:ir.model.fields,field_description:power_supply.field_power_supply__active
+#: model_terms:ir.ui.view,arch_db:power_supply.power_contract_search
 msgid "Active"
 msgstr "Activo"
 
@@ -277,11 +286,6 @@ msgstr "Cobertura"
 #: model:ir.ui.menu,name:power_supply.power_coverage_menu
 msgid "Coverages"
 msgstr "Coberturas"
-
-#. module: power_supply
-#: model_terms:ir.actions.act_window,help:power_supply.action_power_supply
-msgid "Crear nuevos documento"
-msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__create_uid
@@ -884,7 +888,7 @@ msgstr "Mi línea de actividades"
 #. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_supply_default_tree
 msgid "My Deadline"
-msgstr ""
+msgstr "Mis vencimientos"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_contract__name
@@ -1185,6 +1189,16 @@ msgid "Power Supplies"
 msgstr "Suministros"
 
 #. module: power_supply
+#: model:ir.module.category,description:power_supply.module_category_power_supply
+msgid "Power Supplies, contracts and more in energy market."
+msgstr "Puntos de suministro, contratos y más del mercado energético."
+
+#. module: power_supply
+#: model:ir.module.category,name:power_supply.module_category_power_supply
+msgid "Power Supply"
+msgstr "Puntos de suministro"
+
+#. module: power_supply
 #: model:ir.model,name:power_supply.model_power_tag
 msgid "Power Tags"
 msgstr "Etiquetas"
@@ -1208,10 +1222,19 @@ msgstr "Suministros"
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__supply_id
 #: model:ir.model.fields,field_description:power_supply.field_power_contract__supply_id
 #: model:ir.model.fields,field_description:power_supply.field_power_saving__supply_id
-#: model:res.groups,name:power_supply.group_power_supply_user
 #: model_terms:ir.ui.view,arch_db:power_supply.power_supply_default_form
 msgid "Power supply"
 msgstr "Suministro"
+
+#. module: power_supply
+#: model:res.groups,name:power_supply.group_power_supply_admin
+msgid "Power supply Admin"
+msgstr "Administrador"
+
+#. module: power_supply
+#: model:res.groups,name:power_supply.group_power_supply_user
+msgid "Power supply User"
+msgstr "Usuario"
 
 #. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_supply_default_form
@@ -1442,6 +1465,28 @@ msgstr "Ratio de voltaje"
 #: model:ir.model.fields,field_description:power_supply.field_power_marketeer__web
 msgid "Web"
 msgstr ""
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_communication__website_message_ids
+#: model:ir.model.fields,field_description:power_supply.field_power_contract__website_message_ids
+#: model:ir.model.fields,field_description:power_supply.field_power_dealer__website_message_ids
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__website_message_ids
+#: model:ir.model.fields,field_description:power_supply.field_power_saving__website_message_ids
+#: model:ir.model.fields,field_description:power_supply.field_power_sim__website_message_ids
+#: model:ir.model.fields,field_description:power_supply.field_power_supply__website_message_ids
+msgid "Website Messages"
+msgstr "Mensaje de la web"
+
+#. module: power_supply
+#: model:ir.model.fields,help:power_supply.field_power_communication__website_message_ids
+#: model:ir.model.fields,help:power_supply.field_power_contract__website_message_ids
+#: model:ir.model.fields,help:power_supply.field_power_dealer__website_message_ids
+#: model:ir.model.fields,help:power_supply.field_power_marketeer__website_message_ids
+#: model:ir.model.fields,help:power_supply.field_power_saving__website_message_ids
+#: model:ir.model.fields,help:power_supply.field_power_sim__website_message_ids
+#: model:ir.model.fields,help:power_supply.field_power_supply__website_message_ids
+msgid "Website communication history"
+msgstr "Histórico de comunicaciones web"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_marketeer__zip
