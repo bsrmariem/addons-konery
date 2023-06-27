@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="partner_id store True">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="groups pwsup">
+      <change beforePath="$PROJECT_DIR$/power_supply/security/user_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/security/user_groups.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00252" summary="sup 1206">
-      <created>1686612046759</created>
-      <option name="number" value="00252" />
-      <option name="presentableId" value="LOCAL-00252" />
-      <option name="project" value="LOCAL" />
-      <updated>1686612046759</updated>
     </task>
     <task id="LOCAL-00253" summary="sup 1206">
       <created>1686639151050</created>
@@ -421,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687765565374</updated>
     </task>
-    <option name="localTasksCounter" value="301" />
+    <task id="LOCAL-00301" summary="groups pwsup">
+      <created>1687862340946</created>
+      <option name="number" value="00301" />
+      <option name="presentableId" value="LOCAL-00301" />
+      <option name="project" value="LOCAL" />
+      <updated>1687862340946</updated>
+    </task>
+    <option name="localTasksCounter" value="302" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -452,6 +452,18 @@
     <MESSAGE value="traducción qgas" />
     <MESSAGE value="bug protocol comm ro" />
     <MESSAGE value="partner_id store True" />
-    <option name="LAST_COMMIT_MESSAGE" value="partner_id store True" />
+    <MESSAGE value="groups pwsup" />
+    <option name="LAST_COMMIT_MESSAGE" value="groups pwsup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
