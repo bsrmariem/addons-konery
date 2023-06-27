@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="base.module_category_power_supply" model="ir.module.category">
+    <record id="module_category_power_supply" model="ir.module.category">
         <field name="description">Power Supplies, contracts and more for energy market.</field>
         <field name="sequence">99</field>
     </record>
