@@ -90,7 +90,6 @@
                 <field name="name" filter_domain="['|', '|', ('name', 'ilike', self), ('partner_id', 'ilike', self), ('marketeer_id', 'ilike', self)]"/>
                 <field name="partner_id"/>
                 <field name="marketeer_id"/>
-                <field name="supply_id"/>
                 <separator/>
                 <filter string="Origin warranty" name="origin_warranty" domain="[('origin_warranty', '=', True)]"/>
                 <filter string="Compromised" name="compromise" domain="[('compromise','=',True)]"/>
