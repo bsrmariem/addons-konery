@@ -26,10 +26,10 @@ class PowerSupply(models.Model):
     dealer_id = fields.Many2one('power.dealer', store=True)
 
     contract_ids = fields.Many2many(
-        'power.contract',
-        relation='power.supcon.rel',
-        column1='supply_id',
-        column2='contract_id',
+        "power.contract",
+        relation=""power.supcon.rel",
+        column1="supply_id",
+        column2="contract_id",
         store=True,
     )
 
