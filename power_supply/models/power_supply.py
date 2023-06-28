@@ -35,7 +35,7 @@ class PowerSupply(models.Model):
 
 #    contract_ids = fields.One2many('power.contract', 'supply_id', string='Contracts', store=True,
 #                                   context={'active_test': False}
-                                   )
+#                                   )
 
     power_electricity_ids = fields.One2many('power.power', 'supply_id', string='Electrical Power', store=True)
     power_gas_ids = fields.One2many('power.power', 'supply_id', string='Gas Power', store=True)
