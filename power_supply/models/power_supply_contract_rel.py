@@ -9,5 +9,3 @@ class SupplyContractRel(models.Model):
 
     supply_id = fields.Many2one('power.supply', string='Supply', store=True)
     contract_id = fields.Many2one('power.contract', string='Contract', store=True)
-#    supply_id = fields.Integer(string='Supply', store=True)
-#    contract_id = fields.Integer(string='Contract', store=True)

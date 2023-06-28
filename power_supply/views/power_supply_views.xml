@@ -68,11 +68,6 @@
                                    context="{'default_energy_type':energy_type, 'default_partner_id':partner_id,
                                    'form_view_ref':'power_supply.power_contract_quick_form'}"
                                    domain="[('partner_id','=',partner_id),('energy_type','=',energy_type)]">
-
-        context="{'form_view_ref':'my_module.view_supply_conditions_form2'}"/>
-
-
-
                                 <tree>
                                     <field name="name"/>
                                     <field name="marketeer_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>

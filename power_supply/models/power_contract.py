@@ -39,7 +39,7 @@ class PowerContract(models.Model):
     # Comentado porque no funciona, hay que hacer AA:
     #    @api.onchange('date_start','date_end', 'supply_id')
     def _check_valid_date(self):
-        if (self.id) and (self.supply_id.id):
+        if (self.id) and (self.supply_ids.ids):
             contracts = self.env['power.contract'].search(
                 [('id', '!=', self.id), ('supply_id', '=', self.supply_id.id), ('active', 'in', [True, False])])
             for co in contracts:
