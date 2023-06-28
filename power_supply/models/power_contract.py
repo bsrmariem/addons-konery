@@ -19,7 +19,15 @@ class PowerContract(models.Model):
                                    related='supply_id.energy_type')
     partner_id = fields.Many2one('res.partner', string='Customer', related='supply_id.partner_id', store=True)
     company_group_id = fields.Many2one('res.partner', string='Holding', related='partner_id.company_group_id')
-    cups = fields.Char('CUPS', related='supply_id.cups', store=True)
+#    cups = fields.Char('CUPS', related='supply_id.cups', store=True)
+
+    supply_ids = fields.Many2many(
+        "power.supply",
+        relation='power_supply_contract_rel',
+        column1='contract_id',
+        column2='supply_id',
+        store=True,
+    )
 
     type_id = fields.Many2one('power.contract.type', string='Contract type')
     marketeer_id = fields.Many2one('power.marketeer', store=True)
