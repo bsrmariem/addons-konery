@@ -33,9 +33,13 @@ class PowerSupply(models.Model):
         store=True,
     )
 
-#    contract_ids = fields.One2many('power.contract', 'supply_id', string='Contracts', store=True,
-#                                   context={'active_test': False}
-#                                   )
+    @api.depends('name', 'cups')
+    def _compute_display_name(self):
+        name = "/"
+        if self.cups != "" and self.name != "":
+            name = str(self.cups) + " " + str(self.name)
+        self.display_name = name
+    display_name = fields.Char(compute='_compute_display_name', recursive=True, store=True, index=True)
 
     power_electricity_ids = fields.One2many('power.power', 'supply_id', string='Electrical Power', store=True)
     power_gas_ids = fields.One2many('power.power', 'supply_id', string='Gas Power', store=True)
