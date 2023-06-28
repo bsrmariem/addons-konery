@@ -60,7 +60,6 @@
                             <field name="date"/>
                         </group>
                         <group>
-                            <field name="cups"/>
                             <field name="partner_id"/>
                             <field name="company_group_id"/>
                         </group>
