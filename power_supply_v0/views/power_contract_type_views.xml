@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <record id="power_contract_type_default_tree" model="ir.ui.view">
+        <field name="name">power.contract.type.default.tree</field>
+        <field name="model">power.contract.type</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree name="power_contract_type_tree" editable="top">
+                <field name="name"/>
+                <field name="energy_type"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

@@ -2,6 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="groups pwsup">
+      <change afterPath="$PROJECT_DIR$/power_supply/models/power_supply_contract_rel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/__manifest__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/data/automatic_actions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/i18n/es.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_comunication.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_contract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_contract_type.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_coverage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_dealer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_marketeer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_port.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_power.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_pricelist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_saving.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_sim.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_supply.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_tag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/security/ir.model.access.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/security/user_groups.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/static/description/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/menu_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_communication_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_contract_type_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_contract_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_coverage_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_dealer_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_marketeer_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_port_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_power_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_pricelist_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_saving_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_sim_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_supply_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_tag_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_supply.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_supply.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,15 +73,15 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/power_supply" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/power_supply/models" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/power_supply/models" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/power_supply" />
       <recent name="$PROJECT_DIR$/project_task_department/models" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/power_supply/views" />
-      <recent name="$PROJECT_DIR$/power_supply/models" />
     </key>
   </component>
   <component name="RunManager">
@@ -77,20 +115,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00258" summary="traducción qgas">
-      <created>1687250953372</created>
-      <option name="number" value="00258" />
-      <option name="presentableId" value="LOCAL-00258" />
-      <option name="project" value="LOCAL" />
-      <updated>1687250953372</updated>
-    </task>
-    <task id="LOCAL-00259" summary="traducción qgas">
-      <created>1687271561257</created>
-      <option name="number" value="00259" />
-      <option name="presentableId" value="LOCAL-00259" />
-      <option name="project" value="LOCAL" />
-      <updated>1687271561257</updated>
     </task>
     <task id="LOCAL-00260" summary="traducción qgas">
       <created>1687272856182</created>
@@ -421,7 +445,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687863569446</updated>
     </task>
-    <option name="localTasksCounter" value="307" />
+    <task id="LOCAL-00307" summary="groups pwsup">
+      <created>1687864060143</created>
+      <option name="number" value="00307" />
+      <option name="presentableId" value="LOCAL-00307" />
+      <option name="project" value="LOCAL" />
+      <updated>1687864060143</updated>
+    </task>
+    <task id="LOCAL-00308" summary="groups pwsup">
+      <created>1687864237353</created>
+      <option name="number" value="00308" />
+      <option name="presentableId" value="LOCAL-00308" />
+      <option name="project" value="LOCAL" />
+      <updated>1687864237353</updated>
+    </task>
+    <option name="localTasksCounter" value="309" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

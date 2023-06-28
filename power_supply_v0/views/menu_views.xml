@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- WINDOW ACTIONS: -->
+    <record id="action_power_supply" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Power supplies</field>
+        <field name="res_model">power.supply</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form,map,activity</field>
+    </record>
+
+    <!-- POWER PRICELIST WINDOW ACTION: -->
+    <record id="action_power_pricelist" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Power pricelist</field>
+        <field name="res_model">power.pricelist</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Contract TYPES WINDOW ACTION: -->
+    <record id="action_power_contract_type" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Contract type</field>
+        <field name="res_model">power.contract.type</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- CONTRACTS WINDOW ACTION: -->
+    <record id="action_power_electric_contract" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain">[('energy_type','=','electricity')]</field>
+        <field name="context">{'default_energy_type':'electricity'}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Electricity Contracts</field>
+        <field name="res_model">power.contract</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form,activity</field>
+    </record>
+    <record id="action_power_gas_contract" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain">[('energy_type','=','gas')]</field>
+        <field name="context">{'default_energy_type':'gas'}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Gas Contracts</field>
+        <field name="res_model">power.contract</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form,activity</field>
+    </record>
+
+    <!-- TAGS ON SUPPLYs WINDOW ACTION: -->
+    <record id="action_power_tag" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Tags</field>
+        <field name="res_model">power.tag</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- CONTRACTED POWERS WINDOW ACTION: -->
+    <record id="action_power_power" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Powers</field>
+        <field name="res_model">power.power</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- SAVING WINDOW ACTION: -->
+    <record id="action_power_saving" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Savings</field>
+        <field name="res_model">power.saving</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form,activity</field>
+    </record>
+
+    <!-- DEALERS WINDOW ACTION: -->
+    <record id="action_power_dealer" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context">{}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Dealers</field>
+        <field name="res_model">power.dealer</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- MARKETEERS WINDOW ACTION: -->
+    <record id="action_power_marketeer" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context">{}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Marketeers</field>
+        <field name="res_model">power.marketeer</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- SIMS WINDOW ACTION: -->
+    <record id="action_power_sim" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context">{}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Sims</field>
+        <field name="res_model">power.sim</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- COMMUNICATION WINDOW ACTION: -->
+    <record id="action_power_communication" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context">{}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Communications</field>
+        <field name="res_model">power.communication</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- COVERAGE WINDOW ACTION: -->
+    <record id="action_power_coverage" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context">{}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Coverages</field>
+        <field name="res_model">power.coverage</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <!-- PORTS WINDOW ACTION: -->
+    <record id="action_power_port" model="ir.actions.act_window">
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">action</field>
+        <field name="domain" eval="False"/>
+        <field name="context">{}</field>
+        <field name="filter" eval="False"/>
+        <field name="limit">80</field>
+        <field name="name">Communication ports</field>
+        <field name="res_model">power.port</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="target">current</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="usage" eval="False"/>
+        <field name="view_id" eval="False"/>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <!-- MENUS: -->
+    <menuitem
+            action="action_power_supply"
+            id="power_supply_icon_menu"
+            name="Supplies"
+            sequence="1"
+            web_icon="power_supply,static/description/icon.png"
+    />
+
+    <record id="power_supply_main_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_supply"/>
+        <field name="active" eval="True"/>
+        <field name="name">Power Supplies</field>
+        <field name="parent_id" ref="power_supply_icon_menu"/>
+        <field name="sequence">10</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_supply_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_supply"/>
+        <field name="active" eval="True"/>
+        <field name="name">Supplies</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">10</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_contract_electric_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_electric_contract"/>
+        <field name="active" eval="True"/>
+        <field name="name">Electric Contracts</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">20</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_contract_gas_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_gas_contract"/>
+        <field name="active" eval="True"/>
+        <field name="name">Gas Contracts</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">30</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_power_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_power"/>
+        <field name="active" eval="True"/>
+        <field name="name">Powers</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">40</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_saving_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_saving"/>
+        <field name="active" eval="True"/>
+        <field name="name">Savings</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">50</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_communication_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_communication"/>
+        <field name="active" eval="True"/>
+        <field name="name">Communications</field>
+        <field name="parent_id" ref="power_supply_main_menu"/>
+        <field name="sequence">60</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+
+
+
+    <!-- MAIN CONFIGURATION MENU: -->
+    <record id="power_configuration_menu" model="ir.ui.menu">
+        <field name="active" eval="True"/>
+        <field name="name">Configuration</field>
+        <field name="parent_id" ref="power_supply_icon_menu"/>
+        <field name="sequence">60</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <!-- CONFIGURATION: CNMC DEALERS AND MARKETEERS: -->
+    <record id="power_configuration_cnmc_menu" model="ir.ui.menu">
+        <field name="active" eval="True"/>
+        <field name="name">CNMV</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">70</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_dealer_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_dealer"/>
+        <field name="active" eval="True"/>
+        <field name="name">Dealers</field>
+        <field name="parent_id" ref="power_configuration_cnmc_menu"/>
+        <field name="sequence">80</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_marketeer_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_marketeer"/>
+        <field name="active" eval="True"/>
+        <field name="name">Marketeers</field>
+        <field name="parent_id" ref="power_configuration_cnmc_menu"/>
+        <field name="sequence">90</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+
+    <!-- CONFIGURATION: METER AND COMUNICATIONS: -->
+    <record id="power_configuration_meter_com_menu" model="ir.ui.menu">
+        <field name="active" eval="True"/>
+        <field name="name">Meter and communication</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">100</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_sim_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_sim"/>
+        <field name="active" eval="True"/>
+        <field name="name">Sims</field>
+        <field name="parent_id" ref="power_configuration_meter_com_menu"/>
+        <field name="sequence">110</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_port_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_port"/>
+        <field name="active" eval="True"/>
+        <field name="name">Communication Ports</field>
+        <field name="parent_id" ref="power_configuration_meter_com_menu"/>
+        <field name="sequence">120</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_coverage_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_coverage"/>
+        <field name="active" eval="True"/>
+        <field name="name">Coverages</field>
+        <field name="parent_id" ref="power_configuration_meter_com_menu"/>
+        <field name="sequence">130</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+
+    <!-- CONFIGURATION: GENERAL INFO: -->
+    <record id="power_configuration_infogeneral_menu" model="ir.ui.menu">
+        <field name="active" eval="True"/>
+        <field name="name">General</field>
+        <field name="parent_id" ref="power_configuration_menu"/>
+        <field name="sequence">140</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_pricelist_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_pricelist"/>
+        <field name="active" eval="True"/>
+        <field name="name">Pricelist</field>
+        <field name="parent_id" ref="power_configuration_infogeneral_menu"/>
+        <field name="sequence">150</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_contract_type_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_contract_type"/>
+        <field name="active" eval="True"/>
+        <field name="name">Contract type</field>
+        <field name="parent_id" ref="power_configuration_infogeneral_menu"/>
+        <field name="sequence">160</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+    <record id="power_tag_menu" model="ir.ui.menu">
+        <field name="action" ref="action_power_tag"/>
+        <field name="active" eval="True"/>
+        <field name="name">Tags</field>
+        <field name="parent_id" ref="power_configuration_infogeneral_menu"/>
+        <field name="sequence">170</field>
+        <field name="web_icon" eval="False"/>
+    </record>
+
+</odoo>

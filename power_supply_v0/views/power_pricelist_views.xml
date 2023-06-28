@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <record id="power_pricelist_default_tree" model="ir.ui.view">
+        <field name="name">power.pricelist.default.tree</field>
+        <field name="model">power.pricelist</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree name="power_pricelist_tree" editable="top">
+                <field name="name"/>
+                <field name="energy_type"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

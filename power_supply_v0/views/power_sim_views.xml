@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <record id="power_sim_default_tree" model="ir.ui.view">
+        <field name="name">power.sim.default.tree</field>
+        <field name="model">power.sim</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree name="power_sim_tree">
+                <field name="name"/>
+                <field name="access_ip" optional="show"/>
+                <field name="access_port" optional="hide"/>
+                <field name="control_port" optional="show"/>
+                <field name="active" optional="show"/>
+                <field name="rs485_port" optional="hide"/>
+                <field name="phone" optional="hide"/>
+                <field name="coverage_id" optional="show"/>
+                <field name="communication_ids" widget="many2many_tags" optional="show"/>
+                <field name="state" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="power_sim_default_form" model="ir.ui.view">
+        <field name="name">power.sim.default.form</field>
+        <field name="model">power.sim</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="state" widget="statusbar" class="o_field_statusbar" options="{'clickable': '0', 'fold_field': 'fold'}"/>
+                </header>
+                <sheet name="main" string="SIM">
+                    <h2>
+                        <field name="name" placeholder="ICCID code"/>
+                    </h2>
+                    <group name="administrative_data" string="Administrative data">
+                        <group>
+                            <field name="access_ip"/>
+                            <field name="access_port"/>
+                            <field name="control_port"/>
+                            <field name="rs485_port"/>
+                        </group>
+                        <group>
+                            <field name="phone"/>
+                            <field name="coverage_id"/>
+                            <field name="communication_ids" widget="many2many_tags" readonly="1"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" options="{'post_refresh':'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>
