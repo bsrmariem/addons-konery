@@ -1,46 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="groups pwsup">
-      <change afterPath="$PROJECT_DIR$/power_supply/models/power_supply_contract_rel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/__manifest__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/data/automatic_actions.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/i18n/es.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_comunication.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_contract.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_contract_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_coverage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_dealer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_marketeer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_port.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_power.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_pricelist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_saving.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_sim.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_supply.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/models/power_tag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/security/ir.model.access.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/security/user_groups.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/static/description/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/menu_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_communication_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_contract_type_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_contract_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_coverage_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_dealer_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_marketeer_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_port_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_power_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_pricelist_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_saving_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_sim_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_supply_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power_supply_v0/views/power_tag_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/models/power_supply.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_supply.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/security/ir.model.access.csv" afterDir="false" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="supply_contract_rel">
+      <change beforePath="$PROJECT_DIR$/power_supply/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00260" summary="traducción qgas">
-      <created>1687272856182</created>
-      <option name="number" value="00260" />
-      <option name="presentableId" value="LOCAL-00260" />
-      <option name="project" value="LOCAL" />
-      <updated>1687272856182</updated>
     </task>
     <task id="LOCAL-00261" summary="traducción qgas">
       <created>1687274264266</created>
@@ -459,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687864237353</updated>
     </task>
-    <option name="localTasksCounter" value="309" />
+    <task id="LOCAL-00309" summary="supply_contract_rel">
+      <created>1687966223505</created>
+      <option name="number" value="00309" />
+      <option name="presentableId" value="LOCAL-00309" />
+      <option name="project" value="LOCAL" />
+      <updated>1687966223506</updated>
+    </task>
+    <option name="localTasksCounter" value="310" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -491,7 +453,8 @@
     <MESSAGE value="bug protocol comm ro" />
     <MESSAGE value="partner_id store True" />
     <MESSAGE value="groups pwsup" />
-    <option name="LAST_COMMIT_MESSAGE" value="groups pwsup" />
+    <MESSAGE value="supply_contract_rel" />
+    <option name="LAST_COMMIT_MESSAGE" value="supply_contract_rel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
