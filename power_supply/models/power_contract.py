@@ -14,9 +14,8 @@ class PowerContract(models.Model):
     date = fields.Date(string='Date contracted')
     date_start = fields.Date(string='Date start')
     date_end = fields.Date(string='Date end')
-    energy_type = fields.Selection([('electricity', 'Electricity'), ('gas', 'Gas')], string='Energy type',
-                                   related='supply_id.energy_type')
-    partner_id = fields.Many2one('res.partner', string='Customer', related='supply_id.partner_id', store=True)
+    energy_type = fields.Selection([('electricity', 'Electricity'), ('gas', 'Gas')], string='Energy type')
+    partner_id = fields.Many2one('res.partner', string='Customer',  store=True)
     company_group_id = fields.Many2one('res.partner', string='Holding', related='partner_id.company_group_id')
 
     supply_ids = fields.Many2many(
