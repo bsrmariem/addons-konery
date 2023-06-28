@@ -3,8 +3,8 @@
 
 from odoo import fields, models, api
 
-class PowerSupplyContractRel(models.Model):
-    _name = 'power.supply.contract.rel'
+class SupplyContractRel(models.Model):
+    _name = 'power.supcon.rel'
     _description = 'Power SupplyContract Rel'
 
     name = fields.Char('Name')
