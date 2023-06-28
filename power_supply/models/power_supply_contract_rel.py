@@ -4,10 +4,9 @@
 from odoo import fields, models, api
 
 class SupplyContractRel(models.Model):
-    _name = 'power.supcon.rel'
-    _description = 'Power SupplyContract Rel'
+    _name = 'power.supply.contract.rel'
+    _description = 'Power Supply Contract Rel'
 
-    name = fields.Char('Name')
     supply_id = fields.Many2one('power.supply', string='Supply', store=True)
     contract_id = fields.Many2one('power.contract', string='Contract', store=True)
 #    supply_id = fields.Integer(string='Supply', store=True)
