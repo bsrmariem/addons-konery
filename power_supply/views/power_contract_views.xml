@@ -39,10 +39,13 @@
                     </h2>
                     <group name="contract_data" string="Administrative data">
                         <group>
+                            <field name="partner_id"/>
+                            <field name="company_group_id"/>
                             <field name="energy_type"/>
                             <field name="type_id" domain="[('energy_type','=',energy_type)]" widget="selection"/>
                             <field name="marketeer_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
                             <field name="marketeer_contact_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
+                            <field name="date"/>
                         </group>
                         <group>
                             <field name="origin_warranty" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
@@ -50,21 +53,11 @@
                             <field name="compromise"/>
                             <field name="auto_renew"/>
                             <field name="active" widget="boolean_toggle"/>
-                        </group>
-                    </group>
-
-                    <group name="administrative_data" string="Date and Customer">
-                        <group>
                             <field name="date_start"/>
                             <field name="date_end"/>
-                            <field name="date"/>
-                        </group>
-                        <group>
-                            <field name="partner_id"/>
-                            <field name="company_group_id"/>
                         </group>
                     </group>
-                    <group>
+                    <group name="cups" string="CUPs">
                         <field name="supply_ids" options="{'no_quick_create': True, 'no_create_edit':True}"/>
                     </group>
                     <group name="other_notes" string="Description and notes">
