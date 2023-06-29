@@ -27,9 +27,9 @@ class PowerSupply(models.Model):
 
     contract_ids = fields.Many2many(
         "power.contract",
-        relation='power_supply_contract_rel',
-        column1='supply_id',
-        column2='contract_id',
+        relation="power_supply_contract_rel",
+        column1="supply_id",
+        column2="contract_id",
         store=True, copy=False
     )
 
