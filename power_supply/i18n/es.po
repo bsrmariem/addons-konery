@@ -142,8 +142,8 @@ msgid "Amount"
 msgstr "Importe"
 
 #. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_supply__anual_power
-msgid "Anual power (kWh)"
+#: model:ir.model.fields,field_description:power_supply.field_power_supply__annual_power
+msgid "Annual power (kWh)"
 msgstr "Consumo anual (kWh)"
 
 #. module: power_supply
