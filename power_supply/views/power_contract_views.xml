@@ -20,6 +20,7 @@
                 <field name="compromise" optional="hide"/>
                 <field name="auto_renew" optional="hide"/>
                 <field name="energy_type" optional="hide"/>
+                <field name="date_start" optional="show"/>
                 <field name="date_end" optional="show"/>
                 <field name="active" widget="boolean_toggle" optional="show"/>
             </tree>

@@ -20,7 +20,7 @@ class PowerSupply(models.Model):
 
     location = fields.Char('Location', store=True)
     location_map = fields.Many2one('res.partner', store=True, string='Map address')
-    cups = fields.Char('CUPS', store=True)
+    cups = fields.Char('CUPS', store=True, copy=False)
     anual_power = fields.Integer('Anual power (kWh)')
     tag_ids = fields.Many2many('power.tag', string='Tags', store=True)
     dealer_id = fields.Many2one('power.dealer', store=True)
@@ -30,7 +30,7 @@ class PowerSupply(models.Model):
         relation='power_supply_contract_rel',
         column1='supply_id',
         column2='contract_id',
-        store=True,
+        store=True, copy=False
     )
 
     @api.depends('name', 'cups')

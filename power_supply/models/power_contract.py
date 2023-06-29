@@ -12,8 +12,8 @@ class PowerContract(models.Model):
     name = fields.Char(string='Name', required=True)
     active = fields.Boolean('Active', default=True)
     date = fields.Date(string='Date contracted')
-    date_start = fields.Date(string='Date start')
-    date_end = fields.Date(string='Date end')
+    date_start = fields.Date(string='Date start', required=True)
+    date_end = fields.Date(string='Date end', required=True)
     energy_type = fields.Selection([('electricity', 'Electricity'), ('gas', 'Gas')], string='Energy type')
     partner_id = fields.Many2one('res.partner', string='Customer',  store=True)
     company_group_id = fields.Many2one('res.partner', string='Holding', related='partner_id.company_group_id')
@@ -39,22 +39,23 @@ class PowerContract(models.Model):
     # Comentado porque no funciona, hay que hacer AcciónAutomática:
     #    @api.onchange('date_start','date_end', 'supply_id')
     def _check_valid_date(self):
-        if (self.id) and (self.supply_ids.ids):
-#            contracts = self.env['power.contract'].search(
-#                [('id', '!=', self.id), ('id', 'in', self.supply_ids.ids), ('active', 'in', [True, False])])
-        #    supplies = self.supply_ids
-            contracts = self.env['power.supply.contract.rel'].search(
-                [('supply_id', 'in', self.supply_ids.ids), ('contract_id', '!=', self.id), ('contract_id.active', 'in', [True, False])]).contract_id
-            for co in contracts:
-                if not (co.date_start) or not (co.date_end):
-                    raise UserError(
-                        'Before save this contract check previous to assign starting and ending dates (actives or archived).')
-                if (self.date_start) and (self.date_start < co.date_end) and (self.date_start > co.date_start):
-                    raise UserError('Begin date overlaped with other contract (actives or archived).')
-                if (self.date_end) and (self.date_end < co.date_end) and (self.date_end > co.date_start):
-                    raise UserError('End date overlaped with other contract (actives or archived).')
-                if (self.date_start) and (self.date_end) and (self.date_start < co.date_start) and (self.date_end > co.date_start):
-                    raise UserError(
-                        'Not valid period, check other contract dates for this Supply (actives or archived).')
-                if (self.date_start) and (self.date_end) and (self.date_start > self.date_end):
-                    raise UserError('Date end earlier than begin')
+        for record in self:
+            if (record.id) and (record.supply_ids.ids):
+
+                contracts = env['power.supply.contract.rel'].search(
+                    [('supply_id', 'in', record.supply_ids.ids), ('contract_id', '!=', record.id),
+                     ('contract_id.active', 'in', [True, False])]).contract_id
+
+                for co in contracts:
+                    if not (co.date_start) or not (co.date_end):
+                        raise UserError(
+                            'Before save this contract check previous to assign starting and ending dates (actives or archived).')
+                    if (record.date_start < co.date_end) and (record.date_start > co.date_start):
+                        raise UserError('Begin date overlaped with other contract (actives or archived).')
+                    if (record.date_end < co.date_end) and (record.date_end > co.date_start):
+                        raise UserError('End date overlaped with other contract (actives or archived).')
+                    if (record.date_start < co.date_start) and (record.date_end > co.date_start):
+                        raise UserError(
+                            'Not valid period, check other contract dates for this Supply (actives or archived).')
+                    if (record.date_start > record.date_end):
+                        raise UserError('Date end earlier than begin')
