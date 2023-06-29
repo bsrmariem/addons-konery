@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="supply_contract_rel">
-      <change afterPath="$PROJECT_DIR$/reports_konery/models/res_partner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports_konery/views/res_partner_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports_konery/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/reports_konery/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports_konery/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/reports_konery/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports_konery/models/report_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/reports_konery/models/report_type.py" afterDir="false" />
-    </list>
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="report_konery search customer" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00299" summary="bug protocol comm ro">
-      <created>1687432227115</created>
-      <option name="number" value="00299" />
-      <option name="presentableId" value="LOCAL-00299" />
-      <option name="project" value="LOCAL" />
-      <updated>1687432227115</updated>
     </task>
     <task id="LOCAL-00300" summary="partner_id store True">
       <created>1687765565374</created>
@@ -426,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688027991256</updated>
     </task>
-    <option name="localTasksCounter" value="348" />
+    <task id="LOCAL-00348" summary="report_konery search customer">
+      <created>1688030553935</created>
+      <option name="number" value="00348" />
+      <option name="presentableId" value="LOCAL-00348" />
+      <option name="project" value="LOCAL" />
+      <updated>1688030553935</updated>
+    </task>
+    <option name="localTasksCounter" value="349" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +452,8 @@
     <MESSAGE value="partner_id store True" />
     <MESSAGE value="groups pwsup" />
     <MESSAGE value="supply_contract_rel" />
-    <option name="LAST_COMMIT_MESSAGE" value="supply_contract_rel" />
+    <MESSAGE value="report_konery search customer" />
+    <option name="LAST_COMMIT_MESSAGE" value="report_konery search customer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
