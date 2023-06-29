@@ -44,7 +44,7 @@ class PowerContract(models.Model):
 #                [('id', '!=', self.id), ('id', 'in', self.supply_ids.ids), ('active', 'in', [True, False])])
         #    supplies = self.supply_ids
             contracts = self.env['power.supply.contract.rel'].search(
-                [('supply_id', 'in', self.supply_ids.ids), ('id', '!=', self.id), ('active', 'in', [True, False])])
+                [('supply_id', 'in', self.supply_ids.ids), ('contract_id', '!=', self.id), ('contract_id.active', 'in', [True, False])]).contract_id
             for co in contracts:
                 if not (co.date_start) or not (co.date_end):
                     raise UserError(
