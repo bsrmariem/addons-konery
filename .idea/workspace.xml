@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="report_konery search customer" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="report_konery search customer">
+      <change beforePath="$PROJECT_DIR$/reports_konery/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/reports_konery/security/ir.model.access.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,20 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00300" summary="partner_id store True">
-      <created>1687765565374</created>
-      <option name="number" value="00300" />
-      <option name="presentableId" value="LOCAL-00300" />
-      <option name="project" value="LOCAL" />
-      <updated>1687765565374</updated>
-    </task>
-    <task id="LOCAL-00301" summary="groups pwsup">
-      <created>1687862340946</created>
-      <option name="number" value="00301" />
-      <option name="presentableId" value="LOCAL-00301" />
-      <option name="project" value="LOCAL" />
-      <updated>1687862340946</updated>
     </task>
     <task id="LOCAL-00302" summary="groups pwsup">
       <created>1687862578674</created>
@@ -419,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688030553935</updated>
     </task>
-    <option name="localTasksCounter" value="349" />
+    <task id="LOCAL-00349" summary="report_konery search customer">
+      <created>1688031424764</created>
+      <option name="number" value="00349" />
+      <option name="presentableId" value="LOCAL-00349" />
+      <option name="project" value="LOCAL" />
+      <updated>1688031424764</updated>
+    </task>
+    <task id="LOCAL-00350" summary="report_konery search customer">
+      <created>1688031487573</created>
+      <option name="number" value="00350" />
+      <option name="presentableId" value="LOCAL-00350" />
+      <option name="project" value="LOCAL" />
+      <updated>1688031487573</updated>
+    </task>
+    <option name="localTasksCounter" value="351" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
