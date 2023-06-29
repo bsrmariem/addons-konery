@@ -41,7 +41,7 @@ class PowerContract(models.Model):
     def _check_valid_date(self):
         if (self.id) and (self.supply_ids.ids):
             contracts = self.env['power.contract'].search(
-                [('id', '!=', self.id), ('supply_id', '=', self.supply_id.id), ('active', 'in', [True, False])])
+                [('id', '!=', self.id), ('id', 'in', self.supply_ids.ids), ('active', 'in', [True, False])])
             for co in contracts:
                 if not (co.date_start) or not (co.date_end):
                     raise UserError(
