@@ -15,3 +15,7 @@ class ReportType(models.Model):
     model = fields.Char(string='Modelo', related='report_id.model')
     template = fields.Many2one('ir.ui.view', string='Plantilla', required=True)
     paperformat_id = fields.Many2one('report.paperformat', 'Formato Papel')
+    
+    konery = fields.Boolean('Konery', store=True)
+    solarteam = fields.Boolean('Solarteam', store=True)
+    

@@ -9,7 +9,7 @@
     'author': 'Serincloud',
     "website": "",
     "license": "AGPL-3",
-    "depends": ["account", "purchase", "sale", "report_qweb_pdf_watermark","sale_comment_template"],
+    "depends": ["account", "purchase", "sale_management", "report_qweb_pdf_watermark","sale_comment_template"],
     "data": [
         "views/kn_report_invoice.xml",
         "views/st_report_invoice.xml",
@@ -20,6 +20,7 @@
         "views/templates.xml",
         "views/ir_action_report.xml",
         "views/form_views.xml",
+        "views/res_parter_views.xml",
         #"data/paper_format.xml",
         "security/ir.model.access.csv",
     ],

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data>
+
+    <record id="partner_konery_solarteam_customer_search" model="ir.ui.view">
+        <field name="name">partner.konery.solarteam.customer.inh.search</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <filter name="type_company" position="after">
+                <separator/>
+                <filter name="konery_customer"/>
+                <filter name="solarteam_customer"/>
+                <separator/>
+            </filter>
+        </field>
+    </record>
+
+</data>
