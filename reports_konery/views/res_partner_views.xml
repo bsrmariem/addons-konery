@@ -8,8 +8,8 @@
         <field name="arch" type="xml">
             <filter name="type_company" position="after">
                 <separator/>
-                <filter name="konery_customer"/>
-                <filter name="solarteam_customer"/>
+                <filter string="Konery" name="konery_customer" domain="[('konery_customer','=',True)]"/>
+                <filter string="Solarteam" name="solarteam_customer" domain="[('solarteam_customer','=',True)]"/>
                 <separator/>
             </filter>
         </field>
