@@ -21,7 +21,7 @@ class PowerContract(models.Model):
     supply_ids = fields.Many2many(
         comodel_name='power.supply',
         relation='power_supply_contract_rel',
-        store=True, index=True
+        store=True, index=True, active_test=False
     )
 
     type_id = fields.Many2one('power.contract.type', string='Contract type')
@@ -35,11 +35,10 @@ class PowerContract(models.Model):
     description = fields.Text('Notes')
 
     # Comentado porque no funciona, finalmente hay que hacer AcciónAutomática:
-    #    @api.onchange('date_start','date_end', 'supply_id')
+    @api.onchange('date_start','date_end', 'supply_ids')
     def _check_valid_date(self):
         for record in self:
             if (record.id) and (record.supply_ids.ids):
-
                 contracts = self.env['power.contract'].search(
                     [('supply_id', 'in', record.supply_ids.ids), ('id', '!=', record.id),
                      ('active', 'in', [True, False])])
