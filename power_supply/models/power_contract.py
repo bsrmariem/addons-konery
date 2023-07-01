@@ -20,7 +20,7 @@ class PowerContract(models.Model):
 
     supply_ids = fields.Many2many(
         comodel_name='power.supply',
-        relation='power_supply_contract_rel',
+        relation='power_supply_contract_rel', column1='contract_id', column2='supply_id',
         store=True, index=True, context={'active_test': False}
     )
 
@@ -48,7 +48,21 @@ class PowerContract(models.Model):
     #                                compute=_get_related_date_contracts,
     #                                store=True, context={'active_test': False}, string='Date related constraint')
 
-    @api.onchange('date_start','date_end', 'contract_ids')
+    @api.constrains('date_start')
+    def _check_date_start(self):
+        for record in self:
+            if record.date_end < fields.Date.today():
+                raise ValidationError("The end date cannot be set in the past")
+#    @api.onchange('date_start','date_end', 'contract_ids')
+
+    @api.constrains('date_end')
+    def _check_date_end(self):
+        for record in self:
+            if record.date_end < fields.Date.today():
+                raise ValidationError("The end date cannot be set in the past")
+
+            
+
     def _check_valid_date(self):
         for record in self:
             for co in record.supply_ids.contract_ids:
