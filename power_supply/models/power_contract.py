@@ -20,7 +20,7 @@ class PowerContract(models.Model):
 
     supply_ids = fields.Many2many(
         comodel_name='power.supply',
-        relation='power_supply_contract_rel', column1='contract_id', column2='supply_id',
+        relation='power_supply_contract_rel',
         store=True, index=True, context={'active_test': False}
     )
 
@@ -61,7 +61,7 @@ class PowerContract(models.Model):
             if record.date_end < fields.Date.today():
                 raise ValidationError("The end date cannot be set in the past")
 
-            
+
 
     def _check_valid_date(self):
         for record in self:
