@@ -5,7 +5,7 @@ from odoo import fields, models, api
 
 class PowerPricelist(models.Model):
     _name = 'power.pricelist'
-    _description = 'Power Supplies'
+    _description = 'Power Pricelists'
 
     name = fields.Char(string='Name', required=True)
     energy_type = fields.Selection([('electricity','Electricity'),('gas','Gas')],string='Energy type',
