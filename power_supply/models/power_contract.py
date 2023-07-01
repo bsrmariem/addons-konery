@@ -41,7 +41,7 @@ class PowerContract(models.Model):
             for cup in record.supply_ids:
                 for co in cup.contract_ids:
                     if co not in contracts: contracts.append(co)
-            raise UserError(contracts.ids)
+            raise UserError(contracts)
             for co in contracts:
                 if not (co.date_start) or not (co.date_end):
                     raise UserError(
