@@ -35,7 +35,7 @@ class PowerContract(models.Model):
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
 
-    @api.constrains('date_begin','date_end')
+    @api.constrains('date_begin','date_end','create_date')
     def _check_date_begin(self):
         for record in self:
             if record.date_begin and record.date_end:
