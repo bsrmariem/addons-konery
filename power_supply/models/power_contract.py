@@ -3,6 +3,7 @@
 
 from odoo import api, fields, models, _
 from odoo.exceptions import UserError, ValidationError
+from datetime import date, datetime
 
 class PowerContract(models.Model):
     _name = 'power.contract'
