@@ -37,7 +37,6 @@ class PowerContract(models.Model):
     @api.onchange('date_start','date_end', 'supply_ids')
     def _check_valid_date(self):
         for record in self:
-            raise UserError('si paso')
             for cup in record.supply_ids:
                 for co in cup.contract_ids:
                     if not (co.date_start) or not (co.date_end):
@@ -52,3 +51,5 @@ class PowerContract(models.Model):
                             'Not valid period, check other contract dates for this Supply (actives or archived).')
                     if (record.date_start > record.date_end):
                         raise UserError('Date end earlier than begin')
+                    else:
+                        raise UserError('cup.ids')
