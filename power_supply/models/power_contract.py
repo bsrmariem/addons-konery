@@ -20,9 +20,7 @@ class PowerContract(models.Model):
 
     supply_ids = fields.Many2many(
         comodel_name='power.supply',
-        relation='power_supply_contract_rel',
-#        column1='contract_id',
-#        column2='supply_id',
+        relation='power_supply_contract_rel', 'contract_id', 'supply_id',
         store=True, index=True
     )
 
