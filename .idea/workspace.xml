@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="bug supply primary key">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/models/power_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_contract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/models/power_supply.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_supply.py" afterDir="false" />
-    </list>
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="bug supply primary key" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00313" summary="supply_contract_rel">
-      <created>1687968069042</created>
-      <option name="number" value="00313" />
-      <option name="presentableId" value="LOCAL-00313" />
-      <option name="project" value="LOCAL" />
-      <updated>1687968069042</updated>
     </task>
     <task id="LOCAL-00314" summary="supply_contract_rel">
       <created>1687968128478</created>
@@ -423,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688199600701</updated>
     </task>
-    <option name="localTasksCounter" value="362" />
+    <task id="LOCAL-00362" summary="bug supply primary key">
+      <created>1688200707150</created>
+      <option name="number" value="00362" />
+      <option name="presentableId" value="LOCAL-00362" />
+      <option name="project" value="LOCAL" />
+      <updated>1688200707151</updated>
+    </task>
+    <option name="localTasksCounter" value="363" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
