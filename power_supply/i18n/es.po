@@ -384,7 +384,7 @@ msgid "Date leaving"
 msgstr "Fecha de salida"
 
 #. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_contract__date_start
+#: model:ir.model.fields,field_description:power_supply.field_power_contract__date_begin
 #: model_terms:ir.ui.view,arch_db:power_supply.power_contract_search
 msgid "Date start"
 msgstr "Fecha de inicio"

@@ -13,7 +13,7 @@ class PowerContract(models.Model):
     name = fields.Char(string='Name', required=True)
     active = fields.Boolean('Active', default=True)
     date = fields.Date(string='Date contracted')
-    date_start = fields.Date(string='Date start', required=True)
+    date_begin = fields.Date(string='Date start', required=True)
     date_end = fields.Date(string='Date end', required=True)
     energy_type = fields.Selection([('electricity', 'Electricity'), ('gas', 'Gas')], string='Energy type')
     partner_id = fields.Many2one('res.partner', string='Customer',  store=True)
@@ -49,34 +49,27 @@ class PowerContract(models.Model):
     #                                compute=_get_related_date_contracts,
     #                                store=True, context={'active_test': False}, string='Date related constraint')
 
-    @api.constrains('date_start')
-    def _check_date_start(self):
+    @api.constrains('date_begin','date_end')
+    def _check_date_begin(self):
         for record in self:
-            if record.date_start < fields.Date.today():
-                raise ValidationError("The end date cannot be set in the past")
-#    @api.onchange('date_start','date_end', 'contract_ids')
-
-    @api.constrains('date_end')
-    def _check_date_end(self):
-        for record in self:
-            if record.date_end < fields.Date.today():
-                raise ValidationError("The end date cannot be set in the past")
-
+            if record.date_begin < fields.Date.today():
+                raise ValidationError("The start date cannot be set in the past")
+#    @api.onchange('date_begin','date_end', 'contract_ids')
 
 
 #    def _check_valid_date(self):
             #        for record in self:
             #for cup in record.supply_ids:
                 #    for co in cup.contract_ids:
-                #    if not (co.date_start) or not (co.date_end):
+                #    if not (co.date_begin) or not (co.date_end):
                 #        raise UserError(
                 #            'Before save this contract check previous to assign starting and ending dates (actives and archived).')
-                #    if (record.date_start < co.date_end) and (record.date_start > co.date_start):
+                #    if (record.date_begin < co.date_end) and (record.date_begin > co.date_begin):
                 #        raise UserError('Begin date overlaped with other contract (actives or archived).')
-                #    if (record.date_end < co.date_end) and (record.date_end > co.date_start):
+                #    if (record.date_end < co.date_end) and (record.date_end > co.date_begin):
                 #        raise UserError('End date overlaped with other contract (actives or archived).')
-                #    if (record.date_start < co.date_start) and (record.date_end > co.date_start):
+                #    if (record.date_begin < co.date_begin) and (record.date_end > co.date_begin):
                 #       raise UserError(
                 #            'Not valid period, check other contract dates for this Supply (actives or archived).')
-                #    if (record.date_start > record.date_end):
+                #    if (record.date_begin > record.date_end):
 #        raise UserError('Date end earlier than begin')
