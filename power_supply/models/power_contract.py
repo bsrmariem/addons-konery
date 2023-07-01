@@ -34,10 +34,10 @@ class PowerContract(models.Model):
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
 
-    # Comentado porque no funciona, finalmente hay que hacer AcciónAutomática:
     @api.onchange('date_start','date_end', 'supply_ids')
     def _check_valid_date(self):
         for record in self:
+            raise UserError('si paso')
             for cup in record.supply_ids:
                 for co in cup.contract_ids:
                     if not (co.date_start) or not (co.date_end):
