@@ -30,7 +30,7 @@ class PowerSupply(models.Model):
         relation='power_supply_contract_rel',
         column1='supply_id',
         column2='contract_id',
-        store=True, copy=False,
+        store=True, copy=False, index=True
     )
 
     @api.depends('name', 'cups')

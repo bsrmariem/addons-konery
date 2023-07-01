@@ -23,7 +23,7 @@ class PowerContract(models.Model):
         relation='power_supply_contract_rel',
         column1='contract_id',
         column2='supply_id',
-        store=True,
+        store=True, index=True
     )
 
     type_id = fields.Many2one('power.contract.type', string='Contract type')
@@ -36,7 +36,7 @@ class PowerContract(models.Model):
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
 
-    # Comentado porque no funciona, hay que hacer AcciónAutomática:
+    # Comentado porque no funciona, finalmente hay que hacer AcciónAutomática:
     #    @api.onchange('date_start','date_end', 'supply_id')
     def _check_valid_date(self):
         for record in self:
