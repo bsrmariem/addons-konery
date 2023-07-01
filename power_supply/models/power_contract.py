@@ -34,16 +34,19 @@ class PowerContract(models.Model):
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
 
-    @api.onchange('date_start','date_end', 'supply_ids')
+    @api.depends('supply_ids','supply_ids.contract_ids')
+    def _get_related_date_contracts(self):
+        contracts = []
+        for sup in self.supply_ids:
+            for co in sup.contract_ids:
+                if co.id not in contracts: contracts.append(co.id)
+        self.contract_ids = [(6,0,contracts)]
+    contract_ids = fields.Many2many('power.contract', compute=_get_related_date_contracts,
+                                    store=True, context={'active_test': False}, string='Date related constraint')
+
+    @api.onchange('date_start','date_end', 'contract_ids')
     def _check_valid_date(self):
-        for record in self:
-            contracts = []
-            raise UserError(record.supply_ids.contract_ids)
-            for co in record.supply_ids.contract_ids:
-                if co.id not in contracts:
-                    contracts.append(co)
-            raise UserError(contracts)
-            for co in contracts:
+            for co in record.contract_ids:
                 if not (co.date_start) or not (co.date_end):
                     raise UserError(
                         'Before save this contract check previous to assign starting and ending dates (actives and archived).')
