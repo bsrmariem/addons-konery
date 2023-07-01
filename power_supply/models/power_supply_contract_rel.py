@@ -7,5 +7,5 @@ class SupplyContractRel(models.Model):
     _name = 'power.supply.contract.rel'
     _description = 'Power Supply Contract Rel'
 
-    supply_id = fields.Many2one('power.supply', string='Supply', store=True)
-    contract_id = fields.Many2one('power.contract', string='Contract', store=True)
+    supply_id = fields.Many2one('power.supply', string='Supply', store=True, required=False)
+    contract_id = fields.Many2one('power.contract', string='Contract', store=True, required=False)
