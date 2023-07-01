@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="dates overlap">
-      <change beforePath="$PROJECT_DIR$/power_supply/data/automatic_actions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/data/automatic_actions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/i18n/es.po" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/i18n/es.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/models/power_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_contract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_contract_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_supply_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,20 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00353" summary="report_konery search customer">
-      <created>1688040019452</created>
-      <option name="number" value="00353" />
-      <option name="presentableId" value="LOCAL-00353" />
-      <option name="project" value="LOCAL" />
-      <updated>1688040019452</updated>
-    </task>
-    <task id="LOCAL-00354" summary="report_konery search customer">
-      <created>1688047261038</created>
-      <option name="number" value="00354" />
-      <option name="presentableId" value="LOCAL-00354" />
-      <option name="project" value="LOCAL" />
-      <updated>1688047261038</updated>
     </task>
     <task id="LOCAL-00355" summary="report_konery search customer">
       <created>1688058088769</created>
@@ -425,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688233431391</updated>
     </task>
-    <option name="localTasksCounter" value="402" />
+    <task id="LOCAL-00402" summary="dates overlap">
+      <created>1688250533584</created>
+      <option name="number" value="00402" />
+      <option name="presentableId" value="LOCAL-00402" />
+      <option name="project" value="LOCAL" />
+      <updated>1688250533584</updated>
+    </task>
+    <task id="LOCAL-00403" summary="dates overlap">
+      <created>1688250740458</created>
+      <option name="number" value="00403" />
+      <option name="presentableId" value="LOCAL-00403" />
+      <option name="project" value="LOCAL" />
+      <updated>1688250740458</updated>
+    </task>
+    <option name="localTasksCounter" value="404" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
