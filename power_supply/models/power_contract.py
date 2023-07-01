@@ -41,7 +41,7 @@ class PowerContract(models.Model):
             if (record.id) and (record.supply_ids.ids):
 
                 contracts = self.env['power.contract'].search(
-                    [('supply_id', 'in', record.supply_ids.ids), ('contract_id', '!=', record.id),
+                    [('supply_id', 'in', record.supply_ids.ids), ('id', '!=', record.id),
                      ('active', 'in', [True, False])])
 
                 for co in contracts:
