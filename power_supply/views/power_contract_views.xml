@@ -40,15 +40,15 @@
                     </h2>
                     <group name="contract_data" string="Administrative data">
                         <group>
-                            <field name="partner_id" invisible="1" force_save="1"/>
+                            <field name="partner_id" invisible="1"/>
                             <field name="company_group_id" invisible="1"/>
                             <field name="energy_type" invisible="1"/>
                             <field name="type_id" domain="[('energy_type','=',energy_type)]" widget="selection"/>
                             <field name="marketeer_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
                             <field name="marketeer_contact_id" options="{'no_quick_create': True, 'no_create_edit':True}"/>
                             <field name="date"/>
-                            <field name="date_begin" force_save="1"/>
-                            <field name="date_end" force_save="1"/>
+                            <field name="date_begin"/>
+                            <field name="date_end"/>
                         </group>
                         <group>
                             <field name="origin_warranty" attrs="{'invisible':[('energy_type','!=','electricity')]}"/>
@@ -106,7 +106,6 @@
                     <group name="other_notes" string="Description and notes">
                         <field name="description" placeholder="Other information ..."/>
                     </group>
-
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
