@@ -55,18 +55,16 @@ class PowerContract(models.Model):
             if record.date_begin and record.date_end:
                 for cup in record.supply_ids:
                     for co in cup.contract_ids:
-                        if not (co.date_begin) or not (co.date_end):
-                            raise ValidationError(
-                                'Before save this contract check previous to assign starting and ending dates (actives and archived).')
-                    if (record.date_begin < co.date_end) and (record.date_begin > co.date_begin):
-                        raise ValidationError('Begin date overlaped with other contract (actives or archived).')
-                    if (record.date_end < co.date_end) and (record.date_end > co.date_begin):
-                        raise ValidationError('End date overlaped with other contract (actives or archived).')
-                    if (record.date_begin < co.date_begin) and (record.date_end > co.date_begin):
-                        raise ValidationError(
-                            'Not valid period, check other contract dates for this Supply (actives or archived).')
-                    if (record.date_begin > record.date_end):
-                        raise ValidationError('Date end earlier than begin')
+                        if (co.date_begin) and (co.date_end):
+                            if (record.date_begin < co.date_end) and (record.date_begin > co.date_begin):
+                                raise ValidationError('Begin date overlaped with other contract (actives or archived).')
+                            if (record.date_end < co.date_end) and (record.date_end > co.date_begin):
+                                raise ValidationError('End date overlaped with other contract (actives or archived).')
+                            if (record.date_begin < co.date_begin) and (record.date_end > co.date_begin):
+                                raise ValidationError(
+                                    'Not valid period, check other contract dates for this Supply (actives or archived).')
+                            if (record.date_begin > record.date_end):
+                                raise ValidationError('Date end earlier than begin')
 
 
 #    @api.onchange('date_begin','date_end', 'contract_ids')
