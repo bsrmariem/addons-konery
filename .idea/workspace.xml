@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="dates overlap" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="dates overlap">
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_contract.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,20 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00332" summary="supply_contract_rel">
-      <created>1687993431218</created>
-      <option name="number" value="00332" />
-      <option name="presentableId" value="LOCAL-00332" />
-      <option name="project" value="LOCAL" />
-      <updated>1687993431218</updated>
-    </task>
-    <task id="LOCAL-00333" summary="supply_contract_rel">
-      <created>1687993731553</created>
-      <option name="number" value="00333" />
-      <option name="presentableId" value="LOCAL-00333" />
-      <option name="project" value="LOCAL" />
-      <updated>1687993731553</updated>
     </task>
     <task id="LOCAL-00334" summary="supply_contract_rel">
       <created>1687993837326</created>
@@ -419,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688226292767</updated>
     </task>
-    <option name="localTasksCounter" value="381" />
+    <task id="LOCAL-00381" summary="dates overlap">
+      <created>1688226536616</created>
+      <option name="number" value="00381" />
+      <option name="presentableId" value="LOCAL-00381" />
+      <option name="project" value="LOCAL" />
+      <updated>1688226536616</updated>
+    </task>
+    <task id="LOCAL-00382" summary="dates overlap">
+      <created>1688226649806</created>
+      <option name="number" value="00382" />
+      <option name="presentableId" value="LOCAL-00382" />
+      <option name="project" value="LOCAL" />
+      <updated>1688226649807</updated>
+    </task>
+    <option name="localTasksCounter" value="383" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
