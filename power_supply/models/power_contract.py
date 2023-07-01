@@ -42,7 +42,6 @@ class PowerContract(models.Model):
                 for co in cup.contract_ids:
                     if co not in contracts: contracts.append(co)
             for co in contracts:
-                raise UserError(contracts)
                 if not (co.date_start) or not (co.date_end):
                     raise UserError(
                         'Before save this contract check previous to assign starting and ending dates (actives and archived).')
