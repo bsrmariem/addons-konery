@@ -52,4 +52,4 @@ class PowerContract(models.Model):
                     if (record.date_start > record.date_end):
                         raise UserError('Date end earlier than begin')
                     else:
-                        raise UserError('cup.ids')
+                        raise UserError(cup.ids)
