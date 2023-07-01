@@ -13,7 +13,6 @@ access_power_sim,Power Sims,model_power_sim,power_supply.group_power_supply_user
 access_power_communication,Power Communitaion,model_power_communication,power_supply.group_power_supply_user,1,0,0,0
 access_power_coverage,Power Coverage,model_power_coverage,power_supply.group_power_supply_user,1,0,0,0
 access_power_port,Power Port,model_power_port,power_supply.group_power_supply_user,1,0,0,0
-access_power_supply_contract_rel,Power Supply-Contract rel,model_power_supply_contract_rel,power_supply.group_power_supply_user,1,1,1,1
 
 access_power_contract_type,Tipos de Contrato,model_power_contract_type,power_supply.group_power_supply_admin,1,1,1,1
 access_power_pricelist,Tarifas de suministros,model_power_pricelist,power_supply.group_power_supply_admin,1,1,1,1
