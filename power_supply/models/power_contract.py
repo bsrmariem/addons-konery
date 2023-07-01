@@ -38,6 +38,7 @@ class PowerContract(models.Model):
     def _check_valid_date(self):
         for record in self:
             contracts = []
+            raise UserError(record.supply_ids.contract_ids)
             for co in record.supply_ids.contract_ids:
                 if co.id not in contracts:
                     contracts.append(co)
