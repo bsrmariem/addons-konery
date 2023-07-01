@@ -52,7 +52,7 @@ class PowerContract(models.Model):
     @api.constrains('date_start')
     def _check_date_start(self):
         for record in self:
-            if record.date_end < fields.Date.today():
+            if record.date_start < fields.Date.today():
                 raise ValidationError("The end date cannot be set in the past")
 #    @api.onchange('date_start','date_end', 'contract_ids')
 
