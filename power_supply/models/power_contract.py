@@ -6,8 +6,8 @@ from odoo.exceptions import UserError, ValidationError
 from datetime import date, datetime
 
 class PowerContract(models.Model):
-    _name = 'power.contract'
-    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _name = "power.contract"
+    _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = 'Power Contracts'
 
     name = fields.Char(string='Name', required=True)
@@ -20,7 +20,7 @@ class PowerContract(models.Model):
     company_group_id = fields.Many2one('res.partner', string='Holding', related='partner_id.company_group_id')
 
     supply_ids = fields.Many2many(
-        comodel_name='power.supply',
+        comodel_name="power.supply",
         relation='power_supply_contract_rel',
         store=True, index=True, context={'active_test': False}
     )
@@ -35,7 +35,7 @@ class PowerContract(models.Model):
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
 
-    @api.constrains('date_begin','date_end','create_date')
+    @api.constrains('date_begin','date_end')
     def _check_date_begin(self):
         for record in self:
             if record.date_begin and record.date_end:

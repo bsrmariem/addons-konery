@@ -66,6 +66,7 @@
                         <page name="contract" string="Contract">
                             <field name="contract_ids"
                                    context="{'default_energy_type':energy_type, 'default_partner_id':partner_id,
+                                   'default_contract_ids':[active_id],
                                    'form_view_ref':'power_supply.power_contract_quick_form'}"
                                    domain="[('partner_id','=',partner_id),('energy_type','=',energy_type)]">
                                 <tree>
