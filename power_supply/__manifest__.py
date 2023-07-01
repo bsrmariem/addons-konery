@@ -7,7 +7,6 @@ Power Supply history
 """,
     'author': 'Serincloud',
     'depends': [
-        'base_automation',
         'calendar',
         'base_partner_company_group',
         'mail',
@@ -29,7 +28,6 @@ Power Supply history
         'views/power_communication_views.xml',
         'views/power_coverage_views.xml',
         'views/power_port_views.xml',
-        'data/automatic_actions.xml',
     ],
     'application': True,
     'installable': True,

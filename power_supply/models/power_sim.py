@@ -10,7 +10,6 @@ class PowerSim(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Sims'
 
-    # ¿Porqué name y phone? name debería ser number y quitar phone
     name = fields.Char(string='ICCID', required=True)
     access_ip = fields.Char("Access IP")
     access_port = fields.Integer("Access port")
