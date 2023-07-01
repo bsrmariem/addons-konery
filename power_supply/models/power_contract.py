@@ -44,7 +44,7 @@ class PowerContract(models.Model):
                         contracts.append(co.id)
             record['contract_ids'] = [(6,0,contracts)]
     contract_ids = fields.Many2many('power.contract',
-                                    relation='power_contract_rel', 'contract1', 'contract2',
+                                    relation='power_contract_rel', column1='contract1', column2='contract2',
                                     compute=_get_related_date_contracts,
                                     store=True, context={'active_test': False}, string='Date related constraint')
 
