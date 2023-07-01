@@ -35,7 +35,7 @@ class PowerContract(models.Model):
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
 
-#    @api.depends('supply_ids','supply_ids.contract_ids')
+    #    @api.depends('supply_ids','supply_ids.contract_ids')
     #    def _get_related_date_contracts(self):
     #    for record in self:
     #        contracts = []
@@ -52,24 +52,36 @@ class PowerContract(models.Model):
     @api.constrains('date_begin','date_end')
     def _check_date_begin(self):
         for record in self:
-            if record.date_begin < fields.Date.today():
-                raise ValidationError("The start date cannot be set in the past")
+            for cup in record.supply_ids:
+                for co in cup.contract_ids:
+                    if not (co.date_begin) or not (co.date_end):
+                        raise ValidationError(
+                            'Before save this contract check previous to assign starting and ending dates (actives and archived).')
+                if (record.date_begin < co.date_end) and (record.date_begin > co.date_begin):
+                    raise ValidationError('Begin date overlaped with other contract (actives or archived).')
+                if (record.date_end < co.date_end) and (record.date_end > co.date_begin):
+                    raise ValidationError('End date overlaped with other contract (actives or archived).')
+                if (record.date_begin < co.date_begin) and (record.date_end > co.date_begin):
+                    raise ValidationError(
+                        'Not valid period, check other contract dates for this Supply (actives or archived).')
+                if (record.date_begin > record.date_end):
+                    raise ValidationError('Date end earlier than begin')
+
+
 #    @api.onchange('date_begin','date_end', 'contract_ids')
-
-
 #    def _check_valid_date(self):
-            #        for record in self:
-            #for cup in record.supply_ids:
-                #    for co in cup.contract_ids:
-                #    if not (co.date_begin) or not (co.date_end):
-                #        raise UserError(
-                #            'Before save this contract check previous to assign starting and ending dates (actives and archived).')
-                #    if (record.date_begin < co.date_end) and (record.date_begin > co.date_begin):
-                #        raise UserError('Begin date overlaped with other contract (actives or archived).')
-                #    if (record.date_end < co.date_end) and (record.date_end > co.date_begin):
-                #        raise UserError('End date overlaped with other contract (actives or archived).')
-                #    if (record.date_begin < co.date_begin) and (record.date_end > co.date_begin):
-                #       raise UserError(
-                #            'Not valid period, check other contract dates for this Supply (actives or archived).')
-                #    if (record.date_begin > record.date_end):
+#        for record in self:
+#for cup in record.supply_ids:
+#    for co in cup.contract_ids:
+#    if not (co.date_begin) or not (co.date_end):
+#        raise UserError(
+#            'Before save this contract check previous to assign starting and ending dates (actives and archived).')
+#    if (record.date_begin < co.date_end) and (record.date_begin > co.date_begin):
+#        raise UserError('Begin date overlaped with other contract (actives or archived).')
+#    if (record.date_end < co.date_end) and (record.date_end > co.date_begin):
+#        raise UserError('End date overlaped with other contract (actives or archived).')
+#    if (record.date_begin < co.date_begin) and (record.date_end > co.date_begin):
+#       raise UserError(
+#            'Not valid period, check other contract dates for this Supply (actives or archived).')
+#    if (record.date_begin > record.date_end):
 #        raise UserError('Date end earlier than begin')
