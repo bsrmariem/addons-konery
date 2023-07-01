@@ -34,24 +34,24 @@ class PowerContract(models.Model):
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
 
-    @api.depends('supply_ids','supply_ids.contract_ids')
-    def _get_related_date_contracts(self):
-        for record in self:
-            contracts = []
-            for sup in record.supply_ids:
-                for co in sup.contract_ids:
-                    if (co.id not in contracts) and (co.id != record.id):
-                        contracts.append(co.id)
-            record['contract_ids'] = [(6,0,contracts)]
-    contract_ids = fields.Many2many('power.contract',
-                                    relation='power_contract_rel', column1='contract1', column2='contract2',
-                                    compute=_get_related_date_contracts,
-                                    store=True, context={'active_test': False}, string='Date related constraint')
+#    @api.depends('supply_ids','supply_ids.contract_ids')
+    #    def _get_related_date_contracts(self):
+    #    for record in self:
+    #        contracts = []
+    #        for sup in record.supply_ids:
+    #            for co in sup.contract_ids:
+    #                if (co.id not in contracts) and (co.id != record.id):
+    #                    contracts.append(co.id)
+    #        record['contract_ids'] = [(6,0,contracts)]
+    #contract_ids = fields.Many2many('power.contract',
+    #                                relation='power_contract_rel', column1='contract1', column2='contract2',
+    #                                compute=_get_related_date_contracts,
+    #                                store=True, context={'active_test': False}, string='Date related constraint')
 
     @api.onchange('date_start','date_end', 'contract_ids')
     def _check_valid_date(self):
         for record in self:
-            for co in record.contract_ids:
+            for co in record.supply_ids.contract_ids:
                 if not (co.date_start) or not (co.date_end):
                     raise UserError(
                         'Before save this contract check previous to assign starting and ending dates (actives and archived).')
