@@ -36,11 +36,13 @@ class PowerContract(models.Model):
 
     @api.depends('supply_ids','supply_ids.contract_ids')
     def _get_related_date_contracts(self):
+        for record in self:
         contracts = []
-        for sup in self.supply_ids:
+        for sup in record.supply_ids:
             for co in sup.contract_ids:
-                if co.id not in contracts: contracts.append(co.id)
-        self.contract_ids = [(6,0,contracts)]
+                if (co.id not in contracts) and (co.id != record.id):
+                    contracts.append(co.id)
+        record.contract_ids = [(6,0,contracts)]
     contract_ids = fields.Many2many('power.contract', compute=_get_related_date_contracts,
                                     store=True, context={'active_test': False}, string='Date related constraint')
 
