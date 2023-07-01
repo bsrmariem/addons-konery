@@ -21,7 +21,7 @@ class PowerContract(models.Model):
     supply_ids = fields.Many2many(
         comodel_name='power.supply',
         relation='power_supply_contract_rel',
-        store=True, index=True, active_test=False
+        store=True, index=True, context={'active_test': False}
     )
 
     type_id = fields.Many2one('power.contract.type', string='Contract type')
