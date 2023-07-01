@@ -42,7 +42,7 @@ class PowerContract(models.Model):
 
                 contracts = self.env['power.contract'].search(
                     [('supply_id', 'in', record.supply_ids.ids), ('contract_id', '!=', record.id),
-                     ('contract_id.active', 'in', [True, False])])
+                     ('active', 'in', [True, False])])
 
                 for co in contracts:
                     if not (co.date_start) or not (co.date_end):
