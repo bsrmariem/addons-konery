@@ -19,7 +19,7 @@ class PowerContract(models.Model):
     company_group_id = fields.Many2one('res.partner', string='Holding', related='partner_id.company_group_id')
 
     supply_ids = fields.Many2many(
-        "power.supply",
+        comodel_name='power.supply',
         relation='power_supply_contract_rel',
         column1='contract_id',
         column2='supply_id',
