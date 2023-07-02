@@ -65,7 +65,6 @@ class PowerSupply(models.Model):
                 if (co.date_begin) and (co.date_end):
                     for sub in subcon:
                         corev = self.env['power.contract'].search([('id','=',sub)])
-                        raise ValidationError(sub)
                         if (co.date_begin < corev.date_end) and (co.date_begin > corev.date_begin):
                             raise ValidationError('Begin date overlaped with other contract (actives or archived).')
                         if (co.date_end < corev.date_end) and (co.date_end > corev.date_begin):
