@@ -52,6 +52,6 @@ class PowerContract(models.Model):
                             if (record.date_begin <= co.date_begin) and (record.date_end > co.date_begin):
                                 raise ValidationError(
                                     'Not valid period, check other contract dates for this Supply (actives or archived).')
-                            # Si fecha inicio mayor que fin, no puede ser:
+                            # Si fecha inicio mayor que fin, no válido:
                             if (record.date_begin > record.date_end):
                                 raise ValidationError('Date end earlier than begin')
