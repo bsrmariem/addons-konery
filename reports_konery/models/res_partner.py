@@ -5,7 +5,7 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     @api.depends('invoice_ids','invoice_ids.report_type.konery','sale_order_ids','sale_order_ids.report_type.konery')
-    def get_konery_customer(self):
+    def _get_konery_customer(self):
         for record in self:
             konery_customer = False
             konery_invoices = self.env['account.move'].search([('partner_id','=',record.id)])
@@ -15,7 +15,7 @@ class ResPartner(models.Model):
 #            if (konery_invoices.ids != False) or (konery_sales.ids != False):
 #                konery_customer = True
             record['konery_customer'] = konery_customer
-    konery_customer = fields.Boolean('Konery customer', store=True, compute=get_konery_customer)
+    konery_customer = fields.Boolean('Konery customer', store=True, compute='_get_konery_customer')
 
     @api.depends('invoice_ids','invoice_ids.report_type.solarteam','sale_order_ids','sale_order_ids.report_type.solarteam')
     def get_solarteam_customer(self):
