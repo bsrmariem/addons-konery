@@ -4,8 +4,8 @@
 from odoo import fields, models, api
 
 class PowerSupply(models.Model):
-    _name = 'power.supply'
-    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _name = "power.supply"
+    _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = 'Power Supplies'
 
     name = fields.Char(string='Name', required=True)

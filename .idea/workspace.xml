@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="dates overlap">
-      <change beforePath="$PROJECT_DIR$/power_supply/models/power_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_contract.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power_supply/models/power_supply.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_supply.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,20 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00361" summary="bug supply primary key">
-      <created>1688199600701</created>
-      <option name="number" value="00361" />
-      <option name="presentableId" value="LOCAL-00361" />
-      <option name="project" value="LOCAL" />
-      <updated>1688199600701</updated>
-    </task>
-    <task id="LOCAL-00362" summary="bug supply primary key">
-      <created>1688200707150</created>
-      <option name="number" value="00362" />
-      <option name="presentableId" value="LOCAL-00362" />
-      <option name="project" value="LOCAL" />
-      <updated>1688200707151</updated>
     </task>
     <task id="LOCAL-00363" summary="bug supply primary key">
       <created>1688201375246</created>
@@ -422,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688255310009</updated>
     </task>
-    <option name="localTasksCounter" value="410" />
+    <task id="LOCAL-00410" summary="dates overlap">
+      <created>1688256189540</created>
+      <option name="number" value="00410" />
+      <option name="presentableId" value="LOCAL-00410" />
+      <option name="project" value="LOCAL" />
+      <updated>1688256189540</updated>
+    </task>
+    <task id="LOCAL-00411" summary="dates overlap">
+      <created>1688256344805</created>
+      <option name="number" value="00411" />
+      <option name="presentableId" value="LOCAL-00411" />
+      <option name="project" value="LOCAL" />
+      <updated>1688256344805</updated>
+    </task>
+    <option name="localTasksCounter" value="412" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
