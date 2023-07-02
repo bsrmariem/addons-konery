@@ -12,7 +12,7 @@ class ResPartner(models.Model):
                                                                ('move_type','in',['out_invoice']),
                                                                ('report_type.konery','=',True)])
             konery_sales = self.env['sale.order'].search([('partner_id','=',record.id),('report_type.konery','=',True)])
-            if (konery_invoices != False) or (konery_sales != False):
+            if (konery_invoices.ids != False) or (konery_sales.ids != False):
                 konery_customer = True
             record['konery_customer'] = konery_customer
     konery_customer = fields.Boolean('Konery customer', store=True, compute=get_konery_customer)
