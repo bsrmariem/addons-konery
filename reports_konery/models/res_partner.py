@@ -8,8 +8,8 @@ class ResPartner(models.Model):
     def _get_konery_customer(self):
         for record in self:
             konery_customer = False
-            konery_invoices = self.env['account.move'].search([('partner_id','=',record.id)])
-#                                                               ('move_type','in',['out_invoice'])])
+            konery_invoices = self.env['account.move'].search([('partner_id','=',record.id),
+                                                               ('move_type','in',['out_invoice'])])
 #                                                               ('report_type.konery','=',True)])
 #            konery_sales = self.env['sale.order'].search([('partner_id','=',record.id),('report_type.konery','=',True)])
 #            if (konery_invoices.ids != False) or (konery_sales.ids != False):
