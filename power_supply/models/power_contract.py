@@ -42,12 +42,16 @@ class PowerContract(models.Model):
                 for cup in record.supply_ids:
                     for co in cup.contract_ids:
                         if (co.date_begin) and (co.date_end):
+                            # Si fecha inicio está comprendida entre rango comprarado, solapa:
                             if (record.date_begin < co.date_end) and (record.date_begin > co.date_begin):
                                 raise ValidationError('Begin date overlaped with other contract (actives or archived).')
+                            # Si fecha fin entre rango comparado, solapa:
                             if (record.date_end < co.date_end) and (record.date_end > co.date_begin):
                                 raise ValidationError('End date overlaped with other contract (actives or archived).')
+                            # Si inicio es anterior pero fin posterior al inicio, solapa:
                             if (record.date_begin < co.date_begin) and (record.date_end > co.date_begin):
                                 raise ValidationError(
                                     'Not valid period, check other contract dates for this Supply (actives or archived).')
+                            # Si fecha inicio mayor que fin, no puede ser:
                             if (record.date_begin > record.date_end):
                                 raise ValidationError('Date end earlier than begin')
