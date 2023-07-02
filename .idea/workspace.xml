@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="bug konery customer">
-      <change beforePath="$PROJECT_DIR$/reports_konery/models/res_partner.py" beforeDir="false" afterPath="$PROJECT_DIR$/reports_konery/models/res_partner.py" afterDir="false" />
-    </list>
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="bug konery customer" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,27 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00406" summary="dates overlap">
-      <created>1688251640140</created>
-      <option name="number" value="00406" />
-      <option name="presentableId" value="LOCAL-00406" />
-      <option name="project" value="LOCAL" />
-      <updated>1688251640140</updated>
-    </task>
-    <task id="LOCAL-00407" summary="dates overlap">
-      <created>1688254097233</created>
-      <option name="number" value="00407" />
-      <option name="presentableId" value="LOCAL-00407" />
-      <option name="project" value="LOCAL" />
-      <updated>1688254097233</updated>
-    </task>
-    <task id="LOCAL-00408" summary="dates overlap">
-      <created>1688254933472</created>
-      <option name="number" value="00408" />
-      <option name="presentableId" value="LOCAL-00408" />
-      <option name="project" value="LOCAL" />
-      <updated>1688254933472</updated>
     </task>
     <task id="LOCAL-00409" summary="dates overlap">
       <created>1688255310009</created>
@@ -421,7 +398,28 @@
       <option name="project" value="LOCAL" />
       <updated>1688297946262</updated>
     </task>
-    <option name="localTasksCounter" value="455" />
+    <task id="LOCAL-00455" summary="bug konery customer">
+      <created>1688298048770</created>
+      <option name="number" value="00455" />
+      <option name="presentableId" value="LOCAL-00455" />
+      <option name="project" value="LOCAL" />
+      <updated>1688298048770</updated>
+    </task>
+    <task id="LOCAL-00456" summary="bug konery customer">
+      <created>1688298114363</created>
+      <option name="number" value="00456" />
+      <option name="presentableId" value="LOCAL-00456" />
+      <option name="project" value="LOCAL" />
+      <updated>1688298114363</updated>
+    </task>
+    <task id="LOCAL-00457" summary="bug konery customer">
+      <created>1688298265823</created>
+      <option name="number" value="00457" />
+      <option name="presentableId" value="LOCAL-00457" />
+      <option name="project" value="LOCAL" />
+      <updated>1688298265823</updated>
+    </task>
+    <option name="localTasksCounter" value="458" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
