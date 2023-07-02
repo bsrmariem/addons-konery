@@ -60,6 +60,7 @@ class PowerSupply(models.Model):
     def _check_date_contracts(self):
         for record in self:
             subcon = [record.contract_ids.ids]
+            raise ValidationError(subcon)
             for co in record.contract_ids:
                 if (co.date_begin) and (co.date_end):
                     for sub in subcon:
