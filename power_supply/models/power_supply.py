@@ -74,4 +74,4 @@ class PowerSupply(models.Model):
                                 'Not valid period, check other contract dates for this Supply (actives or archived).')
                         if (co.date_begin > co.date_end):
                             raise ValidationError('Date end earlier than begin')
-                        subcon.remove(corev)
+                        subcon.remove(corev.id)
