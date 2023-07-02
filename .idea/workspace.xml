@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="dates overlap">
-      <change beforePath="$PROJECT_DIR$/reports_konery/models/res_partner.py" beforeDir="false" afterPath="$PROJECT_DIR$/reports_konery/models/res_partner.py" afterDir="false" />
-    </list>
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="bug konery customer" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,20 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00390" summary="dates overlap">
-      <created>1688228699285</created>
-      <option name="number" value="00390" />
-      <option name="presentableId" value="LOCAL-00390" />
-      <option name="project" value="LOCAL" />
-      <updated>1688228699285</updated>
-    </task>
-    <task id="LOCAL-00391" summary="dates overlap">
-      <created>1688230374522</created>
-      <option name="number" value="00391" />
-      <option name="presentableId" value="LOCAL-00391" />
-      <option name="project" value="LOCAL" />
-      <updated>1688230374522</updated>
     </task>
     <task id="LOCAL-00392" summary="dates overlap">
       <created>1688230434946</created>
@@ -421,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688260495382</updated>
     </task>
-    <option name="localTasksCounter" value="439" />
+    <task id="LOCAL-00439" summary="dates overlap">
+      <created>1688290254371</created>
+      <option name="number" value="00439" />
+      <option name="presentableId" value="LOCAL-00439" />
+      <option name="project" value="LOCAL" />
+      <updated>1688290254371</updated>
+    </task>
+    <task id="LOCAL-00440" summary="bug konery customer">
+      <created>1688290313081</created>
+      <option name="number" value="00440" />
+      <option name="presentableId" value="LOCAL-00440" />
+      <option name="project" value="LOCAL" />
+      <updated>1688290313081</updated>
+    </task>
+    <option name="localTasksCounter" value="441" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -457,7 +455,8 @@
     <MESSAGE value="report_konery search customer" />
     <MESSAGE value="bug supply primary key" />
     <MESSAGE value="dates overlap" />
-    <option name="LAST_COMMIT_MESSAGE" value="dates overlap" />
+    <MESSAGE value="bug konery customer" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug konery customer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
