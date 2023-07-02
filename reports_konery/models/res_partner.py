@@ -6,12 +6,13 @@ class ResPartner(models.Model):
 
     @api.depends('invoice_ids','invoice_ids.report_type.konery','sale_order_ids','sale_order_ids.report_type.konery')
     def get_konery_customer(self):
-        konery_customer = False
-        konery_invoices = self.env['account.move'].search([('partner_id','=',self.id),('move_type','in',['out_invoice')]])
-        konery_sales = self.env['sale.order'].search([('partner_id','=',self.id),('report_type.konery','=',True)])
-#        if (konery_invoices != False) or (konery_sales != False):
-#            konery_customer = True
-        self.konery_customer = konery_customer
+        for record in self:
+            konery_customer = False
+            konery_invoices = self.env['account.move'].search([('partner_id','=',record.id),('move_type','in',['out_invoice')]])
+            konery_sales = self.env['sale.order'].search([('partner_id','=',record.id),('report_type.konery','=',True)])
+    #        if (konery_invoices != False) or (konery_sales != False):
+    #            konery_customer = True
+            record['konery_customer'] = konery_customer
     konery_customer = fields.Boolean('Konery customer', store=True, compute=get_konery_customer)
 
     @api.depends('invoice_ids','invoice_ids.report_type.solarteam','sale_order_ids','sale_order_ids.report_type.solarteam')
