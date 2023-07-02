@@ -53,4 +53,22 @@ class PowerSupply(models.Model):
     energy_type_readonly = fields.Boolean('Energy type is readonly', compute='_get_energy_type_readonly')
 
     communication_ids = fields.One2many('power.communication','supply_id', string='Communications', store=True)
-    
+
+
+    @api.constrains('supply_ids')
+    def _check_date_contracts(self):
+        for record in self:
+            subcon = record.contract_ids
+            for co in record.contract_ids:
+                if (co.date_begin) and (co.date_end):
+                    for corev in subcon:
+                        if (co.date_begin < corev.date_end) and (co.date_begin > corev.date_begin):
+                            raise ValidationError('Begin date overlaped with other contract (actives or archived).')
+                        if (co.date_end < corev.date_end) and (co.date_end > corev.date_begin):
+                            raise ValidationError('End date overlaped with other contract (actives or archived).')
+                        if (co.date_begin < corev.date_begin) and (co.date_end > corev.date_begin):
+                            raise ValidationError(
+                                'Not valid period, check other contract dates for this Supply (actives or archived).')
+                        if (co.date_begin > co.date_end):
+                            raise ValidationError('Date end earlier than begin')
+                        subcon.remove(corev)
