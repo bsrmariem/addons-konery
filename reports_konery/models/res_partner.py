@@ -8,9 +8,9 @@ class ResPartner(models.Model):
     def get_konery_customer(self):
         konery_customer = False
         konery_invoices = self.env['account.move'].search([('move_type','in',['out_invoice']),
-                                                           ('report_type.konery','=',True)])[0]
-        konery_sales = self.env['sale.order'].search([('report_type.konery','=',True)])[0]
-        if (konery_invoices.id) or (konery_sales.id):
+                                                           ('report_type.konery','=',True)])
+        konery_sales = self.env['sale.order'].search([('report_type.konery','=',True)])
+        if (konery_invoices.ids) or (konery_sales.ids):
             konery_customer = True
         self.konery_customer = konery_customer
     konery_customer = fields.Boolean('Konery customer', store=True, compute=get_konery_customer)
@@ -19,9 +19,9 @@ class ResPartner(models.Model):
     def get_solarteam_customer(self):
         solarteam_customer = False
         solarteam_invoices = self.env['account.move'].search([('move_type','in',['out_invoice']),
-                                                              ('report_type.solarteam','=',True)])[0]
-        solarteam_sales = self.env['sale.order'].search([('report_type.solarteam','=',True)])[0]
-        if (solarteam_invoices.id) or (solarteam_sales.id):
+                                                              ('report_type.solarteam','=',True)])
+        solarteam_sales = self.env['sale.order'].search([('report_type.solarteam','=',True)])
+        if (solarteam_invoices.ids) or (solarteam_sales.ids):
             solarteam_customer = True
         self.solarteam_customer = solarteam_customer
     solarteam_customer = fields.Boolean('Konery customer', store=True, compute=get_solarteam_customer)
