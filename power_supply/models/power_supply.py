@@ -61,11 +61,11 @@ class PowerSupply(models.Model):
         for record in self:
             subcon = []
             for li in record.contract_ids: subcon.append(li.id)
-            raise ValidationError(subcon)
             for co in record.contract_ids:
                 if (co.date_begin) and (co.date_end):
                     for sub in subcon:
                         corev = self.env['power.contract'].search([('id','=',sub)])
+                        raise ValidationError(sub)
                         if (co.date_begin < corev.date_end) and (co.date_begin > corev.date_begin):
                             raise ValidationError('Begin date overlaped with other contract (actives or archived).')
                         if (co.date_end < corev.date_end) and (co.date_end > corev.date_begin):
