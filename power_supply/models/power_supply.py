@@ -79,4 +79,4 @@ class PowerSupply(models.Model):
                             # Si fecha inicio mayor que fin, no puede ser:
                             if (co.date_begin > co.date_end):
                                 raise ValidationError('Date end earlier than begin')
-                            subcon.remove(sub)
+                subcon.remove(co.id)
