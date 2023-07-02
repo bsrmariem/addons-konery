@@ -66,13 +66,13 @@ class PowerSupply(models.Model):
                     for sub in subcon:
                         corev = self.env['power.contract'].search([('id','=',sub)])
                         # Si fecha inicio está comprendida entre rango comprarado, solapa:
-                        if (co.date_begin < corev.date_end) and (co.date_begin > corev.date_begin):
+                        if (co.date_begin < corev.date_end) and (co.date_begin >= corev.date_begin):
                             raise ValidationError('Begin date overlaped with other contract (actives or archived).')
                         # Si fecha fin entre rango comparado, solapa:
-                        if (co.date_end < corev.date_end) and (co.date_end > corev.date_begin):
+                        if (co.date_end <= corev.date_end) and (co.date_end > corev.date_begin):
                             raise ValidationError('End date overlaped with other contract (actives or archived).')
                         # Si inicio es anterior pero fin posterior al inicio, solapa:
-                        if (co.date_begin < corev.date_begin) and (co.date_end > corev.date_begin):
+                        if (co.date_begin <= corev.date_begin) and (co.date_end > corev.date_begin):
                             raise ValidationError(
                                 'Not valid period, check other contract dates for this Supply (actives or archived).')
                         # Si fecha inicio mayor que fin, no puede ser:
