@@ -56,7 +56,7 @@ class PowerSupply(models.Model):
     communication_ids = fields.One2many('power.communication','supply_id', string='Communications', store=True)
 
 
-    @api.constrains('contract_ids')
+    @api.onchange('contract_ids')
     def _check_date_contracts(self):
         for record in self:
             subcon = []
