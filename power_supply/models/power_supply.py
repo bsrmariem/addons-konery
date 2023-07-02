@@ -2,6 +2,7 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
 from odoo import fields, models, api
+from odoo.exceptions import UserError, ValidationError
 
 class PowerSupply(models.Model):
     _name = "power.supply"
@@ -55,7 +56,7 @@ class PowerSupply(models.Model):
     communication_ids = fields.One2many('power.communication','supply_id', string='Communications', store=True)
 
 
-    @api.constrains('contract_id','write_date')
+    @api.constrains('contract_ids')
     def _check_date_contracts(self):
         for record in self:
             subcon = record.contract_ids
