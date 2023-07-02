@@ -21,12 +21,12 @@ class ResPartner(models.Model):
     def get_solarteam_customer(self):
         for record in self:
             solarteam_customer = False
-#            solarteam_invoices = self.env['account.move'].search([('partner_id','=',record.id),
-#                                                                  ('move_type','in',['out_invoice']),
-#                                                                  ('report_type.solarteam','=',True)])
-#            solarteam_sales = self.env['sale.order'].search([('partner_id','=',record.id),
-#                                                             ('report_type.solarteam','=',True)])
-#            if (solarteam_invoices.ids) or (solarteam_sales.ids):
-#                solarteam_customer = True
+            solarteam_invoices = self.env['account.move'].search([('partner_id','=',record.id),
+                                                                  ('move_type','in',['out_invoice']),
+                                                                  ('report_type.solarteam','=',True)])
+            solarteam_sales = self.env['sale.order'].search([('partner_id','=',record.id),
+                                                             ('report_type.solarteam','=',True)])
+            if (solarteam_invoices.ids) or (solarteam_sales.ids):
+                solarteam_customer = True
             record['solarteam_customer'] = solarteam_customer
     solarteam_customer = fields.Boolean('Konery customer', store=True, compute=get_solarteam_customer)
