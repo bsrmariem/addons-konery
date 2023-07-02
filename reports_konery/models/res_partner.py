@@ -7,10 +7,9 @@ class ResPartner(models.Model):
     @api.depends('invoice_ids','invoice_ids.report_type.konery','sale_order_ids','sale_order_ids.report_type.konery')
     def get_konery_customer(self):
         konery_customer = False
-        konery_invoices = self.env['account.move'].search([('move_type','in',['out_invoice']),
-                                                           ('report_type.konery','=',True)])
+        konery_invoices = self.env['account.move'].search([('move_type','in',['out_invoice']), ('report_type.konery','=',True)])
         konery_sales = self.env['sale.order'].search([('report_type.konery','=',True)])
-        if (konery_invoices.ids != False) or (konery_sales.ids != False):
+        if (konery_invoices != False) or (konery_sales != False):
             konery_customer = True
         self.konery_customer = konery_customer
     konery_customer = fields.Boolean('Konery customer', store=True, compute=get_konery_customer)
