@@ -59,10 +59,11 @@ class PowerSupply(models.Model):
     @api.constrains('contract_ids')
     def _check_date_contracts(self):
         for record in self:
-            subcon = record.contract_ids
+            subcon = [record.contract_ids.ids]
             for co in record.contract_ids:
                 if (co.date_begin) and (co.date_end):
-                    for corev in subcon:
+                    for sub in subcon:
+                        corev = self.env['power.contract'].search([('id','=',sub)])
                         if (co.date_begin < corev.date_end) and (co.date_begin > corev.date_begin):
                             raise ValidationError('Begin date overlaped with other contract (actives or archived).')
                         if (co.date_end < corev.date_end) and (co.date_end > corev.date_begin):
