@@ -55,3 +55,6 @@ class PowerContract(models.Model):
                             # Si fecha inicio mayor que fin, no válido:
                             if (record.date_begin > record.date_end):
                                 raise ValidationError('Date end earlier than begin')
+                            # La fecha de contratación ha de ser anterior a la de inicio:
+                            if (record.date_begin > record.date):
+                                raise ValidationError('The hiring date must be prior to the start date')
