@@ -35,10 +35,17 @@ class PowerContract(models.Model):
     atr_detached = fields.Boolean('Detached ATR')
     description = fields.Text('Notes')
 
-    @api.constrains('date_begin','date_end','supply_ids')
+    @api.constrains('date_begin','date_end','supply_ids','date')
     def _check_date_begin_end(self):
         for record in self:
+            # La fecha de contratación ha de ser anterior a la de inicio:
+            if (record.date_begin < record.date):
+                raise ValidationError('The hiring date must be prior to the start date')
             if record.date_begin and record.date_end:
+                # Si fecha inicio mayor que fin, no válido:
+                if (record.date_begin > record.date_end):
+                    raise ValidationError('Date end earlier than begin')
+                # Chequeo del resto de contratos relacionados para no solapar:
                 for cup in record.supply_ids:
                     for co in cup.contract_ids:
                         if (co.date_begin) and (co.date_end) and (co.id != record.id):
@@ -52,9 +59,3 @@ class PowerContract(models.Model):
                             if (record.date_begin <= co.date_begin) and (record.date_end > co.date_begin):
                                 raise ValidationError(
                                     'Not valid period, check other contract dates for this Supply (actives or archived).')
-                            # Si fecha inicio mayor que fin, no válido:
-                            if (record.date_begin > record.date_end):
-                                raise ValidationError('Date end earlier than begin')
-                            # La fecha de contratación ha de ser anterior a la de inicio:
-                            if (record.date_begin > record.date):
-                                raise ValidationError('The hiring date must be prior to the start date')
