@@ -76,10 +76,5 @@ class PowerSupply(models.Model):
                             if (co.date_begin <= corev.date_begin) and (co.date_end > corev.date_begin):
                                 raise ValidationError(
                                     'Not valid period, check other contract dates for this Supply (actives or archived).')
-                            # Si fecha inicio mayor que fin, no puede ser:
-                            if (co.date_begin > co.date_end):
-                                raise ValidationError('Date end earlier than begin')
-                            # La fecha de
-                            if (co.date_begin > co.date):
-                                raise ValidationError('The hiring date must be prior to the start date')
+                            # El resto de chequeos de fecha se hace por el constraint del contrato.
                 subcon.remove(co.id)
