@@ -8,8 +8,7 @@ class PowerPower(models.Model):
     _description = 'Power Contract Powers'
 
     supply_id = fields.Many2one('power.supply', string='Supply', store=True)
-    energy_type = fields.Selection([('electricity','Electricity'),('gas','Gas')],string='Energy type',
-                                   related='supply_id.energy_type')
+    energy_type = fields.Selection([string='Energy type', related='supply_id.energy_type')
 
     partner_id = fields.Many2one('res.partner', related='supply_id.partner_id', string='Customer', store=True)
 
