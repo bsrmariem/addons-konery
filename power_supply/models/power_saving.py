@@ -11,8 +11,7 @@ class PowerSaving(models.Model):
     name = fields.Char(string='Name', required=True)
     date = fields.Date(string='Date', required=True)
     supply_id = fields.Many2one('power.supply', string='Power supply', store=True, required=True)
-    energy_type = fields.Selection([('electricity', 'Electricity'), ('gas', 'Gas')], string='Energy type',
-                                   related='supply_id.energy_type')
+    energy_type = fields.Selection(string='Energy type', related='supply_id.energy_type')
     partner_id = fields.Many2one('res.partner', string='Customer', related='supply_id.partner_id')
     cups = fields.Char('CUPS', related='supply_id.cups', store=True)
     amount = fields.Monetary('Amount')
