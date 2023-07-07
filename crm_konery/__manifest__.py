@@ -5,6 +5,7 @@
     'name': 'CRM Konery Custom',
     'version': '16.0.1.0.2',
     'category': '',
+    "license": "AGPL-3",
     'description': u"""
 CRM Konery Customs
 """,

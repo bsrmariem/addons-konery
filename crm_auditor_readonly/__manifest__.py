@@ -5,6 +5,7 @@
     'name': 'CRM Auditor Readonly',
     'version': '16.0.0.1.0',
     'category': 'Sales/CRM',
+    "license": "AGPL-3",
     'sequence': 15,
     'summary': '',
     'website': '',

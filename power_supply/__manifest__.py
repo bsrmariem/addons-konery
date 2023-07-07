@@ -5,6 +5,7 @@
     'name': 'Power Supplies',
     'version': '16.0.1.0.3',
     'category': '',
+    "license": "AGPL-3",
     'description': u"""
 Power Supply history
 """,
