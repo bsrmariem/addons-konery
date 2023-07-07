@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="New date control for hiring">
-      <change beforePath="$PROJECT_DIR$/crm_auditor_readonly/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm_auditor_readonly/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm_konery/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm_konery/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm_lead_tasks/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm_lead_tasks/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/konery_importer/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/konery_importer/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/konery_links/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/konery_links/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/models/power_saving.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_saving.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_task_department/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_task_department/__manifest__.py" afterDir="false" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="license warning">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,20 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00426" summary="dates overlap">
-      <created>1688257667469</created>
-      <option name="number" value="00426" />
-      <option name="presentableId" value="LOCAL-00426" />
-      <option name="project" value="LOCAL" />
-      <updated>1688257667469</updated>
-    </task>
-    <task id="LOCAL-00427" summary="dates overlap">
-      <created>1688257730142</created>
-      <option name="number" value="00427" />
-      <option name="presentableId" value="LOCAL-00427" />
-      <option name="project" value="LOCAL" />
-      <updated>1688257730142</updated>
     </task>
     <task id="LOCAL-00428" summary="dates overlap">
       <created>1688258394721</created>
@@ -428,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688724983353</updated>
     </task>
-    <option name="localTasksCounter" value="475" />
+    <task id="LOCAL-00475" summary="New date control for hiring">
+      <created>1688725344698</created>
+      <option name="number" value="00475" />
+      <option name="presentableId" value="LOCAL-00475" />
+      <option name="project" value="LOCAL" />
+      <updated>1688725344698</updated>
+    </task>
+    <task id="LOCAL-00476" summary="license warning">
+      <created>1688725592642</created>
+      <option name="number" value="00476" />
+      <option name="presentableId" value="LOCAL-00476" />
+      <option name="project" value="LOCAL" />
+      <updated>1688725592642</updated>
+    </task>
+    <option name="localTasksCounter" value="477" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -466,7 +459,8 @@
     <MESSAGE value="dates overlap" />
     <MESSAGE value="bug konery customer" />
     <MESSAGE value="New date control for hiring" />
-    <option name="LAST_COMMIT_MESSAGE" value="New date control for hiring" />
+    <MESSAGE value="license warning" />
+    <option name="LAST_COMMIT_MESSAGE" value="license warning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

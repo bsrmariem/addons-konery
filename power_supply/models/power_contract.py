@@ -39,10 +39,10 @@ class PowerContract(models.Model):
     def _check_date_begin_end(self):
         for record in self:
             # La fecha de contratación ha de ser anterior a la de inicio:
-            if (record.date_begin < record.date):
+            if (record.date_begin) and (record.date) and (record.date_begin < record.date):
                 raise ValidationError('The hiring date must be prior to the start date')
             # Chequeo de contratos relacionados para no solapar fechas:
-            if record.date_begin and record.date_end:
+            if (record.date_begin) and (record.date_end):
                 # En el propio, si fecha inicio mayor que fin, no válido:
                 if (record.date_begin > record.date_end):
                     raise ValidationError('Date end earlier than begin')
