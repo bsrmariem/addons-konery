@@ -100,7 +100,7 @@
                     </group>
                     <group name="cups" string="CUPs">
                         <field name="supply_ids"
-                               domain="[('partner_id','=',partner_id),('energy_type','=',energy_type)]"
+                               domain="[('energy_type','=',energy_type),'|',('partner_id','=',partner_id),('company_group_id','=',company_group_id)]"
                                options="{'no_quick_create': True, 'no_create_edit':True}"/>
                     </group>
                     <group name="other_notes" string="Description and notes">
