@@ -52,7 +52,7 @@
                         </group>
                     </group>
 
-                    <group name="electrical_data" string="Electrical" attrs="{'invisible':[('electricity','=',False)]}">
+                    <group name="electrical_data" string="Electricity" attrs="{'invisible':[('electricity','=',False)]}">
                         <group>
                             <field name="order_number"/>
                             <field name="phone"/>
