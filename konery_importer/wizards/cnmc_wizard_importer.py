@@ -19,6 +19,10 @@ DIS_KEYS = ['NIF empresa', 'Nº de orden', 'Nombre empresa', 'Teléfono gratuito
 MAR_KEYS = ['Nº de orden', 'Nombre empresa', 'Dirección empresa', 'C.P.', 'Municipio empresa', 'Provincia empresa',
             'Teléfono Att cliente gratuito', 'Ámbito actuación', 'NIF empresa', 'Fecha alta', 'Fecha baja',
             'Página web', 'Estado']
+# REVISAR:
+MAR_GAS_KEYS = ['Nº Sifco', 'Razón Social', 'NIF empresa', 'Dirección Notificaciones', 'C.P.', 'Municipio',
+                'Provincia', 'País', 'Ámbito actuación', 'Teléfono Att cliente gratuito','Fecha inicio actividad',
+                'Fecha de baja listado', 'Estado']
 
 class ImporterCnmc(models.TransientModel):
     _name = 'cnmc.importer'
@@ -102,9 +106,68 @@ class ImporterCnmc(models.TransientModel):
             raise ValidationError('Error %s' % e)
 
 
-    # PENDIENTE DE IMPLEMENTAR (COPIA / PEGA Y RENOMBRAR CAMPOS DE MARKETEER, PERO SI YA EXISTE GAS=TRUE Y NUEVOS CAMPOS:
+    # PENDIENTE DE IMPLEMENTAR (RENOMBRAR CAMPOS DE MARKETEER, GAS=TRUE aunque exista, Y NUEVOS CAMPOS:
     def import_gas_marketer(self, csv):
         raise ValidationError('Función aún no implementada')
+        l = 0
+        k = 0
+
+        try:
+            for line in csv:
+                if l == 0:
+                    for key in MAR_GAS_KEYS:
+                        if k < len(MAR_GAS_KEYS) - 1:
+                            if key == line[k]:
+                                k += 1
+                            else:
+                                raise ValidationError('Please upload a valid .csv file with ordered KEYS %s' % DIS_KEYS)
+                    l += 1
+                    k = 0
+
+                else:
+                    mark_registered = self.env['power.marketeer'].search([
+                        ("vat", "=", line[k+8]),
+                    ], limit=1)
+                    if mark_registered.id:
+                        # Sobreescribir:
+                        self.env['power.marketeer'].sudo().write({
+                            'gas_sifco': str(line[k]),
+                            'country': str(line[k+3]),
+                            'gas_phone': str(line[k + 6]),
+                            'gas_sector': str(line[k + 7]),
+                            'gas_date_discharge': date_discharge,
+                            'gas_date_leaving': date_leaving,
+                            'gas_status': str(line([k+8]))
+                            'gas': True,
+                        })
+                    else:
+                        date_discharge = False
+                        date_leaving = False
+                        if line[k + 9] != '':
+                            temp_date = line[k + 9].replace('/','')
+                            date_discharge = datetime.datetime.strptime(temp_date, '%d%m%Y').date()
+                        if line[k + 10] != '':
+                            temp_date = line[k + 10].replace('/', '')
+                            date_leaving = datetime.datetime.strptime(temp_date, '%d%m%Y').date()
+                        # Crear nuevo:
+                        self.env['power.marketeer'].sudo().create({
+                            'name': str(line[k + 1]),
+                            'street': str(line[k + 2]),
+                            'city': str(line[k + 4]),
+                            'state': str(line[k + 5]),
+                            'zip': str(line[k + 3]),
+                            'country': str(line[k+3]),
+                            'gas_sifco': str(line[k]),
+                            'gas_phone': str(line[k + 6]),
+                            'gas_sector': str(line[k + 7]),
+                            'vat': str(line[k+8]),
+                            'gas_date_discharge': date_discharge,
+                            'gas_date_leaving': date_leaving,
+                            'gas_status': str(line([k+8]))
+                            'gas': True,
+                        })
+        except Exception as e:
+            raise ValidationError('Error %s' % e)
 
 
 

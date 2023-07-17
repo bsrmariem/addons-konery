@@ -30,3 +30,5 @@ class PowerMarketeer(models.Model):
     gas_phone = fields.Char('Gas phone')
     gas_date_discharge = fields.Date(string='Gas Date discharge')
     gas_date_leaving = fields.Date(string='Gas Date leaving')
+    country = fields.Char('Country')
+    gas_status = fields.Char("Gas Status")

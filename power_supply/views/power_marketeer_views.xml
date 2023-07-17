@@ -42,13 +42,17 @@
                     </h2>
                     <group name="company_data" string="Company data">
                         <group>
-                            <field name="vat"/>
-                            <field name="web"/>
-                            <field name="status"/>
+                            <field name="street" readonly="1"/>
+                            <field name="city" readonly="1"/>
+                            <field name="state" readonly="1"/>
+                            <field name="zip" readonly="1"/>
+                            <field name="country" readonly="1"/>
                         </group>
                         <group>
                             <field name="electricity"/>
                             <field name="gas"/>
+                            <field name="vat" readonly="1"/>
+                            <field name="web"/>
                         </group>
                     </group>
 
@@ -61,6 +65,7 @@
                         <group>
                             <field name="date_discharge"/>
                             <field name="date_leaving"/>
+                            <field name="status"/>
                         </group>
                     </group>
 
@@ -73,6 +78,7 @@
                         <group>
                             <field name="gas_date_discharge"/>
                             <field name="gas_date_leaving"/>
+                            <field name="gas_status"/>
                         </group>
                     </group>
 
