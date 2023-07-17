@@ -144,6 +144,7 @@ class ImporterCnmc(models.TransientModel):
                             'date_discharge': date_discharge,
                             'date_leaving': date_leaving,
                             'web': str(line[k + 11]),
+                            'electricity': True,
                         })
         except Exception as e:
             raise ValidationError('Error %s' % e)

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="license warning">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/models/power_marketeer.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_marketeer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" afterDir="false" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="gas marketeer fields">
+      <change beforePath="$PROJECT_DIR$/konery_importer/wizards/cnmc_wizard_importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/konery_importer/wizards/cnmc_wizard_importer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,20 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00431" summary="dates overlap">
-      <created>1688259437237</created>
-      <option name="number" value="00431" />
-      <option name="presentableId" value="LOCAL-00431" />
-      <option name="project" value="LOCAL" />
-      <updated>1688259437237</updated>
-    </task>
-    <task id="LOCAL-00432" summary="dates overlap">
-      <created>1688259654831</created>
-      <option name="number" value="00432" />
-      <option name="presentableId" value="LOCAL-00432" />
-      <option name="project" value="LOCAL" />
-      <updated>1688259654831</updated>
     </task>
     <task id="LOCAL-00433" summary="dates overlap">
       <created>1688259947487</created>
@@ -423,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689151121357</updated>
     </task>
-    <option name="localTasksCounter" value="480" />
+    <task id="LOCAL-00480" summary="gas marketeer fields">
+      <created>1689594829947</created>
+      <option name="number" value="00480" />
+      <option name="presentableId" value="LOCAL-00480" />
+      <option name="project" value="LOCAL" />
+      <updated>1689594829947</updated>
+    </task>
+    <task id="LOCAL-00481" summary="gas marketeer fields">
+      <created>1689595075843</created>
+      <option name="number" value="00481" />
+      <option name="presentableId" value="LOCAL-00481" />
+      <option name="project" value="LOCAL" />
+      <updated>1689595075843</updated>
+    </task>
+    <option name="localTasksCounter" value="482" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,6 +460,7 @@
     <MESSAGE value="bug konery customer" />
     <MESSAGE value="New date control for hiring" />
     <MESSAGE value="license warning" />
-    <option name="LAST_COMMIT_MESSAGE" value="license warning" />
+    <MESSAGE value="gas marketeer fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="gas marketeer fields" />
   </component>
 </project>
