@@ -8,15 +8,22 @@
         <field name="type">tree</field>
         <field name="arch" type="xml">
             <tree name="power_marketeer_tree">
-                    <field name="name"/>
+                <field name="name"/>
                 <field name="active" optional="hide"/>
                 <field name="order_number" optional="show"/>
+                <field name="gas_sifco" optional="hide"/>
                 <field name="phone" optional="hide"/>
+                <field name="gas_phone" optional="hide"/>
                 <field name="sector" optional="show"/>
+                <field name="gas_sector" optional="hide"/>
                 <field name="vat" optional="show"/>
                 <field name="date_discharge" optional="hide"/>
                 <field name="date_leaving" optional="hide"/>
+                <field name="gas_date_discharge" optional="hide"/>
+                <field name="gas_date_leaving" optional="hide"/>
                 <field name="web" optional="hide"/>
+                <field name="electricity" optional="show"/>
+                <field name="gas" optional="show"/>
                 <field name="status" optional="show"/>
             </tree>
         </field>
@@ -33,20 +40,42 @@
                     <h2>
                         <field name="name" placeholder="Marketeer company name"/>
                     </h2>
-                    <group name="administrative_data" string="Administrative data">
+                    <group name="company_data" string="Company data">
+                        <group>
+                            <field name="vat"/>
+                            <field name="web"/>
+                            <field name="status"/>
+                        </group>
+                        <group>
+                            <field name="electricity"/>
+                            <field name="gas"/>
+                        </group>
+                    </group>
+
+                    <group name="electrical_data" string="Electrical" attrs="{'invisible':[('electricity','=',False)]}">
                         <group>
                             <field name="order_number"/>
                             <field name="phone"/>
                             <field name="sector"/>
-                            <field name="vat"/>
                         </group>
                         <group>
                             <field name="date_discharge"/>
                             <field name="date_leaving"/>
-                            <field name="web"/>
-                            <field name="status"/>
                         </group>
                     </group>
+
+                    <group name="gas_data" string="Gas" attrs="{'invisible':[('gas','=',False)]}">
+                        <group>
+                            <field name="gas_sifco"/>
+                            <field name="gas_phone"/>
+                            <field name="gas_sector"/>
+                        </group>
+                        <group>
+                            <field name="gas_date_discharge"/>
+                            <field name="gas_date_leaving"/>
+                        </group>
+                    </group>
+
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>

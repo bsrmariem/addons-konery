@@ -22,3 +22,11 @@ class PowerMarketeer(models.Model):
     date_discharge = fields.Date(string='Date discharge')
     date_leaving = fields.Date(string='Date leaving')
     web = fields.Char("Web")
+
+    electricity = fields.Boolean('Electricity')
+    gas = fields.Boolean('Gas')
+    gas_sifco = fields.Char('Sifco')
+    gas_sector = fields.Char('Ambito en gas')
+    gas_phone = fields.Char('Gas phone')
+    gas_date_discharge = fields.Date(string='Gas Date discharge')
+    gas_date_leaving = fields.Date(string='Gas Date leaving')

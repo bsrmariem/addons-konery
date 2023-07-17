@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="license warning" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="license warning">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/models/power_marketeer.py" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/models/power_marketeer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,13 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00430" summary="dates overlap">
-      <created>1688259110598</created>
-      <option name="number" value="00430" />
-      <option name="presentableId" value="LOCAL-00430" />
-      <option name="project" value="LOCAL" />
-      <updated>1688259110598</updated>
     </task>
     <task id="LOCAL-00431" summary="dates overlap">
       <created>1688259437237</created>
@@ -419,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689150672083</updated>
     </task>
-    <option name="localTasksCounter" value="479" />
+    <task id="LOCAL-00479" summary="license warning">
+      <created>1689151121357</created>
+      <option name="number" value="00479" />
+      <option name="presentableId" value="LOCAL-00479" />
+      <option name="project" value="LOCAL" />
+      <updated>1689151121357</updated>
+    </task>
+    <option name="localTasksCounter" value="480" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,16 +463,5 @@
     <MESSAGE value="New date control for hiring" />
     <MESSAGE value="license warning" />
     <option name="LAST_COMMIT_MESSAGE" value="license warning" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
