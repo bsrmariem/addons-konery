@@ -137,7 +137,7 @@ class ImporterCnmc(models.TransientModel):
                             'gas_sector': str(line[k + 7]),
                             'gas_date_discharge': date_discharge,
                             'gas_date_leaving': date_leaving,
-                            'gas_status': str(line([k+8]))
+                            'gas_status': str(line([k+8])),
                             'gas': True,
                         })
                     else:
