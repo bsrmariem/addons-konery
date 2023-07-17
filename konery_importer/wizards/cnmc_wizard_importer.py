@@ -163,7 +163,7 @@ class ImporterCnmc(models.TransientModel):
                             'vat': str(line[k+8]),
                             'gas_date_discharge': date_discharge,
                             'gas_date_leaving': date_leaving,
-                            'gas_status': str(line([k+8]))
+                            'gas_status': str(line([k+8])),
                             'gas': True,
                         })
         except Exception as e:
