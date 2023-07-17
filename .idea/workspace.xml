@@ -78,13 +78,6 @@
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
     </task>
-    <task id="LOCAL-00438" summary="dates overlap">
-      <created>1688260495382</created>
-      <option name="number" value="00438" />
-      <option name="presentableId" value="LOCAL-00438" />
-      <option name="project" value="LOCAL" />
-      <updated>1688260495382</updated>
-    </task>
     <task id="LOCAL-00439" summary="dates overlap">
       <created>1688290254371</created>
       <option name="number" value="00439" />
@@ -421,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689606893308</updated>
     </task>
-    <option name="localTasksCounter" value="487" />
+    <task id="LOCAL-00487" summary="electricity true">
+      <created>1689607725861</created>
+      <option name="number" value="00487" />
+      <option name="presentableId" value="LOCAL-00487" />
+      <option name="project" value="LOCAL" />
+      <updated>1689607725861</updated>
+    </task>
+    <option name="localTasksCounter" value="488" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -118,7 +118,7 @@ class ImporterCnmc(models.TransientModel):
                             if key == line[k]:
                                 k += 1
                             else:
-                                raise ValidationError('Please upload a valid .csv file with ordered KEYS %s' % DIS_KEYS)
+                                raise ValidationError('Please upload a valid .csv file with ordered KEYS %s' % MAR_GAS_KEYS)
                     l += 1
                     k = 0
 
@@ -187,7 +187,7 @@ class ImporterCnmc(models.TransientModel):
                             if key == line[k]:
                                 k += 1
                             else:
-                                raise ValidationError('Please upload a valid .csv file with ordered KEYS %s' % DIS_KEYS)
+                                raise ValidationError('Please upload a valid .csv file with ordered KEYS %s' % MAR_KEYS)
                     l += 1
                     k = 0
 
