@@ -121,10 +121,9 @@ class ImporterCnmc(models.TransientModel):
                                 raise ValidationError('Please upload a valid .csv file with ordered KEYS %s' % MAR_GAS_KEYS)
                     l += 1
                     k = 0
-
                 else:
                     mark_registered = self.env['power.marketeer'].search([
-                        ("vat", "=", line[k+2]),
+                        ("vat", "=", line[k + 2]),
                     ], limit=1)
                     if mark_registered.id:
                         date_discharge = False
@@ -139,8 +138,8 @@ class ImporterCnmc(models.TransientModel):
                         self.env['power.marketeer'].sudo().write({
                             'gas_sifco': str(line[k]),
                             'country': str(line[k + 7]),
-                            'gas_phone': str(line[k + 9]),
                             'gas_sector': str(line[k + 8]),
+                            'gas_phone': str(line[k + 9]),
                             'gas_date_discharge': date_discharge,
                             'gas_date_leaving': date_leaving,
                             'gas_status': str(line([k + 12])),
@@ -168,7 +167,7 @@ class ImporterCnmc(models.TransientModel):
                             'gas_phone': str(line[k + 9]),
                             'gas_date_discharge': date_discharge,
                             'gas_date_leaving': date_leaving,
-                            'gas_status': str(line([k+12])),
+                            'gas_status': str(line([k + 12])),
                             'gas': True,
                         })
         except Exception as e:
