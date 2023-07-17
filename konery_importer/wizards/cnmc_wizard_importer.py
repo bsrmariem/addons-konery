@@ -124,7 +124,7 @@ class ImporterCnmc(models.TransientModel):
 
                 else:
                     mark_registered = self.env['power.marketeer'].search([
-                        ("vat", "=", line[k+8]),
+                        ("vat", "=", line[k+2]),
                     ], limit=1)
                     if mark_registered.id:
                         date_discharge = False
