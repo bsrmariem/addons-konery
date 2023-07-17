@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="gas marketeer fields">
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="electricity true">
       <change beforePath="$PROJECT_DIR$/konery_importer/wizards/cnmc_wizard_importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/konery_importer/wizards/cnmc_wizard_importer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00433" summary="dates overlap">
-      <created>1688259947487</created>
-      <option name="number" value="00433" />
-      <option name="presentableId" value="LOCAL-00433" />
-      <option name="project" value="LOCAL" />
-      <updated>1688259947487</updated>
     </task>
     <task id="LOCAL-00434" summary="dates overlap">
       <created>1688260180536</created>
@@ -421,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689595075843</updated>
     </task>
-    <option name="localTasksCounter" value="482" />
+    <task id="LOCAL-00482" summary="electricity true">
+      <created>1689595352038</created>
+      <option name="number" value="00482" />
+      <option name="presentableId" value="LOCAL-00482" />
+      <option name="project" value="LOCAL" />
+      <updated>1689595352038</updated>
+    </task>
+    <option name="localTasksCounter" value="483" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -436,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ico kon" />
     <MESSAGE value="power supply v0" />
     <MESSAGE value="power supply upd selection &amp; rename field" />
     <MESSAGE value="power supply v1" />
@@ -461,6 +460,7 @@
     <MESSAGE value="New date control for hiring" />
     <MESSAGE value="license warning" />
     <MESSAGE value="gas marketeer fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="gas marketeer fields" />
+    <MESSAGE value="electricity true" />
+    <option name="LAST_COMMIT_MESSAGE" value="electricity true" />
   </component>
 </project>

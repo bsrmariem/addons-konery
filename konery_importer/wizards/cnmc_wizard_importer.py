@@ -11,6 +11,7 @@ TYPE = [
     ('marketer', 'Marketer'),
     ('dealer', 'Dealer'),
     ('sim', 'SIM'),
+    ('gas_marketeer', 'Gas Marketeer'),
 ]
 
 SIM_KEYS = ['ICCID', 'TELEFONO', 'IP ACCESO', 'PUERTO ACCESO', 'PUERTO CONTROL', 'PUERTO 485', 'ESTADO', 'COBERTURA']
@@ -100,6 +101,13 @@ class ImporterCnmc(models.TransientModel):
         except Exception as e:
             raise ValidationError('Error %s' % e)
 
+
+    # PENDIENTE DE IMPLEMENTAR (COPIA / PEGA Y RENOMBRAR CAMPOS DE MARKETEER, PERO SI YA EXISTE GAS=TRUE Y NUEVOS CAMPOS:
+    def import_gas_marketer(self, csv):
+        raise ValidationError('Función aún no implementada')
+
+
+
     def import_marketer(self, csv):
         l = 0
         k = 0
@@ -162,8 +170,10 @@ class ImporterCnmc(models.TransientModel):
                     self.import_sim(csvfile)
                 elif (self.file_type == 'dealer'):
                     self.import_dealer(csvfile)
-                else:
+                elif (self.file_type == 'marketeer'):
                     self.import_marketer(csvfile)
+                else:
+                    self.import_gas_marketer(csvfile)
 
         else:
             raise ValidationError('Please upload a valid .csv file')
