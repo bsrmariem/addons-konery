@@ -142,11 +142,13 @@ class ImporterCnmc(models.TransientModel):
                             'gas_phone': str(line[k + 9]),
                             'gas_date_discharge': date_discharge,
                             'gas_date_leaving': date_leaving,
-                            'gas_status': str(line([k + 12])),
+                            'gas_status': str(line[k + 12]),
                             'gas': True,
                         })
 
                     else:
+                        date_discharge = False
+                        date_leaving = False
                         if line[k + 10] != '':
                             temp_date = line[k + 10].replace('/','')
                             date_discharge = datetime.datetime.strptime(temp_date, '%d%m%Y').date()
@@ -154,6 +156,7 @@ class ImporterCnmc(models.TransientModel):
                             temp_date = line[k + 11].replace('/', '')
                             date_leaving = datetime.datetime.strptime(temp_date, '%d%m%Y').date()
                         # Crear nuevo:
+
                         self.env['power.marketeer'].sudo().create({
                             'gas_sifco': str(line[k]),
                             'name': str(line[k + 1]),
@@ -167,9 +170,10 @@ class ImporterCnmc(models.TransientModel):
                             'gas_phone': str(line[k + 9]),
                             'gas_date_discharge': date_discharge,
                             'gas_date_leaving': date_leaving,
-                            'gas_status': str(line([k + 12])),
+                            'gas_status': str(line[k + 12]),
                             'gas': True,
                         })
+
         except Exception as e:
             raise ValidationError('Error %s' % e)
 
