@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-02 11:12+0000\n"
-"PO-Revision-Date: 2023-06-02 13:17+0200\n"
+"POT-Creation-Date: 2023-07-21 15:29+0000\n"
+"PO-Revision-Date: 2023-07-21 17:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: es_ES\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. module: konery_importer
 #: model_terms:ir.ui.view,arch_db:konery_importer.cnmc_importer_wizard_form
@@ -78,9 +78,14 @@ msgid "File type"
 msgstr "Tipo de archivo"
 
 #. module: konery_importer
+#: model:ir.model.fields.selection,name:konery_importer.selection__cnmc_importer__file_type__gas_marketeer
+msgid "Gas Marketeer"
+msgstr "Comercializadora de gas"
+
+#. module: konery_importer
 #: model:ir.model.fields,field_description:konery_importer.field_cnmc_importer__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: konery_importer
 #: model:ir.model.fields,field_description:konery_importer.field_cnmc_importer____last_update
@@ -98,9 +103,9 @@ msgid "Last Updated on"
 msgstr "Ultima Actualización en"
 
 #. module: konery_importer
-#: model:ir.model.fields.selection,name:konery_importer.selection__cnmc_importer__file_type__marketer
+#: model:ir.model.fields.selection,name:konery_importer.selection__cnmc_importer__file_type__marketeer
 msgid "Marketer"
-msgstr "Comercializadora"
+msgstr "Comercializadora eléctrica"
 
 #. module: konery_importer
 #: model:ir.model.fields,field_description:konery_importer.field_cnmc_importer__name
@@ -110,7 +115,7 @@ msgstr "Nombre"
 #. module: konery_importer
 #: model:ir.model.fields.selection,name:konery_importer.selection__cnmc_importer__file_type__sim
 msgid "SIM"
-msgstr "SIM"
+msgstr ""
 
 #. module: konery_importer
 #: model_terms:ir.ui.view,arch_db:konery_importer.cnmc_importer_wizard_form
