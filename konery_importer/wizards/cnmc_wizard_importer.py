@@ -135,7 +135,7 @@ class ImporterCnmc(models.TransientModel):
                             temp_date = line[k + 11].replace('/', '')
                             date_leaving = datetime.datetime.strptime(temp_date, '%d%m%Y').date()
                         # Sobreescribir:
-                        self.env['power.marketeer'].sudo().write({
+                        mark_registered.write({
                             'gas_sifco': str(line[k]),
                             'country': str(line[k + 7]),
                             'gas_sector': str(line[k + 8]),
