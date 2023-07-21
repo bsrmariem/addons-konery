@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="search marketeer" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="importer imp">
+      <change beforePath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power_supply/views/power_marketeer_views.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00446" summary="bug konery customer">
-      <created>1688296962319</created>
-      <option name="number" value="00446" />
-      <option name="presentableId" value="LOCAL-00446" />
-      <option name="project" value="LOCAL" />
-      <updated>1688296962319</updated>
     </task>
     <task id="LOCAL-00447" summary="bug konery customer">
       <created>1688297020321</created>
@@ -419,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689954288342</updated>
     </task>
-    <option name="localTasksCounter" value="495" />
+    <task id="LOCAL-00495" summary="importer imp">
+      <created>1689955038033</created>
+      <option name="number" value="00495" />
+      <option name="presentableId" value="LOCAL-00495" />
+      <option name="project" value="LOCAL" />
+      <updated>1689955038033</updated>
+    </task>
+    <option name="localTasksCounter" value="496" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="power supply v1" />
     <MESSAGE value="power supply v2" />
     <MESSAGE value="power supply v3" />
     <MESSAGE value="power supply v4" />
@@ -459,6 +460,7 @@
     <MESSAGE value="electricity true" />
     <MESSAGE value="bug marketEer" />
     <MESSAGE value="search marketeer" />
-    <option name="LAST_COMMIT_MESSAGE" value="search marketeer" />
+    <MESSAGE value="importer imp" />
+    <option name="LAST_COMMIT_MESSAGE" value="importer imp" />
   </component>
 </project>

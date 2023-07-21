@@ -102,6 +102,7 @@
                 <field name="name" filter_domain="['|', ('name','ilike',self), ('vat','ilike',self)]"/>
                 <separator/>
                 <filter string="Electricity" name="electricity" domain="[('electricity','=',True)]"/>
+                <separator/>
                 <filter string="Gas" name="gas" domain="[('gas','=',True)]"/>
                 <separator/>
                 <filter string="Available electricity" name="available-electricity"
