@@ -93,4 +93,24 @@
     </record>
 
 
+    <record id="power_marketeer_search" model="ir.ui.view">
+        <field name="name">power.marketeer.search</field>
+        <field name="model">power.marketeer</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="arch" type="xml">
+            <search string="Search Power Marketeer">
+                <field name="name" filter_domain="['|', ('name','ilike',self), ('vat','ilike',self)]"/>
+                <separator/>
+                <filter string="Electricity" name="electricity" domain="[('electricity','=',True)]"/>
+                <filter string="Gas" name="gas" domain="[('gas','=',True)]"/>
+                <separator/>
+                <filter string="Available electricity" name="available-electricity"
+                        domain="[('electricity', '=', True),'|',('date_leaving','=',False),('status','=',False)]"/>
+                <filter string="Available gas" name="available-gas"
+                        domain="[('gas', '=', True),'|',('gas_date_leaving','=',False),('gas_status','=',False)]"/>
+            </search>
+        </field>
+    </record>
+
+
 </odoo>
