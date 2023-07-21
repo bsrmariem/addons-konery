@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-02 16:48+0000\n"
-"PO-Revision-Date: 2023-07-02 19:04+0200\n"
+"POT-Creation-Date: 2023-07-21 15:18+0000\n"
+"PO-Revision-Date: 2023-07-21 17:23+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -125,11 +125,15 @@ msgstr "Añade descripción …"
 #: model_terms:ir.ui.view,arch_db:power_supply.power_contract_default_form
 #: model_terms:ir.ui.view,arch_db:power_supply.power_contract_quick_form
 #: model_terms:ir.ui.view,arch_db:power_supply.power_dealer_default_form
-#: model_terms:ir.ui.view,arch_db:power_supply.power_marketeer_default_form
 #: model_terms:ir.ui.view,arch_db:power_supply.power_power_default_form
 #: model_terms:ir.ui.view,arch_db:power_supply.power_sim_default_form
 msgid "Administrative data"
 msgstr "Datos administrativos"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__gas_sector
+msgid "Ambito en gas"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_saving__amount
@@ -168,6 +172,16 @@ msgstr "Autorenovación"
 #: model:ir.model.fields.selection,name:power_supply.selection__power_sim__state__available
 msgid "Available"
 msgstr "Disponible"
+
+#. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_marketeer_search
+msgid "Available electricity"
+msgstr "Activos eléctricos"
+
+#. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_marketeer_search
+msgid "Available gas"
+msgstr "Activos en gas"
 
 #. module: power_supply
 #: model:ir.ui.menu,name:power_supply.power_configuration_cnmc_menu
@@ -232,6 +246,11 @@ msgid "Communnication name"
 msgstr "Nombre para la comunicación"
 
 #. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_marketeer_default_form
+msgid "Company data"
+msgstr "Datos de compañía"
+
+#. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_contract__compromise
 msgid "Compromise"
 msgstr "Permanencia"
@@ -276,6 +295,11 @@ msgstr "Contratos"
 #: model:ir.model.fields,field_description:power_supply.field_power_sim__control_port
 msgid "Control port"
 msgstr "Puerto de control"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__country
+msgid "Country"
+msgstr "País"
 
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_sim__coverage_id
@@ -465,10 +489,13 @@ msgid "Electrical Power"
 msgstr "Potencia eléctrica"
 
 #. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__electricity
 #: model:ir.model.fields.selection,name:power_supply.selection__power_contract__energy_type__electricity
 #: model:ir.model.fields.selection,name:power_supply.selection__power_contract_type__energy_type__electricity
 #: model:ir.model.fields.selection,name:power_supply.selection__power_pricelist__energy_type__electricity
 #: model:ir.model.fields.selection,name:power_supply.selection__power_supply__energy_type__electricity
+#: model_terms:ir.ui.view,arch_db:power_supply.power_marketeer_default_form
+#: model_terms:ir.ui.view,arch_db:power_supply.power_marketeer_search
 #: model_terms:ir.ui.view,arch_db:power_supply.power_saving_search
 #: model_terms:ir.ui.view,arch_db:power_supply.power_supply_search
 msgid "Electricity"
@@ -487,6 +514,7 @@ msgstr "Energía (*)"
 #. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_contract__energy_type
 #: model:ir.model.fields,field_description:power_supply.field_power_contract_type__energy_type
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__energy_type
 #: model:ir.model.fields,field_description:power_supply.field_power_power__energy_type
 #: model:ir.model.fields,field_description:power_supply.field_power_pricelist__energy_type
 #: model:ir.model.fields,field_description:power_supply.field_power_saving__energy_type
@@ -543,10 +571,13 @@ msgid "GSM"
 msgstr ""
 
 #. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__gas
 #: model:ir.model.fields.selection,name:power_supply.selection__power_contract__energy_type__gas
 #: model:ir.model.fields.selection,name:power_supply.selection__power_contract_type__energy_type__gas
 #: model:ir.model.fields.selection,name:power_supply.selection__power_pricelist__energy_type__gas
 #: model:ir.model.fields.selection,name:power_supply.selection__power_supply__energy_type__gas
+#: model_terms:ir.ui.view,arch_db:power_supply.power_marketeer_default_form
+#: model_terms:ir.ui.view,arch_db:power_supply.power_marketeer_search
 #: model_terms:ir.ui.view,arch_db:power_supply.power_saving_search
 #: model_terms:ir.ui.view,arch_db:power_supply.power_supply_search
 msgid "Gas"
@@ -559,9 +590,29 @@ msgid "Gas Contracts"
 msgstr "Contratos de gas"
 
 #. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__gas_date_discharge
+msgid "Gas Date discharge"
+msgstr "Alta comercializadora gas"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__gas_date_leaving
+msgid "Gas Date leaving"
+msgstr "Baja comercializadora gas"
+
+#. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_supply__power_gas_ids
 msgid "Gas Power"
 msgstr "Potencia de Gas"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__gas_status
+msgid "Gas Status"
+msgstr "Estado Gas"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__gas_phone
+msgid "Gas phone"
+msgstr "Tfno soporte Gas"
 
 #. module: power_supply
 #: model:ir.ui.menu,name:power_supply.power_configuration_infogeneral_menu
@@ -675,19 +726,12 @@ msgstr "Si marcado, nuevos mensajes que requieren tu atención."
 
 #. module: power_supply
 #: model:ir.model.fields,help:power_supply.field_power_communication__message_has_error
-#: model:ir.model.fields,help:power_supply.field_power_communication__message_has_sms_error
 #: model:ir.model.fields,help:power_supply.field_power_contract__message_has_error
-#: model:ir.model.fields,help:power_supply.field_power_contract__message_has_sms_error
 #: model:ir.model.fields,help:power_supply.field_power_dealer__message_has_error
-#: model:ir.model.fields,help:power_supply.field_power_dealer__message_has_sms_error
 #: model:ir.model.fields,help:power_supply.field_power_marketeer__message_has_error
-#: model:ir.model.fields,help:power_supply.field_power_marketeer__message_has_sms_error
 #: model:ir.model.fields,help:power_supply.field_power_saving__message_has_error
-#: model:ir.model.fields,help:power_supply.field_power_saving__message_has_sms_error
 #: model:ir.model.fields,help:power_supply.field_power_sim__message_has_error
-#: model:ir.model.fields,help:power_supply.field_power_sim__message_has_sms_error
 #: model:ir.model.fields,help:power_supply.field_power_supply__message_has_error
-#: model:ir.model.fields,help:power_supply.field_power_supply__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si marcado, algún mensaje tiene error de entrega."
 
@@ -1307,17 +1351,6 @@ msgid "SIM Owner"
 msgstr "Propietario de la SIM"
 
 #. module: power_supply
-#: model:ir.model.fields,field_description:power_supply.field_power_communication__message_has_sms_error
-#: model:ir.model.fields,field_description:power_supply.field_power_contract__message_has_sms_error
-#: model:ir.model.fields,field_description:power_supply.field_power_dealer__message_has_sms_error
-#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__message_has_sms_error
-#: model:ir.model.fields,field_description:power_supply.field_power_saving__message_has_sms_error
-#: model:ir.model.fields,field_description:power_supply.field_power_sim__message_has_sms_error
-#: model:ir.model.fields,field_description:power_supply.field_power_supply__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Fallo en entrega de SMS"
-
-#. module: power_supply
 #: model:ir.model.fields,field_description:power_supply.field_power_supply__salesman_id
 msgid "Salesman"
 msgstr "Vendedor"
@@ -1346,6 +1379,16 @@ msgid "Search Power Contract"
 msgstr "Buscar contrato"
 
 #. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_dealer_search
+msgid "Search Power Dealer"
+msgstr "Búsqueda distribuidoras"
+
+#. module: power_supply
+#: model_terms:ir.ui.view,arch_db:power_supply.power_marketeer_search
+msgid "Search Power Marketeer"
+msgstr "Búsqueda de comercializadoras"
+
+#. module: power_supply
 #: model_terms:ir.ui.view,arch_db:power_supply.power_saving_search
 msgid "Search Power Saving"
 msgstr "Buscar ahorro"
@@ -1370,6 +1413,11 @@ msgstr "Propuesto"
 #: model:ir.model.fields,field_description:power_supply.field_power_communication__meter_serial_speed
 msgid "Serial speed"
 msgstr "Velocidad puerto serie"
+
+#. module: power_supply
+#: model:ir.model.fields,field_description:power_supply.field_power_marketeer__gas_sifco
+msgid "Sifco"
+msgstr ""
 
 #. module: power_supply
 #: model:ir.actions.act_window,name:power_supply.action_power_sim
