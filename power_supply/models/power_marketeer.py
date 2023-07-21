@@ -35,9 +35,10 @@ class PowerMarketeer(models.Model):
 
     @api.depends('electricity','gas')
     def _get_marketeer_energy_type(self):
-        type = ""
-        if (self.electricity == True) and (self.gas == False): type = "electricity"
-        elif (self.electricity == True) and (self.gas == True): type = "electricity-gas"
-        elif (self.electricity == False) and (self.gas == True): type = "gas"
-        self.energy_type = type
+        for record in self:
+            type = ""
+            if (record.electricity == True) and (record.gas == False): type = "electricity"
+            elif (record.electricity == True) and (record.gas == True): type = "electricity-gas"
+            elif (record.electricity == False) and (record.gas == True): type = "gas"
+            record['energy_type'] = type
     energy_type = fields.Char('Energy type', store=True, compute='_get_marketeer_energy_type')
