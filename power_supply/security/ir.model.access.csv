@@ -1,24 +1,24 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 
 access_power_contract,Contratos de suministros,model_power_contract,power_supply.group_power_supply_user,1,1,1,1
-access_power_contract_type,Tipos de Contrato,model_power_contract_type,power_supply.group_power_supply_user,1,0,0,0
+access_power_contract_type_user,Tipos de Contrato usuario,model_power_contract_type,power_supply.group_power_supply_user,1,0,0,0
 access_power_power,Potencias en Contrato,model_power_power,power_supply.group_power_supply_user,1,1,1,1
-access_power_pricelist,Tarifas de suministros,model_power_pricelist,power_supply.group_power_supply_user,1,0,0,0
+access_power_pricelist_user,Tarifas de suministros usuario,model_power_pricelist,power_supply.group_power_supply_user,1,0,0,0
 access_power_supply,Puntos de suministro,model_power_supply,power_supply.group_power_supply_user,1,1,1,1
-access_power_tag,Etiquetas de suministros,model_power_tag,power_supply.group_power_supply_user,1,0,0,0
+access_power_tag_user,Etiquetas de suministros usuario,model_power_tag,power_supply.group_power_supply_user,1,0,0,0
 access_power_saving,Ahorros en suministros,model_power_saving,power_supply.group_power_supply_user,1,1,1,1
-access_power_dealer,Power dealers,model_power_dealer,power_supply.group_power_supply_user,1,0,0,0
-access_power_marketeer,Power marketeers,model_power_marketeer,power_supply.group_power_supply_user,1,0,0,0
-access_power_sim,Power Sims,model_power_sim,power_supply.group_power_supply_user,1,0,0,0
+access_power_dealer_user,Power dealers usuario,model_power_dealer,power_supply.group_power_supply_user,1,0,0,0
+access_power_marketeer_user,Power marketeers usuario,model_power_marketeer,power_supply.group_power_supply_user,1,0,0,0
+access_power_sim_user,Power Sims usuario,model_power_sim,power_supply.group_power_supply_user,1,0,0,0
 access_power_communication,Power Communitaion,model_power_communication,power_supply.group_power_supply_user,1,1,1,1
-access_power_coverage,Power Coverage,model_power_coverage,power_supply.group_power_supply_user,1,0,0,0
-access_power_port,Power Port,model_power_port,power_supply.group_power_supply_user,1,0,0,0
+access_power_coverage_user,Power Coverage usuario,model_power_coverage,power_supply.group_power_supply_user,1,0,0,0
+access_power_port_user,Power Port usuario,model_power_port,power_supply.group_power_supply_user,1,0,0,0
 
-access_power_contract_type,Tipos de Contrato,model_power_contract_type,power_supply.group_power_supply_admin,1,1,1,1
-access_power_pricelist,Tarifas de suministros,model_power_pricelist,power_supply.group_power_supply_admin,1,1,1,1
-access_power_tag,Etiquetas de suministros,model_power_tag,power_supply.group_power_supply_admin,1,1,1,1
-access_power_dealer,Power dealers,model_power_dealer,power_supply.group_power_supply_admin,1,1,1,1
-access_power_marketeer,Power marketeers,model_power_marketeer,power_supply.group_power_supply_admin,1,1,1,1
-access_power_sim,Power Sims,model_power_sim,power_supply.group_power_supply_admin,1,1,1,1
-access_power_coverage,Power Coverage,model_power_coverage,power_supply.group_power_supply_admin,1,1,1,1
-access_power_port,Power Port,model_power_port,power_supply.group_power_supply_admin,1,1,1,1
+access_power_contract_type_admin,Tipos de Contrato admin,model_power_contract_type,power_supply.group_power_supply_admin,1,1,1,1
+access_power_pricelist_admin,Tarifas de suministros admin,model_power_pricelist,power_supply.group_power_supply_admin,1,1,1,1
+access_power_tag_admin,Etiquetas de suministros admin,model_power_tag,power_supply.group_power_supply_admin,1,1,1,1
+access_power_dealer_admin,Power dealers admin,model_power_dealer,power_supply.group_power_supply_admin,1,1,1,1
+access_power_marketeer_admin,Power marketeers admin,model_power_marketeer,power_supply.group_power_supply_admin,1,1,1,1
+access_power_sim_admin,Power Sims admin,model_power_sim,power_supply.group_power_supply_admin,1,1,1,1
+access_power_coverage_admin,Power Coverage admin,model_power_coverage,power_supply.group_power_supply_admin,1,1,1,1
+access_power_port_admin,Power Port admin,model_power_port,power_supply.group_power_supply_admin,1,1,1,1
