@@ -10,8 +10,7 @@
         <field name="arch" type="xml">
             <data>
                 <xpath expr="//field[@name='vat']" position="attributes">
-                    <attribute name="attrs">{"readonly": [["parent_id","!=",False]]}</attribute>
-                    <attribute name="required">1</attribute>
+                    <attribute name="attrs">{"readonly": [["parent_id","!=",False]], "required":True}</attribute>
                 </xpath>
             </data>
         </field>
