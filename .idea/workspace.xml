@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="review id security duplicateds">
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="vat required">
+      <change afterPath="$PROJECT_DIR$/crm_konery/views/res_partner_views.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm_konery/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm_konery/__manifest__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +37,15 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/crm_konery/views" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/crm_konery/views" />
+      <recent name="$PROJECT_DIR$/crm_konery/models" />
       <recent name="$PROJECT_DIR$/reports_konery/views" />
       <recent name="$PROJECT_DIR$/reports_konery/models" />
       <recent name="$PROJECT_DIR$/power_supply/models" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/power_supply" />
     </key>
   </component>
   <component name="RunManager">
@@ -77,20 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00449" summary="bug konery customer">
-      <created>1688297375874</created>
-      <option name="number" value="00449" />
-      <option name="presentableId" value="LOCAL-00449" />
-      <option name="project" value="LOCAL" />
-      <updated>1688297375874</updated>
-    </task>
-    <task id="LOCAL-00450" summary="bug konery customer">
-      <created>1688297512290</created>
-      <option name="number" value="00450" />
-      <option name="presentableId" value="LOCAL-00450" />
-      <option name="project" value="LOCAL" />
-      <updated>1688297512290</updated>
     </task>
     <task id="LOCAL-00451" summary="bug konery customer">
       <created>1688297689445</created>
@@ -421,7 +409,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690284096571</updated>
     </task>
-    <option name="localTasksCounter" value="498" />
+    <task id="LOCAL-00498" summary="vat required">
+      <created>1690995419583</created>
+      <option name="number" value="00498" />
+      <option name="presentableId" value="LOCAL-00498" />
+      <option name="project" value="LOCAL" />
+      <updated>1690995419583</updated>
+    </task>
+    <task id="LOCAL-00499" summary="vat required">
+      <created>1690995643550</created>
+      <option name="number" value="00499" />
+      <option name="presentableId" value="LOCAL-00499" />
+      <option name="project" value="LOCAL" />
+      <updated>1690995643550</updated>
+    </task>
+    <option name="localTasksCounter" value="500" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -436,7 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="power supply v4" />
     <MESSAGE value="project_task_dpt" />
     <MESSAGE value="supply-meter" />
     <MESSAGE value="project_task_import" />
@@ -461,6 +462,18 @@
     <MESSAGE value="importer imp" />
     <MESSAGE value="search imp" />
     <MESSAGE value="review id security duplicateds" />
-    <option name="LAST_COMMIT_MESSAGE" value="review id security duplicateds" />
+    <MESSAGE value="vat required" />
+    <option name="LAST_COMMIT_MESSAGE" value="vat required" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
