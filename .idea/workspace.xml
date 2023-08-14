@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="vat required" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="crm konery" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00454" summary="bug konery customer">
-      <created>1688297946262</created>
-      <option name="number" value="00454" />
-      <option name="presentableId" value="LOCAL-00454" />
-      <option name="project" value="LOCAL" />
-      <updated>1688297946262</updated>
     </task>
     <task id="LOCAL-00455" summary="bug konery customer">
       <created>1688298048770</created>
@@ -419,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692012862676</updated>
     </task>
-    <option name="localTasksCounter" value="503" />
+    <task id="LOCAL-00503" summary="crm konery">
+      <created>1692021753238</created>
+      <option name="number" value="00503" />
+      <option name="presentableId" value="LOCAL-00503" />
+      <option name="project" value="LOCAL" />
+      <updated>1692021753238</updated>
+    </task>
+    <option name="localTasksCounter" value="504" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="project_task_dpt" />
     <MESSAGE value="supply-meter" />
     <MESSAGE value="project_task_import" />
     <MESSAGE value="meter_owner" />
@@ -459,6 +458,7 @@
     <MESSAGE value="search imp" />
     <MESSAGE value="review id security duplicateds" />
     <MESSAGE value="vat required" />
-    <option name="LAST_COMMIT_MESSAGE" value="vat required" />
+    <MESSAGE value="crm konery" />
+    <option name="LAST_COMMIT_MESSAGE" value="crm konery" />
   </component>
 </project>
