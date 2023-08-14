@@ -13,8 +13,8 @@
                     <attribute name="attrs">{"readonly": [["parent_id","!=",False]], "required":True}</attribute>
                 </xpath>
                 <field name="category_id" position="attributes">
-                    <attribute name="options">{"no_create":True}</attribute>
-                    <attribute name="attrs">{"required":True}</attribute>
+                    <attribute name="options">{'color_field': 'color','no_create':True}</attribute>
+                    <attribute name="attrs">{'required':True}</attribute>
                 </field>
             </data>
         </field>
