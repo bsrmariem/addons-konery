@@ -78,20 +78,6 @@
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
     </task>
-    <task id="LOCAL-00456" summary="bug konery customer">
-      <created>1688298114363</created>
-      <option name="number" value="00456" />
-      <option name="presentableId" value="LOCAL-00456" />
-      <option name="project" value="LOCAL" />
-      <updated>1688298114363</updated>
-    </task>
-    <task id="LOCAL-00457" summary="bug konery customer">
-      <created>1688298265823</created>
-      <option name="number" value="00457" />
-      <option name="presentableId" value="LOCAL-00457" />
-      <option name="project" value="LOCAL" />
-      <updated>1688298265823</updated>
-    </task>
     <task id="LOCAL-00458" summary="bug konery customer">
       <created>1688298518797</created>
       <option name="number" value="00458" />
@@ -421,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692021798414</updated>
     </task>
-    <option name="localTasksCounter" value="505" />
+    <task id="LOCAL-00505" summary="crm konery">
+      <created>1692022142640</created>
+      <option name="number" value="00505" />
+      <option name="presentableId" value="LOCAL-00505" />
+      <option name="project" value="LOCAL" />
+      <updated>1692022142640</updated>
+    </task>
+    <task id="LOCAL-00506" summary="crm konery">
+      <created>1692022432904</created>
+      <option name="number" value="00506" />
+      <option name="presentableId" value="LOCAL-00506" />
+      <option name="project" value="LOCAL" />
+      <updated>1692022432904</updated>
+    </task>
+    <option name="localTasksCounter" value="507" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
