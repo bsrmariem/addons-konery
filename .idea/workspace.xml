@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="vat required" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="vat required">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm_konery/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm_konery/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm_konery/views/res_partner_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crm_konery/views/res_partner_views.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,13 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00452" summary="bug konery customer">
-      <created>1688297793173</created>
-      <option name="number" value="00452" />
-      <option name="presentableId" value="LOCAL-00452" />
-      <option name="project" value="LOCAL" />
-      <updated>1688297793173</updated>
     </task>
     <task id="LOCAL-00453" summary="bug konery customer">
       <created>1688297886222</created>
@@ -419,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690996527543</updated>
     </task>
-    <option name="localTasksCounter" value="501" />
+    <task id="LOCAL-00501" summary="vat required">
+      <created>1691019006716</created>
+      <option name="number" value="00501" />
+      <option name="presentableId" value="LOCAL-00501" />
+      <option name="project" value="LOCAL" />
+      <updated>1691019006716</updated>
+    </task>
+    <option name="localTasksCounter" value="502" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,16 +464,5 @@
     <MESSAGE value="review id security duplicateds" />
     <MESSAGE value="vat required" />
     <option name="LAST_COMMIT_MESSAGE" value="vat required" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

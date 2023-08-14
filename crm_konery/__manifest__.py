@@ -13,6 +13,7 @@ CRM Konery Customs
     'depends': [
         'crm',
         'sale_management',
+        'l10n_es_toponyms',
     ],
     'data': [
         'views/crm_lead_views.xml',
