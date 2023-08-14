@@ -11,7 +11,7 @@
             <data>
                 <field name="partner_shipping_id" position="after">
                     <field name="opportunity_id" required="1"/>
-                    <field name="crm_user_id" context="{'default_sales_team_id': crm_team_id}" widget="many2one_avatar_user"/>
+                    <field name="user_id" context="{'default_sales_team_id': crm_team_id}" widget="many2one_avatar_user"/>
                     <field name="crm_team_id"/>
                     <field name="crm_user_company_ids" invisible="1"/>
                 </field>
