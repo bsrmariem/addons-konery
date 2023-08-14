@@ -12,6 +12,9 @@
                 <xpath expr="//field[@name='vat']" position="attributes">
                     <attribute name="attrs">{"readonly": [["parent_id","!=",False]], "required":True}</attribute>
                 </xpath>
+                <field name="category_id" position="attributes">
+                    <attribute name="options">{'required':True, 'no_create':True}</attribute>
+                </field>
             </data>
         </field>
     </record>
