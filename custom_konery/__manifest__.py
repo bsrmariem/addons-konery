@@ -15,13 +15,6 @@ Konery Customs
     ],
     'data': [
     ],
-    'assets': {
-        'web.assets_backend': [
-            'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap'
-        ],
-        'web.assets_frontend': [
-            'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap'
-        ],
     'installable': True,
     }
 }

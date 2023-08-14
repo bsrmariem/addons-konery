@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="crm konery leads">
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="ttf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_konery/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/__manifest__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00462" summary="bug konery customer">
-      <created>1688298824844</created>
-      <option name="number" value="00462" />
-      <option name="presentableId" value="LOCAL-00462" />
-      <option name="project" value="LOCAL" />
-      <updated>1688298824844</updated>
     </task>
     <task id="LOCAL-00463" summary="bug konery customer">
       <created>1688310952922</created>
@@ -422,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692025471743</updated>
     </task>
-    <option name="localTasksCounter" value="511" />
+    <task id="LOCAL-00511" summary="ttf">
+      <created>1692026391964</created>
+      <option name="number" value="00511" />
+      <option name="presentableId" value="LOCAL-00511" />
+      <option name="project" value="LOCAL" />
+      <updated>1692026391964</updated>
+    </task>
+    <option name="localTasksCounter" value="512" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="meter_owner" />
     <MESSAGE value="sup 0206" />
     <MESSAGE value="sup 1206" />
     <MESSAGE value="traducción qgas" />
@@ -462,6 +460,7 @@
     <MESSAGE value="crm konery" />
     <MESSAGE value="konery custom" />
     <MESSAGE value="crm konery leads" />
-    <option name="LAST_COMMIT_MESSAGE" value="crm konery leads" />
+    <MESSAGE value="ttf" />
+    <option name="LAST_COMMIT_MESSAGE" value="ttf" />
   </component>
 </project>
