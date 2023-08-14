@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="crm konery">
-      <change afterPath="$PROJECT_DIR$/custom_konery/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_konery/__manifest__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_konery/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_konery/models/product_template.py" afterDir="false" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="konery custom">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm_konery/views/crm_lead_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crm_konery/views/crm_lead_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/custom_konery/models" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -80,13 +78,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00460" summary="bug konery customer">
-      <created>1688298639281</created>
-      <option name="number" value="00460" />
-      <option name="presentableId" value="LOCAL-00460" />
-      <option name="project" value="LOCAL" />
-      <updated>1688298639281</updated>
     </task>
     <task id="LOCAL-00461" summary="bug konery customer">
       <created>1688298704235</created>
@@ -424,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692023038394</updated>
     </task>
-    <option name="localTasksCounter" value="509" />
+    <task id="LOCAL-00509" summary="konery custom">
+      <created>1692023712450</created>
+      <option name="number" value="00509" />
+      <option name="presentableId" value="LOCAL-00509" />
+      <option name="project" value="LOCAL" />
+      <updated>1692023712450</updated>
+    </task>
+    <option name="localTasksCounter" value="510" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,7 +437,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="supply-meter" />
     <MESSAGE value="project_task_import" />
     <MESSAGE value="meter_owner" />
     <MESSAGE value="sup 0206" />
@@ -464,6 +461,7 @@
     <MESSAGE value="review id security duplicateds" />
     <MESSAGE value="vat required" />
     <MESSAGE value="crm konery" />
-    <option name="LAST_COMMIT_MESSAGE" value="crm konery" />
+    <MESSAGE value="konery custom" />
+    <option name="LAST_COMMIT_MESSAGE" value="konery custom" />
   </component>
 </project>
