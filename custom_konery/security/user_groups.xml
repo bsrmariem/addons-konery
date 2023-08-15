@@ -22,7 +22,7 @@
             <field name="name">helpdesk.ticket.operator.rule</field>
             <field name="model_id" ref="model_helpdesk_ticket"/>
             <field name="domain_force">[]</field>
-            <field name="groups_id"eval="[(6, 0, [ref('custom_konery.group_helpdesk_user')])]" />
+            <field name="groups_id" eval="[(6, 0, [ref('custom_konery.group_helpdesk_user')])]" />
             <field eval="0" name="perm_write"></field>
             <field eval="1" name="perm_read"></field>
             <field eval="0" name="perm_unlink"></field>
