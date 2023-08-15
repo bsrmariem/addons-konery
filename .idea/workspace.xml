@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="helpdesk operator group" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="helpdesk operator group">
+      <change beforePath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00469" summary="bug konery customer">
-      <created>1688312688365</created>
-      <option name="number" value="00469" />
-      <option name="presentableId" value="LOCAL-00469" />
-      <option name="project" value="LOCAL" />
-      <updated>1688312688366</updated>
     </task>
     <task id="LOCAL-00470" summary="New date control for hiring">
       <created>1688386490930</created>
@@ -419,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692142763880</updated>
     </task>
-    <option name="localTasksCounter" value="518" />
+    <task id="LOCAL-00518" summary="helpdesk operator group">
+      <created>1692143043162</created>
+      <option name="number" value="00518" />
+      <option name="presentableId" value="LOCAL-00518" />
+      <option name="project" value="LOCAL" />
+      <updated>1692143043162</updated>
+    </task>
+    <option name="localTasksCounter" value="519" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

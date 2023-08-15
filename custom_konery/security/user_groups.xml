@@ -13,6 +13,7 @@
     </record>
 
     <data noupdate="1">
+
         <record model="ir.rule" id="helpdesk.helpdesk_ticket_user_rule">
             <field name="groups" eval="[(6, 0, [ref('custom_konery.group_helpdesk_operator')])]"/>
         </record>
@@ -20,14 +21,13 @@
         <record model="ir.rule" id="helpdesk_ticket_operator_rule">
             <field name="name">helpdesk.ticket.operator.rule</field>
             <field name="model_id" ref="model_helpdesk_ticket"/>
-            <!--
-            <field name="domain_force">[ '|', '|', ('public','=',True), ('create_uid','=',user.id),('message_partner_ids','in', [user.partner_id.id])]</field>
-            -->
+            <field name="domain_force">[]</field>
             <field name="groups" eval="[(6, 0, [ref('custom_konery.group_helpdesk_user')])]" />
             <field eval="0" name="perm_write"></field>
             <field eval="1" name="perm_read"></field>
             <field eval="0" name="perm_unlink"></field>
             <field eval="1" name="perm_create"></field>
         </record>
+
     </data>
 </odoo>
