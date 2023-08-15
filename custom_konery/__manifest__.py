@@ -12,6 +12,7 @@ Konery Customs
     'author': 'Serincloud',
     'depends': [
         'purchase',
+        'helpdesk',
     ],
     'data': [
         'security/user_groups.xml',
