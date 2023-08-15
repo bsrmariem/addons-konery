@@ -16,6 +16,7 @@ Konery Customs
     ],
     'data': [
         'security/user_groups.xml',
+        'data/rules.xml',
     ],
     'installable': True,
 }
