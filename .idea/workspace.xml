@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="helpdesk operator group">
-      <change beforePath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="helpdesk operator group" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,34 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00470" summary="New date control for hiring">
-      <created>1688386490930</created>
-      <option name="number" value="00470" />
-      <option name="presentableId" value="LOCAL-00470" />
-      <option name="project" value="LOCAL" />
-      <updated>1688386490930</updated>
-    </task>
-    <task id="LOCAL-00471" summary="New date control for hiring">
-      <created>1688724100835</created>
-      <option name="number" value="00471" />
-      <option name="presentableId" value="LOCAL-00471" />
-      <option name="project" value="LOCAL" />
-      <updated>1688724100835</updated>
-    </task>
-    <task id="LOCAL-00472" summary="New date control for hiring">
-      <created>1688724428041</created>
-      <option name="number" value="00472" />
-      <option name="presentableId" value="LOCAL-00472" />
-      <option name="project" value="LOCAL" />
-      <updated>1688724428041</updated>
-    </task>
-    <task id="LOCAL-00473" summary="New date control for hiring">
-      <created>1688724950540</created>
-      <option name="number" value="00473" />
-      <option name="presentableId" value="LOCAL-00473" />
-      <option name="project" value="LOCAL" />
-      <updated>1688724950540</updated>
     </task>
     <task id="LOCAL-00474" summary="New date control for hiring">
       <created>1688724983353</created>
@@ -421,7 +391,35 @@
       <option name="project" value="LOCAL" />
       <updated>1692143043162</updated>
     </task>
-    <option name="localTasksCounter" value="519" />
+    <task id="LOCAL-00519" summary="helpdesk operator group">
+      <created>1692143444583</created>
+      <option name="number" value="00519" />
+      <option name="presentableId" value="LOCAL-00519" />
+      <option name="project" value="LOCAL" />
+      <updated>1692143444583</updated>
+    </task>
+    <task id="LOCAL-00520" summary="helpdesk operator group">
+      <created>1692143561906</created>
+      <option name="number" value="00520" />
+      <option name="presentableId" value="LOCAL-00520" />
+      <option name="project" value="LOCAL" />
+      <updated>1692143561906</updated>
+    </task>
+    <task id="LOCAL-00521" summary="helpdesk operator group">
+      <created>1692143614168</created>
+      <option name="number" value="00521" />
+      <option name="presentableId" value="LOCAL-00521" />
+      <option name="project" value="LOCAL" />
+      <updated>1692143614168</updated>
+    </task>
+    <task id="LOCAL-00522" summary="helpdesk operator group">
+      <created>1692143700409</created>
+      <option name="number" value="00522" />
+      <option name="presentableId" value="LOCAL-00522" />
+      <option name="project" value="LOCAL" />
+      <updated>1692143700409</updated>
+    </task>
+    <option name="localTasksCounter" value="523" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
