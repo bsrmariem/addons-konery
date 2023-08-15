@@ -18,5 +18,4 @@ Konery Customs
         'security/user_groups.xml',
     ],
     'installable': True,
-    }
 }

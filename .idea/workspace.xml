@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="ttf">
-      <change afterPath="$PROJECT_DIR$/custom_konery/data/rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_konery/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/__manifest__.py" afterDir="false" />
-    </list>
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="helpdesk operator group" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,20 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00464" summary="bug konery customer">
-      <created>1688311025168</created>
-      <option name="number" value="00464" />
-      <option name="presentableId" value="LOCAL-00464" />
-      <option name="project" value="LOCAL" />
-      <updated>1688311025168</updated>
-    </task>
-    <task id="LOCAL-00465" summary="bug konery customer">
-      <created>1688311081463</created>
-      <option name="number" value="00465" />
-      <option name="presentableId" value="LOCAL-00465" />
-      <option name="project" value="LOCAL" />
-      <updated>1688311081463</updated>
     </task>
     <task id="LOCAL-00466" summary="bug konery customer">
       <created>1688311145906</created>
@@ -424,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692028202731</updated>
     </task>
-    <option name="localTasksCounter" value="513" />
+    <task id="LOCAL-00513" summary="helpdesk operator group">
+      <created>1692140290256</created>
+      <option name="number" value="00513" />
+      <option name="presentableId" value="LOCAL-00513" />
+      <option name="project" value="LOCAL" />
+      <updated>1692140290256</updated>
+    </task>
+    <task id="LOCAL-00514" summary="helpdesk operator group">
+      <created>1692140376941</created>
+      <option name="number" value="00514" />
+      <option name="presentableId" value="LOCAL-00514" />
+      <option name="project" value="LOCAL" />
+      <updated>1692140376941</updated>
+    </task>
+    <option name="localTasksCounter" value="515" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sup 0206" />
     <MESSAGE value="sup 1206" />
     <MESSAGE value="traducción qgas" />
     <MESSAGE value="bug protocol comm ro" />
@@ -464,6 +458,7 @@
     <MESSAGE value="konery custom" />
     <MESSAGE value="crm konery leads" />
     <MESSAGE value="ttf" />
-    <option name="LAST_COMMIT_MESSAGE" value="ttf" />
+    <MESSAGE value="helpdesk operator group" />
+    <option name="LAST_COMMIT_MESSAGE" value="helpdesk operator group" />
   </component>
 </project>
