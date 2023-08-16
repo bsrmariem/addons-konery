@@ -21,7 +21,6 @@
         <record model="ir.rule" id="helpdesk_ticket_operator_rule">
             <field name="name">helpdesk.ticket.operator.rule</field>
             <field name="model_id" ref="model_helpdesk_ticket"/>
-            <field name="domain_force">[]</field>
             <field name="groups_id" eval="[(4, ref('group_helpdesk_operator'))]"/>
             <field eval="0" name="perm_write"></field>
             <field eval="1" name="perm_read"></field>
