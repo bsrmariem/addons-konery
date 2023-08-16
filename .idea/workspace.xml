@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="helpdesk operator group">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_konery/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/__manifest__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,27 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00484" summary="electricity true">
-      <created>1689606345837</created>
-      <option name="number" value="00484" />
-      <option name="presentableId" value="LOCAL-00484" />
-      <option name="project" value="LOCAL" />
-      <updated>1689606345837</updated>
-    </task>
-    <task id="LOCAL-00485" summary="electricity true">
-      <created>1689606803628</created>
-      <option name="number" value="00485" />
-      <option name="presentableId" value="LOCAL-00485" />
-      <option name="project" value="LOCAL" />
-      <updated>1689606803628</updated>
-    </task>
-    <task id="LOCAL-00486" summary="electricity true">
-      <created>1689606893308</created>
-      <option name="number" value="00486" />
-      <option name="presentableId" value="LOCAL-00486" />
-      <option name="project" value="LOCAL" />
-      <updated>1689606893308</updated>
     </task>
     <task id="LOCAL-00487" summary="electricity true">
       <created>1689607725861</created>
@@ -422,7 +400,28 @@
       <option name="project" value="LOCAL" />
       <updated>1692145668673</updated>
     </task>
-    <option name="localTasksCounter" value="533" />
+    <task id="LOCAL-00533" summary="helpdesk operator group">
+      <created>1692147575439</created>
+      <option name="number" value="00533" />
+      <option name="presentableId" value="LOCAL-00533" />
+      <option name="project" value="LOCAL" />
+      <updated>1692147575439</updated>
+    </task>
+    <task id="LOCAL-00534" summary="helpdesk operator group">
+      <created>1692147632599</created>
+      <option name="number" value="00534" />
+      <option name="presentableId" value="LOCAL-00534" />
+      <option name="project" value="LOCAL" />
+      <updated>1692147632599</updated>
+    </task>
+    <task id="LOCAL-00535" summary="helpdesk operator group">
+      <created>1692147703493</created>
+      <option name="number" value="00535" />
+      <option name="presentableId" value="LOCAL-00535" />
+      <option name="project" value="LOCAL" />
+      <updated>1692147703493</updated>
+    </task>
+    <option name="localTasksCounter" value="536" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
