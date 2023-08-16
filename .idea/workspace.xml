@@ -78,27 +78,6 @@
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
     </task>
-    <task id="LOCAL-00477" summary="license warning">
-      <created>1688741867422</created>
-      <option name="number" value="00477" />
-      <option name="presentableId" value="LOCAL-00477" />
-      <option name="project" value="LOCAL" />
-      <updated>1688741867422</updated>
-    </task>
-    <task id="LOCAL-00478" summary="license warning">
-      <created>1689150672083</created>
-      <option name="number" value="00478" />
-      <option name="presentableId" value="LOCAL-00478" />
-      <option name="project" value="LOCAL" />
-      <updated>1689150672083</updated>
-    </task>
-    <task id="LOCAL-00479" summary="license warning">
-      <created>1689151121357</created>
-      <option name="number" value="00479" />
-      <option name="presentableId" value="LOCAL-00479" />
-      <option name="project" value="LOCAL" />
-      <updated>1689151121357</updated>
-    </task>
     <task id="LOCAL-00480" summary="gas marketeer fields">
       <created>1689594829947</created>
       <option name="number" value="00480" />
@@ -421,7 +400,28 @@
       <option name="project" value="LOCAL" />
       <updated>1692144005951</updated>
     </task>
-    <option name="localTasksCounter" value="526" />
+    <task id="LOCAL-00526" summary="helpdesk operator group">
+      <created>1692144111962</created>
+      <option name="number" value="00526" />
+      <option name="presentableId" value="LOCAL-00526" />
+      <option name="project" value="LOCAL" />
+      <updated>1692144111962</updated>
+    </task>
+    <task id="LOCAL-00527" summary="helpdesk operator group">
+      <created>1692144238636</created>
+      <option name="number" value="00527" />
+      <option name="presentableId" value="LOCAL-00527" />
+      <option name="project" value="LOCAL" />
+      <updated>1692144238636</updated>
+    </task>
+    <task id="LOCAL-00528" summary="helpdesk operator group">
+      <created>1692144316808</created>
+      <option name="number" value="00528" />
+      <option name="presentableId" value="LOCAL-00528" />
+      <option name="project" value="LOCAL" />
+      <updated>1692144316808</updated>
+    </task>
+    <option name="localTasksCounter" value="529" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
