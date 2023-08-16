@@ -6,6 +6,8 @@
     'version': '16.0.1.0.1',
     'category': '',
     "license": "AGPL-3",
+    'sequence': 95,
+    'summary': '',
     'description': u"""
 Konery Customs
 """,
@@ -14,7 +16,6 @@ Konery Customs
         'purchase',
         'helpdesk',
     ],
-    'data': [
-    ],
     'installable': True,
+    'application': False,
 }
