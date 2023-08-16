@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="helpdesk operator group">
-      <change beforePath="$PROJECT_DIR$/custom_konery/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/__manifest__.py" afterDir="false" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="bug letra">
+      <change beforePath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00489" summary="electricity true">
-      <created>1689608363553</created>
-      <option name="number" value="00489" />
-      <option name="presentableId" value="LOCAL-00489" />
-      <option name="project" value="LOCAL" />
-      <updated>1689608363553</updated>
     </task>
     <task id="LOCAL-00490" summary="electricity true">
       <created>1689609012487</created>
@@ -421,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692171410657</updated>
     </task>
-    <option name="localTasksCounter" value="538" />
+    <task id="LOCAL-00538" summary="bug letra">
+      <created>1692172063857</created>
+      <option name="number" value="00538" />
+      <option name="presentableId" value="LOCAL-00538" />
+      <option name="project" value="LOCAL" />
+      <updated>1692172063857</updated>
+    </task>
+    <option name="localTasksCounter" value="539" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -436,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sup 1206" />
     <MESSAGE value="traducción qgas" />
     <MESSAGE value="bug protocol comm ro" />
     <MESSAGE value="partner_id store True" />
@@ -461,6 +460,7 @@
     <MESSAGE value="crm konery leads" />
     <MESSAGE value="ttf" />
     <MESSAGE value="helpdesk operator group" />
-    <option name="LAST_COMMIT_MESSAGE" value="helpdesk operator group" />
+    <MESSAGE value="bug letra" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug letra" />
   </component>
 </project>
