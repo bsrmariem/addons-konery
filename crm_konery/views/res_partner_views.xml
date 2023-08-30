@@ -12,13 +12,13 @@
                 <xpath expr="//field[@name='vat']" position="attributes">
                     <attribute name="attrs">{"readonly": [["parent_id","!=",False]], "required":True}</attribute>
                 </xpath>
-                <field name="category_id" position="attributes">
-                    <attribute name="options">{'color_field': 'color','no_create':True}</attribute>
-                    <attribute name="attrs">{'required':True}</attribute>
-                </field>
                 <field name="vat" position="after">
                     <field name="power_kw"/>
                     <field name="fv_origin"/>
+                </field>
+                <field name="category_id" position="attributes">
+                    <attribute name="options">{'color_field': 'color','no_create':True}</attribute>
+                    <attribute name="attrs">{'required':True}</attribute>
                 </field>
             </data>
         </field>
