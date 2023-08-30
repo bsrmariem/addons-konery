@@ -9,9 +9,14 @@
         <field name="priority">98</field>
         <field name="arch" type="xml">
             <data>
-                <field name="user_id" position="after">
+                <xpath expr="//sheet/group/group[4]/field[@name='user_id']" position="after">
                     <field name="power_kw"/>
-                </field>
+                    <field name="fv_origin"/>
+                </xpath>
+                <xpath expr="//sheet/group/group[5]/field[@name='user_id']" position="after">
+                    <field name="power_kw"/>
+                    <field name="fv_origin"/>
+                </xpath>
                 <xpath expr="//group[@name='lead_info']" position="attributes">
                     <attribute name="attrs">{'invisible':True}</attribute>
                 </xpath>
