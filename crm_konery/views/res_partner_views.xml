@@ -16,6 +16,10 @@
                     <attribute name="options">{'color_field': 'color','no_create':True}</attribute>
                     <attribute name="attrs">{'required':True}</attribute>
                 </field>
+                <field name="category_id" position="after">
+                    <field name="power_kw"/>
+                    <field name="fv_origin"/>
+                </field>
             </data>
         </field>
     </record>
