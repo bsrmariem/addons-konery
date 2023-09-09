@@ -5,7 +5,7 @@
 
         <record id="konery_ir_cron_model_access" model="ir.cron">
             <field name="name">=> KONERY Cron Model Acess</field>
-            <field ref="model_ir_model_access" name="model_id"/>
+            <field ref="base.model_ir_model_access" name="model_id"/>
             <field eval="True" name="active" />
             <field name="user_id" ref="base.user_root" />
             <field name="interval_number">1</field>
