@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <data>
+
+        <record id="konery_ir_cron_model_access" model="ir.cron">
+            <field name="name">=> KONERY Cron Model Acess</field>
+            <field ref="model_ir_model_access" name="model_id"/>
+            <field eval="True" name="active" />
+            <field name="user_id" ref="base.user_root" />
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall" />
+            <field name="state">code</field>
+            <field name="code">
+# Sólo estos grupos pueden crear productos (José Antonio y Juan Pedro):
+# 09/2023: Compra / Administrador y Administración / Ajustes para la compra de productos. El resto los limitamos.
+
+# GRUPOS CON PERMISOS PARA CREAR PRODUCTOS:
+grupos_crear = ['purchase.group_purchase_manager', 'base.group_system']
+excluidos = []
+for li in grupos_crear:
+  excluido = env.ref(li)
+  excluidos.append(excluido.id)
+
+# ACTUALIZAR PRODUCT.TEMPLATE:
+permisos = env['ir.model.access'].search([('model_id','=','product.template')])
+for li in permisos:
+  if (li.group_id.id not in excluidos) and (li.perm_create == True):
+    li['perm_create'] = False
+
+# ACTUALIZAR PRODUCT.PRODUCT:
+permisos = env['ir.model.access'].search([('model_id','=','product.product')])
+for li in permisos:
+  if (li.group_id.id not in excluidos) and (li.perm_create == True):
+    li['perm_create'] = False
+
+            </field>
+        </record>
+
+    </data>
+
+</odoo>

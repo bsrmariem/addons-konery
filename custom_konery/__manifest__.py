@@ -13,7 +13,9 @@
         'purchase',
         'helpdesk',
     ],
-    'data': [],
+    'data': [
+        'data/scheduled_actions.xml',
+    ],
     'installable': True,
     'application': False,
 }
