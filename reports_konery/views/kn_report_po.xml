@@ -73,7 +73,7 @@
 
                             <!--<t t-set="display_discount" t-value="any([l.discount for l in o.order_line])"/>-->
 
-                            <table class="table-border" style="float:right;width:90%;font-family: montserrat;font-size:12px;border-color:white">
+                            <table class="table-border" style="float:right;width:90%;font-family: montserrat;font-size:12px;border-color:transparent">
                                 <!-- <thead>
                                      <tr style="border-bottom:1pt solid #0084BF;border-top:1pt solid #0871d0;">
                                          <th><strong>DESCRIPCIÓN </strong></th>
@@ -166,10 +166,10 @@
 
                             <div style="text-align:right;">
 
-                                <table class="table-border" style="page-break-inside: avoid;float:right;width:50%;font-family: montserrat;border-color:white">
+                                <table class="table-border" style="page-break-inside: avoid;float:right;width:50%;font-family: montserrat;border-color:transparent">
                                     <thead style="border-bottom:5pt solid #0084BF;border-top:5pt solid #0084BF;">
                                         <t t-set="colspan" t-value="9"/>
-                                        <tr style="border-color:white">
+                                        <tr style="border-color:transparent">
 
 
                                             <td>
