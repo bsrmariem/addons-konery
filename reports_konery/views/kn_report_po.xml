@@ -34,14 +34,6 @@
                                     NIF:<span t-field="o.dest_address_id.vat"/>
                                 </p>
 
-                                <div>
-                                    <p style="text-align:left;color:#0084BF;line-height: 18px;">
-                                        www.konery.com<br/>
-                                        info@konery.com<br/>
-                                        +34 868 07 44 04 <br/>
-                                    </p>
-
-                                </div>
                             </div>
                             <div style="float:right;">
                                 <div style="text-align:left;white-space: nowrap;font-size:16px;line-height: 18px;">
