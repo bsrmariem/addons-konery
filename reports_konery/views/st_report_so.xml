@@ -101,7 +101,6 @@
                                 <span>Pro-Forma Invoice # </span><br/>
                             </t>
 
-
                             <!--t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"-->
                             <t style="font-weight: 500;line-height: 15px;font-size:14px;text-align:right;" class="text-right">
                                 <t t-if="doc.user_id">
@@ -112,8 +111,6 @@
                             <t style="font-weight: 500;line-height:15px;font-size:14px;padding-right:0px;text-align:right;">
                                 <t t-if="doc.name">PRESUPUESTO:  <span t-field="doc.name"/>  <br/> </t>
                             </t>
-
-
 
                             <t style="font-weight: 500;line-height:15px;font-size:14px;padding-right:0px;text-align:right;">
                                 <t t-if="doc.opportunity_id">PROYECTO: <span t-field="doc.opportunity_id"/>  <br/> </t>
@@ -133,15 +130,11 @@
                                 <br></br>
                             </t>
 
-
-
                             <t style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
                             </t>
                             <t style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
                                 <strong><span style="text-align:left;font-weight: 900;white-space: nowrap;font-size:16px;line-height: 18px;" t-field="doc.partner_id"/></strong> <br/>
                             </t>
-
-
 
                             <t style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
                             </t>
@@ -149,15 +142,11 @@
                                 CIF <span t-field="doc.partner_id.vat"/> <br/>
                             </t>
 
-
-
                             <t style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
                             </t>
                             <t style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
                                 <span t-field="doc.partner_id.street"/> <br/>
                             </t>
-
-
 
                             <t style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
                             </t>
@@ -167,7 +156,6 @@
                                 <span t-field="doc.partner_id.zip"/>  <br/>
                             </t>
 
-
                             <!--Agregamos un salto de linea-->
 
                             <t style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
@@ -176,7 +164,6 @@
                             <t style="padding-left:10px;line-height: 15px;text-align:left;">
                                 <br></br>
                             </t>
-
 
                         </div>
                     </div>
@@ -188,7 +175,8 @@
                             <tr style="border-bottom:5pt solid #3C2186;border-top:5pt solid #3C2186;">
                                 <!-- TODO: remove in master -->
                                 <t t-set="colspan" t-value="5"/>
-                                <th style="padding-top: 10px; padding-bottom:10px;" class="text-right">DESCRIPCIÓN</th><th/>                                <th class="text-right" style="text-align:left;">CANTIDAD</th>
+                                <th style="padding-top: 10px; padding-bottom:10px;" class="text-right">DESCRIPCIÓN</th>
+                                <th class="text-right" style="text-align:left;">CANTIDAD</th>
                                 <th class="text-right" style="text-align:left;">PRECIO UNIDAD</th>
                                 <th t-if="display_discount" style="text-align:left;" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
                                     <span>Desc.(%)</span>                                </th>
@@ -213,14 +201,6 @@
                                 <tr t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''" style="padding-top: 20px;border-bottom:1pt;">
                                     <t t-if="not line.display_type" name="account_invoice_line_accountable">
 
-                                        <td colspan="5" style="padding-top: 10px;font-weight: 500;line-height: 15px;font-size:10px" name="so_line_name">
-                                            <p style="text-align:left;"><span t-field="line.name"/> </p>
-                                        </td>
-                                    </t>
-                                </tr>
-                                <tr t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''" style="padding-top: 20px;border-bottom:1pt;">
-                                    <t t-if="not line.display_type" name="account_invoice_line_accountable">
-
                                         <td style="padding-top: 10px;font-weight: 500;line-height: 15px;font-size:10px" name="so_line_name">
                                             <p style="text-align:left;"><span t-field="line.name"/> </p>
                                         </td>
@@ -240,7 +220,6 @@
                                             <span t-field="line.price_total" groups="account.group_show_line_subtotals_tax_included"/>
                                         </td>
                                         <!--<t t-if="count > 4"> <p style="page-break-after:always"></p> </t>-->
-
                                     </t>
                                     <t t-if="line.display_type == 'line_section'">
                                         <td colspan="99" style="padding-top: 20px;padding-bottom: 0;">
@@ -256,11 +235,7 @@
                                                 <span t-field="line.name"/></p>
                                         </td>
                                     </t>
-
                                 </tr>
-
-
-
                                 <t t-if="current_section and (line_last or doc.order_line[line_index+1].display_type == 'line_section')">
                                 </t>
                             </t>
@@ -282,25 +257,19 @@
                                     </td>
                                 </tr>
                                 <tr style="border-color:transparent">
-
                                     <td style="text-align:left;padding-top: 10px; padding-bottom:10px;border-bottom:5pt solid #3C2186">
                                         <strong>IMPUESTOS (IVA 21%)</strong>
                                     </td>
                                     <td style="padding-top: 10px; padding-bottom:10px;border-bottom:5pt solid #3C2186">
                                         <span t-field="doc.amount_tax"/>
                                     </td>
-
                                 </tr>
                                 <tr style="border-color:transparent">
-
                                     <td style="text-align:left;padding-top: 10px; padding-bottom:10px;">
                                         <strong>TOTAL</strong>
                                     </td>
-
                                     <td>
-
                                         <span t-field="doc.amount_total"/>
-
                                     </td>
                                 </tr>
 
@@ -317,7 +286,7 @@
                                 <p t-field="doc.signed_by"/>
                             </div>
                         </div>
-                        <br/><br/><br/><br/><br/><br/><br/>
+                        <br/><br/><br/><br/><br/><br/><br/><br/>
                         <div align="left" style="font-family: urbanist;font-size:11px;margin-left:8%;page-break-inside: avoid;">
                             <p t-field="doc.note" name="order_note"/>
                             <p t-if="not is_html_empty(doc.payment_term_id.note)">
@@ -462,7 +431,6 @@
                                 <span t-field="doc.partner_id.zip"/>  <br/>
                             </t>
 
-
                             <!--Agregamos un salto de linea-->
 
                             <t style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
@@ -483,7 +451,8 @@
                             <tr style="border-bottom:5pt solid #3C2186;border-top:5pt solid #3C2186;">
                                 <!-- TODO: remove in master -->
                                 <t t-set="colspan" t-value="4"/>
-                                <th style="padding-top: 10px; padding-bottom:10px;" class="text-right">DESCRIPCIÓN</th><th/>                                <th class="text-right" style="text-align:left;">CANTIDAD</th>
+                                <th style="padding-top: 10px; padding-bottom:10px;" class="text-right">DESCRIPCIÓN</th>
+                                <th class="text-right" style="text-align:left;">CANTIDAD</th>
                                 <th t-if="display_discount" style="text-align:left;" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
                                     <span>Desc.(%)</span>                                </th>
                                 <th class="text-right" style="text-align:left;">
@@ -507,14 +476,6 @@
                                 <tr t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''" style="padding-top: 20px;border-bottom:1pt;">
                                     <t t-if="not line.display_type" name="account_invoice_line_accountable">
 
-                                        <td colspan="5" style="padding-top: 10px;font-weight: 500;line-height: 15px;font-size:10px" name="so_line_name">
-                                            <p style="text-align:left;"><span t-field="line.name"/> </p>
-                                        </td>
-                                    </t>
-                                </tr>
-                                <tr t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''" style="padding-top: 20px;border-bottom:1pt;">
-                                    <t t-if="not line.display_type" name="account_invoice_line_accountable">
-
                                         <td style="padding-top: 10px;font-weight: 500;line-height: 15px;font-size:10px" name="so_line_name">
                                             <p style="text-align:left;"><span t-field="line.name"/> </p>
                                         </td>
@@ -530,7 +491,6 @@
                                             <span t-field="line.price_total" groups="account.group_show_line_subtotals_tax_included"/>
                                         </td>
                                         <!--<t t-if="count > 4"> <p style="page-break-after:always"></p> </t>-->
-
                                     </t>
                                     <t t-if="line.display_type == 'line_section'">
                                         <td colspan="99" style="padding-top: 20px;padding-bottom: 0;">
@@ -546,11 +506,7 @@
                                                 <span t-field="line.name"/></p>
                                         </td>
                                     </t>
-
                                 </tr>
-
-
-
                                 <t t-if="current_section and (line_last or doc.order_line[line_index+1].display_type == 'line_section')">
                                 </t>
                             </t>
@@ -607,7 +563,7 @@
                                 <p t-field="doc.signed_by"/>
                             </div>
                         </div>
-                        <br/><br/><br/><br/><br/><br/><br/>
+                        <br/><br/><br/><br/><br/><br/><br/><br/>
                         <div align="left" style="font-family: urbanist;font-size:11px;margin-left:8%;page-break-inside: avoid;">
                             <p t-field="doc.note" name="order_note"/>
                             <p t-if="not is_html_empty(doc.payment_term_id.note)">
