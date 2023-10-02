@@ -40,7 +40,7 @@
         </field>
     </record>-->
 
-    <!--<record id="view_po_form_report_type" model="ir.ui.view">
+    <record id="view_po_form_report_type" model="ir.ui.view">
         <field name="name">po.report.selector</field>
         <field name="model">purchase.order</field>
         <field name="inherit_id" ref="purchase.purchase_order_form"/>
@@ -52,7 +52,7 @@
                 </div>
             </xpath>
         </field>
-    </record>-->
+    </record>
 
 
     <!--<record id="view_so_form_x_observaciones" model="ir.ui.view">

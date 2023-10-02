@@ -30,13 +30,12 @@
               parent="po_reports"
               name="Formatos" action="action_report_type"/>
 
-    <!--<menuitem id="po_reports"
+    <menuitem id="po_reports"
               parent="purchase.menu_purchase_config"
               name="Reports"/>
     <menuitem id="po_reports_types"
               parent="po_reports"
               name="Types" action="action_report_type"/>
-    -->
 
     <record id="ir_report_view_custom" model="ir.ui.view">
         <field name="name">ir.actions.report.custom</field>
