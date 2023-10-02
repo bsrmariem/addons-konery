@@ -31,5 +31,10 @@
         #"data/paper_format.xml",
         "security/ir.model.access.csv",
     ],
+    'assets': {
+            'web._assets_primary_variables': [
+                "reports_konery/static/src/scss/font.scss",
+            ],
+        },
 
 }

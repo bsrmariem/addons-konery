@@ -206,15 +206,7 @@
                                 <t t-set="current_subtotal" t-value="current_subtotal + line.price_total" groups="account.group_show_line_subtotals_tax_included"/>
                                 <!--<tr style="border-bottom:1pt solid #0871d0;"
                                             t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">-->
-                                <tr t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''" style="padding-top: 20px;border-bottom:1pt;">
-                                    <t t-if="line.display_type == 'product'" name="account_invoice_line_accountable">
-                                        <td colspan="6" style="font-weight: 500;width: 40%; line-height: 15px;font-size:13px;padding-top: 20px;padding-bottom: 0;" name="account_invoice_line_name">
-                                            <p>
-                                                <span t-field="line.name" t-options="{'widget': 'text'}"/>
-                                            </p>
-                                        </td>
-                                    </t>
-                                </tr>
+
                                 <tr t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''" style="padding-top: 20px;border-bottom:1pt;">
                                     <t t-if="line.display_type == 'product'" name="account_invoice_line_accountable">
                                         <td style="font-weight: 500;width: 40%; line-height: 15px;font-size:13px;padding-top: 20px;padding-bottom: 0;" name="account_invoice_line_name">
