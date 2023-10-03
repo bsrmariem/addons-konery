@@ -25,7 +25,7 @@ msgstr "Coste exceso Km"
 #. module: fleet_extended
 #: model:ir.model.fields,field_description:fleet_extended.field_fleet_vehicle_log_contract__annual_consumed_km
 msgid "Annual consumed km"
-msgstr "Media real km/año"
+msgstr "Media km/año"
 
 #. module: fleet_extended
 #: model:ir.model.fields,field_description:fleet_extended.field_fleet_vehicle_log_contract__annual_estimated_km
