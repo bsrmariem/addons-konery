@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="project v0" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="project v0">
+      <change beforePath="$PROJECT_DIR$/project_konery_pnt/security/user_groups_access.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_konery_pnt/security/user_groups_access.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,20 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00512" summary="ttf">
-      <created>1692028202731</created>
-      <option name="number" value="00512" />
-      <option name="presentableId" value="LOCAL-00512" />
-      <option name="project" value="LOCAL" />
-      <updated>1692028202731</updated>
-    </task>
-    <task id="LOCAL-00513" summary="helpdesk operator group">
-      <created>1692140290256</created>
-      <option name="number" value="00513" />
-      <option name="presentableId" value="LOCAL-00513" />
-      <option name="project" value="LOCAL" />
-      <updated>1692140290256</updated>
     </task>
     <task id="LOCAL-00514" summary="helpdesk operator group">
       <created>1692140376941</created>
@@ -419,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1697210068387</updated>
     </task>
-    <option name="localTasksCounter" value="561" />
+    <task id="LOCAL-00561" summary="project v0">
+      <created>1697210460032</created>
+      <option name="number" value="00561" />
+      <option name="presentableId" value="LOCAL-00561" />
+      <option name="project" value="LOCAL" />
+      <updated>1697210460032</updated>
+    </task>
+    <task id="LOCAL-00562" summary="project v0">
+      <created>1697210703670</created>
+      <option name="number" value="00562" />
+      <option name="presentableId" value="LOCAL-00562" />
+      <option name="project" value="LOCAL" />
+      <updated>1697210703670</updated>
+    </task>
+    <option name="localTasksCounter" value="563" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
