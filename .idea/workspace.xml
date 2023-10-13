@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="fleet extended">
+      <change afterPath="$PROJECT_DIR$/project_konery_pnt/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_konery_pnt/__manifest__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_konery_pnt/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_konery_pnt/security/ir.model.access.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_konery_pnt/security/user_groups.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,15 +40,15 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/fleet_extended" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/project_konery" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/fleet_extended" />
+      <recent name="$PROJECT_DIR$/project_konery" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/fleet_extended" />
       <recent name="$PROJECT_DIR$/custom_konery" />
       <recent name="$PROJECT_DIR$/custom_konery/models" />
-      <recent name="$PROJECT_DIR$/crm_konery/views" />
     </key>
   </component>
   <component name="RunManager">
@@ -77,13 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00506" summary="crm konery">
-      <created>1692022432904</created>
-      <option name="number" value="00506" />
-      <option name="presentableId" value="LOCAL-00506" />
-      <option name="project" value="LOCAL" />
-      <updated>1692022432904</updated>
     </task>
     <task id="LOCAL-00507" summary="crm konery">
       <created>1692022723787</created>
@@ -421,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696331098109</updated>
     </task>
-    <option name="localTasksCounter" value="555" />
+    <task id="LOCAL-00555" summary="fleet extended">
+      <created>1696332398474</created>
+      <option name="number" value="00555" />
+      <option name="presentableId" value="LOCAL-00555" />
+      <option name="project" value="LOCAL" />
+      <updated>1696332398474</updated>
+    </task>
+    <option name="localTasksCounter" value="556" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
