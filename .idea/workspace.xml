@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="project v0">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_konery/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_konery/data/scheduled_actions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/data/scheduled_actions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_konery_pnt/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_konery_pnt/__manifest__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_konery_pnt/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_konery_pnt/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/security/ir.model.access.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_konery_pnt/security/user_groups.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="project permissions to custom_konery" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00520" summary="helpdesk operator group">
-      <created>1692143561906</created>
-      <option name="number" value="00520" />
-      <option name="presentableId" value="LOCAL-00520" />
-      <option name="project" value="LOCAL" />
-      <updated>1692143561906</updated>
     </task>
     <task id="LOCAL-00521" summary="helpdesk operator group">
       <created>1692143614168</created>
@@ -429,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697211680290</updated>
     </task>
-    <option name="localTasksCounter" value="569" />
+    <task id="LOCAL-00569" summary="project permissions to custom_konery">
+      <created>1697212559140</created>
+      <option name="number" value="00569" />
+      <option name="presentableId" value="LOCAL-00569" />
+      <option name="project" value="LOCAL" />
+      <updated>1697212559140</updated>
+    </task>
+    <option name="localTasksCounter" value="570" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dates overlap" />
     <MESSAGE value="bug konery customer" />
     <MESSAGE value="New date control for hiring" />
     <MESSAGE value="license warning" />
@@ -469,7 +458,8 @@
     <MESSAGE value="update access products" />
     <MESSAGE value="fleet extended" />
     <MESSAGE value="project v0" />
-    <option name="LAST_COMMIT_MESSAGE" value="project v0" />
+    <MESSAGE value="project permissions to custom_konery" />
+    <option name="LAST_COMMIT_MESSAGE" value="project permissions to custom_konery" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
