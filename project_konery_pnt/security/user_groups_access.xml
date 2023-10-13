@@ -11,7 +11,7 @@
 
     # Permiso para el nuevo grupo (todos):
     <record id="project_konery_pnt.group_project_create_delete" model="ir.model.access">
-        <field name="name">access_project_creation_deletion</field>
+        <field name="name" eval="access_project_creation_deletion"/>
         <field name="model_id" ref="model_project_project"/>
         <field name="perm_read" eval="True"/>
         <field name="perm_write" eval="True"/>
