@@ -15,6 +15,7 @@
             <field name="state">code</field>
             <field name="code">
 # Sólo estos grupos pueden crear productos (José Antonio y Juan Pedro):
+# Se hace así por si se instalan nuevos módulos o reinstalan los existentes.
 # 09/2023: Compra / Administrador y Administración / Ajustes para la compra de productos. El resto los limitamos.
 
 # GRUPOS CON PERMISOS PARA CREAR PRODUCTOS:

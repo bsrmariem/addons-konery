@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="project v0">
-      <change afterPath="$PROJECT_DIR$/project_konery_pnt/security/ir.model.access.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_konery_pnt/security/user_groups_access.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_konery_pnt/security/user_groups_access.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_konery/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_konery/data/scheduled_actions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/data/scheduled_actions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/security/user_groups.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_konery_pnt/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_konery_pnt/__manifest__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_konery_pnt/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_konery_pnt/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/custom_konery/security/ir.model.access.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_konery_pnt/security/user_groups.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,15 +43,15 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/project_konery_pnt/security" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/custom_konery/security" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/custom_konery/security" />
       <recent name="$PROJECT_DIR$/project_konery_pnt/security" />
       <recent name="$PROJECT_DIR$/project_konery" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/fleet_extended" />
-      <recent name="$PROJECT_DIR$/custom_konery" />
     </key>
   </component>
   <component name="RunManager">
@@ -79,27 +85,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00517" summary="helpdesk operator group">
-      <created>1692142763880</created>
-      <option name="number" value="00517" />
-      <option name="presentableId" value="LOCAL-00517" />
-      <option name="project" value="LOCAL" />
-      <updated>1692142763880</updated>
-    </task>
-    <task id="LOCAL-00518" summary="helpdesk operator group">
-      <created>1692143043162</created>
-      <option name="number" value="00518" />
-      <option name="presentableId" value="LOCAL-00518" />
-      <option name="project" value="LOCAL" />
-      <updated>1692143043162</updated>
-    </task>
-    <task id="LOCAL-00519" summary="helpdesk operator group">
-      <created>1692143444583</created>
-      <option name="number" value="00519" />
-      <option name="presentableId" value="LOCAL-00519" />
-      <option name="project" value="LOCAL" />
-      <updated>1692143444583</updated>
     </task>
     <task id="LOCAL-00520" summary="helpdesk operator group">
       <created>1692143561906</created>
@@ -423,7 +408,28 @@
       <option name="project" value="LOCAL" />
       <updated>1697210963581</updated>
     </task>
-    <option name="localTasksCounter" value="566" />
+    <task id="LOCAL-00566" summary="project v0">
+      <created>1697211403982</created>
+      <option name="number" value="00566" />
+      <option name="presentableId" value="LOCAL-00566" />
+      <option name="project" value="LOCAL" />
+      <updated>1697211403982</updated>
+    </task>
+    <task id="LOCAL-00567" summary="project v0">
+      <created>1697211567669</created>
+      <option name="number" value="00567" />
+      <option name="presentableId" value="LOCAL-00567" />
+      <option name="project" value="LOCAL" />
+      <updated>1697211567669</updated>
+    </task>
+    <task id="LOCAL-00568" summary="project v0">
+      <created>1697211680289</created>
+      <option name="number" value="00568" />
+      <option name="presentableId" value="LOCAL-00568" />
+      <option name="project" value="LOCAL" />
+      <updated>1697211680290</updated>
+    </task>
+    <option name="localTasksCounter" value="569" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

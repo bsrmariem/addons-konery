@@ -7,7 +7,7 @@
     'category': '',
     "license": "AGPL-3",
     'website': "https://ingenieriacloud.com",
-    'summary': 'Konery Customs',
+    'summary': 'Konery Customs, project group Admin and permissions',
     'author': 'Serincloud',
     'depends': [
         'purchase',
@@ -15,6 +15,8 @@
     ],
     'data': [
         'data/scheduled_actions.xml',
+        'security/user_groups.xml',
+        'security/ir.model.access.csv',
     ],
     'installable': True,
     'application': False,
