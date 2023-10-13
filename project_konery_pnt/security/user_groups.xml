@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    # Nuevo grupo Admin que puede crear y eliminar:
     <record id="group_project_create_delete" model="res.groups">
         <field name="name">Project Admin (creation / deletion)</field>
         <field name="implied_ids" eval="[(4, ref('project.group_project_manager'))]"/>
@@ -10,10 +11,22 @@
 
 
     <data>
+        # Modificar permisos existen en MANAGER para que no pueda crear ni borrar:
         <record id="project.access_project_update_project_manager" model="ir.model.access">
             <field name="perm_create">False</field>
             <field name="perm_unlink">False</field>
         </record>
+
+        # Permiso para el nuevo grupo (todos):
+        <record id="project_konery_pnt.group_project_create_delete" model="ir.model.access">
+            <field name="name">access_project_creation_deletion</field>
+            <field name="model_id" eval="model_project_project"/>
+            <field name="perm_read">True</field>
+            <field name="perm_write">True</field>
+            <field name="perm_create">True</field>
+            <field name="perm_unlink">True</field>
+        </record>
+
     </data>
 
 

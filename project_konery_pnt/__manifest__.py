@@ -13,7 +13,7 @@
         'project',
     ],
     'data': [
-        'security/user_groups.xml',
+        'security/user_groups_access.xml',
     ],
     'installable': True,
     'application': False,
