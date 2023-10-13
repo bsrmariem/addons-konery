@@ -10,16 +10,6 @@
     </record>
 
     <data>
-        # Permiso para el nuevo grupo (todos):
-        <record id="project_konery_pnt.access_project_create_delete" model="ir.model.access">
-            <field name="name" eval="access_project_creation_deletion"/>
-            <field name="model_id" ref="model_project_project"/>
-            <field name="perm_read" eval="True"/>
-            <field name="perm_write" eval="True"/>
-            <field name="perm_create" eval="True"/>
-            <field name="perm_unlink" eval="True"/>
-        </record>
-
         # Modificar permisos existen en MANAGER para que no pueda crear ni borrar:
         <record id="project.access_project_project_manager" model="ir.model.access">
             <field name="perm_create">False</field>

@@ -13,7 +13,8 @@
         'project',
     ],
     'data': [
-        'security/user_groups_access.xml',
+        'security/user_groups.xml',
+        'security/ir.model.access.csv',
     ],
     'installable': True,
     'application': False,
