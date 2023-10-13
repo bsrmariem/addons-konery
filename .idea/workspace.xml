@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="fleet extended">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_konery_pnt/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_konery_pnt/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_konery_pnt/security/user_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_konery_pnt/security/user_groups.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="project v0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,20 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00508" summary="crm konery">
-      <created>1692023038394</created>
-      <option name="number" value="00508" />
-      <option name="presentableId" value="LOCAL-00508" />
-      <option name="project" value="LOCAL" />
-      <updated>1692023038394</updated>
-    </task>
-    <task id="LOCAL-00509" summary="konery custom">
-      <created>1692023712450</created>
-      <option name="number" value="00509" />
-      <option name="presentableId" value="LOCAL-00509" />
-      <option name="project" value="LOCAL" />
-      <updated>1692023712450</updated>
     </task>
     <task id="LOCAL-00510" summary="crm konery leads">
       <created>1692025471743</created>
@@ -423,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1697208674693</updated>
     </task>
-    <option name="localTasksCounter" value="557" />
+    <task id="LOCAL-00557" summary="project v0">
+      <created>1697209304420</created>
+      <option name="number" value="00557" />
+      <option name="presentableId" value="LOCAL-00557" />
+      <option name="project" value="LOCAL" />
+      <updated>1697209304420</updated>
+    </task>
+    <task id="LOCAL-00558" summary="project v0">
+      <created>1697209390774</created>
+      <option name="number" value="00558" />
+      <option name="presentableId" value="LOCAL-00558" />
+      <option name="project" value="LOCAL" />
+      <updated>1697209390774</updated>
+    </task>
+    <option name="localTasksCounter" value="559" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bug supply primary key" />
     <MESSAGE value="dates overlap" />
     <MESSAGE value="bug konery customer" />
     <MESSAGE value="New date control for hiring" />
@@ -463,7 +458,8 @@
     <MESSAGE value="lead2opp hide create partner" />
     <MESSAGE value="update access products" />
     <MESSAGE value="fleet extended" />
-    <option name="LAST_COMMIT_MESSAGE" value="fleet extended" />
+    <MESSAGE value="project v0" />
+    <option name="LAST_COMMIT_MESSAGE" value="project v0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
