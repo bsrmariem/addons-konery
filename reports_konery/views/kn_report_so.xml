@@ -118,14 +118,13 @@
                             <table class="table-border" style="float:right;width:100%;font-family: VisbyCFRoundedDB;border-color:white;">
                                 <thead style="font-size:17px;">
                                     <tr>
-                                        <th t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
-                                            style="padding-top: 10px; padding-bottom:10px;padding-left: 20px;text-align:right;" class="text-left">
+                                        <th t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}" style="padding-top: 10px; padding-bottom:10px;padding-left: 20px;text-align:right;" class="text-left">
 
                                         </th>
                                         <th>
                                             <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
                                                 <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
-                                                <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;" >FACTURA PROFORMA: </span>
+                                                <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">FACTURA PROFORMA: </span>
                                             </t>
                                             <t style="font-weight: 600" t-if="env.context.get('proforma', False) or is_pro_forma">
                                                 <span>FACTURA PROFORMA: </span>
@@ -179,7 +178,7 @@
                                         </td>
                                         <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
                                             <t t-if="doc.date_order">
-                                                <strong><span  t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
+                                                <strong><span t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
                                             </t>
                                         </td>
                                     </tr>
@@ -187,10 +186,10 @@
                                     <!--Agregamos un salto de linea-->
                                     <tr>
                                         <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                         <td style="padding-left:10px;line-height: 15px;text-align:left;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                     </tr>
 
@@ -231,10 +230,10 @@
                                     <!--Agregamos un salto de linea-->
                                     <tr>
                                         <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                         <td style="padding-left:10px;line-height: 15px;text-align:left;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -245,14 +244,14 @@
                     <div class="page"/>
                     <t t-set="display_discount" t-value="any([l.discount for l in doc.order_line])"/>
                     <div class="clearfix"/>
+                    <br/><br/>
                     <table class="table-border" style="float:right;width:90%;font-family: VisbyCFRoundedDB;font-size:12px;border-color:white;">
                         <thead>
                             <tr style="border-bottom:3pt solid ;border-top:3pt solid ;color:#1b1475;">
                                 <!-- TODO: remove in master -->
                                 <t t-set="colspan" t-value="5"/>
-                                <th style="padding-top: 10px; padding-bottom:10px;text-align:left;" t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
-                                    class="text-left">DESCRIPCIÓN</th>
-                                <th style="text-align:left;" >CANTIDAD</th>
+                                <th style="padding-top: 10px; padding-bottom:10px;text-align:left;" t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}" class="text-left">DESCRIPCIÓN</th>
+                                <th style="text-align:left;">CANTIDAD</th>
                                 <th class="text-right" style="text-align:left;">PRECIO UNIDAD</th>
                                 <th name="th_taxes" class="text-right" style="text-align:left;">IMPUESTOS</th>
                                 <th t-if="display_discount" style="text-align:left;" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
@@ -279,15 +278,15 @@
                                 <tr style="font-family: Open Sans;" t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''">
                                     <t t-if="not line.display_type" name="account_invoice_line_accountable">
 
-                                        <td  style="font-weight: 500;width: 50%;line-height: 15px;font-size:10px" name="account_invoice_line_name">
+                                        <td style="font-weight: 500;width: 50%;line-height: 15px;font-size:10px" name="account_invoice_line_name">
                                             <p style="text-align:left;"><span t-field="line.name"/> </p>
                                         </td>
                                         <td class="text-right">
-                                            <span t-field="line.product_uom_qty"/>
+                                            <span t-esc="'%.2f'% line.product_uom_qty"/>
                                             <span t-field="line.product_uom" groups="uom.group_uom"/>
                                         </td>
                                         <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
-                                            <span t-field="line.price_unit" t-options="{&quot;widget&quot;: &quot;float&quot;, &quot;precision&quot;: 2}"/>                                        </td>
+                                            <span t-field="line.price_unit" t-options="{&quot;widget&quot;: &quot;float&quot;, &quot;precision&quot;: 2}"/> €                                        </td>
                                         <td name="td_taxes" class="text-right">
                                             <span t-esc="', '.join(map(lambda x: (x.description or x.name), line.tax_id))"/>
                                         </td>
@@ -309,7 +308,7 @@
                                     </t>
                                     <t t-if="line.display_type == 'line_note'">
                                         <td colspan="99">
-                                            <p  style="text-align:left;color:#1b1475">
+                                            <p style="text-align:left;color:#1b1475">
 
                                                 <span t-field="line.name"/></p>
                                         </td>
@@ -323,7 +322,7 @@
                     </table>
                     <div class="clearfix"/>
                     <div style="text-align:right;">
-
+                    <br/>
                         <table class="table-border" style="float:right;width:50%;font-family: VisbyCFRoundedDB;border-color:white">
                             <thead style="border-bottom:3pt solid #1b1475;border-top:3pt solid #1b1475;">
                                 <t t-set="colspan" t-value="9"/>
@@ -347,11 +346,11 @@
 
                                 </tr>
                                 <tr style="border-color:white">
-                                    <td >
+                                    <td>
                                         <strong style="color:#1b1475">TOTAL</strong>
                                     </td>
 
-                                    <td >
+                                    <td>
                                         <span>
                                             <strong><span t-field="doc.amount_total"/></strong>
                                         </span>
@@ -425,7 +424,7 @@
                         Autorizo a KONERY EFICIENCIA ENERGÉTICA S.L., para que me remita información comercial que pueda ser de mi interés
                         , al objeto de mantenerme informado sobre sus servicios y/o productos.
                     </p>
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -434,12 +433,12 @@
                         </tbody>
                     </table>
 
-                    <p style="font-family: Open Sans;text-align: justify;font-size:11px;margin-left:5%">
+                    <p style="tfont-family: Open Sans;ext-align: justify;font-size:11px;margin-left:5%">
                         Autorizo a KONERY EFICIENCIA ENERGÉTICA S.L. para poder utilizar el logotipo y marca del cliente,
                         en los documentos de carácter técnico, memorias o documentaciones que sean necesarias para uso técnico,
                         comercial u objeto de los trabajos encargados por el cliente.
                     </p>
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -453,7 +452,7 @@
                         en las presentaciones o publicaciones en la web de Konery y/ o redes sociales.
                     </p>
 
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -468,7 +467,7 @@
                         su posterior difusión en la página web y/o redes sociales de Konery
                     </p>
 
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -476,6 +475,7 @@
                             </tr>
                         </tbody>
                     </table>
+
 
                 </t>
             </t>
@@ -509,14 +509,13 @@
                             <table class="table-border" style="float:right;width:100%;font-family: VisbyCFRoundedDB;border-color:white;">
                                 <thead style="font-size:17px;">
                                     <tr>
-                                        <th t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
-                                            style="padding-top: 10px; padding-bottom:10px;padding-left: 20px;text-align:right;" class="text-left">
+                                        <th t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}" style="padding-top: 10px; padding-bottom:10px;padding-left: 20px;text-align:right;" class="text-left">
 
                                         </th>
                                         <th>
                                             <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
                                                 <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
-                                                <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;" >PRESUPUESTO: </span>
+                                                <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">PRESUPUESTO: </span>
                                             </t>
                                             <t style="font-weight: 600" t-if="env.context.get('proforma', False) or is_pro_forma">
                                                 <span>Pro-Forma Invoice # </span>
@@ -567,7 +566,7 @@
                                         </td>
                                         <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
                                             <t t-if="doc.date_order">
-                                                <strong><span  t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
+                                                <strong><span t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
                                             </t>
                                         </td>
                                     </tr>
@@ -575,10 +574,10 @@
                                     <!--Agregamos un salto de linea-->
                                     <tr>
                                         <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                         <td style="padding-left:10px;line-height: 15px;text-align:left;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                     </tr>
 
@@ -619,10 +618,10 @@
                                     <!--Agregamos un salto de linea-->
                                     <tr>
                                         <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                         <td style="padding-left:10px;line-height: 15px;text-align:left;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -633,14 +632,13 @@
                     <div class="page"/>
                     <t t-set="display_discount" t-value="any([l.discount for l in doc.order_line])"/>
                     <div class="clearfix"/>
-                    <br/>
+                    <br/><br/>
                     <table class="table-border" style="float:right;width:90%;font-family: VisbyCFRoundedDB;font-size:12px;border-color:white;">
                         <thead>
                             <tr style="border-bottom:3pt solid ;border-top:3pt solid ;color:#1b1475;">
                                 <!-- TODO: remove in master -->
                                 <t t-set="colspan" t-value="5"/>
-                                <th style="padding-top: 10px; padding-bottom:10px;text-align:left;" t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
-                                    class="text-left">DESCRIPCIÓN</th>
+                                <th style="padding-top: 10px; padding-bottom:10px;text-align:left;" t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}" class="text-left">DESCRIPCIÓN</th>
                                 <th class="text-right" style="text-align:left;">CANTIDAD</th>
                                 <th class="text-right" style="text-align:left;">PRECIO UNIDAD</th>
                                 <th t-if="display_discount" style="text-align:left;" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
@@ -667,15 +665,15 @@
                                 <tr style="font-family: Open Sans;" t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''">
                                     <t t-if="not line.display_type" name="account_invoice_line_accountable">
 
-                                        <td  style="font-weight: 500;width: 50%;line-height: 15px;font-size:10px" name="account_invoice_line_name">
+                                        <td style="font-weight: 500;width: 50%;line-height: 15px;font-size:10px" name="account_invoice_line_name">
                                             <p style="text-align:left;"><span t-field="line.name"/> </p>
                                         </td>
                                         <td class="text-right">
-                                            <span t-field="line.product_uom_qty"/>
+                                            <span t-esc="'%.2f'% line.product_uom_qty"/>
                                             <span t-field="line.product_uom" groups="uom.group_uom"/>
                                         </td>
                                         <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
-                                            <span t-field="line.price_unit" t-options="{&quot;widget&quot;: &quot;float&quot;, &quot;precision&quot;: 2}"/>
+                                            <span t-field="line.price_unit" t-options="{&quot;widget&quot;: &quot;float&quot;, &quot;precision&quot;: 2}"/> €
                                         </td>
 
                                         <td t-if="display_discount" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
@@ -696,7 +694,7 @@
                                     </t>
                                     <t t-if="line.display_type == 'line_note'">
                                         <td colspan="99">
-                                            <p  style="text-align:left;color:#1b1475">
+                                            <p style="text-align:left;color:#1b1475">
 
                                                 <span t-field="line.name"/></p>
                                         </td>
@@ -710,7 +708,7 @@
                     </table>
                     <div class="clearfix"/>
                     <div style="text-align:right;">
-
+                    <br/>
                         <table class="table-border" style="float:right;width:50%;font-family: VisbyCFRoundedDB;border-color:white;">
                             <thead style="border-bottom:3pt solid #1b1475;border-top:3pt solid #1b1475;">
                                 <t t-set="colspan" t-value="9"/>
@@ -734,11 +732,11 @@
 
                                 </tr>-->
                                 <tr>
-                                    <td >
+                                    <td>
                                         <strong style="color:#1b1475">TOTAL</strong>
                                     </td>
 
-                                    <td >
+                                    <td>
                                         <span>
                                             <strong><span t-field="doc.amount_untaxed"/></strong>
                                         </span>
@@ -812,7 +810,7 @@
                         Autorizo a KONERY EFICIENCIA ENERGÉTICA S.L., para que me remita información comercial que pueda ser de mi interés
                         , al objeto de mantenerme informado sobre sus servicios y/o productos.
                     </p>
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -826,7 +824,7 @@
                         en los documentos de carácter técnico, memorias o documentaciones que sean necesarias para uso técnico,
                         comercial u objeto de los trabajos encargados por el cliente.
                     </p>
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -840,7 +838,7 @@
                         en las presentaciones o publicaciones en la web de Konery y/ o redes sociales.
                     </p>
 
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -855,7 +853,7 @@
                         su posterior difusión en la página web y/o redes sociales de Konery
                     </p>
 
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -894,14 +892,13 @@
                             <table class="table-border" style="float:right;width:100%;font-family: VisbyCFRoundedDB;border-color:white;">
                                 <thead style="font-size:17px;">
                                     <tr>
-                                        <th t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
-                                            style="padding-top: 10px; padding-bottom:10px;padding-left: 20px;text-align:right;" class="text-left">
+                                        <th t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}" style="padding-top: 10px; padding-bottom:10px;padding-left: 20px;text-align:right;" class="text-left">
 
                                         </th>
                                         <th>
                                             <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
                                                 <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
-                                                <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;" >PRESUPUESTO: </span>
+                                                <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">PRESUPUESTO: </span>
                                             </t>
                                             <t style="font-weight: 600" t-if="env.context.get('proforma', False) or is_pro_forma">
                                                 <span>Pro-Forma Invoice # </span>
@@ -952,7 +949,7 @@
                                         </td>
                                         <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
                                             <t t-if="doc.date_order">
-                                                <strong><span  t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
+                                                <strong><span t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></strong>
                                             </t>
                                         </td>
                                     </tr>
@@ -960,10 +957,10 @@
                                     <!--Agregamos un salto de linea-->
                                     <tr>
                                         <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                         <td style="padding-left:10px;line-height: 15px;text-align:left;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                     </tr>
 
@@ -1004,10 +1001,10 @@
                                     <!--Agregamos un salto de linea-->
                                     <tr>
                                         <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                         <td style="padding-left:10px;line-height: 15px;text-align:left;">
-                                            <br></br>
+                                            <br/>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1018,16 +1015,16 @@
                     <div class="page"/>
                     <t t-set="display_discount" t-value="any([l.discount for l in doc.order_line])"/>
                     <div class="clearfix"/>
+                    <br/><br/>
                     <table class="table-border" style="float:right;width:90%;font-family: VisbyCFRoundedDB;font-size:12px;border-color:white;">
                         <thead>
                             <tr style="border-bottom:3pt solid ;border-top:3pt solid ;color:#1b1475;">
                                 <!-- TODO: remove in master -->
                                 <t t-set="colspan" t-value="5"/>
-                                <th t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
-                                    style="padding-top: 10px; padding-bottom:10px;text-align:left;" class="text-left">DESCRIPCIÓN</th>
+                                <th t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}" style="padding-top: 10px; padding-bottom:10px;text-align:left;" class="text-left">DESCRIPCIÓN</th>
                                 <th t-attf-class="text-end {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">CANTIDAD</th>
 
-                                <th t-if="display_discount"  style="text-align:left;" class="text-end" groups="sale.group_discount_per_so_line">
+                                <th t-if="display_discount" style="text-align:left;" class="text-end" groups="sale.group_discount_per_so_line">
                                     <span>Disc.(%)</span>
                                     <!-- TODO: remove in master -->
                                     <t t-set="colspan" t-value="colspan+1"/>
@@ -1052,12 +1049,11 @@
                                 <tr style="font-family: Open Sans;" t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''">
                                     <t t-if="not line.display_type" name="account_invoice_line_accountable">
 
-                                        <td t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
-                                            style="font-weight: 500;line-height: 15px;font-size:10px" name="account_invoice_line_name">
+                                        <td t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}" style="font-weight: 500;line-height: 15px;font-size:10px" name="account_invoice_line_name">
                                             <p style="text-align:left;"><span t-field="line.name"/></p>
                                         </td>
                                         <td t-attf-class="text-end {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
-                                            <span t-field="line.product_uom_qty"/>
+                                            <span t-esc="'%.2f'% line.product_uom_qty"/>
                                             <span t-field="line.product_uom" groups="uom.group_uom"/>
                                         </td>
 
@@ -1077,7 +1073,7 @@
                                     </t>
                                     <t t-if="line.display_type == 'line_note'">
                                         <td colspan="99">
-                                            <p  style="text-align:left;color:#1b1475">
+                                            <p style="text-align:left;color:#1b1475">
 
                                                 <span t-field="line.name"/></p>
                                         </td>
@@ -1091,7 +1087,7 @@
                     </table>
                     <div class="clearfix"/>
                     <div style="text-align:right;">
-
+                    <br/>
                         <table class="table-border" style="float:right;width:50%;font-family: VisbyCFRoundedDB;border-color:white;">
                             <thead style="border-bottom:3pt solid #1b1475;border-top:3pt solid #1b1475;">
                                 <t t-set="colspan" t-value="9"/>
@@ -1115,11 +1111,11 @@
 
                                 </tr>-->
                                 <tr>
-                                    <td >
+                                    <td>
                                         <strong style="color:#1b1475">TOTAL</strong>
                                     </td>
 
-                                    <td >
+                                    <td>
                                         <span>
                                             <strong><span t-field="doc.amount_untaxed"/></strong>
                                         </span>
@@ -1194,7 +1190,7 @@
                         Autorizo a KONERY EFICIENCIA ENERGÉTICA S.L., para que me remita información comercial que pueda ser de mi interés
                         , al objeto de mantenerme informado sobre sus servicios y/o productos.
                     </p>
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -1203,12 +1199,12 @@
                         </tbody>
                     </table>
 
-                    <p style="font-family: Open Sans;text-align: justify;font-size:11px;margin-left:5%">
+                    <p style="tfont-family: Open Sans;ext-align: justify;font-size:11px;margin-left:5%">
                         Autorizo a KONERY EFICIENCIA ENERGÉTICA S.L. para poder utilizar el logotipo y marca del cliente,
                         en los documentos de carácter técnico, memorias o documentaciones que sean necesarias para uso técnico,
                         comercial u objeto de los trabajos encargados por el cliente.
                     </p>
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -1222,7 +1218,7 @@
                         en las presentaciones o publicaciones en la web de Konery y/ o redes sociales.
                     </p>
 
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -1237,7 +1233,7 @@
                         su posterior difusión en la página web y/o redes sociales de Konery
                     </p>
 
-                    <table  class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%">
+                    <table class="table" style="font-family: Open Sans;border: 1px solid;border-top: 1px solid;margin-left:5%;margin-:5%;width:95%">
                         <tbody style="border: 1px solid;border-top: 1px solid;">
                             <tr style="border: 1px solid;border-top: 1px solid;">
                                 <td style="border: 1px solid;border-top: 1px solid;"> Si </td>
@@ -1245,6 +1241,7 @@
                             </tr>
                         </tbody>
                     </table>
+
 
                 </t>
             </t>
