@@ -5,8 +5,8 @@ class FleetVehicleLogContract(models.Model):
     _inherit = 'fleet.vehicle.log.contract'
 
     contract_km = fields.Integer('Contracted km', store=True, copy=True)
-    additional_km_cost = fields.Monetary('Additional km', store=True, copy=True)
-    returned_km_cost = fields.Monetary('Returned km', store=True, copy=True)
+    additional_km_cost = fields.Float('Additional km', store=True, copy=True, digits='Product Price')
+    returned_km_cost = fields.Float('Returned km', store=True, copy=True, digits='Product Price')
 
     def _get_pending_contract_km(self):
         self.pending_km = self.contract_km - self.vehicle_id.odometer
