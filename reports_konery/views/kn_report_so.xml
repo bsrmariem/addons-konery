@@ -633,7 +633,8 @@
                     <t t-set="display_discount" t-value="any([l.discount for l in doc.order_line])"/>
                     <div class="clearfix"/>
                     <br/><br/>
-                    <table class="table-border" style="float:right;width:90%;font-family: VisbyCFRoundedDB;font-size:12px;border-color:white;">
+                    <table class="table-border" style="float:right;width:90%;font-family: VisbyCFRoundedDB;font-size:12px;border-color:transparent;">
+
                         <thead>
                             <tr style="border-bottom:3pt solid ;border-top:3pt solid ;color:#1b1475;">
                                 <!-- TODO: remove in master -->
