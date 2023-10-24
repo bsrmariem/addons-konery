@@ -23,7 +23,6 @@
         "views/kn_report_so.xml",
         "views/st_report_so.xml",
         "views/kn_report_po.xml",
-        "views/kn_report_po.xml",
         "views/templates.xml",
         "views/ir_action_report.xml",
         "views/form_views.xml",
