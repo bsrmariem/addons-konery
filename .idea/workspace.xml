@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="sale order crm team_id">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="add std modules">
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/README.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/__manifest__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/i18n/es_ES.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/models/website_menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/readme/CONTRIBUTORS.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/readme/DESCRIPTION.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/readme/USAGE.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/security/record_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/static/description/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/static/description/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/tests/test_menu_perm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website_menu_permission/views/website_views.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +49,14 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/custom_konery/security" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/custom_konery/security" />
       <recent name="$PROJECT_DIR$/project_konery_pnt/security" />
       <recent name="$PROJECT_DIR$/project_konery" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/fleet_extended" />
     </key>
   </component>
@@ -77,13 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
-    </task>
-    <task id="LOCAL-00526" summary="helpdesk operator group">
-      <created>1692144111962</created>
-      <option name="number" value="00526" />
-      <option name="presentableId" value="LOCAL-00526" />
-      <option name="project" value="LOCAL" />
-      <updated>1692144111962</updated>
     </task>
     <task id="LOCAL-00527" summary="helpdesk operator group">
       <created>1692144238636</created>
@@ -421,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698162217370</updated>
     </task>
-    <option name="localTasksCounter" value="575" />
+    <task id="LOCAL-00575" summary="add std modules">
+      <created>1698712883801</created>
+      <option name="number" value="00575" />
+      <option name="presentableId" value="LOCAL-00575" />
+      <option name="project" value="LOCAL" />
+      <updated>1698712883801</updated>
+    </task>
+    <option name="localTasksCounter" value="576" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -436,7 +450,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="license warning" />
     <MESSAGE value="gas marketeer fields" />
     <MESSAGE value="electricity true" />
     <MESSAGE value="bug marketEer" />
@@ -461,6 +474,18 @@
     <MESSAGE value="project permissions to custom_konery" />
     <MESSAGE value="fleet contract decimals" />
     <MESSAGE value="sale order crm team_id" />
-    <option name="LAST_COMMIT_MESSAGE" value="sale order crm team_id" />
+    <MESSAGE value="add std modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="add std modules" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
