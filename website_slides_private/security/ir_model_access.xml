@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<odoo>
+
+  <!-- Modify empty group value to existing access permission (slides): -->
+  <record id="website_slides.access_slide_slide_all" model="ir.model.access">
+    <field name="name">slide.slide.all</field>
+    <field name="model_id" eval="ref('website_slides.model_slide_slide')" />
+    <field name="perm_read" eval="True"/>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_write" eval="False"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="group_id" eval="ref('base.group_user')"/>
+  </record>
+
+  <!-- Modify empty group value to existing access permission (channel): -->
+  <record id="website_slides.access_slide_channel_all" model="ir.model.access">
+    <field name="name">slide.channel.all</field>
+    <field name="model_id" eval="ref('website_slides.model_slide_channel')" />
+    <field name="perm_read" eval="True"/>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_write" eval="False"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="group_id" eval="ref('base.group_user')"/>
+  </record>
+
+</odoo>

@@ -78,13 +78,6 @@
       <option name="presentableId" value="Default" />
       <updated>1678809905432</updated>
     </task>
-    <task id="LOCAL-00525" summary="helpdesk operator group">
-      <created>1692144005951</created>
-      <option name="number" value="00525" />
-      <option name="presentableId" value="LOCAL-00525" />
-      <option name="project" value="LOCAL" />
-      <updated>1692144005951</updated>
-    </task>
     <task id="LOCAL-00526" summary="helpdesk operator group">
       <created>1692144111962</created>
       <option name="number" value="00526" />
@@ -421,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698063471585</updated>
     </task>
-    <option name="localTasksCounter" value="574" />
+    <task id="LOCAL-00574" summary="sale order crm team_id">
+      <created>1698162217370</created>
+      <option name="number" value="00574" />
+      <option name="presentableId" value="LOCAL-00574" />
+      <option name="project" value="LOCAL" />
+      <updated>1698162217370</updated>
+    </task>
+    <option name="localTasksCounter" value="575" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
