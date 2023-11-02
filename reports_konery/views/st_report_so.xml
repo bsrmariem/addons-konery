@@ -170,6 +170,9 @@
                     <div class="clearfix"/>
                     <table style="float:right;width:100%;font-family: urbanist;font-size:12px;border-color:transparent;">
                         <thead>
+                            <tr style="border-bottom:3pt solid ;color:#1b1475;">
+                                <th style="padding-top: 10px; padding-bottom:10px;text-align:left;" class="text-left"/>
+                            </tr>
                             <tr style="border-bottom:5pt solid #3C2186;border-top:5pt solid #3C2186;">
                                 <!-- TODO: remove in master -->
                                 <t t-set="colspan" t-value="5"/>
@@ -442,6 +445,9 @@
                     <div class="clearfix"/>
                     <table style="float:right;width:100%;font-family: urbanist;font-size:12px;border-color:transparent;">
                         <thead>
+                            <tr style="border-bottom:3pt solid ;color:#1b1475;">
+                                <th style="padding-top: 10px; padding-bottom:10px;text-align:left;" class="text-left"/>
+                            </tr>
                             <tr style="border-bottom:5pt solid #3C2186;border-top:5pt solid #3C2186;">
                                 <!-- TODO: remove in master -->
                                 <t t-set="colspan" t-value="4"/>
