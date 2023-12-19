@@ -29,4 +29,4 @@ class ResPartner(models.Model):
             if (solarteam_invoices.ids) or (solarteam_sales.ids):
                 solarteam_customer = True
             record['solarteam_customer'] = solarteam_customer
-    solarteam_customer = fields.Boolean('Konery customer', store=True, compute=get_solarteam_customer)
+    solarteam_customer = fields.Boolean('SolarTeam customer', store=True, compute=get_solarteam_customer)

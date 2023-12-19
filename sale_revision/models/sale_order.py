@@ -15,12 +15,12 @@ class SaleOrder(models.Model):
                                     store=True,
                                     context={'active_test': False}
                                     )
-    revision_count = fields.Integer(string="Revisions",
+    revision_count = fields.Integer(string="Revision count",
                                     compute="get_revisions_count",
                                     store=False
                                     )
     revision_messages = fields.Many2many('mail.message',
-                                         string="Messages",
+                                         string="R.Messages",
                                          compute="get_revision_messages",
                                          store=False
                                          )
