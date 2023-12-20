@@ -9,15 +9,18 @@ class FleetVehicleLogContract(models.Model):
     returned_km_cost = fields.Float('Returned km', store=True, copy=True, digits='Product Price')
 
     def _get_pending_contract_km(self):
-        self.pending_km = self.contract_km - self.vehicle_id.odometer
+        for record in self:
+            record['pending_km'] = record.contract_km - record.vehicle_id.odometer
     pending_km = fields.Integer('Pending km', store=False, compute='_get_pending_contract_km')
 
     def _get_annual_estimated_km(self):
-        dif = self.expiration_date - self.start_date
-        self.annual_estimated_km = self.contract_km / ( dif.days / 365 )
+        for record in self:
+            dif = record.expiration_date - record.start_date
+            record['annual_estimated_km'] = record.contract_km / ( dif.days / 365 )
     annual_estimated_km = fields.Integer('Annual estimated km', store=False, copy=True, compute='_get_annual_estimated_km')
 
     def _get_annual_consumed_km(self):
-        dif = date.today() - self.start_date
-        self.annual_consumed_km = self.vehicle_id.odometer / ( dif.days / 365 )
+        for record in self:
+            dif = date.today() - record.start_date
+            record['annual_consumed_km'] = record.vehicle_id.odometer / ( dif.days / 365 )
     annual_consumed_km = fields.Integer('Annual consumed km', store=False, compute='_get_annual_consumed_km')
