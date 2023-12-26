@@ -222,8 +222,7 @@
                                 <th name="th_price_unit" t-if="display_discount" style="text-align:left;" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
                                     <span>Disc.%</span>
                                 </th>
-                                <th name="th_taxes" class="text-right" style="text-align:left;"><span>Taxes</span></th>
-                                <th class="text-right" style="text-align:left;">
+c                                <th class="text-right" style="text-align:left;">
                                     <span groups="account.group_show_line_subtotals_tax_excluded">Amount</span>
                                     <span groups="account.group_show_line_subtotals_tax_included">Total Price</span>
                                 </th>
@@ -239,7 +238,7 @@
 
                                 <tr style="font-family: Open Sans;" t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''">
                                     <t t-if="line.display_type == 'product'" name="account_invoice_line_accountable">
-                                        <td style="font-weight: 500;width: 50%;line-height: 15px;font-size:10px" name="account_invoice_line_name">
+                                        <td style="font-weight: 500;width: 40%;line-height: 15px;font-size:10px" name="account_invoice_line_name">
                                             <span t-field="line.name" t-options="{'widget': 'text'}"/></td>
                                         <td class="text-right">
                                             <span t-esc="'%.2f'% line.quantity"/>
@@ -500,7 +499,7 @@
                                 <th name="th_price_unit" t-if="display_discount" style="text-align:left;" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
                                     <span>Disc.%</span>
                                 </th>
-                                <th name="th_taxes" class="text-right" style="text-align:left;"><span>Taxes</span></th>
+                                <th name="th_taxes" class="text-center" style="text-align:center;"><span>Taxes</span></th>
                                 <th class="text-right" style="text-align:left;">
                                     <span groups="account.group_show_line_subtotals_tax_excluded">Amount</span>
                                     <span groups="account.group_show_line_subtotals_tax_included">Total Price</span>
@@ -517,7 +516,7 @@
 
                                 <tr style="font-family: Open Sans;" t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''">
                                     <t t-if="line.display_type == 'product'" name="account_invoice_line_accountable">
-                                        <td style="font-weight: 500;width: 50%;line-height: 15px;font-size:10px" name="account_invoice_line_name">
+                                        <td style="font-weight: 500;width: 40%;line-height: 15px;font-size:10px" name="account_invoice_line_name">
                                             <span t-field="line.name" t-options="{'widget': 'text'}"/></td>
                                         <td class="text-right">
                                             <span t-esc="'%.2f'% line.quantity"/>
@@ -777,7 +776,7 @@
                                 <th name="th_price_unit" t-if="display_discount" style="text-align:left;" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
                                     <span>Disc.%</span>
                                 </th>
-                                <th name="th_taxes" class="text-right" style="text-align:left;"><span>Taxes</span></th>
+                                <th name="th_taxes" class="text-center" style="text-align:center;"><span>Taxes</span></th>
                                 <th class="text-right" style="text-align:left;">
                                     <span groups="account.group_show_line_subtotals_tax_excluded">Amount</span>
                                     <span groups="account.group_show_line_subtotals_tax_included">Total Price</span>
@@ -794,7 +793,7 @@
 
                                 <tr style="font-family: Open Sans;" t-att-class="'font-italic o_line_note' if line.display_type == 'line_note' else ''">
                                     <t t-if="line.display_type == 'product'" name="account_invoice_line_accountable">
-                                        <td style="font-weight: 500;width: 50%;line-height: 15px;font-size:10px" name="account_invoice_line_name">
+                                        <td style="font-weight: 500;width: 40%;line-height: 15px;font-size:10px" name="account_invoice_line_name">
                                             <span t-field="line.name" t-options="{'widget': 'text'}"/></td>
                                         <td class="text-right">
                                             <span t-esc="'%.2f'% line.quantity"/>
