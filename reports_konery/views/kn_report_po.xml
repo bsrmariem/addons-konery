@@ -294,7 +294,7 @@
                                     <br/>
                                     <br/>
                                 </div>
-                                <div t-if="o.picking_type_id.warehouse_id.partner_id" style="text-align:left;white-space: nowrap;font-size:14px;line-height: 18px;font-family: VisbyCFRoundedDB;">
+                                <!--<div t-if="o.picking_type_id.warehouse_id.partner_id" style="text-align:left;white-space: nowrap;font-size:14px;line-height: 18px;font-family: VisbyCFRoundedDB;">
                                     <span style="font-weight:900;color:#1b1475;text-align:left;">Dirección entrega:</span><br/>
                                     <strong><span t-field="o.picking_type_id.warehouse_id.partner_id" style="text-align:left;color:#1b1475;font-weight: 900;white-space: nowrap;line-height: 18px;"/></strong><br/>
                                     <span t-field="o.picking_type_id.warehouse_id.partner_id.street"/><br/>
@@ -303,7 +303,7 @@
                                     CIF: <span t-field="o.picking_type_id.warehouse_id.partner_id.vat"/>
                                     <br/>
                                     <br/>
-                                </div>
+                                </div>-->
                             </div>
 
                             <div style="float:right;text-align:left;margin-right:2%;">
