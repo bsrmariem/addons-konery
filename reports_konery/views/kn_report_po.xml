@@ -22,6 +22,17 @@
                                     <br/>
                                     <br/>
                                 </div>
+                                <div t-if="o.picking_type_id.warehouse_id.partner_id" style="text-align:left;white-space: nowrap;font-size:14px;line-height: 18px;font-family: VisbyCFRoundedDB;">
+                                    <strong><span style="text-align:left;color:#1b1475;font-weight: 900;white-space: nowrap;font-size:16px;line-height: 18px;">
+                                        Dirección entrega</span></strong><br/>
+                                    <strong><span t-field="o.picking_type_id.warehouse_id.partner_id" style="text-align:left;color:#1b1475;font-weight: 900;white-space: nowrap;line-height: 18px;"/></strong><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.street"/><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.street2"/><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.zip"/> <span t-field="o.picking_type_id.warehouse_id.partner_id.state_id"/>,<span t-field="o.picking_type_id.warehouse_id.partner_id.country_id"/><br/>
+                                    CIF: <span t-field="o.picking_type_id.warehouse_id.partner_id.vat"/>
+                                    <br/>
+                                    <br/>
+                                </div>
                             </div>
 
                             <div style="float:right;text-align:left;margin-right:2%;">
@@ -281,6 +292,17 @@
                                     <span t-field="o.company_id.street2"/><br/>
                                     <span t-field="o.company_id.zip"/> <span t-field="o.company_id.state_id"/>,<span t-field="o.company_id.country_id"/><br/>
                                     CIF: <span t-field="o.company_id.vat"/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                                <div t-if="o.picking_type_id.warehouse_id.partner_id" style="text-align:left;white-space: nowrap;font-size:14px;line-height: 18px;font-family: VisbyCFRoundedDB;">
+                                    <strong><span style="text-align:left;color:#1b1475;font-weight: 900;white-space: nowrap;font-size:16px;line-height: 18px;">
+                                        Dirección entrega</span></strong><br/>
+                                    <strong><span t-field="o.picking_type_id.warehouse_id.partner_id" style="text-align:left;color:#1b1475;font-weight: 900;white-space: nowrap;line-height: 18px;"/></strong><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.street"/><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.street2"/><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.zip"/> <span t-field="o.picking_type_id.warehouse_id.partner_id.state_id"/>,<span t-field="o.picking_type_id.warehouse_id.partner_id.country_id"/><br/>
+                                    CIF: <span t-field="o.picking_type_id.warehouse_id.partner_id.vat"/>
                                     <br/>
                                     <br/>
                                 </div>
