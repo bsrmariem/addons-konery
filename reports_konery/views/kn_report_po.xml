@@ -58,7 +58,7 @@
                                                 </t>
                                                 <t t-if="o.state in ['sent', 'to approve']">
                                                     <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
-                                                    <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">EDIDO DE COMPRA: </span>
+                                                    <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">PEDIDO DE COMPRA: </span>
                                                 </t>
                                                 <t t-if="o.state in ['purchase', 'done']">
                                                     <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->

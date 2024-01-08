@@ -222,7 +222,8 @@
                                 <th name="th_price_unit" t-if="display_discount" style="text-align:left;" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
                                     <span>Disc.%</span>
                                 </th>
-c                                <th class="text-right" style="text-align:left;">
+                                <th name="th_taxes" class="text-center" style="text-align:center;"><span>Taxes</span></th>
+                                <th class="text-right" style="text-align:left;">
                                     <span groups="account.group_show_line_subtotals_tax_excluded">Amount</span>
                                     <span groups="account.group_show_line_subtotals_tax_included">Total Price</span>
                                 </th>
@@ -799,7 +800,7 @@ c                                <th class="text-right" style="text-align:left;"
                                             <span t-esc="'%.2f'% line.quantity"/>
                                             <span t-field="line.product_uom_id" groups="uom.group_uom"/>
                                         </td>
-                                         <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+                                        <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
                                             <span t-field="line.price_unit" t-options="{&quot;widget&quot;: &quot;float&quot;, &quot;precision&quot;: 2}"/> €
                                         </td>
                                         <td t-if="display_discount" t-attf-class="text-end {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
