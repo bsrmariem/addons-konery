@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="add websitemenuperm">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2N0nXM4wQ45sFsTSVfI2TngmDka" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/custom_konery/security" />
+      <recent name="$PROJECT_DIR$/project_konery_pnt/security" />
+      <recent name="$PROJECT_DIR$/project_konery" />
+      <recent name="$PROJECT_DIR$/fleet_extended" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3954191-fa9e-4dac-8e4b-1d379e306680" name="Changes" comment="power supply v0" />
+      <created>1678809905432</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678809905432</updated>
+    </task>
+    <task id="LOCAL-00528" summary="helpdesk operator group">
+      <created>1692144316808</created>
+      <option name="number" value="00528" />
+      <option name="presentableId" value="LOCAL-00528" />
+      <option name="project" value="LOCAL" />
+      <updated>1692144316808</updated>
+    </task>
+    <task id="LOCAL-00529" summary="helpdesk operator group">
+      <created>1692144678400</created>
+      <option name="number" value="00529" />
+      <option name="presentableId" value="LOCAL-00529" />
+      <option name="project" value="LOCAL" />
+      <updated>1692144678400</updated>
+    </task>
+    <task id="LOCAL-00530" summary="helpdesk operator group">
+      <created>1692144937251</created>
+      <option name="number" value="00530" />
+      <option name="presentableId" value="LOCAL-00530" />
+      <option name="project" value="LOCAL" />
+      <updated>1692144937251</updated>
+    </task>
+    <task id="LOCAL-00531" summary="helpdesk operator group">
+      <created>1692144983815</created>
+      <option name="number" value="00531" />
+      <option name="presentableId" value="LOCAL-00531" />
+      <option name="project" value="LOCAL" />
+      <updated>1692144983815</updated>
+    </task>
+    <task id="LOCAL-00532" summary="helpdesk operator group">
+      <created>1692145668673</created>
+      <option name="number" value="00532" />
+      <option name="presentableId" value="LOCAL-00532" />
+      <option name="project" value="LOCAL" />
+      <updated>1692145668673</updated>
+    </task>
+    <task id="LOCAL-00533" summary="helpdesk operator group">
+      <created>1692147575439</created>
+      <option name="number" value="00533" />
+      <option name="presentableId" value="LOCAL-00533" />
+      <option name="project" value="LOCAL" />
+      <updated>1692147575439</updated>
+    </task>
+    <task id="LOCAL-00534" summary="helpdesk operator group">
+      <created>1692147632599</created>
+      <option name="number" value="00534" />
+      <option name="presentableId" value="LOCAL-00534" />
+      <option name="project" value="LOCAL" />
+      <updated>1692147632599</updated>
+    </task>
+    <task id="LOCAL-00535" summary="helpdesk operator group">
+      <created>1692147703493</created>
+      <option name="number" value="00535" />
+      <option name="presentableId" value="LOCAL-00535" />
+      <option name="project" value="LOCAL" />
+      <updated>1692147703493</updated>
+    </task>
+    <task id="LOCAL-00536" summary="helpdesk operator group">
+      <created>1692170950016</created>
+      <option name="number" value="00536" />
+      <option name="presentableId" value="LOCAL-00536" />
+      <option name="project" value="LOCAL" />
+      <updated>1692170950016</updated>
+    </task>
+    <task id="LOCAL-00537" summary="helpdesk operator group">
+      <created>1692171410657</created>
+      <option name="number" value="00537" />
+      <option name="presentableId" value="LOCAL-00537" />
+      <option name="project" value="LOCAL" />
+      <updated>1692171410657</updated>
+    </task>
+    <task id="LOCAL-00538" summary="bug letra">
+      <created>1692172063857</created>
+      <option name="number" value="00538" />
+      <option name="presentableId" value="LOCAL-00538" />
+      <option name="project" value="LOCAL" />
+      <updated>1692172063857</updated>
+    </task>
+    <task id="LOCAL-00539" summary="bug letra">
+      <created>1692172681995</created>
+      <option name="number" value="00539" />
+      <option name="presentableId" value="LOCAL-00539" />
+      <option name="project" value="LOCAL" />
+      <updated>1692172681995</updated>
+    </task>
+    <task id="LOCAL-00540" summary="bug letra">
+      <created>1692177449161</created>
+      <option name="number" value="00540" />
+      <option name="presentableId" value="LOCAL-00540" />
+      <option name="project" value="LOCAL" />
+      <updated>1692177449161</updated>
+    </task>
+    <task id="LOCAL-00541" summary="bug letra">
+      <created>1692178595200</created>
+      <option name="number" value="00541" />
+      <option name="presentableId" value="LOCAL-00541" />
+      <option name="project" value="LOCAL" />
+      <updated>1692178595200</updated>
+    </task>
+    <task id="LOCAL-00542" summary="bug letra">
+      <created>1692186349016</created>
+      <option name="number" value="00542" />
+      <option name="presentableId" value="LOCAL-00542" />
+      <option name="project" value="LOCAL" />
+      <updated>1692186349016</updated>
+    </task>
+    <task id="LOCAL-00543" summary="customkon">
+      <created>1692224408397</created>
+      <option name="number" value="00543" />
+      <option name="presentableId" value="LOCAL-00543" />
+      <option name="project" value="LOCAL" />
+      <updated>1692224408397</updated>
+    </task>
+    <task id="LOCAL-00544" summary="upd crm-leads">
+      <created>1693384962553</created>
+      <option name="number" value="00544" />
+      <option name="presentableId" value="LOCAL-00544" />
+      <option name="project" value="LOCAL" />
+      <updated>1693384962553</updated>
+    </task>
+    <task id="LOCAL-00545" summary="upd crm-leads">
+      <created>1693412922669</created>
+      <option name="number" value="00545" />
+      <option name="presentableId" value="LOCAL-00545" />
+      <option name="project" value="LOCAL" />
+      <updated>1693412922669</updated>
+    </task>
+    <task id="LOCAL-00546" summary="upd crm-leads">
+      <created>1693413467867</created>
+      <option name="number" value="00546" />
+      <option name="presentableId" value="LOCAL-00546" />
+      <option name="project" value="LOCAL" />
+      <updated>1693413467867</updated>
+    </task>
+    <task id="LOCAL-00547" summary="upd crm-leads">
+      <created>1693413595451</created>
+      <option name="number" value="00547" />
+      <option name="presentableId" value="LOCAL-00547" />
+      <option name="project" value="LOCAL" />
+      <updated>1693413595451</updated>
+    </task>
+    <task id="LOCAL-00548" summary="upd crm-leads">
+      <created>1693414266244</created>
+      <option name="number" value="00548" />
+      <option name="presentableId" value="LOCAL-00548" />
+      <option name="project" value="LOCAL" />
+      <updated>1693414266244</updated>
+    </task>
+    <task id="LOCAL-00549" summary="bug cabecera provincia">
+      <created>1693581782167</created>
+      <option name="number" value="00549" />
+      <option name="presentableId" value="LOCAL-00549" />
+      <option name="project" value="LOCAL" />
+      <updated>1693581782167</updated>
+    </task>
+    <task id="LOCAL-00550" summary="lead2opp hide create partner">
+      <created>1693926783318</created>
+      <option name="number" value="00550" />
+      <option name="presentableId" value="LOCAL-00550" />
+      <option name="project" value="LOCAL" />
+      <updated>1693926783318</updated>
+    </task>
+    <task id="LOCAL-00551" summary="update access products">
+      <created>1694279411797</created>
+      <option name="number" value="00551" />
+      <option name="presentableId" value="LOCAL-00551" />
+      <option name="project" value="LOCAL" />
+      <updated>1694279411797</updated>
+    </task>
+    <task id="LOCAL-00552" summary="update access products">
+      <created>1694279728185</created>
+      <option name="number" value="00552" />
+      <option name="presentableId" value="LOCAL-00552" />
+      <option name="project" value="LOCAL" />
+      <updated>1694279728186</updated>
+    </task>
+    <task id="LOCAL-00553" summary="update access products">
+      <created>1696264530235</created>
+      <option name="number" value="00553" />
+      <option name="presentableId" value="LOCAL-00553" />
+      <option name="project" value="LOCAL" />
+      <updated>1696264530236</updated>
+    </task>
+    <task id="LOCAL-00554" summary="fleet extended">
+      <created>1696331098108</created>
+      <option name="number" value="00554" />
+      <option name="presentableId" value="LOCAL-00554" />
+      <option name="project" value="LOCAL" />
+      <updated>1696331098109</updated>
+    </task>
+    <task id="LOCAL-00555" summary="fleet extended">
+      <created>1696332398474</created>
+      <option name="number" value="00555" />
+      <option name="presentableId" value="LOCAL-00555" />
+      <option name="project" value="LOCAL" />
+      <updated>1696332398474</updated>
+    </task>
+    <task id="LOCAL-00556" summary="fleet extended">
+      <created>1697208674693</created>
+      <option name="number" value="00556" />
+      <option name="presentableId" value="LOCAL-00556" />
+      <option name="project" value="LOCAL" />
+      <updated>1697208674693</updated>
+    </task>
+    <task id="LOCAL-00557" summary="project v0">
+      <created>1697209304420</created>
+      <option name="number" value="00557" />
+      <option name="presentableId" value="LOCAL-00557" />
+      <option name="project" value="LOCAL" />
+      <updated>1697209304420</updated>
+    </task>
+    <task id="LOCAL-00558" summary="project v0">
+      <created>1697209390774</created>
+      <option name="number" value="00558" />
+      <option name="presentableId" value="LOCAL-00558" />
+      <option name="project" value="LOCAL" />
+      <updated>1697209390774</updated>
+    </task>
+    <task id="LOCAL-00559" summary="project v0">
+      <created>1697209862322</created>
+      <option name="number" value="00559" />
+      <option name="presentableId" value="LOCAL-00559" />
+      <option name="project" value="LOCAL" />
+      <updated>1697209862322</updated>
+    </task>
+    <task id="LOCAL-00560" summary="project v0">
+      <created>1697210068387</created>
+      <option name="number" value="00560" />
+      <option name="presentableId" value="LOCAL-00560" />
+      <option name="project" value="LOCAL" />
+      <updated>1697210068387</updated>
+    </task>
+    <task id="LOCAL-00561" summary="project v0">
+      <created>1697210460032</created>
+      <option name="number" value="00561" />
+      <option name="presentableId" value="LOCAL-00561" />
+      <option name="project" value="LOCAL" />
+      <updated>1697210460032</updated>
+    </task>
+    <task id="LOCAL-00562" summary="project v0">
+      <created>1697210703670</created>
+      <option name="number" value="00562" />
+      <option name="presentableId" value="LOCAL-00562" />
+      <option name="project" value="LOCAL" />
+      <updated>1697210703670</updated>
+    </task>
+    <task id="LOCAL-00563" summary="project v0">
+      <created>1697210808634</created>
+      <option name="number" value="00563" />
+      <option name="presentableId" value="LOCAL-00563" />
+      <option name="project" value="LOCAL" />
+      <updated>1697210808634</updated>
+    </task>
+    <task id="LOCAL-00564" summary="project v0">
+      <created>1697210909733</created>
+      <option name="number" value="00564" />
+      <option name="presentableId" value="LOCAL-00564" />
+      <option name="project" value="LOCAL" />
+      <updated>1697210909733</updated>
+    </task>
+    <task id="LOCAL-00565" summary="project v0">
+      <created>1697210963581</created>
+      <option name="number" value="00565" />
+      <option name="presentableId" value="LOCAL-00565" />
+      <option name="project" value="LOCAL" />
+      <updated>1697210963581</updated>
+    </task>
+    <task id="LOCAL-00566" summary="project v0">
+      <created>1697211403982</created>
+      <option name="number" value="00566" />
+      <option name="presentableId" value="LOCAL-00566" />
+      <option name="project" value="LOCAL" />
+      <updated>1697211403982</updated>
+    </task>
+    <task id="LOCAL-00567" summary="project v0">
+      <created>1697211567669</created>
+      <option name="number" value="00567" />
+      <option name="presentableId" value="LOCAL-00567" />
+      <option name="project" value="LOCAL" />
+      <updated>1697211567669</updated>
+    </task>
+    <task id="LOCAL-00568" summary="project v0">
+      <created>1697211680289</created>
+      <option name="number" value="00568" />
+      <option name="presentableId" value="LOCAL-00568" />
+      <option name="project" value="LOCAL" />
+      <updated>1697211680290</updated>
+    </task>
+    <task id="LOCAL-00569" summary="project permissions to custom_konery">
+      <created>1697212559140</created>
+      <option name="number" value="00569" />
+      <option name="presentableId" value="LOCAL-00569" />
+      <option name="project" value="LOCAL" />
+      <updated>1697212559140</updated>
+    </task>
+    <task id="LOCAL-00570" summary="project permissions to custom_konery">
+      <created>1697213190002</created>
+      <option name="number" value="00570" />
+      <option name="presentableId" value="LOCAL-00570" />
+      <option name="project" value="LOCAL" />
+      <updated>1697213190002</updated>
+    </task>
+    <task id="LOCAL-00571" summary="fleet contract decimals">
+      <created>1697646734156</created>
+      <option name="number" value="00571" />
+      <option name="presentableId" value="LOCAL-00571" />
+      <option name="project" value="LOCAL" />
+      <updated>1697646734156</updated>
+    </task>
+    <task id="LOCAL-00572" summary="sale order crm team_id">
+      <created>1698063294169</created>
+      <option name="number" value="00572" />
+      <option name="presentableId" value="LOCAL-00572" />
+      <option name="project" value="LOCAL" />
+      <updated>1698063294169</updated>
+    </task>
+    <task id="LOCAL-00573" summary="sale order crm team_id">
+      <created>1698063471585</created>
+      <option name="number" value="00573" />
+      <option name="presentableId" value="LOCAL-00573" />
+      <option name="project" value="LOCAL" />
+      <updated>1698063471585</updated>
+    </task>
+    <task id="LOCAL-00574" summary="sale order crm team_id">
+      <created>1698162217370</created>
+      <option name="number" value="00574" />
+      <option name="presentableId" value="LOCAL-00574" />
+      <option name="project" value="LOCAL" />
+      <updated>1698162217370</updated>
+    </task>
+    <task id="LOCAL-00575" summary="add std modules">
+      <created>1698712883801</created>
+      <option name="number" value="00575" />
+      <option name="presentableId" value="LOCAL-00575" />
+      <option name="project" value="LOCAL" />
+      <updated>1698712883801</updated>
+    </task>
+    <task id="LOCAL-00576" summary="add websitemenuperm">
+      <created>1698713931589</created>
+      <option name="number" value="00576" />
+      <option name="presentableId" value="LOCAL-00576" />
+      <option name="project" value="LOCAL" />
+      <updated>1698713931589</updated>
+    </task>
+    <option name="localTasksCounter" value="577" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="electricity true" />
+    <MESSAGE value="bug marketEer" />
+    <MESSAGE value="search marketeer" />
+    <MESSAGE value="importer imp" />
+    <MESSAGE value="search imp" />
+    <MESSAGE value="review id security duplicateds" />
+    <MESSAGE value="vat required" />
+    <MESSAGE value="crm konery" />
+    <MESSAGE value="konery custom" />
+    <MESSAGE value="crm konery leads" />
+    <MESSAGE value="ttf" />
+    <MESSAGE value="helpdesk operator group" />
+    <MESSAGE value="bug letra" />
+    <MESSAGE value="customkon" />
+    <MESSAGE value="upd crm-leads" />
+    <MESSAGE value="bug cabecera provincia" />
+    <MESSAGE value="lead2opp hide create partner" />
+    <MESSAGE value="update access products" />
+    <MESSAGE value="fleet extended" />
+    <MESSAGE value="project v0" />
+    <MESSAGE value="project permissions to custom_konery" />
+    <MESSAGE value="fleet contract decimals" />
+    <MESSAGE value="sale order crm team_id" />
+    <MESSAGE value="add std modules" />
+    <MESSAGE value="add websitemenuperm" />
+    <option name="LAST_COMMIT_MESSAGE" value="add websitemenuperm" />
+  </component>
+</project>

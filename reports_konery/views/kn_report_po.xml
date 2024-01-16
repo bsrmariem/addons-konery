@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="konery_po_report_document">
+            <t t-name="reports_konery.konery_po_report_document">
+                <t t-name="konery_po_report_document">
+                    <t t-call="reports_konery.external_konery_so_layout">
+                        <link href="https://fonts.googleapis.com/css?family=Montserrat:700,300" rel="stylesheet"/>
+                        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,300" rel="stylesheet"/>
+                        <link href="reports_konery/static/src/scss/font.scss" rel="stylesheet"/>
+                        <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/>
+
+                        <div>
+                            <div style="float:left">
+                                <div style="text-align:left;white-space: nowrap;font-size:14px;line-height: 18px;font-family: VisbyCFRoundedDB;">
+                                    <strong><span t-field="o.company_id" style="text-align:left;color:#1b1475;font-weight: 900;white-space: nowrap;font-size:16px;line-height: 18px;"/></strong><br/>
+                                    <span t-field="o.company_id.street"/><br/>
+                                    <span t-field="o.company_id.street2"/><br/>
+                                    <span t-field="o.company_id.zip"/> <span t-field="o.company_id.state_id"/>,<span t-field="o.company_id.country_id"/><br/>
+                                    CIF: <span t-field="o.company_id.vat"/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                                <div t-if="o.dest_address_id" style="text-align:left;white-space: nowrap;font-size:14px;line-height: 18px;font-family: VisbyCFRoundedDB;">
+                                    <strong><span style="text-align:left;color:#1b1475;font-weight: 900;font-size:16px;line-height: 18px;">Dirección entrega</span></strong><br/>
+                                    <strong><span t-field="o.dest_address_id" style="text-align:left;color:#1b1475;font-weight: 900;white-space: nowrap;line-height: 18px;"/></strong><br/>
+                                    <span t-field="o.dest_address_id.street"/><br/>
+                                    <span t-field="o.dest_address_id.street2"/><br/>
+                                    <span t-field="o.dest_address_id.zip"/> <span t-field="o.dest_address_id.state_id"/>,<span t-field="o.dest_address_id.country_id"/><br/>
+                                    CIF: <span t-field="o.dest_address_id.vat"/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                                <div t-if="not o.dest_address_id and o.picking_type_id.warehouse_id.partner_id" style="text-align:left;white-space: nowrap;font-size:14px;line-height: 18px;font-family: VisbyCFRoundedDB;">
+                                    <strong><span style="text-align:left;color:#1b1475;font-weight: 900;font-size:16px;line-height: 18px;">Dirección entrega</span></strong><br/>
+                                    <strong><span t-field="o.picking_type_id.warehouse_id.partner_id" style="text-align:left;color:#1b1475;font-weight: 900;white-space: nowrap;line-height: 18px;"/></strong><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.street"/><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.street2"/><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.zip"/> <span t-field="o.picking_type_id.warehouse_id.partner_id.state_id"/>,<span t-field="o.picking_type_id.warehouse_id.partner_id.country_id"/><br/>
+                                    CIF: <span t-field="o.picking_type_id.warehouse_id.partner_id.vat"/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+
+                            <div style="float:right;text-align:left;margin-right:2%;">
+                                <table class="table-border" style="float:right;width:100%;font-family: VisbyCFRoundedDB;border-color:white;">
+                                    <thead style="font-size:17px;">
+                                        <tr>
+                                            <th t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}" style="padding-top: 10px; padding-bottom:10px;padding-left: 20px;text-align:right;" class="text-left">
+
+                                            </th>
+                                            <th>
+                                                <t t-if="o.state == 'draft'">
+                                                    <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
+                                                    <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">SOLICITUD DE PRESUPUESTO: </span>
+                                                </t>
+                                                <t t-if="o.state in ['sent', 'to approve']">
+                                                    <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
+                                                    <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">PEDIDO DE COMPRA: </span>
+                                                </t>
+                                                <t t-if="o.state in ['purchase', 'done']">
+                                                    <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
+                                                    <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">PEDIDO DE COMPRA: </span>
+                                                </t>
+                                                <t t-if="o.state == 'cancel'">
+                                                    <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
+                                                    <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">PEDIDO DE COMPRA CANCELADO: </span>
+                                                </t>
+                                            </th>
+                                            <th class="text-end">
+
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="font-size:14px;" class="sale_tbody">
+                                        <tr>
+                                            <!--t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"-->
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                <t>REF.INTERNA PEDIDO: </t>
+                                            </td>
+                                            <!--t-attf-class="text-end {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"-->
+                                            <td style="padding-left: 10px; text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <t>
+                                                    <strong><span t-field="o.name"/></strong>
+                                                </t>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: 500;line-height:15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                <t t-if="o.partner_ref">SU REF. PEDIDO: </t>
+                                            </td>
+                                            <td style="padding-left: 10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <t t-if="o.partner_ref">
+                                                    <strong><span t-field="o.partner_ref"/></strong>
+                                                </t>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: 500;line-height:15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                <t t-if="o.date_order"> FECHA PEDIDO: </t>
+                                            </td>
+                                            <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <t t-if="o.date_order">
+                                                    <strong><span t-field="o.date_order"/></strong>
+                                                </t>
+                                            </td>
+                                        </tr>
+
+
+                                        <!--Agregamos un salto de linea-->
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                <br/>
+                                            </td>
+                                            <td style="padding-left:10px;line-height: 15px;text-align:left;">
+                                                <br/>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            </td>
+                                            <td style="padding-left:10px;text-align:left;color:#1b1475;max-width:250px;word-wrap:break-word;">
+                                                <strong><span t-field="o.partner_id"/></strong>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            </td>
+                                            <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <strong>CIF <span t-field="o.partner_id.vat"/></strong>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            </td>
+                                            <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <strong><span t-field="o.partner_id.street"/></strong>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            </td>
+                                            <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <strong><span t-field="o.partner_id.country_id"/></strong>
+                                                <strong><span t-field="o.partner_id.state_id"/></strong>
+                                                <strong><span t-field="o.partner_id.zip"/></strong>
+                                            </td>
+                                        </tr>
+
+                                        <!--Agregamos un salto de linea-->
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                <br/>
+                                            </td>
+                                            <td style="padding-left:10px;line-height: 15px;text-align:left;">
+                                                <br/>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="page">
+                            <div class="clearfix"/>
+                            <br/>
+
+                            <!--<t t-set="display_discount" t-value="any([l.discount for l in o.order_line])"/>-->
+
+                            <table class="table-border" style="float:right;width:90%;font-family: VisbyCFRoundedDB;font-size:12px;border-color:transparent;">
+                                <thead>
+                                    <tr style="border-bottom:3pt solid ;border-top:3pt solid ;color:#1b1475;">
+                                        <!-- TODO: remove in master -->
+                                        <t t-set="colspan" t-value="5"/>
+                                        <th style="padding-top: 10px; padding-bottom:10px;text-align:left;" class="text-left"><span><strong>DESCRIPCIÓN</strong></span></th>
+
+                                        <!--<th class="d-none text-left"><span>Source Document</span></th>-->
+                                        <th class="text-center"><span>CANTIDAD</span></th>
+
+                                        <th t-attf-class="text-center"><span>PRECIO UNITARIO</span></th>
+
+                                        <th t-attf-class="text-center {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><span>IMPUESTOS</span></th>
+
+                                        <th class="text-center">
+                                            <span groups="account.group_show_line_subtotals_tax_excluded">TOTAL</span>
+                                            <span groups="account.group_show_line_subtotals_tax_included">Total Price</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="o.order_line" t-as="line">
+                                        <tr style="font-family: Open Sans;">
+
+                                            <td>
+                                                <p style="text-align:left;"><span t-field="line.sequence"/> /  <span t-field="line.name"/></p>
+                                            </td>
+
+                                            <td class="text-center">
+                                                <span t-field="line.product_qty"/>
+                                                <span t-field="line.product_uom.name" groups="uom.group_uom"/>
+                                            </td>
+
+                                            <td class="text-center">
+                                                <span t-field="line.price_unit"/>
+                                            </td>
+
+                                            <td class="text-center">
+                                                <span t-esc="', '.join(map(lambda x: x.name, line.taxes_id))"/>
+                                            </td>
+
+                                            <td class="text-center">
+                                                <span t-field="line.price_subtotal" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+
+                            <br/>
+
+                            <div style="text-align:right;">
+                                <table class="table-border" style="page-break-inside: avoid;float:right;width:50%;font-family: VisbyCFRoundedDB;border-color:transparent;">
+                                    <thead style="border-bottom:3pt solid #1b1475;border-top:3pt solid #1b1475;">
+                                        <t t-set="colspan" t-value="9"/>
+                                        <tr style="border-color:transparent">
+                                            <td>
+                                                <strong style="color:#1b1475;">SUBTOTAL</strong>
+                                            </td>
+                                            <td>
+                                                <strong><span t-field="o.amount_untaxed"/></strong>
+                                            </td>
+                                        </tr>
+                                        <tr style="border-color:transparent">
+                                            <td>
+                                                <strong style="color:#1b1475;">IMPUESTOS</strong>
+                                            </td>
+                                            <td>
+                                                <strong><span t-field="o.amount_tax"/></strong>
+                                            </td>
+
+                                        </tr>
+                                        <tr style="border-color:transparent">
+                                            <td>
+                                                <strong style="color:#1b1475;">TOTAL</strong>
+                                            </td>
+
+                                            <td>
+                                                <span>
+                                                    <strong><span t-field="o.amount_total"/></strong>
+                                                </span>
+                                                <!-- <span t-if="doc.state not in ['draft','sent']">
+                                                     <strong><span t-field="doc.amount_total"/></strong>
+                                                 </span>-->
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <div class="clearfix"/>
+                                <br/><br/><br/><br/>
+                                <div align="left">
+                                    <p t-field="o.notes"/>
+                                    <div class="oe_structure"/>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p style="page-break-before:always;text-align: justify">
+                            <strong>PROTECCIÓN DE DATOS: Responsable del Tratamiento: </strong> KONERY EFICIENCIA ENERGÉTICA S.L.
+                            B73704405  <strong>Finalidad del Tratamiento: </strong>Mantener de la relación comercial, gestión contable y económica derivada de la misma.
+                            <strong> Procedencia de los datos:</strong> Los datos han sido facilitados por usted mismo o por su organización. <strong> Categoría de datos:</strong>
+                            Tratamos únicamente datos identificativos para mantener el contacto y datos económicos. <strong> Ejercicio de derechos:</strong>
+                            Podrá acceder, corregir, eliminar y portar sus datos personales, así como oponerse y solicitar la limitación de los mismos.
+                            Puede ejercitar sus derechos, así como obtener más información en Calle José Manuel Sánchez Pedreño 1 -
+                            Edificio Plazarte - planta 7, 30009, Murcia, MURCIA,o en la dirección de correo electrónico dpokonery@konery.com.
+                        </p>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <template id="konery_pos_report_document">
+            <t t-name="reports_konery.konery_pos_report_document">
+                <t t-name="konery_po_report_document">
+                    <t t-call="reports_konery.external_konery_so_layout">
+                        <link href="https://fonts.googleapis.com/css?family=Montserrat:700,300" rel="stylesheet"/>
+                        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,300" rel="stylesheet"/>
+                        <link href="reports_konery/static/src/scss/font.scss" rel="stylesheet"/>
+
+                        <div>
+                            <div style="float:left">
+                                <div style="text-align:left;white-space: nowrap;font-size:14px;line-height: 18px;font-family: VisbyCFRoundedDB;">
+                                    <strong><span t-field="o.company_id" style="text-align:left;color:#1b1475;font-weight: 900;white-space: nowrap;font-size:16px;line-height: 18px;"/></strong><br/>
+                                    <span t-field="o.company_id.street"/><br/>
+                                    <span t-field="o.company_id.street2"/><br/>
+                                    <span t-field="o.company_id.zip"/> <span t-field="o.company_id.state_id"/>,<span t-field="o.company_id.country_id"/><br/>
+                                    CIF: <span t-field="o.company_id.vat"/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                                <!--<div t-if="o.picking_type_id.warehouse_id.partner_id" style="text-align:left;white-space: nowrap;font-size:14px;line-height: 18px;font-family: VisbyCFRoundedDB;">
+                                    <span style="font-weight:900;color:#1b1475;text-align:left;">Dirección entrega:</span><br/>
+                                    <strong><span t-field="o.picking_type_id.warehouse_id.partner_id" style="text-align:left;color:#1b1475;font-weight: 900;white-space: nowrap;line-height: 18px;"/></strong><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.street"/><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.street2"/><br/>
+                                    <span t-field="o.picking_type_id.warehouse_id.partner_id.zip"/> <span t-field="o.picking_type_id.warehouse_id.partner_id.state_id"/>,<span t-field="o.picking_type_id.warehouse_id.partner_id.country_id"/><br/>
+                                    CIF: <span t-field="o.picking_type_id.warehouse_id.partner_id.vat"/>
+                                    <br/>
+                                    <br/>
+                                </div>-->
+                            </div>
+
+                            <div style="float:right;text-align:left;margin-right:2%;">
+                                <table class="table-border" style="float:right;width:100%;font-family: VisbyCFRoundedDB;border-color:white;">
+                                    <thead style="font-size:17px;">
+                                        <tr>
+                                            <th t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}" style="padding-top: 10px; padding-bottom:10px;padding-left: 20px;text-align:right;" class="text-left">
+
+                                            </th>
+                                            <th>
+                                                <t t-if="o.state == 'draft'">
+                                                    <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
+                                                    <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">SOLICITUD DE PRESUPUESTO: </span>
+                                                </t>
+                                                <t t-if="o.state in ['sent', 'to approve']">
+                                                    <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
+                                                    <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">PEDIDO DE COMPRA: </span>
+                                                </t>
+                                                <t t-if="o.state in ['purchase', 'done']">
+                                                    <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
+                                                    <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">PEDIDO DE COMPRA: </span>
+                                                </t>
+                                                <t t-if="o.state == 'cancel'">
+                                                    <!--<span style="font-weight: 600" t-if="doc.state not in ['draft','sent']">FACTURA: </span>-->
+                                                    <span style="font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;">PEDIDO DE COMPRA CANCELADO: </span>
+                                                </t>
+                                            </th>
+                                            <th class="text-end">
+
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="font-size:14px;" class="sale_tbody">
+                                        <tr>
+                                            <!--t-attf-class="text-start {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"-->
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                <t>REF.INTERNA PEDIDO: </t>
+                                            </td>
+                                            <!--t-attf-class="text-end {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"-->
+                                            <td style="padding-left: 10px; text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <t>
+                                                    <strong><span t-field="o.name"/></strong>
+                                                </t>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: 500;line-height:15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                <t t-if="o.partner_ref">SU REF. PEDIDO: </t>
+                                            </td>
+                                            <td style="padding-left: 10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <t t-if="o.partner_ref">
+                                                    <strong><span t-field="o.partner_ref"/></strong>
+                                                </t>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: 500;line-height:15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                <t t-if="o.date_order"> FECHA PEDIDO: </t>
+                                            </td>
+                                            <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <t t-if="o.date_order">
+                                                    <strong><span t-field="o.date_order"/></strong>
+                                                </t>
+                                            </td>
+                                        </tr>
+
+
+                                        <!--Agregamos un salto de linea-->
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                <br/>
+                                            </td>
+                                            <td style="padding-left:10px;line-height: 15px;text-align:left;">
+                                                <br/>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            </td>
+                                            <td style="padding-left:10px;text-align:left;color:#1b1475;max-width:250px;word-wrap:break-word;">
+                                                <strong><span t-field="o.partner_id"/></strong>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            </td>
+                                            <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <strong>CIF <span t-field="o.partner_id.vat"/></strong>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            </td>
+                                            <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <strong><span t-field="o.partner_id.street"/></strong>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                            </td>
+                                            <td style="padding-left:10px;text-align:left;max-width:250px;word-wrap:break-word;">
+                                                <strong><span t-field="o.partner_id.country_id"/></strong>
+                                                <strong><span t-field="o.partner_id.state_id"/></strong>
+                                                <strong><span t-field="o.partner_id.zip"/></strong>
+                                            </td>
+                                        </tr>
+
+                                        <!--Agregamos un salto de linea-->
+                                        <tr>
+                                            <td style="font-weight: 500;line-height: 15px;font-size:14px;padding-right:0px;text-align:right;">
+                                                <br/>
+                                            </td>
+                                            <td style="padding-left:10px;line-height: 15px;text-align:left;">
+                                                <br/>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="page">
+                            <div class="clearfix"/>
+                            <br/>
+
+                            <!--<t t-set="display_discount" t-value="any([l.discount for l in o.order_line])"/>-->
+
+                            <table class="table-border" style="float:right;width:90%;font-family: VisbyCFRoundedDB;font-size:12px;border-color:transparent;">
+                                <thead>
+                                    <tr style="border-bottom:3pt solid ;border-top:3pt solid ;color:#1b1475;">
+                                        <!-- TODO: remove in master -->
+                                        <t t-set="colspan" t-value="4"/>
+                                        <th style="padding-top: 10px; padding-bottom:10px;text-align:left;" class="text-left"><span><strong>DESCRIPCIÓN</strong></span></th>
+
+                                        <!--<th class="d-none text-left"><span>Source Document</span></th>-->
+                                        <th class="text-center"><span>CANTIDAD</span></th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="o.order_line" t-as="line">
+                                        <tr style="font-family: Open Sans;">
+
+                                            <td>
+                                                <p style="text-align:left;"><span t-field="line.sequence"/> /  <span t-field="line.name"/></p>
+                                            </td>
+
+                                            <td class="text-center">
+                                                <span t-field="line.product_qty"/>
+                                                <span t-field="line.product_uom.name" groups="uom.group_uom"/>
+                                            </td>
+
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+
+                            <br/>
+
+                            <div style="text-align:right;">
+                                <div class="clearfix"/>
+                                <br/><br/><br/><br/>
+                                <div align="left">
+                                    <p t-field="o.notes"/>
+                                    <div class="oe_structure"/>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p style="page-break-before:always;text-align: justify">
+                            <strong>PROTECCIÓN DE DATOS: Responsable del Tratamiento: </strong> KONERY EFICIENCIA ENERGÉTICA S.L.
+                            B73704405  <strong>Finalidad del Tratamiento: </strong>Mantener de la relación comercial, gestión contable y económica derivada de la misma.
+                            <strong> Procedencia de los datos:</strong> Los datos han sido facilitados por usted mismo o por su organización. <strong> Categoría de datos:</strong>
+                            Tratamos únicamente datos identificativos para mantener el contacto y datos económicos. <strong> Ejercicio de derechos:</strong>
+                            Podrá acceder, corregir, eliminar y portar sus datos personales, así como oponerse y solicitar la limitación de los mismos.
+                            Puede ejercitar sus derechos, así como obtener más información en Calle José Manuel Sánchez Pedreño 1 -
+                            Edificio Plazarte - planta 7, 30009, Murcia, MURCIA,o en la dirección de correo electrónico dpokonery@konery.com.
+                        </p>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+
+    </data>
+</odoo>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <record id="power_marketeer_default_tree" model="ir.ui.view">
+        <field name="name">power.marketeer.default.tree</field>
+        <field name="model">power.marketeer</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree name="power_marketeer_tree">
+                <field name="name"/>
+                <field name="active" optional="hide"/>
+                <field name="order_number" optional="show"/>
+                <field name="gas_sifco" optional="hide"/>
+                <field name="phone" optional="hide"/>
+                <field name="gas_phone" optional="hide"/>
+                <field name="sector" optional="show"/>
+                <field name="gas_sector" optional="hide"/>
+                <field name="vat" optional="show"/>
+                <field name="date_discharge" optional="hide"/>
+                <field name="date_leaving" optional="hide"/>
+                <field name="gas_date_discharge" optional="hide"/>
+                <field name="gas_date_leaving" optional="hide"/>
+                <field name="web" optional="hide"/>
+                <field name="electricity" optional="show"/>
+                <field name="gas" optional="show"/>
+                <field name="status" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="power_marketeer_default_form" model="ir.ui.view">
+        <field name="name">power.marketeer.default.form</field>
+        <field name="model">power.marketeer</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet name="main" string="Marketeer">
+                    <h2>
+                        <field name="name" placeholder="Marketeer company name"/>
+                    </h2>
+                    <group name="company_data" string="Company data">
+                        <group>
+                            <field name="street" readonly="1"/>
+                            <field name="city" readonly="1"/>
+                            <field name="state" readonly="1"/>
+                            <field name="zip" readonly="1"/>
+                            <field name="country" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="electricity"/>
+                            <field name="gas"/>
+                            <field name="vat" readonly="1"/>
+                            <field name="web"/>
+                        </group>
+                    </group>
+
+                    <group name="electrical_data" string="Electricity" attrs="{'invisible':[('electricity','=',False)]}">
+                        <group>
+                            <field name="order_number"/>
+                            <field name="phone"/>
+                            <field name="sector"/>
+                        </group>
+                        <group>
+                            <field name="date_discharge"/>
+                            <field name="date_leaving"/>
+                            <field name="status"/>
+                        </group>
+                    </group>
+
+                    <group name="gas_data" string="Gas" attrs="{'invisible':[('gas','=',False)]}">
+                        <group>
+                            <field name="gas_sifco"/>
+                            <field name="gas_phone"/>
+                            <field name="gas_sector"/>
+                        </group>
+                        <group>
+                            <field name="gas_date_discharge"/>
+                            <field name="gas_date_leaving"/>
+                            <field name="gas_status"/>
+                        </group>
+                    </group>
+
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" options="{'post_refresh':'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="power_marketeer_search" model="ir.ui.view">
+        <field name="name">power.marketeer.search</field>
+        <field name="model">power.marketeer</field>
+        <field name="inherit_id" eval="False"/>
+        <field name="arch" type="xml">
+            <search string="Search Power Marketeer">
+                <field name="name" filter_domain="['|', ('name','ilike',self), ('vat','ilike',self)]"/>
+                <separator/>
+                <filter string="Electricity" name="electricity" domain="[('electricity','=',True)]"/>
+                <separator/>
+                <filter string="Gas" name="gas" domain="[('gas','=',True)]"/>
+                <separator/>
+                <filter string="Available electricity" name="available-electricity"
+                        domain="[('electricity', '=', True),'|',('date_leaving','=',False),('status','=',False)]"/>
+                <filter string="Available gas" name="available-gas"
+                        domain="[('gas', '=', True),'|',('gas_date_leaving','=',False),('gas_status','=',False)]"/>
+            </search>
+        </field>
+    </record>
+
+
+</odoo>

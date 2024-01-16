@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cnmc_wizard_importer,CNMC Wizard,model_cnmc_importer,power_supply.group_power_supply_user,1,1,1,1
+
+

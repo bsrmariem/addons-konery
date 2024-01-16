@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="paperformat_solar_team" model="report.paperformat">
+            <field name="name">M A4 SolarTeam</field>
+            <field name="default" eval="True" />
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">45</field>
+            <field name="margin_bottom">47</field>
+            <field name="margin_left">7</field>
+            <field name="margin_right">7</field>
+            <field name="header_line" eval="False" />
+            <field name="header_spacing">5</field>
+            <field name="dpi">90</field>
+            <field name="report_ids" eval="[(6, 0, [
+            ref('reports_konery.solar_team_invoice_report_document'),
+            ref('reports_konery.solar_team_so_report_document'),]
+            )]"/>
+        </record>
+
+        <record id="paperformat_konery_factura" model="report.paperformat">
+            <field name="name">M A4  Factura Konery</field>
+            <field name="default" eval="True" />
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">65</field>
+            <field name="margin_bottom">45</field>
+            <field name="margin_left">8</field>
+            <field name="margin_right">1</field>
+            <field name="header_line" eval="False" />
+            <field name="header_spacing">60</field>
+            <field name="dpi">90</field>
+            <field name="report_ids" eval="[(6, 0, [
+            ref('reports_konery.konery_invoice_report_document_reno'),
+            ref('reports_konery.konery_invoice_report_document_360'),
+            ref('reports_konery.konery_invoice_report_document_scada')]
+            )]"/>
+
+        </record>
+        <record id="paperformat_konery" model="report.paperformat">
+            <field name="name">M A4 Konery</field>
+            <field name="default" eval="True" />
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">31</field>
+            <field name="margin_bottom">45</field>
+            <field name="margin_left">8</field>
+            <field name="margin_right">8</field>
+            <field name="header_line" eval="False" />
+            <field name="header_spacing">15</field>
+            <field name="dpi">90</field>
+            <field name="report_ids" eval="[(6, 0, [
+            ref('reports_konery.konery_so_report_document_proforma'),
+            ref('reports_konery.konery_so_report_document_order'),
+            ref('reports_konery.konery_so_report_document_wup')]
+            )]"/>
+
+        </record>
+
+
+    </data>
+</odoo>

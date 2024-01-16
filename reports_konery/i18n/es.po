@@ -1,0 +1,912 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* reports_konery
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-08 09:44+0000\n"
+"PO-Revision-Date: 2024-01-08 10:45+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_pos_report_document
+msgid ""
+"<br/>\n"
+"                                    CIF:"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid ""
+"<br/>\n"
+"                                    FECHA:"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid ""
+"<br/>\n"
+"                                CIF:"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid ""
+"<br/>\n"
+"                            <span style=\"font-weight: 600;font-size: 16px;\"> Detalles bancarios </span>\n"
+"                            <br/>\n"
+"                            <span class=\"text-left\" style=\"font-size: 14px;\"> IberCaja ES59 2085 8171 5703 3024 1732 </span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+msgid ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Amount</span>\n"
+"                                    <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Cantidad</span>\n"
+"                                    <span groups=\"account.group_show_line_subtotals_tax_included\">Precio total</span>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+msgid ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">TOTAL</span>\n"
+"                                            <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">TOTAL</span>\n"
+"                                            <span groups=\"account.group_show_line_subtotals_tax_included\">Precio total</span>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">TOTAL</span>\n"
+"                                    <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">TOTAL</span>\n"
+"                                    <span groups=\"account.group_show_line_subtotals_tax_included\">Precio total</span>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+msgid ""
+"<span style=\"color:#1b1475;font-weight: 600;font-size: 16px;text-align:right;\"> Detalles bancarios </span> <br/>\n"
+"                        <span class=\"text-left\" style=\"font-size: 14px;\"> CAIXABANK   ES62 2100 5815 4202 0006 1608 </span><br/>\n"
+"                        <span style=\"font-size: 14px;\"> SABADELL ES36 0081 0626 9300 0229 8037 </span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "<span style=\"font-size:17px;font-weight:900;padding-left: 10px;text-align:right;\">PRESUPUESTO: </span><br/>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid "<span style=\"font-weight: 600\">FACTURA: </span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+msgid "<span style=\"font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;\">FACTURA PROFORMA: </span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+msgid "<span style=\"font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;\">FACTURA: </span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_pos_report_document
+msgid "<span style=\"font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;\">PEDIDO DE COMPRA CANCELADO: </span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_pos_report_document
+msgid "<span style=\"font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;\">PEDIDO DE COMPRA: </span>"
+msgstr "<span style=\"font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;\">EDIDO DE COMPRA: </span>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid "<span style=\"font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;\">PRESUPUESTO: </span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_pos_report_document
+msgid "<span style=\"font-weight:900;color:#1b1475;padding-left: 10px;text-align:right;\">SOLICITUD DE PRESUPUESTO: </span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+msgid "<span>1</span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_pos_report_document
+msgid "<span><strong>DESCRIPCIÓN</strong></span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_pos_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid "<span>CANTIDAD</span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+msgid "<span>DESC.(%)</span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+msgid "<span>Desc.(%)</span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+msgid "<span>Description</span>"
+msgstr "<span>DESCRIPCIÓN</span>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+msgid "<span>Disc.%</span>"
+msgstr "<span>DESC.%</span>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid "<span>Disc.(%)</span>"
+msgstr "<span>DESC.(%)</span>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+msgid "<span>FACTURA PROFORMA: </span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid "<span>IMPUESTOS</span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid "<span>PRECIO UNIDAD</span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+msgid "<span>PRECIO UNITARIO</span>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid "<span>Pro-Forma Invoice # </span>"
+msgstr "<span>Factura Pro-Forma # </span>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "<span>Pro-Forma Invoice # </span><br/>"
+msgstr "<span>Factura Pro-Forma # </span><br/>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+msgid "<span>Quantity</span>"
+msgstr "<span>CANTIDAD</span>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+msgid "<span>Taxes</span>"
+msgstr "<span>IMPUESTOS</span>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+msgid "<span>Unit Price</span>"
+msgstr "<span>PRECIO U.</span>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+msgid "<strong style=\"color:#1b1475\">IMPUESTOS</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+msgid "<strong style=\"color:#1b1475\">SUBTOTAL</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid "<strong style=\"color:#1b1475\">TOTAL</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+msgid "<strong style=\"color:#1b1475;\">IMPUESTOS</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+msgid "<strong style=\"color:#1b1475;\">SUBTOTAL</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+msgid "<strong style=\"color:#1b1475;\">TOTAL</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+msgid ""
+"<strong><span style=\"text-align:left;color:#1b1475;font-weight: 900;font-size:16px;line-height: 18px;\">Dirección entrega</span></"
+"strong><br/>"
+msgstr ""
+"<strong><span style=\"text-align:left;color:#1b1475;font-weight: 900;white-space: nowrap;font-size:16px;line-height: 18px;\"/>\n"
+"                                        Dirección entrega</strong><br/>"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "<strong>Firma</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "<strong>IMPUESTOS (IVA 21%)</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid "<strong>IMPUESTOS</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid "<strong>INFORMACIÓN EN FORMATO CLÁUSULA</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid "<strong>NOTA INFORMATIVA</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "<strong>Nota Informativa</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid "<strong>PETICIONES DE CONSENTIMIENTO</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_pos_report_document
+msgid ""
+"<strong>PROTECCIÓN DE DATOS: Responsable del Tratamiento: </strong> KONERY EFICIENCIA ENERGÉTICA S.L.\n"
+"                            B73704405  <strong>Finalidad del Tratamiento: </strong>Mantener de la relación comercial, gestión contable y "
+"económica derivada de la misma.\n"
+"                            <strong> Procedencia de los datos:</strong> Los datos han sido facilitados por usted mismo o por su "
+"organización. <strong> Categoría de datos:</strong>\n"
+"                            Tratamos únicamente datos identificativos para mantener el contacto y datos económicos. <strong> Ejercicio de "
+"derechos:</strong>\n"
+"                            Podrá acceder, corregir, eliminar y portar sus datos personales, así como oponerse y solicitar la limitación de "
+"los mismos.\n"
+"                            Puede ejercitar sus derechos, así como obtener más información en Calle José Manuel Sánchez Pedreño 1 -\n"
+"                            Edificio Plazarte - planta 7, 30009, Murcia, MURCIA,o en la dirección de correo electrónico dpokonery@konery.com."
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid ""
+"<strong>PROTECCIÓN DE DATOS: Responsable del Tratamiento:</strong>\n"
+"                        KONERY EFICIENCIA ENERGÉTICA S.L. B73704405 <strong>Finalidad del Tratamiento:</strong>\n"
+"                        Dar correcto cumplimiento al contrato suscrito relativo a eficiencia\n"
+"                        energética, auditorias, implantaciones de paneles solares., realización\n"
+"                        tareas administrativas, contables o fiscales derivadas del contrato, así\n"
+"                        como mantenerle informado sobre nuevos servicios y/o productos mientras dure\n"
+"                        la relación contractual.<strong> Procedencia de los datos:</strong> Los datos han sido\n"
+"                        facilitados por usted mismo o por su organización. <strong>Categoría de datos:</strong>\n"
+"                        Tratamos únicamente datos identificativos para mantener el contacto y datos\n"
+"                        económicos. <strong>Ejercicio de derechos:</strong> Podrá acceder, corregir, eliminar y portar sus datos\n"
+"                        personales, así como oponerse y solicitar la limitación de los mismos. Puede ejercitar sus\n"
+"                        derechos, así como obtener más información en Calle José Manuel Sánchez Pedreño 1 -  Edificio\n"
+"                        Plazarte - planta 7, 30009, Murcia, MURCIA,o en la dirección de correo electrónico\n"
+"                        dpokonery@konery.com."
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+msgid ""
+"<strong>PROTECCIÓN DE DATOS: Responsable del Tratamiento:</strong>\n"
+"                        KONERY EFICIENCIA ENERGÉTICA S.L. B73704405 <strong>Finalidad del Tratamiento:</strong>\n"
+"                        Dar correcto cumplimiento al contrato suscrito relativo a eficiencia energética,\n"
+"                        auditorias, implantaciones de paneles solares., realización tareas administrativas,\n"
+"                        contables o fiscales derivadas del contrato, así como mantenerle informado sobre nuevos servicios\n"
+"                        y/o productos mientras dure la relación contractual.<strong> Procedencia de los datos: </strong>Los datos han\n"
+"                        sido facilitados por usted mismo o por su organización. <strong>Categoría de datos:</strong> Tratamos únicamente\n"
+"                        datos identificativos para mantener el contacto y datos económicos.<strong> Ejercicio de derechos: </strong>Podrá "
+"acceder,\n"
+"                        corregir, eliminar y portar sus datos personales, así como oponerse y solicitar la limitación de los mismos.\n"
+"                        Puede ejercitar sus derechos, así como obtener más información en Calle José Manuel Sánchez Pedreño 1 -\n"
+"                        Edificio Plazarte - planta 7, 30009, Murcia, MURCIA,o en la dirección de correo electrónico dpokonery@konery.com."
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+msgid ""
+"<strong>PROTECCIÓN DE DATOS: Responsable del Tratamiento:</strong> KONERY EFICIENCIA\n"
+"                        ENERGÉTICA S.L. B73704405 <strong>Finalidad del Tratamiento:</strong> Dar correcto cumplimiento al contrato "
+"suscrito\n"
+"                        de gestión energética con el fin de optimizar el gasto energético, realización tareas administrativas,\n"
+"                        contables o fiscales derivadas del contrato así como mantenerle informado sobre nuevos servicios y/o\n"
+"                        productos mientras dure la relación contractual <strong>Procedencia de los datos:</strong> Los datos han sido\n"
+"                        facilitados por usted mismo o por su organización. <strong>Categoría de datos: </strong>Tratamos únicamente datos\n"
+"                        identificativos para mantener el contacto y datos económicos. <strong>Ejercicio de derechos:</strong> Podrá "
+"acceder,\n"
+"                        corregir, eliminar y portar sus datos personales, así como oponerse y solicitar la limitación de\n"
+"                        los mismos. Puede ejercitar sus derechos, así como obtener más información en Calle José Manuel\n"
+"                        Sánchez Pedreño 1 -  Edificio Plazarte - planta 7, 30009, Murcia, MURCIA,o en la dirección de\n"
+"                        correo electrónico dpokonery@konery.com."
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+msgid ""
+"<strong>PROTECCIÓN DE DATOS: Responsable del Tratamiento:</strong> KONERY EFICIENCIA\n"
+"                        ENERGÉTICA S.L. B73704405 <strong>Finalidad del Tratamiento:</strong> Dar correcto cumplimiento al contrato suscrito "
+"de\n"
+"                        gestión energética con el fin de optimizar el gasto energético, realización tareas administrativas, contables\n"
+"                        o fiscales derivadas del contrato, así como mantenerle informado sobre nuevos servicios y/o productos mientras\n"
+"                        dure la relación contractual. <strong>Procedencia de los datos:</strong> Los datos han sido facilitados por usted "
+"mismo o por\n"
+"                        su organización. <strong>Categoría de datos:</strong> Tratamos únicamente datos identificativos para mantener el "
+"contacto y\n"
+"                        datos económicos.<strong> Ejercicio de derechos: </strong>Podrá acceder, corregir, eliminar y portar sus datos "
+"personales,\n"
+"                        así como oponerse y solicitar la limitación de los mismos. Puede ejercitar sus derechos, así como obtener\n"
+"                        más información en Calle José Manuel Sánchez Pedreño 1 -  Edificio Plazarte - planta 7, 30009, Murcia,\n"
+"                        MURCIA,o en la dirección de correo electrónico dpokonery@konery.com."
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid ""
+"<strong>PROTECCIÓN DE DATOS: Responsable del Tratamiento:</strong> KONERY EFICIENCIA ENERGÉTICA S.L.,\n"
+"                        B73704405.<strong>Finalidad del Tratamiento:</strong> Remitirle el presupuesto solicitado y mantenerle informado\n"
+"                        sobre nuevos servicios y/o productos. <strong>Procedencia de los datos:</strong> los datos han sido facilitados por\n"
+"                        usted mismo o por su organización.<strong> Categoría de datos:</strong> Tratamos únicamente datos identificativos "
+"para\n"
+"                        mantener el contactdoc.<strong> Ejercicio de derechos:</strong> Podrá acceder, corregir, eliminar y portar sus datos "
+"personales,\n"
+"                        así como oponerse y solicitar la limitación de los mismos. Puede ejercitar sus derechos, así como obtener más\n"
+"                        información en Calle José Manuel Sánchez Pedreño 1 - Edificio Plazarte - planta 7, 30009 - Murcia (MURCIA),\n"
+"                        dpokonery@konery.com."
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "<strong>SUBTOTAL</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "<strong>TOTAL</strong>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid ""
+"Autorizo a KONERY EFICIENCIA ENERGÉTICA S.L. para poder utilizar el logotipo y marca del cliente para uso\n"
+"                        en las presentaciones o publicaciones en la web de Konery y/ o redes sociales."
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid ""
+"Autorizo a KONERY EFICIENCIA ENERGÉTICA S.L. para poder utilizar el logotipo y marca del cliente,\n"
+"                        en los documentos de carácter técnico, memorias o documentaciones que sean necesarias para uso técnico,\n"
+"                        comercial u objeto de los trabajos encargados por el cliente."
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid ""
+"Autorizo a KONERY EFICIENCIA ENERGÉTICA S.L., a poder realizar la grabación de material fotográfico y\n"
+"                        audiovisual durante la instalación de placas fotovoltaicas en las instalaciones de mi entidad y,\n"
+"                        su posterior difusión en la página web y/o redes sociales de Konery"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid ""
+"Autorizo a KONERY EFICIENCIA ENERGÉTICA S.L., para que me remita información comercial que pueda ser de mi interés\n"
+"                        , al objeto de mantenerme informado sobre sus servicios y/o productos."
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "CANTIDAD"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_pos_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "CIF"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "COMERCIAL:"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model,name:reports_konery.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "DESCRIPCIÓN"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid "FACTURA Nº #:"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+msgid "FACTURA:"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_pos_report_document
+msgid "FECHA PEDIDO:"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "FECHA:"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_account_bank_statement_line__report_type
+#: model:ir.model.fields,field_description:reports_konery.field_account_move__report_type
+#: model:ir.model.fields,field_description:reports_konery.field_account_payment__report_type
+#: model_terms:ir.ui.view,arch_db:reports_konery.view_move_form_report_type
+#: model_terms:ir.ui.view,arch_db:reports_konery.view_so_form_report_type
+msgid "Formato Impresión"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__paperformat_id
+msgid "Formato Papel"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.ui.menu,name:reports_konery.move_reports_types model:ir.ui.menu,name:reports_konery.so_reports_types
+msgid "Formatos"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.actions.act_window,name:reports_konery.action_report_type model:ir.ui.menu,name:reports_konery.move_reports
+#: model:ir.ui.menu,name:reports_konery.so_reports
+msgid "Formatos Impresión"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__id
+msgid "ID"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+msgid "IMPUESTOS"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__report_id
+msgid "Informe"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.report_type_tree
+msgid "Informes"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model,name:reports_konery.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.partner_konery_solarteam_customer_search
+msgid "Konery"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_res_partner__konery_customer
+#: model:ir.model.fields,field_description:reports_konery.field_res_users__konery_customer
+msgid "Konery customer"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__model
+msgid "Modelo"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid "No"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__name
+msgid "Nombre"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+msgid "PRECIO UNIDAD"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "PRESUPUESTO:"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+msgid "PROFORMA #:"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "PROYECTO:"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid ""
+"Para la correcta prestación del servicio es necesario que KONERY EFICIENCIA ENERGÉTICA S.L\n"
+"                        acceda a las plataformas de descarga de facturas eléctricas o de gas, de las comercializadoras\n"
+"                        con las que tenga contrato de suministro con el fin de componer las facturas emitidas y los\n"
+"                        conceptos que en ella aparecen o a su reclamación si estos fueran erróneos."
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid ""
+"Para que la entidad KONERY EFICIENCIA ENERGÉTICA S.L. pueda emitir la propuesta solicitada,\n"
+"                        será necesario que nos facilite una copia de su factura de electricidad."
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__template
+msgid "Plantilla"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model,name:reports_konery.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.external_konery_layout_standard
+#: model_terms:ir.ui.view,arch_db:reports_konery.external_konery_so_layout_standard
+#: model_terms:ir.ui.view,arch_db:reports_konery.external_solarteam_layout_standard
+#: model_terms:ir.ui.view,arch_db:reports_konery.external_solarteam_so_layout_standard
+msgid "Página: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid "RECTIFICATIVA"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_pos_report_document
+msgid "REF.INTERNA PEDIDO:"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.external_konery_layout_standard
+#: model_terms:ir.ui.view,arch_db:reports_konery.external_konery_so_layout_standard
+msgid "Registro Mercantil de Murcia. Tomo 2800 Folio 73. Inscripción 1ª.Hoja-Mu75396. CIF B73704405"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model,name:reports_konery.model_ir_actions_report
+msgid "Report Action"
+msgstr "Acción de informe"
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_purchase_order__report_type
+#: model:ir.model.fields,field_description:reports_konery.field_sale_order__report_type
+#: model_terms:ir.ui.view,arch_db:reports_konery.view_po_form_report_type
+msgid "Report Type"
+msgstr "Formato de impresión\t"
+
+#. module: reports_konery
+#: model:ir.model,name:reports_konery.model_report_type
+msgid "Report types"
+msgstr "Formatos de impresión"
+
+#. module: reports_konery
+#: model:ir.ui.menu,name:reports_konery.po_reports model_terms:ir.ui.view,arch_db:reports_konery.report_type_form
+msgid "Reports"
+msgstr "Informes"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_po_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_pos_report_document
+msgid "SU REF. PEDIDO:"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model,name:reports_konery.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+msgid "Si"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_res_partner__solarteam_customer
+#: model:ir.model.fields,field_description:reports_konery.field_res_users__solarteam_customer
+msgid "SolarTeam customer"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__solarteam
+#: model_terms:ir.ui.view,arch_db:reports_konery.partner_konery_solarteam_customer_search
+msgid "Solarteam"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+msgid "TOTAL"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_order_fixed
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_proforma
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_so_report_document_wup
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_report_document
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_so_wup_report_document
+msgid "Total Price"
+msgstr "Precio total"
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_ir_actions_report__report_type_ids
+#: model:ir.ui.menu,name:reports_konery.po_reports_types
+msgid "Types"
+msgstr "Formatos"
+
+#. module: reports_konery
+#: model:ir.model.fields,help:reports_konery.field_report_type__type_pdf_watermark
+msgid "Upload an pdf file to use as an watermark on this report."
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_360
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_reno
+#: model_terms:ir.ui.view,arch_db:reports_konery.konery_invoice_report_document_scada
+#: model_terms:ir.ui.view,arch_db:reports_konery.solar_team_invoice_report_document
+msgid "VENCIMIENTO:"
+msgstr ""
+
+#. module: reports_konery
+#: model:ir.model.fields,field_description:reports_konery.field_report_type__type_pdf_watermark
+msgid "Watermark"
+msgstr ""
+
+#. module: reports_konery
+#: model_terms:ir.ui.view,arch_db:reports_konery.external_konery_layout_standard
+#: model_terms:ir.ui.view,arch_db:reports_konery.external_konery_so_layout_standard
+msgid "www.konery.com"
+msgstr ""
